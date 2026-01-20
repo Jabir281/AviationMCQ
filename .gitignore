@@ -1,6 +1,9 @@
 # Secrets
 website/api/config.php
 
+# Intermediate extraction artifacts (large; not needed for website)
+website/JSON/
+
 # Python
 __pycache__/
 *.pyc
