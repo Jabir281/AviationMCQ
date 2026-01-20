@@ -1,0 +1,2092 @@
+[
+  {
+    "question": "Planning a VFR flight along magnetic track of 155, a suitable Flight Level would be:",
+    "options": [
+      "FL 70",
+      "FL 55",
+      "FL 80",
+      "FL 65"
+    ],
+    "correct": null,
+    "id": 1
+  },
+  {
+    "question": "Planning a VFR flight along true track of 170, magnetic variation along the track is 25W. A suitable Flight Level would be:",
+    "options": [
+      "FL 70",
+      "FL 80",
+      "FL 55",
+      "FL 65"
+    ],
+    "correct": null,
+    "id": 2
+  },
+  {
+    "question": "VFR flights shall be flown over congested areas of cities at a height not less than [1]_ above the highest obstacle within a radius of [2] __ from the aircraft.",
+    "options": [
+      "[1] 1000 ft, [2] 600 m",
+      "[1] 2000 ft, [2] 600 ft",
+      "[1] 1500 ft, [2] 900 ft",
+      "[1] 1000 ft, [2] 300 m"
+    ],
+    "correct": null,
+    "id": 3
+  },
+  {
+    "question": "Minimum Safe Altitude (MSA) 8500 ft OAT -20℃ at FL 85 QNH 1003 hPa Elevation 4000 ft The minimum safe Pressure Altitude, rounded to 10 ft, is:",
+    "options": [
+      "9550 ft",
+      "9150 ft",
+      "8650 ft",
+      "8250 ft"
+    ],
+    "correct": null,
+    "id": 4
+  },
+  {
+    "question": "For a VFR routing along a mountainous region with the information given, determine the lowest usable flight level for this leg: Elevation of nearby airport: 1300 ft Grid-MORA: 6500 ft Obstacle Clearance required: 2000 ft QNH 993 hPa Temperature ISA-18 Magnetic Course: 120°(M)",
+    "options": [
+      "FL 75",
+      "FL 65",
+      "FL 85",
+      "FL 55"
+    ],
+    "correct": null,
+    "id": 5
+  },
+  {
+    "question": "Cruise Level FL95 GS 155 kt TAS Constant Wind component Negligible OAR ISA QNH 1030 hPa Rate of Descent 500 ft/min To arrive at 2000 ft overhead the airfield, descent must commence at a distance of:",
+    "options": [
+      "41 NM",
+      "47 NM",
+      "36 NM",
+      "44 NM"
+    ],
+    "correct": null,
+    "id": 6
+  },
+  {
+    "question": "A flight planning chart states the time to FL190 at a given gross mass is 22 min and the distance travelled in still air is 66 NM. The distance covered with an average 35 kt headwind is:",
+    "options": [
+      "62 NM",
+      "83 NM",
+      "77 NM",
+      "53 NM"
+    ],
+    "correct": null,
+    "id": 7
+  },
+  {
+    "question": "Cruise level FL155 Average TAS in descent 260 kt Wind component Zero OAT ISA QNH 1030 hPa Rate of descent 500 ft/min To arrive at 2000 ft overhead a VOR the descent should be commenced at a distance from the VOR of:",
+    "options": [
+      "100 NM",
+      "140 NM",
+      "120 NM",
+      "110 NM"
+    ],
+    "correct": null,
+    "id": 8
+  },
+  {
+    "question": "Departure elevation 1500 ft Cruise Level FL075 QNH 1023 hPa OAT ISA 1 hPa 30 ft What vertical distance do you have to climb to Cruise Level?",
+    "options": [
+      "7800 ft",
+      "6500 ft",
+      "6100 ft",
+      "6300 ft"
+    ],
+    "correct": null,
+    "id": 9
+  },
+  {
+    "question": "Descent from 7500 ft AMSL to 1000 ft AMSL, 6 NM from a VORTAC, GS 156 kt, Rate of Descent 800 ft/min. The distance between the VORTAC and Top of Descent (TOC) is:",
+    "options": [
+      "34 NM",
+      "11 NM",
+      "15 NM",
+      "27 NM"
+    ],
+    "correct": null,
+    "id": 10
+  },
+  {
+    "question": "With regard to determine the position of a significant VFR point for insertion into a global navigation satellite system (GNSS) flight plan, which of the listed methods is correct? 1. Using the distance and bearing from an existing significant point 2. Using coordinates 3. Use of any nearby existing waypoint",
+    "options": [
+      "1, 2 and 3",
+      "2 only",
+      "1 and 3",
+      "1 and 2"
+    ],
+    "correct": null,
+    "id": 11
+  },
+  {
+    "question": "When cruising at FL340 with OAT -55℃ at M.78, then climbing to FL380 with OAT -59℃ and level off with M.80, the change in TAS is:",
+    "options": [
+      "increase by 6 kt.",
+      "increase by 16 kt.",
+      "decrease by 6 kt.",
+      "decrease by 16 kt."
+    ],
+    "correct": null,
+    "id": 12
+  },
+  {
+    "question": "With the following information given, calculate the TAS: Cruising Level: FL 370 Mach number: M 0.80 Temperature: ISA-10 Wind component: - 65 kt",
+    "options": [
+      "260 kt",
+      "544 kt",
+      "506 kt",
+      "449 kt"
+    ],
+    "correct": null,
+    "id": 13
+  },
+  {
+    "question": "Given a heading of 060 at a TAS of 140 kt. and wind/velocity 170/20, calculate (1) drift angle and (2) ground speed:",
+    "options": [
+      "(1) 7ºL, (2) 132 kt.",
+      "(1) 7°L, (2) 148 kt.",
+      "(1) 7ºR, (2) 132 kt.",
+      "(1) 7ºR, (2) 148 kt."
+    ],
+    "correct": null,
+    "id": 14
+  },
+  {
+    "question": "True course (TC) 017º W/V 340°/30 kt True air speed (TAS) 420 kt Calculate the wind correction angle (WCA) and ground speed (GS):",
+    "options": [
+      "-2°, 396 kt",
+      "+2°, 406 kt",
+      "+2°, 396 kt",
+      "-2°, 436 kt"
+    ],
+    "correct": null,
+    "id": 15
+  },
+  {
+    "question": "Given a heading of 220 at a TAS of 130 kt. and wind/velocity 280/30, calculate (1) drift angle and (2) ground speed:",
+    "options": [
+      "(1) 13ºL, (2) 118 kt.",
+      "(1) 13ºR, (2) 142 kt.",
+      "(1) 13ºL, (2) 142 kt.",
+      "(1) 13ºR, (2) 118 kt."
+    ],
+    "correct": null,
+    "id": 16
+  },
+  {
+    "question": "Compass Heading 252° Variation 22°E Deviation 3ºW Drift Angle 9° right The True Track is:",
+    "options": [
+      "246°",
+      "268°",
+      "280°",
+      "224°"
+    ],
+    "correct": null,
+    "id": 17
+  },
+  {
+    "question": "Time to cruising level 36 min. Still Air Distance 157 NAM With an average 60 kt tailwind the ground distance is:",
+    "options": [
+      "128 NM",
+      "155 NM",
+      "193 NM",
+      "216 NM"
+    ],
+    "correct": null,
+    "id": 18
+  },
+  {
+    "question": "Sector distance 450 NM, TAS is 460 kt, 50 kt tailwind. Calculate the still air distance in Nautical Air Miles (NAM):",
+    "options": [
+      "496 NAM",
+      "411 NAM",
+      "406 NAM",
+      "516 NAM"
+    ],
+    "correct": null,
+    "id": 19
+  },
+  {
+    "question": "Still air climb distance 189 Nautical Air Miles (NAM), time to climb 30 min. Calculate the ground distance with a 30 kt head wind:",
+    "options": [
+      "205 NM",
+      "196 NM",
+      "184 NM",
+      "174 NM"
+    ],
+    "correct": null,
+    "id": 20
+  },
+  {
+    "question": "Elevation 2500 ft, QNH 995 hPa, climb to FL105 at 750 ft/min rate of climb. Calculate the climb time:",
+    "options": [
+      "11 min",
+      "10 min",
+      "9 min",
+      "8 min"
+    ],
+    "correct": null,
+    "id": 21
+  },
+  {
+    "question": "Given: FL 370: M 0.80, SAT -60° C, Headwind 15 kt FL 330: M 0.78, SAT -60° C, Headwind 5 kt FL 290: M 0.80, SAT -55° C, Headwind 15 kt FL 270: M 0.76, SAT -43º C, Wind Zero The Flight Level which will allow for the maximum ground speed is:",
+    "options": [
+      "FL 370",
+      "FL 330",
+      "FL 290",
+      "FL 270"
+    ],
+    "correct": null,
+    "id": 22
+  },
+  {
+    "question": "Distance A to B 480 NM TAS 380 kt Headwind A to B 60 kt Tailwind B to A 60 kt The Total Flight Duration (A to B to A) is:",
+    "options": [
+      "2 h 35 min",
+      "2 h 28 min",
+      "3 h 10 min",
+      "2 h 15 min"
+    ],
+    "correct": null,
+    "id": 23
+  },
+  {
+    "question": "Course 235(M) MSA 7800 ft QNH 995 hPa Temp. ISA The minimum suitable IFR flight level is:",
+    "options": [
+      "FL60",
+      "FL75",
+      "FL100",
+      "FL90"
+    ],
+    "correct": null,
+    "id": 24
+  },
+  {
+    "question": "The minimum sector altitude (MSA) on an instrument apppraoch chart is referenced to a radio navigation facility, usually within ...",
+    "options": [
+      "5 NM",
+      "30 NM",
+      "20 NM",
+      "25 NM"
+    ],
+    "correct": null,
+    "id": 25
+  },
+  {
+    "question": "QNH 1025 HPa ISA +10 deg. C IFR flight 135° magnetic course airway MSA 7800 ft The minimum flight level is:",
+    "options": [
+      "FL65",
+      "FL75",
+      "FL80",
+      "FL90"
+    ],
+    "correct": null,
+    "id": 26
+  },
+  {
+    "question": "Excluding RVSM, an appropriate flight level (FL) for an IFR flight in accordance with the semi-circular height rules on a Magnetic Course 200 is:",
+    "options": [
+      "FL300",
+      "FL290",
+      "FL310",
+      "FL320"
+    ],
+    "correct": null,
+    "id": 27
+  },
+  {
+    "question": "According GM1 CAT.OP.MPA.145 (b), MOCA is the sum of the maximum terrain or obstacle elevation plus (1) _ for elevation up to and including 6000 ft, or (2) __ for elevation exceeding 6000 ft rounded up to the next 100 ft.",
+    "options": [
+      "(1) 1000 ft, (2) 2000 ft",
+      "(1) 2000 ft, (2) 1000 ft",
+      "(1) 3000 ft, (2) 2000 ft",
+      "(1) 500 ft, (2) 1000 ft"
+    ],
+    "correct": null,
+    "id": 28
+  },
+  {
+    "question": "According GM1 CAT.OP.MPA.145 (b), the lowest MOCA to be indicated is ...",
+    "options": [
+      "2000 ft (600 m)",
+      "1000 ft (300 m)",
+      "5000 ft (450 m)",
+      "500 ft (150 m)"
+    ],
+    "correct": null,
+    "id": 29
+  },
+  {
+    "question": "An airway is marked „3500T 2100 a“ means the:",
+    "options": [
+      "Minimum En-route Altitude (MEA) is 3500 ft.",
+      "Airway is a low level link route from 2100 ft to 3500 ft AMSL",
+      "Base of the Airway is 3500 ft MSL.",
+      "Minimum Obstacle Clearance Altitude (MOCA) is 3500 ft."
+    ],
+    "correct": null,
+    "id": 30
+  },
+  {
+    "question": "An airway is marked „FL80 1500 a“ means the ...",
+    "options": [
+      "Airway extends from 1500 ft MSL to FL80.",
+      "Minimum radio reception altitude (MRA) is 1500 ft AMSL.",
+      "Base of the airway is 1500 ft MSL.",
+      "Minimum En-route Altitude (MEA) is FL80."
+    ],
+    "correct": null,
+    "id": 31
+  },
+  {
+    "question": "An airway is marked „5000 2900a“ means the ...",
+    "options": [
+      "Minimum Obstacle Clearance Altitude (MOCA).",
+      "Minimum Holding Altitude (MHA).",
+      "Maximum Authorised Altitude (MAA).",
+      "Minimum En-route Altitude (MEA)."
+    ],
+    "correct": null,
+    "id": 32
+  },
+  {
+    "question": "The lowest altitude between radio fixes assuring navigational signal coverage and obstacle clearance is the:",
+    "options": [
+      "Minimum Off Route Altitude (MORA)",
+      "Minimum Sector Altitude (MSA)",
+      "Minimum Obstacle Clearance Altitude (MOCA)",
+      "Minimum Enroute Altitude (MEA)"
+    ],
+    "correct": null,
+    "id": 33
+  },
+  {
+    "question": "The Minimum Off-Route Altitude (MORA) provides obstruction clearance up to what distance from the airway centerline?",
+    "options": [
+      "10 NM",
+      "1 NM",
+      "20 NM",
+      "5 NM"
+    ],
+    "correct": null,
+    "id": 34
+  },
+  {
+    "question": "During IFR descent to an airport, who is responsible for terrain separation and obstacle clearance?",
+    "options": [
+      "The pilot in command (PIC), except when flying in IMC",
+      "The pilot in command (PIC) in all cases",
+      "ATC in all cases",
+      "The pilot in command (PIC), except the flight is RADAR vectored"
+    ],
+    "correct": null,
+    "id": 35
+  },
+  {
+    "question": "According ICAO Doc 82168, in non-mountainous areas (e.g with terrain not higher than 3000 ft), the minimum permissible holding level provides a clearance of at least (1) _above obstacles in the holding area, and a clearance which ranges from 300 m at the edge of the holding area to a minimum of 60 m at the (2) _ limit of the buffer area.",
+    "options": [
+      "(1) 600 m, (2) 5 NM",
+      "(1) 300 m, (2) 5 NM",
+      "(1) 600 m, (2) 10 NM",
+      "(1) 300 m, (2) 10 NM"
+    ],
+    "correct": null,
+    "id": 36
+  },
+  {
+    "question": "For an airway in mountainous terrain, the approximate minimum clearance used for calculating MOCA is (1) __ for elevations less than 5000 ft and (2) __ for elevations greater than 5000 ft.",
+    "options": [
+      "(1) 1500 ft, (2) 2000 ft",
+      "(1) 1000 ft, (2) 3000 ft",
+      "(1) 1500 ft, (2) 3000 ft",
+      "(1) 1000 ft, (2) 2000 ft"
+    ],
+    "correct": null,
+    "id": 37
+  },
+  {
+    "question": "According SERA.5015, an IFR flight shall be flown at a level which is not below the minimum flight altitude, or, where no such minimum flight altitude has been established: over high terrain or in mountainous areas, at a level which is at least (1) above the highest obstacle located within (2) of the estimated position of the aircraft.",
+    "options": [
+      "(1) 600 m (2000 ft), (2) 8 km",
+      "(1) 300 m (1000 ft), (2) 5 km",
+      "(1) 600 m (2000 ft), (2) 5 km",
+      "(1) 300 m (1000 ft), (2) 8 km"
+    ],
+    "correct": null,
+    "id": 38
+  },
+  {
+    "question": "Altimeter temperature correction should be applied by the pilot during final approach, when the ambient temperature on the surface is much (1) __ than ISA, and is (2) __ minimum altitudes at fixes inside the Final Approach Fix (FAF).",
+    "options": [
+      "(1) higher, (2) added to",
+      "(1) lower, (2) added to",
+      "(1) higher, (2) subtracted from",
+      "(1) lower, (2) subtracted from"
+    ],
+    "correct": null,
+    "id": 39
+  },
+  {
+    "question": "During an LNAV 2D approach, (1) _ is responsible to apply temperature corrections in case temperature is (2) _than ISA.",
+    "options": [
+      "(1) ATC, (2) much higher",
+      "(1) the pilot in command, (2) much higher",
+      "(1) the pilot in command, (2) much lower",
+      "(1) ATC, (2) much lower"
+    ],
+    "correct": null,
+    "id": 40
+  },
+  {
+    "question": "According to ICAO Doc 8168 Volume I FLIGHT PROCEDURES PART III, when an IFR flight is being vectored by radar, air traffic control (ATC) may assign minimum radar vectoring altitudes which ...",
+    "options": [
+      "may be below the minimum sector altitude.",
+      "must be at the minimum sector altitude.",
+      "must be at least 1000 ft above minimum sector altitude.",
+      "may not be below the minimum sector altitude."
+    ],
+    "correct": null,
+    "id": 41
+  },
+  {
+    "question": "Given the following information, calculate the minimum flight level to be flown under IFR: MOCA: 4400 ft Magnetic course: 233(M) Elevation of nearby airport: 1500 ft Magnetic variation: 12ºW Temperature: ISA-18 QNH reported at airport: 993 hPa Transition Altitude: 5000 feet",
+    "options": [
+      "FL 50",
+      "FL 60",
+      "FL 70",
+      "FL 80"
+    ],
+    "correct": null,
+    "id": 42
+  },
+  {
+    "question": "Given the following information, calculate the true altitude of the aircraft of the aircraft above airfield datum („true height“): Aircraft at FL 45 Temperature: ISA-13 Elevation of nearby airport: 200 ft QNH at airport: 1030 hPa",
+    "options": [
+      "3560 ft",
+      "4580 ft",
+      "4020 ft",
+      "5040 ft"
+    ],
+    "correct": null,
+    "id": 43
+  },
+  {
+    "question": "Unless on Standard Instrument Departure charts, routes usually indicate ...",
+    "options": [
+      "Magnetic Heading.",
+      "True Course.",
+      "True Heading.",
+      "Magnetic Course."
+    ],
+    "correct": null,
+    "id": 44
+  },
+  {
+    "question": "With regard to RNAV and conventional STARs, which of the following statements is correct? 1. „RNAV STAR overlay“ charts provide RNAV information to support flying a conventional STAR. 2. An „RNAV STAR“ must NOT be flown with reference to conventional sources only.",
+    "options": [
+      "1 is incorrect, 2 is incorrect",
+      "1 is correct, 2 is correct",
+      "1 is incorrect, 2 is correct",
+      "1 is correct, 2 is incorrect"
+    ],
+    "correct": null,
+    "id": 45
+  },
+  {
+    "question": "With regard to RNAV and conventional SIDs, which of the following statements is correct? 1. A „RNAV SID“ may be flown without any ground-based navigation aids. 2. A „RNAV SID“ must be flown in case ground-based navigational navigation aids become unusable.",
+    "options": [
+      "1 is correct, 2 is correct",
+      "1 is correct, 2 is incorrect",
+      "1 is incorrect, 2 is correct",
+      "1 is incorrect, 2 is incorrect"
+    ],
+    "correct": null,
+    "id": 46
+  },
+  {
+    "question": "A commercial aeroplane is capable for an Approach Climb Gradient (ACG) of 3.5%. Instrument approach procedures that may be selected include: 1. ILS-DME approach with required minimum ACG is 2.9% 2. VOR-DME approach minimum ACG required is 4.4% 3. LOC-DME approach with required minimum ACG required is 3.5%",
+    "options": [
+      "2 and 3",
+      "1 and 2",
+      "1 and 3.",
+      "1, 2 and 3"
+    ],
+    "correct": null,
+    "id": 47
+  },
+  {
+    "question": "The lowest ICAO altitude providing minimum 300 m (1000 ft) clearance above all objects in a 46 km (25 NM) radius centred on a radio navigational aid, is the:",
+    "options": [
+      "MORA",
+      "MSA",
+      "MEA",
+      "MOCA"
+    ],
+    "correct": null,
+    "id": 48
+  },
+  {
+    "question": "The approach chart for an RNAV approach shows a decision height of 320 ft. Type and category of this approach are:",
+    "options": [
+      "Type A, no category",
+      "Type B, Category II",
+      "Type B, no category",
+      "Type A, Category"
+    ],
+    "correct": null,
+    "id": 49
+  },
+  {
+    "question": "With regard to PBN approaches designated as RNP APCH, which of the following statements is correct? 1. RNP approaches are based on GNSS. 2. RNP approaches can be identified by LNAV or LNAV/VNAV minima published on the chart.",
+    "options": [
+      "1 is incorrect, 2 is incorrect",
+      "1 is incorrect, 2 is correct",
+      "1 is correct, 2 is correct",
+      "1 is correct, 2 is incorrect"
+    ],
+    "correct": null,
+    "id": 50
+  },
+  {
+    "question": "Type B approaches have a decision height of (1) and (2) .",
+    "options": [
+      "(1) less than 250 ft, (2) no category",
+      "(1) less than 250 ft, (2) categories I, Il or III",
+      "(1) more than 250 ft, (2) no category",
+      "(1) more than 250 ft, (2) categories I, II or III"
+    ],
+    "correct": null,
+    "id": 51
+  },
+  {
+    "question": "Category and type of an ILS CAT I approach with decision height (DH) of 200 ft are:",
+    "options": [
+      "Type A, 2D approach",
+      "Type B, 3D approach",
+      "Type B, 2D approach",
+      "Type A, 3D approach"
+    ],
+    "correct": null,
+    "id": 52
+  },
+  {
+    "question": "A RNP Type B approach must be 3D and requires: 1. ILS 2. MLS 3. GBAS 4. SBAS 5. ABAS only",
+    "options": [
+      "1, 2 or 5",
+      "3, 4 or 5",
+      "1, 3, 4 or 5",
+      "1, 2, 3 or 4"
+    ],
+    "correct": null,
+    "id": 53
+  },
+  {
+    "question": "The approach chart for an approach shows a decision height of 150 ft. Type and category of this approach are:",
+    "options": [
+      "Type B, Category II",
+      "Type A, no category",
+      "Type B, no category",
+      "Type A, Category"
+    ],
+    "correct": null,
+    "id": 54
+  },
+  {
+    "question": "With regard to definition by ICAO Annex 2, a non-precision approach is an instrument approach procedure designed for (1) _ instrument approach operations of (2) _.",
+    "options": [
+      "(1) 2D, (2) Type B",
+      "(1) 2D, (2) Type A",
+      "(1) 3D, (2) Type B",
+      "(1) 3D, (2) Type A"
+    ],
+    "correct": null,
+    "id": 55
+  },
+  {
+    "question": "With regard to LPV approaches, the (1) _guidance is equivalent to localizer, and the protected area is considerably (2) __ than the protected area for the present LNAV and LNAV/VNAV lateral protection.",
+    "options": [
+      "(1) vertical, (2) smaller",
+      "(1) lateral, (2) smaller",
+      "(1) vertical, (2) larger",
+      "(1) lateral, (2) larger"
+    ],
+    "correct": null,
+    "id": 56
+  },
+  {
+    "question": "A non-precision approach in its most basic form uses reference from (1) only and provides (2) .",
+    "options": [
+      "(2) GNSS waypoints, (2) lateral guidance only",
+      "(1) ground-based facilities, (2) lateral guidance only by VOR or Localizer",
+      "(1) ground-based facilities, (2) lateral and vertcial guidance",
+      "(2) GNSS waypoints, (2) lateral and vertical guidance"
+    ],
+    "correct": null,
+    "id": 57
+  },
+  {
+    "question": "An example for an RNP approach procedure which must be designated as „,RNP AR APCH“ may be ...",
+    "options": [
+      "curved segment in the arrival path.",
+      "any published LPV minima.",
+      "any published LNAV/VNAV minima.",
+      "curved segment in the final approach."
+    ],
+    "correct": null,
+    "id": 58
+  },
+  {
+    "question": "According ICAO Doc 9613 regarding approaches designated as „RNP AR APCH“, the State AIP should clearly indicate that the navigation application is an RNP AR APCH procedure and that ...",
+    "options": [
+      "special equipment is required.",
+      "alternative routings are required.",
+      "augmented reality features are required.",
+      "specific authorization is required."
+    ],
+    "correct": null,
+    "id": 59
+  },
+  {
+    "question": "A LPV provides precision approaches (1) _ vertical guidance down to minima as low as (2) _. .",
+    "options": [
+      "(1) with, (2) 100 ft",
+      "(1) with, (2) 200 ft",
+      "(1) without, (2) 200 ft",
+      "(1) without, (2) 100 ft"
+    ],
+    "correct": null,
+    "id": 60
+  },
+  {
+    "question": "A LPV approach is ...",
+    "options": [
+      "an augmented GNSS approach based on localizer performance without vertical guidance.",
+      "an augmented GNSS approach based on localizer performance with vertical guidance.",
+      "limited-precision approach based on ground-based facilities without vertical guidance.",
+      "limited-precision approach based on ground-based facilities with vertical guidance."
+    ],
+    "correct": null,
+    "id": 61
+  },
+  {
+    "question": "In case an RNP approach chart shows two types of published minima for LNAV and LP, the (1)_are based on Localiser Performance requiring (2) _on board the aircraft.",
+    "options": [
+      "(1) LP minima, (2) standard GNSS equipment",
+      "(1) LP minima, (2) additional equipment to standard GNSS receiver",
+      "(1) LNAV minima, (2) additional equipment to standard GNSS receiver",
+      "(1) LNAV minima, (2) standard GNSS equipment"
+    ],
+    "correct": null,
+    "id": 62
+  },
+  {
+    "question": "In case of FMS inability to provide vertical guidance, a RNP approach may be flown ...",
+    "options": [
+      "as a non-precision approach without vertical guidance by on-board systems.",
+      "as a precision approach without vertical guidance by on-board systems.",
+      "as a non-precision approach with vertical guidance by on-board systems.",
+      "as a precision approach with vertical guidance by on-board systems."
+    ],
+    "correct": null,
+    "id": 63
+  },
+  {
+    "question": "An approach designated as „APV Baro“ or „APV SBAS“ is a (1) down to minima published as (2) .",
+    "options": [
+      "(1) 2D approach, (2) LNAV/VNAV or LPV",
+      "(1) 3D approach, (2) LNAV/VNAV or LPV",
+      "(1) 3D approach, (2) MDH or DH",
+      "(1) 2D approach, (2) LNAV or LP"
+    ],
+    "correct": null,
+    "id": 64
+  },
+  {
+    "question": "Cruise Level FL370 Cruise Regime M 0.74 OAT -47º C The TAS in kt is:",
+    "options": [
+      "424",
+      "438",
+      "434",
+      "416"
+    ],
+    "correct": null,
+    "id": 65
+  },
+  {
+    "question": "True course 130° W/V 180/30 TAS 200 kt Calculate the Wind Correction Angle (WCA) and GS:",
+    "options": [
+      "WCA +7º, GS 180 kt",
+      "WCA -7º, GS 180 kt",
+      "WCA +7°, GS 222 kt",
+      "WCA -7º, GS 222 kt"
+    ],
+    "correct": null,
+    "id": 66
+  },
+  {
+    "question": "Distance 300 NM Wind (true) 340/40 Magnetic course 300° Variation 20°E TAS 440 kt Calculate the flight time:",
+    "options": [
+      "45 min",
+      "37 min",
+      "42 min",
+      "48 min"
+    ],
+    "correct": null,
+    "id": 67
+  },
+  {
+    "question": "Advantages of global navigation satellite system/flight management computer (GNSS/FMC) are in specific: 1. Capability for time and fuel revisions based on predicted and actual wind. 2. Disregarding limitations in uncontrolled airspaces during under IFR.",
+    "options": [
+      "1 is correct, 2 is correct",
+      "1 is incorrect, 2 is incorrect",
+      "1 is correct, 2 is incorrect",
+      "1 is incorrect, 2 is correct"
+    ],
+    "correct": null,
+    "id": 68
+  },
+  {
+    "question": "Limitations of using GNSS/FMC equipment include: 1. Errors by pilot-input, especially interchange of numbers when entering flight levels, wind, temperature, fuel. 2. The effect of other than predicted wind on fuel and time estimates.",
+    "options": [
+      "1 is incorrect, 2 is incorrect",
+      "1 is correct, 2 is incorrect",
+      "1 is correct, 2 is correct",
+      "1 is incorrect, 2 is correct"
+    ],
+    "correct": null,
+    "id": 69
+  },
+  {
+    "question": "Limitations of using GNSS/FMC equipment include: 1. Effect of aircraft's non-standard configuration on flight management system (FMS) predictions (e.g. in case of gear down). 2. Inability to store and display additional aeronautical information, like minimum altitudes, approach procedures.",
+    "options": [
+      "1 is correct, 2 is correct",
+      "1 is incorrect, 2 is correct",
+      "1 is correct, 2 is incorrect",
+      "1 is incorrect, 2 is incorrect"
+    ],
+    "correct": null,
+    "id": 70
+  },
+  {
+    "question": "Limitations of using GNSS/FMC equipment include: 1. Inaccuracy and loss of precision by FMS navigation calculations. 2. Aircraft mass significantly differs from that which was input by the crew.",
+    "options": [
+      "1 is correct, 2 is incorrect",
+      "1 is incorrect, 2 is incorrect",
+      "1 is correct, 2 is correct",
+      "1 is incorrect, 2 is correct"
+    ],
+    "correct": null,
+    "id": 71
+  },
+  {
+    "question": "Limitations of using GNSS/FMC equipment include: 1. Interchange of numbers when entering wind can result in a significantly different fuel burn up to the next waypoint from that predicted by the FMS. 2. Incorrect data entry will be detected resulting in rejection of input and a warning message.",
+    "options": [
+      "1 is incorrect, 2 is correct",
+      "1 is correct, 2 is incorrect",
+      "1 is incorrect, 2 is incorrect",
+      "1 is correct, 2 is correct"
+    ],
+    "correct": null,
+    "id": 72
+  },
+  {
+    "question": "Given the information below: Fuel mass 180 kg Fuel density: 0.80 kg/L The fuel volume is:",
+    "options": [
+      "59.4 Imp.GAL",
+      "49.5 Imp.GAL",
+      "1022.9 Imp.GAL",
+      "225 Imp.GAL"
+    ],
+    "correct": null,
+    "id": 73
+  },
+  {
+    "question": "Given the information below: Fuel mass 240 kg Fuel density: 0.78 kg/L The fuel volume is:",
+    "options": [
+      "187.2 US GAL",
+      "81.3 US GAL",
+      "307.7 US GAL",
+      "67.7 US GAL"
+    ],
+    "correct": null,
+    "id": 74
+  },
+  {
+    "question": "Given the information below: 190 US GAL Fuel density: 0.81 kg/L The fuel mass is:",
+    "options": [
+      "582.6 kg",
+      "699.6 kg",
+      "1066.3 kg",
+      "887.9 kg"
+    ],
+    "correct": null,
+    "id": 75
+  },
+  {
+    "question": "Given the information below: 160 Imp.GAL Fuel density: 0.81 kg/L The fuel mass is:",
+    "options": [
+      "490.6 kg",
+      "589.2 kg",
+      "747.7 kg",
+      "898.0 kg"
+    ],
+    "correct": null,
+    "id": 76
+  },
+  {
+    "question": "If the fuel density increases due to temperature change, with all other flight conditions remain unchanged, the fuel flow of a turbine engine given in kg/h will ...",
+    "options": [
+      "increase proportional to fuel density.",
+      "decrease with decreasing temperature.",
+      "not change.",
+      "decrease with increasing temperature."
+    ],
+    "correct": null,
+    "id": 77
+  },
+  {
+    "question": "At 0.8 relative fuel density the fuel flow of a turbine engine is 200 kg/h. With all other in-flight conditions constant, at 0.75 density the fuel flow will be:",
+    "options": [
+      "256 kg/h",
+      "177 kg/h",
+      "215 kg/h",
+      "200 kg/h"
+    ],
+    "correct": null,
+    "id": 78
+  },
+  {
+    "question": "During the pre-flight preparation, the crew decides to re-fuel an amount of 36 US gallons. The approximate fuel quantity in litres (L) to be reported to the fuel truck is:",
+    "options": [
+      "144 L",
+      "9 L",
+      "10 L",
+      "136 L"
+    ],
+    "correct": null,
+    "id": 79
+  },
+  {
+    "question": "During the pre-flight preparation, the crew decides to re-fuel an amount of 24 US gallons, fuel density is 6 lb / US gallon. This amount is equal to approximately:",
+    "options": [
+      "65 kg",
+      "317 kg",
+      "144 kg",
+      "72 kg"
+    ],
+    "correct": null,
+    "id": 80
+  },
+  {
+    "question": "At a checkpoint on a VFR flight, the remaining usable fuel is 60 US gal. Reserve fuel 12 US gal. Flight time remaining 1 h 35 min. To complete the trip, the max. consumption in US gal/h is ...",
+    "options": [
+      "32.8",
+      "36.5",
+      "21.7",
+      "30.3"
+    ],
+    "correct": null,
+    "id": 81
+  },
+  {
+    "question": "(See attachment IC-033-099) Mass: 52500 kg Flight Level: 340 Headwind component: 40 kt TAT: - 42° C Determine fuel required for ground distance 100 NM at LRC speed:",
+    "options": [
+      "470 kg",
+      "940 kg",
+      "493 kg",
+      "481 kg"
+    ],
+    "correct": null,
+    "id": 82
+  },
+  {
+    "question": "(See attachment IC-033-099) Mass: 62500 kg Flight Level: 350 Headwind component: 20 kt TAT: - 42° C Determine fuel required for ground distance 200 NM at LRC speed:",
+    "options": [
+      "1044 kg",
+      "1019 kg",
+      "510 kg",
+      "930 kg"
+    ],
+    "correct": null,
+    "id": 83
+  },
+  {
+    "question": "(See attachment IC-033-099) Mass: 62500 kg Flight Level: 360 Headwind component: 30 kt TAT: - 42° C Determine fuel required for ground distance 180 NM at LRC speed:",
+    "options": [
+      "858 kg",
+      "481 kg",
+      "940 kg",
+      "962 kg"
+    ],
+    "correct": null,
+    "id": 84
+  },
+  {
+    "question": "With the values given below during a VFR flight, what is the highest acceptable fuel flow for the remaining part of the trip? Remaining flight time: 01:20 Fuel remaining: 55 USGA Reserve fuel: 15 USGAL",
+    "options": [
+      "30 USGAL / hour",
+      "11 USGAL / hour",
+      "41 USGAL / hour",
+      "53 USGAL / hour"
+    ],
+    "correct": null,
+    "id": 85
+  },
+  {
+    "question": "Given the following values: Ground distance: 360 NM TAS 240 kt Average Tailwind component: 40 kt Average Fuel Flow: 3300 kg/h Calculate the Trip Fuel:",
+    "options": [
+      "5940 kg",
+      "4950 kg",
+      "2567 kg",
+      "4242 kg"
+    ],
+    "correct": null,
+    "id": 86
+  },
+  {
+    "question": "Given the following values: Ground distance: 240 NM TAS 220 kt Average Tailwind component: 30 kt Average Fuel Flow: 2200 kg/h Calculate the Trip Fuel:",
+    "options": [
+      "2017 kg",
+      "1742 kg",
+      "2112 kg",
+      "2292 kg"
+    ],
+    "correct": null,
+    "id": 87
+  },
+  {
+    "question": "Given the following values: Ground distance: 120 NM TAS 160 kt Average Headwind component: 20 kt Average Fuel Flow: 3300 kg/h Calculate the Trip Fuel:",
+    "options": [
+      "3850 kg",
+      "2475 kg",
+      "2829 kg",
+      "4400 kg"
+    ],
+    "correct": null,
+    "id": 88
+  },
+  {
+    "question": "A flight is planned according to the basic fuel policy procedure as stated in AMC1 CAT.OP.MPA.150(b) (a). Due to payload restrictions, planning required minimum possible Block Fuel. With the values given below, calculate the total fuel required: Trip Fuel: 3300 kg Planned Fuel Flow for Holding: 2200 kg/h Alternate no. 1 Fuel: 1200 kg Alternate no. 2 Fuel: 1600 kg Taxi Fuel: 220 kg (no Additional Fuel or Extra Fuel required)",
+    "options": [
+      "6385 kg",
+      "6183 kg",
+      "7603 kg",
+      "6403 kg"
+    ],
+    "correct": null,
+    "id": 89
+  },
+  {
+    "question": "Trip fuel 3800 kg Contingency fuel 230 kg Alternate fuel 1200 kg Final reserve fuel 1300 kg The Minimum Fuel at destination is:",
+    "options": [
+      "1430 kg",
+      "2730 kg",
+      "1200 kg",
+      "2500 kg"
+    ],
+    "correct": null,
+    "id": 90
+  },
+  {
+    "question": "A piston-engined aircraft arrives at the destination airport and performs one single-engine approach with go-around, and is then required to proceed to the alternate aerodrome. Calculated Trip Fuel: 440 liters Alternate Fuel: 120 liters Fuel Flow cruise: 90 liters/hour Fuel Flow holding: 60 liters/hour Fuel for single-engine approach and go-around: 20 liters The minimum fuel required (1) at the destination and (2) at the alternate is:",
+    "options": [
+      "(1) 165 liters, (2) 45 liters",
+      "(1) 185 liters, (2) 90 liters",
+      "(1) 150 liters, (2) 45 liters",
+      "(1) 120 liters, (2) 90 liters"
+    ],
+    "correct": null,
+    "id": 91
+  },
+  {
+    "question": "The correct formula to derive NAM from Ground Miles (NM) using True Airspeed (TAS) and Ground Speed (GS) is:",
+    "options": [
+      "NAM = NM x TAS x GS",
+      "NAM = NM x GS / TAS",
+      "NAM = NM / TAS / GS",
+      "NAM = NM x TAS / GS"
+    ],
+    "correct": null,
+    "id": 92
+  },
+  {
+    "question": "Given the following values: Start fuel: 15 litres Fuel flow during taxi: 120 litres/hour Estimated Taxi time: 10 minutes Assuming 0.78 kg/litres, the fuel required for engine start and taxi is:",
+    "options": [
+      "35 kg",
+      "43.8 kg",
+      "25 kg",
+      "28 kg"
+    ],
+    "correct": null,
+    "id": 93
+  },
+  {
+    "question": "Given the following values: Start fuel: 12 litres Fuel flow during taxi: 120 litres/hour Estimated Taxi time: 10 minutes Assuming 0.80 kg/litres, the fuel required for engine start and taxi is:",
+    "options": [
+      "16 kg",
+      "32 kg",
+      "25.6 kg",
+      "40 kg"
+    ],
+    "correct": null,
+    "id": 94
+  },
+  {
+    "question": "Given the following values: Start fuel: 10 litres Fuel flow during taxi: 90 litres/hour Estimated Taxi time: 10 minutes Assuming 0.82 kg/litres, the fuel required for engine start and taxi is:",
+    "options": [
+      "30.5 kg",
+      "12.3 kg",
+      "25 kg",
+      "20.5 kg"
+    ],
+    "correct": null,
+    "id": 95
+  },
+  {
+    "question": "Comparing the Integrated Range and Average Fuel Flow procedures, the most correct statement is the ...",
+    "options": [
+      "Integrated Range procedure is more accurate and reflects the different fuel flows during different phases of flight",
+      "Average Fuel Flow procedure allows accurate monitoring of fuel, especially for long range flights",
+      "Integrated Range procedure is easier and faster when calculating required trip fuel",
+      "Average Fuel Flow procedure is more accurate and reflects the fuel consumption during different phases of flight"
+    ],
+    "correct": null,
+    "id": 96
+  },
+  {
+    "question": "When calculating: Take-off Fuel - Contingency Fuel - Alternate Fuel - Final Reserve Fuel - Extra Fuel The result is:",
+    "options": [
+      "Dry Operating Mass",
+      "Trip Fuel",
+      "Basic Empty Mass",
+      "Taxi Fuel"
+    ],
+    "correct": null,
+    "id": 97
+  },
+  {
+    "question": "Trip fuel accounts fuel for: 1. Take-off to landing 2. Expected departure 3. Contingency Fuel 4. Expected arrival and approach 5. Fuel for climb and descent (including step-climbs) 6. Final Reserve Fuel",
+    "options": [
+      "1, 2, 4 and 5",
+      "1, 3 and 6",
+      "1, 2, 3, 4, 5 and 6.",
+      "1, 2, 3 and 6"
+    ],
+    "correct": null,
+    "id": 98
+  },
+  {
+    "question": "When calculating: TOM (Take-off Mass) - DOM (Dry Operating Mass) - Traffic Load - Contingency Fuel - Alternate Fuel - Final Reserve Fuel - Extra Fuel The result is:",
+    "options": [
+      "Trip Fuel",
+      "Empty Mass",
+      "Unusable Fuel",
+      "Landing Mass"
+    ],
+    "correct": null,
+    "id": 99
+  },
+  {
+    "question": "Trip Fuel includes calculated fuel from/for: 1. Block position to holding holding point 2. Take-off to landing, including expected departure 3. End of the departure route to beginning of the arrival route, no departure and arrival 4. Climb, cruise (including any step climb) and descent 5. Arrival, approach and landing 6. Holding for 15 minutes at 1500 ft above destination aerodrome elevation",
+    "options": [
+      "1, 2, 4 and 5",
+      "2, 4 and 5",
+      "2, 4, 5 and 6",
+      "1, 3, 4 and 5"
+    ],
+    "correct": null,
+    "id": 100
+  },
+  {
+    "question": "Contingency Fuel should account for (1) _that could have an influence on the fuel consumption to the (2) _aerodrome.",
+    "options": [
+      "(1) all known predictable factors, (2) alternate",
+      "(1) all known predictable factors, (2) destination",
+      "(1) unforeseen or unpredicable factors, (2) destination",
+      "(1) unforeseen or unpredicable factors, (2) alternate"
+    ],
+    "correct": null,
+    "id": 101
+  },
+  {
+    "question": "In case an airplane experiences higher fuel flow than planned, e.g. due to an instruction from ATC to increase speed, this unforeseen, additional fuel consumption is accounted for by the ...",
+    "options": [
+      "contingency fuel.",
+      "addional fuel.",
+      "extra fuel.",
+      "final reserve fuel."
+    ],
+    "correct": null,
+    "id": 102
+  },
+  {
+    "question": "With regard to CAT operations and the information given below, calculate the Contingency Fuel: Trip Fuel: 2700 lb Taxi Fuel: 140 lb Alternate Fuel: 950 lb (En-route alternate AVAILABLE) Fuel for 30 min at 1500 ft above destination: 720 lb Reserve Fuel: 840 lb",
+    "options": [
+      "720 lb",
+      "135 lb",
+      "81 lb",
+      "120 lb"
+    ],
+    "correct": null,
+    "id": 103
+  },
+  {
+    "question": "With regard to CAT operations and the information given below, calculate the required Alternate Fuel: Fuel for missed approach at the destination: 200 kg Fuel for climb to cruise level: 550 kg Cruise fuel to alternate: 800 kg Descent fuel to alternate: 150 kg Fuel for approach and landing at alternate: 200 kg Holding fuel at alternate: 900 kg Fuel for a missed approach at alternate: 150 kg",
+    "options": [
+      "2800 kg",
+      "1500 kg",
+      "2950 kg",
+      "1900 kg"
+    ],
+    "correct": null,
+    "id": 104
+  },
+  {
+    "question": "An aircraft with reciprocating engines should have final reserve to fly for ...",
+    "options": [
+      "90 min ..",
+      "60 min.",
+      "45 min.",
+      "30 min."
+    ],
+    "correct": null,
+    "id": 105
+  },
+  {
+    "question": "Assuming the destination Aerodrome is A and the alternate Aerodrome is B, the final reserve fuel for a turbojet engine aeroplane should be fuel for ...",
+    "options": [
+      "30 min holding at 1500 ft above Aerodrome B.",
+      "15 min holding at 2000 ft above Aerodrome A.",
+      "45 min holding at 2000 ft above Aerodrome B.",
+      "30 min holding at 1000 ft above Aerodrome A."
+    ],
+    "correct": null,
+    "id": 106
+  },
+  {
+    "question": "A turbine aeroplane diverts due to in-flight depressurisation to an enroute Alternate. Flight conditions are as forecast. The Min. Fuel quantity on arrival must be ...",
+    "options": [
+      "fuel to fly to another aerodrome should weather conditions demand.",
+      "fuel determined by the operator, specified in the Operations Manual.",
+      "fuel to fly at least 45 min.",
+      "fuel to fly at least for 30 min."
+    ],
+    "correct": null,
+    "id": 107
+  },
+  {
+    "question": "For turbojet aeroplanes, what is the time required for final reserve fuel?",
+    "options": [
+      "60 min",
+      "30 min",
+      "15 min",
+      "90 min"
+    ],
+    "correct": null,
+    "id": 108
+  },
+  {
+    "question": "The min. Final Reserve Fuel for a Turbojet should be fuel for ...",
+    "options": [
+      "45 min. holding at 1500 ft above the destination aerodrome.",
+      "15 min. holding at 1500 ft AMSL.",
+      "30 min. holding at 1500 ft above destination aerodrome elevation, when no alternate is required.",
+      "20 min. holding over the alternate airfield."
+    ],
+    "correct": null,
+    "id": 109
+  },
+  {
+    "question": "The final reserve fuel for aeroplanes with turbine engines is fuel to fly for [1] _at holding speed at [2] above aerodrome elevation in standard conditions.",
+    "options": [
+      "[1] 45 min, [2] 1000 ft (300 m)",
+      "[1] 30 min, [2] 1500 ft (450 m)",
+      "[1] 45 min, [2] 1500 ft (450 m)",
+      "[1] 30 min, [2] 1000 ft (300 m)"
+    ],
+    "correct": null,
+    "id": 110
+  },
+  {
+    "question": "Max. Landing Mass 51300 kg Max. Take-off Mass 56300 kg Dry Operating Mass 29100 kg Load 11700 kg Trip fuel 3000 kg Contingency fuel 215 kg Final reserve fuel 1250 kg Alternate fuel 1300 kg Taxi fuel 200 kg Determine the max. extra fuel:",
+    "options": [
+      "9735 kg",
+      "7475 kg",
+      "5775 kg",
+      "7735 kg"
+    ],
+    "correct": null,
+    "id": 111
+  },
+  {
+    "question": "Use the following information from the operational flight plan of a Medium Range Jet Transport Aeroplane (MRJT) to calculate the minimum required Take-Off Fuel, in case the operator has nominated a suitable En-Route Alternate: Flight time: 02:37 Flight time to alternate: 00:40 Cruise fuel flow: 2550 kg/h Holding fuel flow: 1900 kg/h",
+    "options": [
+      "9523 kg",
+      "7823 kg",
+      "9481 kg",
+      "10473 kg"
+    ],
+    "correct": null,
+    "id": 112
+  },
+  {
+    "question": "Calculate the minimum fuel required of a jet aircraft before commencing a Commercial Air Transport flight: Taxi Fuel: 100 kg Trip Fuel: 3450 kg Fuel to alternate: 780 kg Fuel flow at 1500 feet above destination aerodrome: 2100 kg/h",
+    "options": [
+      "4773 kg",
+      "5453 kg",
+      "5553 kg",
+      "6603 kg"
+    ],
+    "correct": null,
+    "id": 113
+  },
+  {
+    "question": "Calculate the total fuel required for a Commercial Air Transport flight in a Long-Range Jet Transport (LRJT) aeroplane, rounded to the higher full kg: Startup/Taxi Fuel: 185 kg Trip Fuel: 48950 kg Contingency Fuel: 5% of Trip Fuel Alternate Fuel: 1880 kg Additional Fuel: 3300 kg Final Reserve Fuel: 2250 kg",
+    "options": [
+      "58828 kg",
+      "56763 kg",
+      "55713 kg",
+      "59013 kg"
+    ],
+    "correct": null,
+    "id": 114
+  },
+  {
+    "question": "Calculate the total fuel required for a Commercial Air Transport flight with a Medium-Range Jet Transport (MRJT) aeroplane, no destination alternate: Fuel Flow Taxi: 10 kg / min Taxi time at departure: 30 minutes Taxi time at destination: 20 minutes Trip distance: 1244 NM Cruise Fuel flow (average): 2550 kg/h Cruise TAS (average): 440 kt Wind component (average): - 25 kt Contingency Fuel: use 3% of Trip Fuel Fuel flow Holding: 2200 kg/h APU fuel flow: 110 kg/h Planned APU usage at the parking position: Zero",
+    "options": [
+      "9274 kg",
+      "9824 kg",
+      "9524 kg",
+      "10374 kg"
+    ],
+    "correct": null,
+    "id": 115
+  },
+  {
+    "question": "Calculate the total fuel required for a Commercial Air Transport flight (VFR) with a multi-engined piston aircraft, rounded to the higher full GAL: Start-up / Taxi Fuel: 2 GAL Climb Fuel: 9 GAL Cruise Fuel: 20 GAL Final Reserve Fuel Flow: 9 GAL/h Alternate Fuel: 6 GAL",
+    "options": [
+      "44 GAL",
+      "40 GAL",
+      "48 GAL",
+      "46 GAL"
+    ],
+    "correct": null,
+    "id": 116
+  },
+  {
+    "question": "Dry Operating Mass 34410 kg Traffic Load 7500 kg Final reserve fuel 963 kg Alternate fuel 1200 kg Contingency fuel 107 kg (not consumed) The Landing Mass at the Alternate will be:",
+    "options": [
+      "42980 kg",
+      "41910 kg",
+      "42017 kg",
+      "44180 kg"
+    ],
+    "correct": null,
+    "id": 117
+  },
+  {
+    "question": "Dry Operating Mass 33910 kg Traffic Load 7800 kg Trip Fuel 2060 kg Final Reserve Fuel 953 kg Alternate Fuel 1200 kg Contingency Fuel 5 % of Trip Fuel Which mass is correct?",
+    "options": [
+      "Landing mass at destination 43863 kg",
+      "Take-off mass 45923 kg",
+      "Take-off mass 43295 kg",
+      "Landing mass at destination 43966 kg"
+    ],
+    "correct": null,
+    "id": 118
+  },
+  {
+    "question": "Dry Operating Mass 33500 kg Traffic Load 10600 kg Max. Take-Off Mass 66200 kg Taxi Fuel 200 kg Tank capacity 22500 I Fuel Density 0.78 kg/l The max. Take-Off Fuel is:",
+    "options": [
+      "21700 kg",
+      "17550 kg",
+      "22300 kg",
+      "17350 kg"
+    ],
+    "correct": null,
+    "id": 119
+  },
+  {
+    "question": "Trip fuel 5352 kg Holding fuel 6000 kg/h Alternate fuel 4380 kg Contingency fuel 5 % of trip fuel The minimum take-off fuel is:",
+    "options": [
+      "13000 kg",
+      "14500 kg",
+      "16000 kg",
+      "11500 kg"
+    ],
+    "correct": null,
+    "id": 120
+  },
+  {
+    "question": "Dry Operating Mass 34000 kg Traffic Load 9110 kg Final Reserve Fuel 973 kg Alternate Fuel 1200 kg Contingency Fuel 112 kg (not consumed) The Landing Mass at the Alternate will be:",
+    "options": [
+      "44195 kg",
+      "43110 kg",
+      "43222 kg",
+      "44083 kg"
+    ],
+    "correct": null,
+    "id": 121
+  },
+  {
+    "question": "Max.Take-off Mass 64400 kg Max. Landing Mass 56200 kg Max. Zero Fuel Mass 53000 kg Dry Operating Mass 35500 kg Estimated Load 14500 kg Estimated Trip Fuel 4900 kg Min. Take-off Fuel 7400 kg The max. Take-Off Fuel is:",
+    "options": [
+      "11200 kg",
+      "11400 kg",
+      "14400 kg",
+      "11100 kg"
+    ],
+    "correct": null,
+    "id": 122
+  },
+  {
+    "question": "Max. Take-Off Mass 64400 kg Max. Landing Mass 56200 kg Max. Zero Fuel Mass 53000 kg Dry Operating Mass 35500 kg Estimated load 14500 kg Estimated trip fuel 4900 kg Min. Take-off Fuel: 7400 kg The max. additional load is:",
+    "options": [
+      "7500 kg",
+      "5500 kg",
+      "3000 kg",
+      "4000 kg"
+    ],
+    "correct": null,
+    "id": 123
+  },
+  {
+    "question": "Taxi fuel 600 kg Ave. cruise consumption 10000 kg/h Holding consumption 8000 kg/h (at 1500 ft above alternate field elevation) Flight Time (Dep. to Dest.) 6 h Alternate fuel 10200 kg The Minimum Ramp Fuel is:",
+    "options": [
+      "70800 kg",
+      "77800 kg",
+      "80800 kg",
+      "74800 kg"
+    ],
+    "correct": null,
+    "id": 124
+  },
+  {
+    "question": "If a „Decision Point Procedure“ is applied for flight planning ...",
+    "options": [
+      "destination alternate must not be determined.",
+      "the trip fuel to the destination aerodrome must be calculated via the decision point.",
+      "the trip fuel to the destination aerodrome must be be calculated via the suitable enroute alternate.",
+      "the base for the fuel calculation is the contingency fuel from departure aerodrome to the decision point."
+    ],
+    "correct": null,
+    "id": 125
+  },
+  {
+    "question": "The main advantage of the „,Decision Point Procedure“ is ...",
+    "options": [
+      "an increase in extra fuel.",
+      "increased flight safety.",
+      "reduced minimum fuel and increased traffic load.",
+      "reduced landing weight and structural stress."
+    ],
+    "correct": null,
+    "id": 126
+  },
+  {
+    "question": "When using the „,Decision Point Procedure“ ...",
+    "options": [
+      "contingency fuel can be reduced by adding contingency only from the burnoff between the decision airport and destination.",
+      "contingency fuel can be reduced by adding contingency only from the burnoff between decision point and destination.",
+      "reserve fuel can be reduced from 15 % down to 10 %.",
+      "holding fuel can be reduced by 25 %."
+    ],
+    "correct": null,
+    "id": 127
+  },
+  {
+    "question": "Using the information given below, and assuming an en-route alternate for optional refuel destination is available, no destination alternate requirements exist for both destination aerodromes, calculate the minimum required fuel for a Commercial Air Transport flight in accordance with Reduced Contingency Fuel Procedure: > Taxi Fuel: 220 kg Trip Fuel to Decision Point: 7770 kg Trip Fuel from Decision Point to commercial destination: 2220 kg Trip Fuel from Decision Point to optional refuel destination: 2440 kg Final Reserve Fuel: 1100 kg Additional Fuel: not required Extra Fuel: not required",
+    "options": [
+      "11421 kg",
+      "11617 kg",
+      "11837 kg",
+      "12761 kg"
+    ],
+    "correct": null,
+    "id": 128
+  },
+  {
+    "question": "For a flight with an aeroplane with reciprocating engines to an isolated destination aerodrome in CAT operations with fuel amounts given below, calculate the minimum fuel required when arriving overhead the isolated aerodrome: Planned flight time (TOC to TOD): 01 h 20 min Cruise Fuel Flow: 900 kg/h Final Reserve Fuel: 450 kg (TOC: Top of Climb, TOD: Top of Descent)",
+    "options": [
+      "675 kg",
+      "945 kg",
+      "855 kg",
+      "1350 kg"
+    ],
+    "correct": null,
+    "id": 129
+  },
+  {
+    "question": "For a flight with an aeroplane with turbine engines to an isolated destination aerodrome in CAT operations with fuel amounts given below, calculate the additional fuel according legal requirements for additional fuel: Cruise Fuel Flow: 2220 kg/h Contingency Fuel: 330 kg Final Reserve Fuel: 1110 kg",
+    "options": [
+      "4440 kg",
+      "3330 kg",
+      "1110 kg",
+      "5550 kg"
+    ],
+    "correct": null,
+    "id": 130
+  },
+  {
+    "question": "Turbojet Operation. Cruise fuel consumption 4060 kg/h. Holding fuel consumption 3690 kg/h. Isolated destination. The Additional Fuel that must be carried is:",
+    "options": [
+      "7360 kg",
+      "8120 kg",
+      "1850 kg",
+      "3040 kg"
+    ],
+    "correct": null,
+    "id": 131
+  },
+  {
+    "question": "With regard to „fuel tankering“, which of the following statements is correct? 1. Fuel tankering should be considered when fuel price at destination is higher than at departure aerodrome. 2. Fuel tankering is considered suitable in case weather conditions at destination aerodrome are below minima.",
+    "options": [
+      "1 is incorrect, 2 is incorrect",
+      "1 is correct, 2 is incorrect",
+      "1 is correct, 2 is correct",
+      "1 is incorrect, 2 is correct"
+    ],
+    "correct": null,
+    "id": 132
+  },
+  {
+    "question": "Information about Customs and Health formalities can be found in ...",
+    "options": [
+      "SIGMET.",
+      "ATCC broadcast.",
+      "AIP.",
+      "NOTAM."
+    ],
+    "correct": null,
+    "id": 133
+  },
+  {
+    "question": "Information about Search and Rescue (SAR) organisation and procedures can be found in ...",
+    "options": [
+      "TAF.",
+      "AIP.",
+      "NOTAM.",
+      "SAR broadcast."
+    ],
+    "correct": null,
+    "id": 134
+  },
+  {
+    "question": "With the NOTAM information given below, until which time the DME part of DUS shall not be used? A1342/22 NOTAMN Q) EDGG/QNDCT/IV/BO /AE/000/999/5117N00645E025 A) EDDL B) 2203290630 C) 2203301200 E) DUESSELDORF VOR/DME DUS 115.15MHZ/CH98Y, DME PART ON TEST. DO NOT USE, FALSE INDICATIONS POSS.",
+    "options": [
+      "Until 30th March 2022, 2200 UTC",
+      "Until 29th March 2022, 2200 UTC",
+      "Until 30th March 2022, 1200 UTC",
+      "Until 29th March 2022, 0630 UTC"
+    ],
+    "correct": null,
+    "id": 135
+  },
+  {
+    "question": "Information about short-term unserviceability of a VOR, TACAN, and NDB is provided in ...",
+    "options": [
+      "AIP.",
+      "NOTAM.",
+      "ATCC broadcast.",
+      "TAF."
+    ],
+    "correct": null,
+    "id": 136
+  },
+  {
+    "question": "With regard to ICAO Annex 15, a NOTAM shall be originated and issued concerning the following information: 1. Occurrence or correction of major defects or impediments on the manoeuvring area. 2. Routine maintenance work on aprons or taxiways which does not affect the safe movements of aircraft.",
+    "options": [
+      "1 is incorrect, 2 is correct",
+      "1 is incorrect, 2 is incorrect",
+      "1 is correct, 2 is incorrect",
+      "1 is correct, 2 is correct"
+    ],
+    "correct": null,
+    "id": 137
+  },
+  {
+    "question": "A1470/10 NOTAMN Q)EGTT/QMRXX/IV/NBO/A/000/999/5129N00028W005 A)EGLL B)2111302000 C)2112010800 E)RWY09327L DUE WIP NO CENTERLINE LIGHTS AVBL The validity period of this NOTAM is:",
+    "options": [
+      "8 hours",
+      "12 hours",
+      "48 hours",
+      "20 hours"
+    ],
+    "correct": null,
+    "id": 138
+  },
+  {
+    "question": "Information about dates and times when Temporary Danger Areas are active can be found in a ...",
+    "options": [
+      "NAV Chart.",
+      "TAF.",
+      "SIGMET.",
+      "NOTAM and AIP."
+    ],
+    "correct": null,
+    "id": 139
+  },
+  {
+    "question": "Leg distance 123 NM Estimated leg time 39 min Actual leg time 41 min The groundspeed is:",
+    "options": [
+      "200 kt",
+      "175 kt",
+      "190 kt",
+      "180 kt"
+    ],
+    "correct": null,
+    "id": 140
+  },
+  {
+    "question": "Distance A to B 60 NM Time en-route 30 min Time of arrival at B 1240 UTC Distance B to C 34 NM The ETA at C is:",
+    "options": [
+      "1247 UTC",
+      "1307 UTC",
+      "1257 UTC",
+      "1317 UTC"
+    ],
+    "correct": null,
+    "id": 141
+  },
+  {
+    "question": "The wind is 20 kt more than the 20 kt forecast headwind. Destination to alternate 57 NM. TAS 150 kt. The new estimated time from destination to the alternate is:",
+    "options": [
+      "23 min",
+      "31 min",
+      "27 min",
+      "36 min"
+    ],
+    "correct": null,
+    "id": 142
+  },
+  {
+    "question": "Total distance 340 NM True track 320° W/V 160/40 TAS 110 kt Calculate the distance from departure to the PET:",
+    "options": [
+      "213 NM",
+      "237 NM",
+      "112 NM",
+      "121 NM"
+    ],
+    "correct": null,
+    "id": 143
+  },
+  {
+    "question": "Total distance 165 NM True track 055° W/V 360/20 TAS 105 kt Calculate the distance from the departure point to the PET:",
+    "options": [
+      "92 NM",
+      "127 NM",
+      "86 NM",
+      "75 NM"
+    ],
+    "correct": null,
+    "id": 144
+  },
+  {
+    "question": "Distance 875 NM True Track 240° W/V 060/50 TAS 500 kt Calculate the Distance (NM) and the Time (min) from the departure point to the PET:",
+    "options": [
+      "476 NM, 62 min",
+      "394 NM, 43 min",
+      "426 NM, 49 min",
+      "719 NM, 79 min"
+    ],
+    "correct": null,
+    "id": 145
+  },
+  {
+    "question": "Distance 95 NM True Track 105° W/V 060/15 TAS 140 kt The distance of the PET from the departure point is:",
+    "options": [
+      "46 NM",
+      "51 NM",
+      "84 NM",
+      "41 NM"
+    ],
+    "correct": null,
+    "id": 146
+  },
+  {
+    "question": "Distance 2800 NM True Track 140° W/V 140/100 TAS 500 kt Caluculate the Distance (NM) and the Time (min) of the PET from the departure point:",
+    "options": [
+      "1350 NM, 159 min",
+      "1680 NM, 252 min",
+      "1130 NM, 114 min",
+      "1140 NM, 136 min."
+    ],
+    "correct": null,
+    "id": 147
+  },
+  {
+    "question": "Distance A to B 2050 NM Groundspeed , out' 440 kt Groundspeed , back' 540 kt The distance from A to the PET is:",
+    "options": [
+      "1045 NM",
+      "1130 NM",
+      "1165 NM",
+      "935 NM"
+    ],
+    "correct": null,
+    "id": 148
+  },
+  {
+    "question": "Distance 2200 NM True track 150° W/V 330/50 TAS 460 kt Calculate the Distance (NM) and Time (min) from the departure point to the PET:",
+    "options": [
+      "980 NM, 115 min",
+      "1000 NM, 174 min",
+      "980 NM, 146 min",
+      "1110 NM, 176 min"
+    ],
+    "correct": null,
+    "id": 149
+  },
+  {
+    "question": "Distance X to Y 2700 NM Mach No. 0.75 OAT -45℃ Tailwind , out' 10 kt Tailwind , back' 35 kt The distance from X to the PET is:",
+    "options": [
+      "1308 NM",
+      "1386 NM",
+      "1354 NM",
+      "1436 NM"
+    ],
+    "correct": null,
+    "id": 150
+  },
+  {
+    "question": "Distance 1100 NM True track 280° W/V 100/80 TAS 440 kt Calculate the Distance (NM) and Time (min) of the PET from the departure point:",
+    "options": [
+      "650 NM, 110 min",
+      "450 NM, 52 min",
+      "550 NM, 82 min",
+      "650 NM, 78 min"
+    ],
+    "correct": null,
+    "id": 151
+  },
+  {
+    "question": "Distance 2500 NM GS Out 540 kt GS Home 470 kt Calculate the time from the departure point to the PET:",
+    "options": [
+      "145 min",
+      "34 min",
+      "129 min",
+      "167 min"
+    ],
+    "correct": null,
+    "id": 152
+  },
+  {
+    "question": "Distance 1860 NM GS Out 360 kt GS Home 400 kt Calculate the Time from the departure point to the PET:",
+    "options": [
+      "142 min",
+      "135 min",
+      "163 min",
+      "179 min"
+    ],
+    "correct": null,
+    "id": 153
+  },
+  {
+    "question": "Distance 950 NM GS Out 275 kt GS Home 225 kt Calculate the Time from the departure point to the PET:",
+    "options": [
+      "93 min",
+      "107 min",
+      "39 min",
+      "142 min"
+    ],
+    "correct": null,
+    "id": 154
+  },
+  {
+    "question": "Distance 340 NM GS Out 150 kt GS Home 120 kt Calculate the distance from the departure point to the PET:",
+    "options": [
+      "253 NM",
+      "167 NM",
+      "151 NM",
+      "193 NM"
+    ],
+    "correct": null,
+    "id": 155
+  },
+  {
+    "question": "CAS 190 kt Altitude 9000 ft OAT ISA - 10° C True Course 350° W/V 320/40 Total Distance 350 NM Endurance 3 h Time of departure 1105 UTC The distance from Departure to Point of Equal Time (PET) is:",
+    "options": [
+      "203 NM",
+      "183 NM",
+      "227 NM",
+      "177 NM"
+    ],
+    "correct": null,
+    "id": 156
+  },
+  {
+    "question": "CAS 190 kt Altitude 9000 ft Temp. ISA - 10° C True Course 350° W/V 320/40 Total Distance 350 NM Endurance 3 h Time of Departure 1105 UTC The Time of Arrival at the Point of Equal Time (PET) is:",
+    "options": [
+      "1231 UTC",
+      "1223 UTC",
+      "1201 UTC",
+      "1213 UTC"
+    ],
+    "correct": null,
+    "id": 157
+  },
+  {
+    "question": "Distance from WP 3 to WP 4 750 NM TAS out 430 kt TAS return 425 kt Tailwind out 30 kt Headwind return 40 kt The distance from WP 3 to the PET is:",
+    "options": [
+      "342 NM",
+      "373 NM",
+      "401 NM",
+      "412 NM"
+    ],
+    "correct": null,
+    "id": 158
+  },
+  {
+    "question": "Course A to B 088° (T) Distance 1250 NM Mean TAS 330 kt Mean W/V 340°/60 kt The time from A to the PET in minutes is:",
+    "options": [
+      "103 min",
+      "114 min",
+      "125 min",
+      "94 min"
+    ],
+    "correct": null,
+    "id": 159
+  },
+  {
+    "question": "Total Distance 410 NM Safe Endurance 3.6 h True Track 055° W/V 180/35 TAS 120 kt The distance of the PSR from the departure point is:",
+    "options": [
+      "211 NM",
+      "173 NM",
+      "97 NM",
+      "203 NM"
+    ],
+    "correct": null,
+    "id": 160
+  },
+  {
+    "question": "Total Distance 210 NM Safe Endurance 2.5 h True Track 035° W/V 250/20 TAS 105 kt The distance of the PSR from the departure point is:",
+    "options": [
+      "172 NM",
+      "127 NM",
+      "59 NM",
+      "93 NM"
+    ],
+    "correct": null,
+    "id": 161
+  },
+  {
+    "question": "Total Distance 210 NM Safe Endurance 3.5 h True Track 310° W/V 270/30 TAS 120 kt The distance of the PSR from the departure point is:",
+    "options": [
+      "125 NM",
+      "200 NM",
+      "50 NM",
+      "275 NM"
+    ],
+    "correct": null,
+    "id": 162
+  },
+  {
+    "question": "Total Distance 180 NM Safe Endurance 2 h TAS 120 kt Ground Speed Out 135 kt Ground Speed Home 105 kt Calculate the distance and time of the PSR from the departure point:",
+    "options": [
+      "66 NM, 30 min",
+      "54 NM, 27 min",
+      "83 NM, 46 min",
+      "118 NM, 53 min"
+    ],
+    "correct": null,
+    "id": 163
+  },
+  {
+    "question": "Total Distance 500 NM Safe Endurance 4 h TAS 140 kt Ground Speed Out 150 kt Ground Speed Home 130 kt Calculate the distance and time of the PSR from the departure point:",
+    "options": [
+      "227 NM, 01 h 54 min",
+      "279 NM, 01 h 51 min",
+      "226 NM, 01 h 31 min",
+      "138 NM, 01 h 03 min"
+    ],
+    "correct": null,
+    "id": 164
+  },
+  {
+    "question": "Total Distance 400 NM Safe Endurance 2.5 h TAS 115 kt Ground Speed Out 130 kt Ground Speed Home 105 kt Calculate the distance of the PSR from the departure point:",
+    "options": [
+      "68 NM",
+      "145 NM",
+      "251 NM",
+      "183 NM"
+    ],
+    "correct": null,
+    "id": 165
+  },
+  {
+    "question": "Total Distance 200 NM Safe Endurance 3 h TAS 130 kt Ground Speed Out 150 kt Ground Speed Home 110 kt Calculate the distance of the PSR from the departure point:",
+    "options": [
+      "97 NM",
+      "190 NM",
+      "88 NM",
+      "15 NM"
+    ],
+    "correct": null,
+    "id": 166
+  },
+  {
+    "question": "Distance A to B 3060 NM Groundspeed , out' 440 kt Groundspeed , back' 540 kt Safe Endurance 10 h The time to the Point of Safe Return (PSR) is:",
+    "options": [
+      "5 h 43 min",
+      "3 h 58 min",
+      "5 h 17 min",
+      "5 h 31 min"
+    ],
+    "correct": null,
+    "id": 167
+  },
+  {
+    "question": "Total Distance 300 NM Safe Endurance 4 h TAS 110 kt Ground Speed Out 120 kt Ground Speed Home 100 kt Calculate the distance of the PSR from the departure point:",
+    "options": [
+      "86 NM",
+      "115 NM",
+      "218 NM",
+      "148 NM"
+    ],
+    "correct": null,
+    "id": 168
+  },
+  {
+    "question": "Total Distance 150 NM Safe Endurance 2.4 h True Track 250 W/V 280/15 TAS 120 kt The distance of the PSR from the departure point is:",
+    "options": [
+      "87 NM",
+      "142 NM",
+      "103 NM",
+      "75 NM"
+    ],
+    "correct": null,
+    "id": 169
+  },
+  {
+    "question": "Total Distance 260 NM Safe Endurance 4.1 h True Track 150 W/V 100/30 TAS 110 kt The distance of the PSR from the departure point is:",
+    "options": [
+      "213 NM",
+      "113 NM",
+      "157 NM",
+      "53 NM"
+    ],
+    "correct": null,
+    "id": 170
+  },
+  {
+    "question": "Total Distance 950 NM Safe Endurance 3.5 h TAS 360 kt Ground Speed Out 320 kt Ground Speed Home 400 kt Calculate the distance and time of the PSR from the departure point:",
+    "options": [
+      "Distance: 548 NM, Time: 81 min",
+      "Distance: 347 NM, Time: 61 min",
+      "Distance: 622 NM, Time: 117 min",
+      "Distance: 323 NM, Time: 55 min"
+    ],
+    "correct": null,
+    "id": 171
+  },
+  {
+    "question": "Total Distance 6340 NM Safe Endurance 15 h True Track 090 W/V 270/100 TAS 400 kt The distance from the departure point to the PSR is:",
+    "options": [
+      "2536 NM",
+      "2813 NM",
+      "2464 NM",
+      "1885 NM"
+    ],
+    "correct": null,
+    "id": 172
+  },
+  {
+    "question": "Total Distance 3750 NM Safe Endurance 9.5 h True Track 360 W/V 360/50 TAS 480 kt The distance from the departure point to the PSR is:",
+    "options": [
+      "2255 NM",
+      "1135 NM",
+      "1520 NM",
+      "2080 NM"
+    ],
+    "correct": null,
+    "id": 173
+  },
+  {
+    "question": "Total Distance 2450 NM Safe Endurance 7.5 h TAS 410 kt Ground Speed Out 360 kt Ground Speed Return 460 kt The time of the PSR from the departure point is:",
+    "options": [
+      "03 h 23 min",
+      "02 h 43 min",
+      "01 h 59 min",
+      "04 h 12 min"
+    ],
+    "correct": null,
+    "id": 174
+  },
+  {
+    "question": "Maximum useable fuel 15000 kg Minimum reserve fuel 3500 kg TAS out 425 kt Headwind out 30 kt TAS return 430 kt Tailwind return 20 kt Average fuel flow 2150 kg/h The time to the Point of Safe Return (PSR) is:",
+    "options": [
+      "3 h 45 min",
+      "2 h 51 min",
+      "2 h 53 min",
+      "2 h 33 min"
+    ],
+    "correct": null,
+    "id": 175
+  },
+  {
+    "question": "Total Distance 330 NM Safe Endurance 5 h True Track 170 W/V 140/25 TAS 125 kt The distance of the PSR from the departure point is:",
+    "options": [
+      "199 NM",
+      "303 NM",
+      "147 NM",
+      "42 NM"
+    ],
+    "correct": null,
+    "id": 176
+  },
+  {
+    "question": "Which of the statements below, relating to the benefits of a computer flight plan, is correct? 1. The computer can file the ATS flight plan. 2. Wind data used by the computer is always more up-to-date than that available to the pilot.",
+    "options": [
+      "1 is correct, 2 is incorrect",
+      "1 is correct, 2 is correct",
+      "1 is incorrect, 2 is correct",
+      "1 is incorrect, 2 is incorrect"
+    ],
+    "correct": null,
+    "id": 177
+  },
+  {
+    "question": "Certificated take-off mass 137000 kg. Actual take-off mass 135000 kg. What is the wake turbulence category?",
+    "options": [
+      "Medium",
+      "Light to medium",
+      "Heavy",
+      "Medium to heavy"
+    ],
+    "correct": null,
+    "id": 178
+  },
+  {
+    "question": "Cruise M 0.84 Cruise Level 330. Static Air Temp. (SAT) -48° C Headwind 52 kt. The aircraft is instructed at 1338 UTC to cross the 030W meridian at 1500 UTC. The distance to go is 570 NM. The reduced Mach Number will be:",
+    "options": [
+      "0.8",
+      "0.82",
+      "0.78",
+      "0.76"
+    ],
+    "correct": null,
+    "id": 179
+  },
+  {
+    "question": "The planned fuel is: Trip fuel Sufficient for 04 h 24 min Reserve fuel 30% of planned trip fuel Start up and Taxi fuel 15 kg Block fuel 138 kg After 3 h 18 min in flight, the remaining fuel is:",
+    "options": [
+      "47 kg",
+      "34 kg",
+      "53 kg",
+      "61 kg"
+    ],
+    "correct": null,
+    "id": 180
+  },
+  {
+    "question": "Trip Fuel 3 h 36 min Reserve Fuel 30 % of Trip Start up & Taxi Fuel 12 kg Block Fuel 452 kg After 3 h flight time, the remaining fuel is:",
+    "options": [
+      "69 kg",
+      "176 kg",
+      "158 kg",
+      "173 kg"
+    ],
+    "correct": null,
+    "id": 181
+  },
+  {
+    "question": "Trip Fuel 3 h 36 min Reserve Fuel 30 % of Trip Start up & Taxi Fuel 26 kg Block Fuel 786 kg After 1 h 30 min. flight time, the remaining fuel is:",
+    "options": [
+      "516 kg",
+      "566 kg",
+      "543 kg",
+      "375 kg"
+    ],
+    "correct": null,
+    "id": 182
+  },
+  {
+    "question": "Planned Fuel: Trip 5 h 25 min Reserve 30 % of Trip Start up and Taxi 12 kg Block 945 kg After 4 h in flight the remaining fuel is:",
+    "options": [
+      "253 kg",
+      "471 kg",
+      "403 kg",
+      "448 kg"
+    ],
+    "correct": null,
+    "id": 183
+  },
+  {
+    "question": "The fuel consumption of an aircraft turbine engine is 220 l/h at 0.80 kg/I fuel density. If the density changes to 0.75kg/l the fuel consumption will be:",
+    "options": [
+      "223 l/h",
+      "182 l/h",
+      "235 l/h",
+      "208 l/h"
+    ],
+    "correct": null,
+    "id": 184
+  },
+  {
+    "question": "Trip Fuel 4 h 25 min Reserve Fuel 30% of Trip Fuel Start up and Taxi Fuel 45 kg Block Fuel 600 kg After flying 3 h 15 min, the remaining fuel is:",
+    "options": [
+      "153 kg",
+      "217 kg",
+      "273 kg",
+      "241 kg"
+    ],
+    "correct": null,
+    "id": 185
+  },
+  {
+    "question": "After 38 min of flight the fuel indicators show the remaining fuel is 100 lb. The total fuel on take-off was 160 lb. The alternate fuel is 30 lb. The fuel for taxi was 13 lb. Final reserve fuel is estimated at 50 lb. If the fuel flow remains the same, how many minutes can be flown to destination with the remaining fuel?",
+    "options": [
+      "12 min",
+      "48 min",
+      "61 min",
+      "7 min"
+    ],
+    "correct": null,
+    "id": 186
+  },
+  {
+    "question": "Block Fuel 200 lb Alternate Fuel 40 lb Final Reserve Fuel 50 lb Taxi Fuel 10 lb Remaining Fuel (after 36 min.) 110 lb With constant fuel flow and landing with required reserve fuel, the flight time remaining to the destination is:",
+    "options": [
+      "28 min",
+      "16 min",
+      "9 min",
+      "47 min"
+    ],
+    "correct": null,
+    "id": 187
+  },
+  {
+    "question": "Trip fuel 65 USG. Fuel consumption mid-way 40 USG. Alternate fuel, including final reserve 17 USG. Contingency fuel 5% of trip fuel. Usable fuel at departure is 93 USG. Select the correct statement:",
+    "options": [
+      "At the destination there will be a remaining fuel of 30 USG",
+      "At departure the reserve fuel was 28 USG",
+      "At the destination the reserve fuel is still in tanks",
+      "The remaining fuel is not sufficient to the destination without using reserve fuel"
+    ],
+    "correct": null,
+    "id": 188
+  },
+  {
+    "question": "A return to the departure point is required after flying 16 min at 100 kt TAS with a 20 kt tail wind. At a turn rate of 3º/s, the aircraft will arrive overhead the aerodrome after ...",
+    "options": [
+      "20 min.",
+      "15 min.",
+      "25 min.",
+      "30 min."
+    ],
+    "correct": null,
+    "id": 189
+  },
+  {
+    "question": "Landing Mass at destination is the sum of ...",
+    "options": [
+      "Zero Fuel Mass, final reserve fuel, taxi fuel and contingency fuel",
+      "Zero Fuel Mass, final reserve fuel, alternate fuel and contingency fuel",
+      "Zero Fuel Mass, final reserve fuel and alternate fuel",
+      "Landing Mass at alternate, final reserve fuel, alternate fuel and trip fuel"
+    ],
+    "correct": null,
+    "id": 190
+  }
+]

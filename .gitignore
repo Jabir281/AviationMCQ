@@ -1,0 +1,14 @@
+# Secrets
+website/api/config.php
+
+# Python
+__pycache__/
+*.pyc
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Node (if ever added)
+node_modules/

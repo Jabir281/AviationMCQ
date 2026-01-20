@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - Aviation MCQ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <a href="index.html" class="back-home">← Back to Home</a>
+            <div class="login-header">
+                <h1>🔐 Admin Panel</h1>
+                <p>Aviation MCQ Management</p>
+            </div>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter admin password" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+                <p id="login-error" class="error-message"></p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        async function apiIsLoggedIn() {
+            try {
+                const res = await fetch('api/admin/me.php', { cache: 'no-store' });
+                if (!res.ok) return false;
+                const data = await res.json();
+                return data && data.ok === true;
+            } catch (_) {
+                return false;
+            }
+        }
+
+        document.getElementById('login-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const passwordEl = document.getElementById('password');
+            const password = passwordEl.value;
+
+            // Server-side auth (Hostinger). GitHub Pages/static hosting cannot run the API.
+            try {
+                const res = await fetch('api/admin/login.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ password })
+                });
+
+                if (res.ok) {
+                    const data = await res.json();
+                    if (data && data.ok === true) {
+                        window.location.href = 'admin-dashboard.html';
+                        return;
+                    }
+                }
+            } catch (_) {
+                // ignore
+            }
+
+            document.getElementById('login-error').textContent = 'Login failed. If you are on GitHub Pages/static hosting, admin login will not work (requires Hostinger PHP + MySQL).';
+            passwordEl.value = '';
+        });
+
+        // If already logged in, redirect to dashboard
+        (async () => {
+            if (await apiIsLoggedIn()) {
+                window.location.href = 'admin-dashboard.html';
+                return;
+            }
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "coms",
+    "name": "Communications",
+    "questionCount": 192,
+    "file": "COMS_extracted.json"
+  },
+  {
+    "id": "hpl",
+    "name": "Human Performance",
+    "questionCount": 313,
+    "file": "HPL_extracted.json"
+  },
+  {
+    "id": "ops",
+    "name": "Air Operations",
+    "questionCount": 310,
+    "file": "OPS_extracted.json"
+  },
+  {
+    "id": "rnav",
+    "name": "Radio Navigation",
+    "questionCount": 249,
+    "file": "RNAV_extracted.json"
+  },
+  {
+    "id": "fpl",
+    "name": "Flight Planning",
+    "questionCount": 190,
+    "file": "FPL_extracted.json"
+  }
+]

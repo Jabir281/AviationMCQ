@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Correct Answers - Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <header class="admin-header">
+        <div class="header-left">
+            <a href="admin-dashboard.html" class="header-home">← Back to Dashboard</a>
+            <h1>✓ Set Correct Answers</h1>
+        </div>
+        <div class="header-right">
+            <a href="admin-editor.html" class="btn btn-outline-light">Go to Editor →</a>
+        </div>
+    </header>
+
+    <div class="page-layout">
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h3>Select Subject</h3>
+                <select id="subject-select" class="subject-dropdown">
+                    <option value="">-- Choose Subject --</option>
+                </select>
+            </div>
+            <div class="sidebar-section">
+                <h3>Filter</h3>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="unanswered">Unanswered</button>
+                    <button class="filter-btn" data-filter="answered">Answered</button>
+                </div>
+            </div>
+            <div class="sidebar-section stats-box" id="stats-box">
+                <p class="placeholder">Select a subject</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="content-header">
+                <h2>Click on the correct option for each question</h2>
+            </div>
+            <div id="questions-list" class="questions-list">
+                <div class="empty-state">
+                    <span class="empty-icon">📋</span>
+                    <p>Select a subject from the sidebar to load questions</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="save-bar" id="save-bar" style="display: none;">
+        <span id="changes-count">0 changes pending</span>
+        <button class="btn btn-success" onclick="saveAnswers()">💾 Save All Changes</button>
+    </div>
+
+    <div id="toast" class="toast"></div>
+
+    <script>
+        async function requireApiAdmin() {
+            try {
+                const res = await fetch('api/admin/me.php', { cache: 'no-store' });
+                if (!res.ok) throw new Error('Unauthorized');
+                const data = await res.json();
+                if (!data || data.ok !== true) throw new Error('Unauthorized');
+            } catch (_) {
+                window.location.href = 'admin.html';
+            }
+        }
+
+        requireApiAdmin();
+
+        let subjectsInfo = {};
+        let questions = [];
+        let pendingChanges = {};
+        let currentFilter = 'all';
+        let currentSubject = null;
+
+        // Load subjects on page load
+        document.addEventListener('DOMContentLoaded', async () => {
+            await loadSubjects();
+            setupFilterButtons();
+        });
+
+        async function loadSubjects() {
+            try {
+                const response = await fetch('api/subjects.php', { cache: 'no-store' });
+                const data = await response.json();
+                const subjects = data.subjects || [];
+                const select = document.getElementById('subject-select');
+                
+                subjects.forEach(subject => {
+                    subjectsInfo[subject.id] = subject;
+                    const option = document.createElement('option');
+                    option.value = subject.id;
+                    option.textContent = `${subject.name} (${subject.questionCount} Q)`;
+                    select.appendChild(option);
+                });
+                
+                select.addEventListener('change', loadQuestions);
+            } catch (error) {
+                console.error('Error loading subjects:', error);
+                showToast('Error loading subjects', 'error');
+            }
+        }
+
+        async function loadQuestions() {
+            const subjectId = document.getElementById('subject-select').value;
+            
+            if (!subjectId) {
+                questions = [];
+                currentSubject = null;
+                renderQuestions();
+                updateStats();
+                return;
+            }
+            
+            currentSubject = subjectId;
+            const subject = subjectsInfo[subjectId];
+            
+            try {
+                const response = await fetch(`api/admin/questions.php?subject=${encodeURIComponent(subjectId)}`, { cache: 'no-store' });
+                const data = await response.json();
+                questions = data.questions || [];
+                pendingChanges = {};
+                
+                renderQuestions();
+                updateStats();
+                updateSaveBar();
+                
+                showToast(`Loaded ${questions.length} questions`, 'success');
+            } catch (error) {
+                console.error('Error loading questions:', error);
+                showToast('Error loading questions', 'error');
+            }
+        }
+
+        function setupFilterButtons() {
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    currentFilter = btn.dataset.filter;
+                    renderQuestions();
+                });
+            });
+        }
+
+        function renderQuestions() {
+            const container = document.getElementById('questions-list');
+            
+            if (questions.length === 0) {
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <span class="empty-icon">📋</span>
+                        <p>Select a subject from the sidebar to load questions</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            let filtered = questions;
+            if (currentFilter === 'answered') {
+                filtered = questions.filter(q => q.correct !== undefined && q.correct !== null);
+            } else if (currentFilter === 'unanswered') {
+                filtered = questions.filter(q => q.correct === undefined || q.correct === null);
+            }
+            
+            if (filtered.length === 0) {
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <span class="empty-icon">🔍</span>
+                        <p>No questions match the current filter</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            container.innerHTML = filtered.map(q => {
+                const index = questions.indexOf(q);
+                const hasAnswer = q.correct !== undefined && q.correct !== null;
+                const pendingAnswer = pendingChanges[index]?.correct;
+                const currentCorrect = pendingAnswer !== undefined ? pendingAnswer : q.correct;
+                
+                return `
+                    <div class="question-card ${hasAnswer || pendingAnswer !== undefined ? 'has-answer' : 'no-answer'}">
+                        <div class="question-header">
+                            <span class="question-id">#${index + 1} | ${q.id || 'No ID'}</span>
+                        </div>
+                        <div class="question-text">${escapeHtml(q.question)}</div>
+                        <div class="options-grid">
+                            ${q.options.map((opt, optIndex) => `
+                                <button class="option-btn ${currentCorrect === optIndex ? 'selected' : ''}" 
+                                        onclick="selectAnswer(${index}, ${optIndex})">
+                                    <span class="option-letter">${String.fromCharCode(65 + optIndex)}.</span>
+                                    <span class="option-text">${escapeHtml(opt)}</span>
+                                </button>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function selectAnswer(questionIndex, optionIndex) {
+            const question = questions[questionIndex];
+            
+            if (question.correct === optionIndex) {
+                if (pendingChanges[questionIndex]?.correct !== undefined) {
+                    delete pendingChanges[questionIndex].correct;
+                    if (Object.keys(pendingChanges[questionIndex]).length === 0) {
+                        delete pendingChanges[questionIndex];
+                    }
+                }
+            } else {
+                if (!pendingChanges[questionIndex]) {
+                    pendingChanges[questionIndex] = {};
+                }
+                pendingChanges[questionIndex].correct = optionIndex;
+            }
+            
+            renderQuestions();
+            updateSaveBar();
+        }
+
+        function updateStats() {
+            const statsBox = document.getElementById('stats-box');
+            
+            if (questions.length === 0) {
+                statsBox.innerHTML = '<p class="placeholder">Select a subject</p>';
+                return;
+            }
+            
+            const total = questions.length;
+            const answered = questions.filter(q => q.correct !== undefined && q.correct !== null).length;
+            const unanswered = total - answered;
+            const percentage = Math.round((answered / total) * 100);
+            
+            statsBox.innerHTML = `
+                <h4>📊 Statistics</h4>
+                <p>Total: <span class="stat-number">${total}</span></p>
+                <p>Answered: <span class="stat-number" style="color: #11998e;">${answered}</span></p>
+                <p>Unanswered: <span class="stat-number" style="color: #f39c12;">${unanswered}</span></p>
+                <p>Progress: <span class="stat-number">${percentage}%</span></p>
+                <div class="progress-bar-mini">
+                    <div class="progress-fill" style="width: ${percentage}%;"></div>
+                </div>
+            `;
+        }
+
+        function updateSaveBar() {
+            const saveBar = document.getElementById('save-bar');
+            const count = Object.keys(pendingChanges).length;
+            
+            if (count > 0) {
+                saveBar.style.display = 'flex';
+                document.getElementById('changes-count').textContent = `${count} change${count > 1 ? 's' : ''} pending`;
+            } else {
+                saveBar.style.display = 'none';
+            }
+        }
+
+        async function saveAnswers() {
+            if (Object.keys(pendingChanges).length === 0) {
+                showToast('No changes to save', 'error');
+                return;
+            }
+
+            try {
+                const updates = Object.entries(pendingChanges)
+                    .filter(([, ch]) => ch.correct !== undefined)
+                    .map(([idx, ch]) => ({
+                        subject: currentSubject,
+                        id: questions[Number(idx)]?.id,
+                        correct: ch.correct
+                    }))
+                    .filter(u => !!u.id);
+
+                for (const u of updates) {
+                    const res = await fetch('api/admin/update_correct.php', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(u)
+                    });
+                    if (!res.ok) throw new Error('Update failed');
+                }
+
+                pendingChanges = {};
+                updateSaveBar();
+                await loadQuestions();
+                showToast('Saved to database ✅', 'success');
+            } catch (error) {
+                console.error('Error saving answers:', error);
+                showToast('Error saving to database', 'error');
+            }
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function showToast(message, type = 'success') {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.className = `toast ${type} show`;
+            setTimeout(() => toast.classList.remove('show'), 3000);
+        }
+    </script>
+</body>
+</html>

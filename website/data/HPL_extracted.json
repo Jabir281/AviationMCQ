@@ -1,0 +1,3445 @@
+[
+  {
+    "question": "Countermeasures in case someone suffers from motion sickness include:",
+    "options": [
+      "Look ahead at a steady horizon, do not move the head.",
+      "Look outside the window down to the ground.",
+      "Breathe faster to get more oxygen into your blood.",
+      "Turn down any help and reduce the symptoms on its own."
+    ],
+    "correct": null,
+    "id": 1
+  },
+  {
+    "question": "In case during a departure procedure, the pilot non-flying retracts flaps at a speed below the required minimum speed due to distraction by ATC communication, a speed warning distracts the pilot flying allowing the aircraft to overshoot the cleared altitude, this can be an example of a ...",
+    "options": [
+      "handling error by pilot flying with controlling speed and rate of climb, procedural error by pilot non-flying by not monitoring speed.",
+      "handling error by pilot non-flying by not monitoring speed, procedural error by pilot flying with incorrect flap setting,",
+      "communication error by pilot non-flying with retracting flaps without previous confirmation by the pilot flying.",
+      "communication error by pilot non-flying by not warning the pilot-flying about the trends in speed and rate of climb."
+    ],
+    "correct": null,
+    "id": 2
+  },
+  {
+    "question": "Consider a situation in which an aircraft landed with less than required fuel on board. It turns out that only the number in the technical log was incorrect, but the actual fuel amount was above the required minimum. In the sense of \"just-culture\", how should the operator react to encourage trust and collaboration?",
+    "options": [
+      "This type of unintended mistake should be reported and discussed to prevent further errors, but should NOT be punished.",
+      "This type of mistake should have severe consequence to prevent further errors and should be punished.",
+      "This type of mistake can occur due to the procedures incorporating handwriting and paperwork and should not further be investigated.",
+      "This type of mistake must be considered as unacceptable, indicating lack of awareness for risks and hazards leading to a reduction in flight safety."
+    ],
+    "correct": null,
+    "id": 3
+  },
+  {
+    "question": "In case an aircraft encounters an undesired aircraft state (UAS), the immediate required action by the crew is to:",
+    "options": [
+      "take countermeasures to restore safety margins and recover normal operating state.",
+      "focus both crew members on fixing the error that lead to the undesired aircraft state.",
+      "proceed with the undesired state and request assistance by ATC.",
+      "monitor the situation closely for detailed analysis during de-briefing."
+    ],
+    "correct": null,
+    "id": 4
+  },
+  {
+    "question": "Which of the scenarios listed below is an example of an \"undesired aircraft state\" or \"undesired flight situation\"?",
+    "options": [
+      "Flying over mountains with possible occurrence of severe turbulence.",
+      "Early diversion and passing a Cumulonimbus with adequate margin.",
+      "Flying in light icing conditions with increased safety margins.",
+      "Climbout after take-off through an inversion layer with increased speed."
+    ],
+    "correct": null,
+    "id": 5
+  },
+  {
+    "question": "What is the correct term for an impression of an apparent movement of light when stared at it for a relatively long period of time in the dark?",
+    "options": [
+      "\"autokinesis\".",
+      "\"white out\".",
+      "\"oculogyral illusion\"",
+      "\"oculografic illusion\"."
+    ],
+    "correct": null,
+    "id": 6
+  },
+  {
+    "question": "The TUC (Time of Useful Consciousness) is defined as ...",
+    "options": [
+      "the length of time during which an individual can act with both mental and physical efficiency; measured from the moment at which he/she is exposed to hypoxia",
+      "the time before becoming unconscious at a sudden pressure loss.",
+      "the time after pressure loss until decompression sickness sets in.",
+      "the point where an individual starts being exposed to hypoxia and death."
+    ],
+    "correct": null,
+    "id": 7
+  },
+  {
+    "question": "The mechanism of accommodation is controlled by the ...",
+    "options": [
+      "ciliary muscle around the lens.",
+      "elasticity of the optic nerves.",
+      "muscles of the eye.",
+      "diameter of the pupil."
+    ],
+    "correct": null,
+    "id": 8
+  },
+  {
+    "question": "How does the human vestibular system perform spatial orientation?",
+    "options": [
+      "By measuring linear and radial acceleration within the inner ear.",
+      "By comparing the body's position to gravity over the tympanic membrane.",
+      "By comparing linear and radial speeds of the body to the aircraft attitude.",
+      "By measuring fluid movements in the tympanic membrane of the inner ear."
+    ],
+    "correct": null,
+    "id": 9
+  },
+  {
+    "question": "To reduce the effects of barotrauma of the middle ear, you should ...",
+    "options": [
+      "close the mouth, pinch the nose tight and blow out, swallow at the same time or yawn.",
+      "raise the rate of descent.",
+      "stop climbing and start descending.",
+      "apply an antibiotic prior to every flight to minimise the occurrence of barotrauma of the middle ear."
+    ],
+    "correct": null,
+    "id": 10
+  },
+  {
+    "question": "The partial pressure of carbon dioxide in the alveoli is ...",
+    "options": [
+      "lower than in the blood.",
+      "the same as in the atmosphere.",
+      "higher than in the blood.",
+      "lower than in the atmosphere."
+    ],
+    "correct": null,
+    "id": 11
+  },
+  {
+    "question": "Why is the pain in the ear worse during the descent than climb?",
+    "options": [
+      "The air in the middle ear is at a lower pressure than the cabin, closing the Eustachian tube and preventing pressure equalisation.",
+      "The air pressure in the inner ear increases more slowly than the cabin's, exceeding the time taken to equalise the pressure between the middle ear and environment.",
+      "During the climb the humidity in the middle ear is more than that of the cabin.",
+      "During the descent the cabin altitude increases faster than the Eustachian tube can open."
+    ],
+    "correct": null,
+    "id": 12
+  },
+  {
+    "question": "Assuming a flight at 15000 ft without using supplementary oxygen, what are the usual symptoms that may occur?",
+    "options": [
+      "Dizziness, tingling, impaired vision rapid, breathing and fatigue.",
+      "Shortness of breath, tingling and dizziness.",
+      "Depression, dizziness and tiredness.",
+      "Euphoria, tingling and high blood pressure."
+    ],
+    "correct": null,
+    "id": 13
+  },
+  {
+    "question": "Assuming a night flight at 10000 feet, when you notice that the visual acuity decreases, you should ...",
+    "options": [
+      "breathing supplementary oxygen.",
+      "close your eyes for 15 minutes.",
+      "scan the sectors of the field of vision.",
+      "dim the instrument lights."
+    ],
+    "correct": null,
+    "id": 14
+  },
+  {
+    "question": "A normal respiratory rate of an adult person at rest is about _ breaths per minute.",
+    "options": [
+      "10 to 15",
+      "5 to 10",
+      "15 to 25",
+      "50 to 60"
+    ],
+    "correct": null,
+    "id": 15
+  },
+  {
+    "question": "Which of the following statements concerning the light-sensitive cells of the eye is true?",
+    "options": [
+      "The cones detect colour vision and are very sensitive to hypoxia.",
+      "The rods are centrally located and increase the acuteness of vision.",
+      "The blood flow to the rods and cones is continuous even during high G-forces.",
+      "The cones are concentrated in the lens."
+    ],
+    "correct": null,
+    "id": 16
+  },
+  {
+    "question": "During flight it is important to use the scanning technique, because ...",
+    "options": [
+      "only in the foveal area resolution is good enough to see an object clearly.",
+      "it is fatiguing to look in the same direction the whole flight.",
+      "only in the peripheral area of the retina resolution is good enough to see an object clearly.",
+      "the reduction in the field of vision with decreasing altitude is due to a vitamin deficiency."
+    ],
+    "correct": null,
+    "id": 17
+  },
+  {
+    "question": "With regard to dealing with circadian dysrhythmia, which of the following statements is correct? 1. The rate of adaptation depends on the number of time zones crossed and the direction of travel. 2. The rate of adaptation depends on the direction of travel.",
+    "options": [
+      "1 is correct, 2 is correct.",
+      "1 is correct, 2 is incorrect.",
+      "1 is incorrect, 2 is correct.",
+      "1 is incorrect, 2 is incorrect."
+    ],
+    "correct": null,
+    "id": 18
+  },
+  {
+    "question": "If an aircraft is flying into fog, snow or haze, the illusion can occur that ...",
+    "options": [
+      "objects seem to be farther away than in reality.",
+      "objects will appear closer than they really are.",
+      "objects will appear bigger in size than in reality.",
+      "objects will appear to be static."
+    ],
+    "correct": null,
+    "id": 19
+  },
+  {
+    "question": "Coriolis illusion can be caused by ...",
+    "options": [
+      "simultaneous head movements during aircraft manoeuvres.",
+      "undergoing positive G.",
+      "staring in the direction of a flashing light.",
+      "normal deterioration of vision with age."
+    ],
+    "correct": null,
+    "id": 20
+  },
+  {
+    "question": "One of the most common non-prescription drugs for cold relief is nasal decongestant spray. Which of following answers is a side effect of such drugs?",
+    "options": [
+      "Feeling drowsiness.",
+      "Experiencing hallucinations.",
+      "Insomnia.",
+      "Diarrhoea and flatulence."
+    ],
+    "correct": null,
+    "id": 21
+  },
+  {
+    "question": "When staring at a single light against the dark (i.e. an isolated star) and the light appears to move after some time, you experience the phenomenon of ...",
+    "options": [
+      "autokinesis.",
+      "the black hole illusion.",
+      "the Coriolis illusion.",
+      "the leans."
+    ],
+    "correct": null,
+    "id": 22
+  },
+  {
+    "question": "According to the SHELL model, the errors resulting from an illogical indexing system in an operations manual are related to a conflict between the components ...",
+    "options": [
+      "Liveware - Software.",
+      "Liveware - Hardware.",
+      "Liveware - Environment.",
+      "Liveware - Liveware."
+    ],
+    "correct": null,
+    "id": 23
+  },
+  {
+    "question": "Which answer names only sub-categories of threats in accordance with the TEM concept?",
+    "options": [
+      "Organisation, environment.",
+      "Aircraft condition, communication.",
+      "Ground navigation, communication.",
+      "Aircraft handling, procedures."
+    ],
+    "correct": null,
+    "id": 24
+  },
+  {
+    "question": "The basic concept of a Safety Management System (SMS) include:",
+    "options": [
+      "hazard identification and risk management.",
+      "threat and error management.",
+      "first-aid kits and recurrent first-aid training.",
+      "quality assurance and liability."
+    ],
+    "correct": null,
+    "id": 25
+  },
+  {
+    "question": "Where a good safety culture is dominant in an organisation, the accountability rests largely with ...",
+    "options": [
+      "management.",
+      "shareholders.",
+      "employees.",
+      "customers."
+    ],
+    "correct": null,
+    "id": 26
+  },
+  {
+    "question": "After a decompression, which of the following symptoms is caused by gas bubbles in the lungs?",
+    "options": [
+      "Chokes.",
+      "Bends.",
+      "Creeps.",
+      "Leans."
+    ],
+    "correct": null,
+    "id": 27
+  },
+  {
+    "question": "A pilot might have the feeling of a nose-low attitude ...",
+    "options": [
+      "when rapidly decelerating in straight, horizontal flight.",
+      "during angular acceleration.",
+      "when carrying out continuous slight turn.",
+      "when rapidly accelerating in straight, horizontal flight."
+    ],
+    "correct": null,
+    "id": 28
+  },
+  {
+    "question": "Which gas diffuses from the blood to the alveoli?",
+    "options": [
+      "Carbon dioxide",
+      "Carbon monoxide",
+      "Nitrogen",
+      "Oxygen"
+    ],
+    "correct": null,
+    "id": 29
+  },
+  {
+    "question": "If the pilot flying becomes incapacitated, what should the pilot not flying do immediately?",
+    "options": [
+      "Take over control of the aircraft",
+      "Contact ATC and declare emergency",
+      "Get medical help for the incapacitated pilot",
+      "Call one of the cabin crew to the cockpit"
+    ],
+    "correct": null,
+    "id": 30
+  },
+  {
+    "question": "With regard to visual illusions during flight, which of the following statements is correct? 1. During flight in VMC in bright light with good visibility, visual separation from other aircraft may be difficult. 2. Also healthy eyes may suffer from near-sightedness in stimulus-free environment.",
+    "options": [
+      "1 is correct, 2 is correct.",
+      "1 is incorrect, 2 is correct.",
+      "1 is correct, 2 is incorrect.",
+      "1 is incorrect, 2 is incorrect."
+    ],
+    "correct": null,
+    "id": 31
+  },
+  {
+    "question": "Typical for the Rapid Eye Movement (REM) sleep is ...",
+    "options": [
+      "the highly active brain.",
+      "the slow and regular heart rate.",
+      "the high muscle tone.",
+      "that no dreams occur."
+    ],
+    "correct": null,
+    "id": 32
+  },
+  {
+    "question": "How long takes a blood/alcohol level of 60 mg/100 ml (equivalent to 0.6 permille) to return to normal level?",
+    "options": [
+      "approximately 4 hours",
+      "approximately 12 hours",
+      "approximately 16 hours",
+      "approximately 1 hour"
+    ],
+    "correct": null,
+    "id": 33
+  },
+  {
+    "question": "The Eustachian tube is the connection between the ...",
+    "options": [
+      "throat and the middle ear.",
+      "nose, throat and inner ear.",
+      "nose, throat and the external auditory canal.",
+      "sinuses and the throat."
+    ],
+    "correct": null,
+    "id": 34
+  },
+  {
+    "question": "Relating to hypoxia, short-term memory impairment starts at an altitude of approximately ...",
+    "options": [
+      "12000 ft.",
+      "7000 ft.",
+      "20000 ft.",
+      "30000 ft."
+    ],
+    "correct": null,
+    "id": 35
+  },
+  {
+    "question": "The proprioceptive senses (seat-of-the-pants sense) ...",
+    "options": [
+      "are totally unreliable for orientation when flying in IMC.",
+      "indicate the difference between gravity and G-forces.",
+      "help the pilot to determine the absolute vertical in flight.",
+      "are important for flights in IMC."
+    ],
+    "correct": null,
+    "id": 36
+  },
+  {
+    "question": "A symptom of the onset of hyperventilation is ...",
+    "options": [
+      "a dizzy feeling.",
+      "a slow heart beat.",
+      "a decreasing rate of breathing.",
+      "cyanosis"
+    ],
+    "correct": null,
+    "id": 37
+  },
+  {
+    "question": "The resynchronisation of the biological rhythms after a time shift is generally more difficult with flights towards the ...",
+    "options": [
+      "East.",
+      "West.",
+      "North.",
+      "South."
+    ],
+    "correct": null,
+    "id": 38
+  },
+  {
+    "question": "Assuming a flight in IMC, what is the most reliable sense which should be used to overcome illusions?",
+    "options": [
+      "The visual sense by interpreting the attitude indicator.",
+      "The \"seat-of-the-pants\" sense.",
+      "The vestibular sense.",
+      "The visual sense by looking outside."
+    ],
+    "correct": null,
+    "id": 39
+  },
+  {
+    "question": "In an environment of low contrast (fog, snow, darkness, haze) ...",
+    "options": [
+      "it is difficult to estimate the correct speed and size of approaching objects.",
+      "it is not possible to detect objects.",
+      "the estimation of the correct speed and size of approaching objects is no problem.",
+      "the occurrence of visual illusions is unlikely."
+    ],
+    "correct": null,
+    "id": 40
+  },
+  {
+    "question": "Which of the following statements regarding the fovea is correct?",
+    "options": [
+      "It is the area of the highest acuteness of vision because of the high concentration of cones.",
+      "It is the area of the highest acuteness of vision because of the high concentration of rods.",
+      "It is the area where no vision is generated because neither cones nor rods are located there.",
+      "It is the area of peripheral vision because of the high concentration of rods and cones."
+    ],
+    "correct": null,
+    "id": 41
+  },
+  {
+    "question": "Which of the following statements regarding the single parts of the blood and the state of their function are correct?",
+    "options": [
+      "Red cells carry oxygen, white cells are involved in immunity and platelets clot blood.",
+      "Red cells carry oxygen, white cells clot blood and platelets are involved in immunity.",
+      "Red cells clot blood, white cells are involved in immunity and platelets carry oxygen.",
+      "Red cells are involved in immunity, white cells carry oxygen and platelets clot blood."
+    ],
+    "correct": null,
+    "id": 42
+  },
+  {
+    "question": "The term \"circadian rhythm\" refers to ...",
+    "options": [
+      "a biological cycle controlled by 24-hour internal clock regulating behavioural and physiological changes.",
+      "a biological cycle controlled by 12-hour internal clock regulating behavioural and physiological awareness.",
+      "a biological cycle controlled by 24-hour internal clock regulating anxiety, euphoria and tiredness.",
+      "a biological cycle controlled by 12-hour internal clock regulating sleep and cognitive activity."
+    ],
+    "correct": null,
+    "id": 43
+  },
+  {
+    "question": "Why may hypoxia arise when flying above 10000 feet?",
+    "options": [
+      "The partial oxygen pressure is lower than required.",
+      "The composition of the blood changes.",
+      "The composition of the air is different from mean sea level.",
+      "The percentage of oxygen is lower than at mean sea level."
+    ],
+    "correct": null,
+    "id": 44
+  },
+  {
+    "question": "Visual perception of depth at small to medium distance is primarily due to ...",
+    "options": [
+      "binocular vision.",
+      "cones and rods.",
+      "peripheral vision.",
+      "the retina."
+    ],
+    "correct": null,
+    "id": 45
+  },
+  {
+    "question": "Hypoxia can affect night vision at approximately ...",
+    "options": [
+      "5000 ft.",
+      "4000 ft.",
+      "3000 ft.",
+      "2000 ft."
+    ],
+    "correct": null,
+    "id": 46
+  },
+  {
+    "question": "When smoking one packet of cigarettes a day, the impact on the pilot's oxygen saturation is that his/her physiological altitude at sea level decreases to ...",
+    "options": [
+      "5000 ft to 8000 ft.",
+      "3000 ft to 5000 ft.",
+      "1500 ft to 3000 ft.",
+      "8000 ft to 12000 ft."
+    ],
+    "correct": null,
+    "id": 47
+  },
+  {
+    "question": "In case before flight, you realize that on of your crew members shows signs of alcoholism, how should the situation be assessed?",
+    "options": [
+      "Misuse of alcohol makes \"unfit to fly\" until the crew member is considered recovered by a medical professional.",
+      "Misuse of alcohol makes \"unfit to fly\" until the crew member has become completely sober after sleeping.",
+      "The briefing should include instructions for minimum work interaction during flight to reduce risk of failures.",
+      "Small amounts of alcohol may make the crew member relax and lead to better performance during flight."
+    ],
+    "correct": null,
+    "id": 48
+  },
+  {
+    "question": "With regard to Threat and Error Management (TEM), resources like Ground Proximity Warning Systems (GPWS) and Standard Operating Procedures (SOPs) are examples for which type of countermeasures?",
+    "options": [
+      "Systemic-based",
+      "Hardware-based",
+      "Automation-based",
+      "Liveware-based"
+    ],
+    "correct": null,
+    "id": 49
+  },
+  {
+    "question": "With regard to Threat and Error Management (TEM), which of the following is an example of an organisational threat?",
+    "options": [
+      "Issue resulting from use of expired charts.",
+      "Flight over mountainous regions with strong winds.",
+      "Failure with cross-verifying automation inputs.",
+      "Issue resulting from any occurring malfunction."
+    ],
+    "correct": null,
+    "id": 50
+  },
+  {
+    "question": "Which action must be taken when first symptoms of decompression sickness occur?",
+    "options": [
+      "Descend to the lowest possible level and land as soon as possible.",
+      "Descend to the lowest possible level and wait for the symptoms to disappear before climbing again.",
+      "Maintain flight level and submit yourself to a medical treatment.",
+      "Put on the oxygen masks immediately."
+    ],
+    "correct": null,
+    "id": 51
+  },
+  {
+    "question": "Which of the following statements correctly highlights the major cause of conductive deafness?",
+    "options": [
+      "A temporary blockage of the middle or outer ear due to fluid or ear wax in the middle ear.",
+      "A serious inner ear infection that affects the hearing and balance.",
+      "A condition caused by a combination of lifestyle factors such as smoking and environmental factors like stress.",
+      "A continuous exposure to high frequency noise, like turbine-engine noise."
+    ],
+    "correct": null,
+    "id": 52
+  },
+  {
+    "question": "Rapid onset of positive z-acceleration (+Gz) can cause a (1) __ in hydrostatic blood pressure (2) the heart.",
+    "options": [
+      "(1) reduction, (2) above",
+      "(1) reduction, (2) below",
+      "(1) increase, (2) above",
+      "(1) increase, (2) below"
+    ],
+    "correct": null,
+    "id": 53
+  },
+  {
+    "question": "When moving from darkness to light, the eyes need up to what time for a complete adaption?",
+    "options": [
+      "10 seconds",
+      "5 minutes",
+      "10 minutes",
+      "30 seconds"
+    ],
+    "correct": null,
+    "id": 54
+  },
+  {
+    "question": "The main function of the Eustachian tube is to equalise the pressure between the and the external atmosphere.",
+    "options": [
+      "middle ear",
+      "sinuses of the nose",
+      "throat",
+      "inner ear"
+    ],
+    "correct": null,
+    "id": 55
+  },
+  {
+    "question": "At which altitude is it possible to breathe 100 % oxygen under pressure after the occurrence of a rapid decompression?",
+    "options": [
+      "Approximately 40000 ft.",
+      "Approximately 30000 ft.",
+      "Approximately 25000 ft.",
+      "Approximately 50000 ft."
+    ],
+    "correct": null,
+    "id": 56
+  },
+  {
+    "question": "The ability of the eye to read alphanumeric information is ...",
+    "options": [
+      "limited to the foveal area of the retina.",
+      "limited to night time using the cones.",
+      "equally shared by the entire retina.",
+      "controlled by peripheral vision."
+    ],
+    "correct": null,
+    "id": 57
+  },
+  {
+    "question": "The consumption of medicines may have consequences on \"being fit-to-fly\" because: 1. Any crew member is prohibited from duty in case of taking prescribed medicine. 2. Even in case the treatment has been stopped, effects of medicine can still be present.",
+    "options": [
+      "1 is incorrect, 2 is correct.",
+      "1 is correct, 2 is incorrect.",
+      "1 is correct, 2 is correct.",
+      "1 is incorrect, 2 is incorrect."
+    ],
+    "correct": null,
+    "id": 58
+  },
+  {
+    "question": "The circadian rhythms require __ for resynchronisation with local time after zone crossing.",
+    "options": [
+      "less time when flying from east to west",
+      "about one week per 2.5 hours of time shift",
+      "about one day per 2.5 hours of time shift",
+      "more time when flying from east to west"
+    ],
+    "correct": null,
+    "id": 59
+  },
+  {
+    "question": "Smoking only a few cigarettes in 1 hour at sea level will ...",
+    "options": [
+      "decrease the hypoxic tolerance.",
+      "not affect night vision when flying at sea level.",
+      "raises your G-tolerance substantially by increasing blood pressure.",
+      "prevent serious hyperventilation due to the sedative effect of nicotine."
+    ],
+    "correct": null,
+    "id": 60
+  },
+  {
+    "question": "Paradoxic sleep (REM) ... 1. refreshes the brain, memory and body. 2. reduces during the night.",
+    "options": [
+      "Neither 1 nor 2 are correct.",
+      "1 is correct only",
+      "2 is correct only",
+      "1 and 2 are correct."
+    ],
+    "correct": null,
+    "id": 61
+  },
+  {
+    "question": "Assuming a flight from your home base (runway width 45 m) to a small airfield (runway width 27 m). When approaching the destination there is a risk of performing a ...",
+    "options": [
+      "low approach with undershoot.",
+      "high approach with overshoot.",
+      "high approach with undershoot.",
+      "low approach with overshoot."
+    ],
+    "correct": null,
+    "id": 62
+  },
+  {
+    "question": "Measures to reduce the probability of noise-induced hearing loss may include: 1. Use hearing protection equipment (earplugs) 2. Limit the duration of exposure to low-frequency noise of less than 20 Hz. 3. Headsets with active noise-reduction 4. Valsalva manoeuvre",
+    "options": [
+      "1 and 3.",
+      "1, 2 and 3.",
+      "2 and 4.",
+      "1, 2, 3 and 4."
+    ],
+    "correct": null,
+    "id": 63
+  },
+  {
+    "question": "The adjustment of the circadian rhythm to a new time zone ...",
+    "options": [
+      "occurs rapidly when flying westbound.",
+      "occurs rapidly when flying eastbound.",
+      "is the same in both westbound and eastbound flights.",
+      "occurs immediately, as circadian rhythms do not change depending on the direction of flying."
+    ],
+    "correct": null,
+    "id": 64
+  },
+  {
+    "question": "When staying in a different time zone for more than 24 hours, the pilot should ...",
+    "options": [
+      "move towards the new time as soon as possible.",
+      "stay on home time and until arrival, afterwards move to the new time.",
+      "stay on home time.",
+      "make no adjustment."
+    ],
+    "correct": null,
+    "id": 65
+  },
+  {
+    "question": "Which of the following statements is true?",
+    "options": [
+      "Oxygen diffusion from the blood into the cells depends on the partial oxygen pressure gradient.",
+      "Oxygen is primarily transported in plasma.",
+      "The gradient of diffusion is higher at altitude than it is at mean sea level.",
+      "Oxygen diffusion from the lungs into the blood is independent of the partial oxygen pressure."
+    ],
+    "correct": null,
+    "id": 66
+  },
+  {
+    "question": "Which of the following situations can cause hypoxic hypoxia?",
+    "options": [
+      "A climb to a high altitude without additional oxygen or loss of cabin pressurisation at high altitude.",
+      "A failure of the cabin pressurisation system.",
+      "Scuba diving within 48 hours following a flight.",
+      "A high rate of descend without supplementary oxygen."
+    ],
+    "correct": null,
+    "id": 67
+  },
+  {
+    "question": "Which of the following statements regarding the night's sleep cycles is / are correct? 1. Each succeeding cycle includes a greater amount of REM-sleep. 2. Frequent interruption of the REM-sleep can be harmful.",
+    "options": [
+      "1 and 2 are both correct",
+      "1 is correct, 2 is false",
+      "1 is false, 2 is correct",
+      "1 and 2 are both false"
+    ],
+    "correct": null,
+    "id": 68
+  },
+  {
+    "question": "Which statements regarding decompression sickness is correct?",
+    "options": [
+      "The indications are the bends, chokes, creeps and neurological symptoms.",
+      "It is only relevant when diving.",
+      "It can only develop at altitudes of more than 40000 ft.",
+      "It causes a pain in the middle ear."
+    ],
+    "correct": null,
+    "id": 69
+  },
+  {
+    "question": "During preparation for final approach for landing, meteorological conditions reduce below the minima. Deteriorating meteorological conditions is a/an (1) __ that can be (2) _by an accurate pre-flight briefing.",
+    "options": [
+      "(1) threat, (2) predicted",
+      "(1) error, (2) predicted",
+      "(1) a threat, (2) prevented",
+      "(1) a occurrence, (2) predicted"
+    ],
+    "correct": null,
+    "id": 70
+  },
+  {
+    "question": "With regard to Threat and Error Management (TEM), which of the following is an environmental threat?",
+    "options": [
+      "Contaminated runway",
+      "Issues resulting from equipment design",
+      "Using outdates charts for approach",
+      "Issue resulting from any occurring malfunction"
+    ],
+    "correct": null,
+    "id": 71
+  },
+  {
+    "question": "Which of the following correctly states the elements of the SHELL model?",
+    "options": [
+      "Software, hardware, environment and liveware.",
+      "Software, hardware, economy and liveware.",
+      "Safety, harmony, environment and laissez-faire.",
+      "Safety, hardware, environment and location."
+    ],
+    "correct": null,
+    "id": 72
+  },
+  {
+    "question": "A pilot can overcome vertigo, in case one: 1. establishes and maintains an effective instrument cross-check 2. trusts the instruments and not the sense of feeling 3. ignores suddenly occurring illusions 4. moves the head sidewards and back and forth to \"shake-off\" illusions",
+    "options": [
+      "1, 2 and 3.",
+      "1 and 2.",
+      "Only 4.",
+      "3 and 4."
+    ],
+    "correct": null,
+    "id": 73
+  },
+  {
+    "question": "The circadian rhythm may be disturbed after: 1. bad sleep at night 2. day flight Brussels - Miami 3. day flight Brussels - Cape Town 4. night flight Miami - Brussels",
+    "options": [
+      "2 and 4 are correct",
+      "1, 2 and 3 are correct",
+      "1 and 3 are correct",
+      "2, 3 and 4 are correct"
+    ],
+    "correct": null,
+    "id": 74
+  },
+  {
+    "question": "When can trapped intestinal gases cause severe pain?",
+    "options": [
+      "When frequently flying above 18000 ft in a non-pressurised aircraft.",
+      "At low altitudes.",
+      "In pressurised aircraft only, when flying at higher flight levels.",
+      "During descent as well as during climb, when the cabin pressure altitude exceeds 2000 ft."
+    ],
+    "correct": null,
+    "id": 75
+  },
+  {
+    "question": "When suffering from a rapid decompression without the appearance of any decompression sickness symptoms, you should ...",
+    "options": [
+      "promptly seek aeromedical advice before flying again.",
+      "do nothing and fly again immediately.",
+      "delay your next flight for 6 hours.",
+      "seek aeromedical advice only if the symptoms become apparent."
+    ],
+    "correct": null,
+    "id": 76
+  },
+  {
+    "question": "What is the result of sleeplessness or the disruption of sleeping patterns? 1. Drowsiness, irritability and lack of concentration. 2. An individual is more prone to make errors.",
+    "options": [
+      "1 and 2 are both correct",
+      "1 is not correct, 2 is correct",
+      "1 is correct, 2 is not correct",
+      "1 and 2 are both not correct"
+    ],
+    "correct": null,
+    "id": 77
+  },
+  {
+    "question": "In case a crew member becomes incapacitated during flight, actions to be taken by the other crew member include: 1. Take over controls 2. Perform emergency descent 3. Declare emergency 4. Land at nearest suitable airport 5. Continue flight to destination",
+    "options": [
+      "1, 3 and 4.",
+      "1, 3, 4 and 5.",
+      "1, 2, 3 and 4.",
+      "1, 3 and 5."
+    ],
+    "correct": null,
+    "id": 78
+  },
+  {
+    "question": "With regard to Carbon Monoxide (CO), which of the following statements is correct? 1. Carbon Monoxide is especially dangerous because it is colour- and odourless. 2. CO poisoning shows symptoms similar to flu, but without high temperature.",
+    "options": [
+      "1 is correct, 2 is correct.",
+      "1 is correct, 2 is incorrect.",
+      "1 is incorrect, 2 is correct.",
+      "1 is incorrect, 2 is incorrect."
+    ],
+    "correct": null,
+    "id": 79
+  },
+  {
+    "question": "The major sources of radiation at height are ...",
+    "options": [
+      "galactic (cosmic) radiation caused by galactic particles and solar radiation caused by solar flares.",
+      "ionisation of the layers in the atmosphere due to the high influence of galactic (cosmic) radiation.",
+      "galactic (cosmic) radiation caused by galactic particles and nuclear radiation caused by the Earth's natural radiation.",
+      "galactic (cosmic) and nuclear radiation, which are both caused by the Earth's natural radiation."
+    ],
+    "correct": null,
+    "id": 80
+  },
+  {
+    "question": "Which of the following are reasons for lower back pain? 1. Different length of the lower extremities 2.Slipped intervertebral disc 3. Tension and fatigue of the back muscles. 4. An increased Body Mass Index.",
+    "options": [
+      "1, 2 and 3.",
+      "2, 3 and 4.",
+      "1 and 3 only.",
+      "2 and 4 only."
+    ],
+    "correct": null,
+    "id": 81
+  },
+  {
+    "question": "What is the correct term for disruptions of pressure equalisation in air-filled cavities of the head (e.g. nose, ear, teeth)?",
+    "options": [
+      "Barotrauma",
+      "Embolism",
+      "Hypoxia",
+      "Hyperventilation"
+    ],
+    "correct": null,
+    "id": 82
+  },
+  {
+    "question": "An increasing amount of carbon dioxide in the blood leads to ...",
+    "options": [
+      "an increased respiratory rate.",
+      "an improved night vision.",
+      "a reduction of haemoglobin.",
+      "an improved resistance to hypoxia."
+    ],
+    "correct": null,
+    "id": 83
+  },
+  {
+    "question": "To compensate the low level of humidity in a pressurised aircraft cabin, it is necessary to ...",
+    "options": [
+      "drink enough water before getting thirsty.",
+      "breath in to a paper bag.",
+      "provide water only for those who are in poor health.",
+      "supply coffee or tea."
+    ],
+    "correct": null,
+    "id": 84
+  },
+  {
+    "question": "Oxygen and carbon dioxide are carried through the body by ...",
+    "options": [
+      "diffusion.",
+      "metabolism.",
+      "circulation.",
+      "oxidisation."
+    ],
+    "correct": null,
+    "id": 85
+  },
+  {
+    "question": "What can be caused by an excessive intake of aspirin?",
+    "options": [
+      "Gastric bleeding.",
+      "Sensory loss.",
+      "Fits.",
+      "Memory loss."
+    ],
+    "correct": null,
+    "id": 86
+  },
+  {
+    "question": "Adverse effects of carbon monoxide increase when ...",
+    "options": [
+      "altitude increases.",
+      "altitude decreases.",
+      "air pressure increases.",
+      "relative humidity decreases."
+    ],
+    "correct": null,
+    "id": 87
+  },
+  {
+    "question": "Anaemia is caused by not enough functional ...",
+    "options": [
+      "haemoglobin.",
+      "platelets.",
+      "plasma.",
+      "white blood cells."
+    ],
+    "correct": null,
+    "id": 88
+  },
+  {
+    "question": "Stimuli must be of a certain strength for the receptors to pick them up. How is this called?",
+    "options": [
+      "Sensory threshold.",
+      "Sensory filter.",
+      "Sensory strength.",
+      "Sensory volume."
+    ],
+    "correct": null,
+    "id": 89
+  },
+  {
+    "question": "When suffering from hypoxia, the cells ...",
+    "options": [
+      "have an undersupply of oxygen.",
+      "are saturated with nitrogen.",
+      "are saturated with oxygen.",
+      "have an undersupply of carbon dioxide."
+    ],
+    "correct": null,
+    "id": 90
+  },
+  {
+    "question": "In case the pilot flying is making a call-out with succeeding change in autopilot-mode while the pilot non-flying is still engaged in ATC communication, this can be an example of a ...",
+    "options": [
+      "communication error by the flight crew.",
+      "procedural error by doing the call-out.",
+      "procedural error by doing radio communication during change of autopilot-mode.",
+      "communication threat due to high workload."
+    ],
+    "correct": null,
+    "id": 91
+  },
+  {
+    "question": "Early warning signs of gastroenteritis include: 1. Vomiting 2. Dizziness and high temperature 3. Diarrhoea 4. Cramping pains 5. Vision inabilities",
+    "options": [
+      "1, 3 and 4.",
+      "1, 2, 3 and 4.",
+      "1, 3 and 5.",
+      "2, 3, 4 and 5."
+    ],
+    "correct": null,
+    "id": 92
+  },
+  {
+    "question": "Physiological effects of an acceleration of 3G on the human body are dependent on the: 1. duration of the G forces 2. onset rate of the G forces 3. aircraft's altitude. 4. magnitude of the G forces",
+    "options": [
+      "1, 2 and 4",
+      "1 and 3",
+      "2, 3 and 4",
+      "2 and 4"
+    ],
+    "correct": null,
+    "id": 93
+  },
+  {
+    "question": "How can subcutaneous pressure receptors be stimulated?",
+    "options": [
+      "By pressure which is created on the corresponding body parts when sitting, standing or lying down.",
+      "By pressing on the skin, indicating the true vertical.",
+      "By environmental stressors.",
+      "By the body condition itself."
+    ],
+    "correct": null,
+    "id": 94
+  },
+  {
+    "question": "With regard to spatial illusion or disorientation, the description \"cross-coupled response to a stimulation of the semi-circular canals in two different planes\" refers to:",
+    "options": [
+      "Coriolis effect.",
+      "Vertigo.",
+      "Spatial disorientation.",
+      "Autokinesis."
+    ],
+    "correct": null,
+    "id": 95
+  },
+  {
+    "question": "Which of the following statements is true regarding carbon monoxide poisoning?",
+    "options": [
+      "Several days are needed to recover from a carbon monoxide poisoning.",
+      "An early symptom of carbon monoxide poisoning is euphoria.",
+      "The human body is not affected by carbon monoxide poisoning.",
+      "Inhaling carbon monoxide can cause hyperventilation."
+    ],
+    "correct": null,
+    "id": 96
+  },
+  {
+    "question": "What is the result when exposing the ears to a 85 dB noise or more?",
+    "options": [
+      "Noise induced hearing loss.",
+      "Conductive hearing loss.",
+      "Presbycusis.",
+      "A ruptured ear drum."
+    ],
+    "correct": null,
+    "id": 97
+  },
+  {
+    "question": "The major problem caused by positive (+Gz) accelerations is ...",
+    "options": [
+      "a pooling of blood in the lower parts of the body and consequently there is less blood available for the brain.",
+      "a deterioration in vision such that all objects are blurred.",
+      "an increased blood pressure in the head.",
+      "hyperoxygenation of the blood, which can lead to sensory disorders."
+    ],
+    "correct": null,
+    "id": 98
+  },
+  {
+    "question": "During a straight and level flight, when experiencing a vestibular illusion the pilot should ...",
+    "options": [
+      "avoid head movements and rely on the instruments.",
+      "tilt his / her head to the side opposite to the turn to nullify the stimulus causing the illusion.",
+      "close his / her eyes for a moment so that the oculo-vestibular conflict disappears.",
+      "rely on his / her sensations only."
+    ],
+    "correct": null,
+    "id": 99
+  },
+  {
+    "question": "Which parts of the head are most commonly effected by Barotrauma?",
+    "options": [
+      "Facial sinuses, middle ear and dental cavities.",
+      "Inner ear, facial sinuses and stomach.",
+      "Facial sinuses, outer ear and eyes.",
+      "Dental cavities, outer ear and eyes."
+    ],
+    "correct": null,
+    "id": 100
+  },
+  {
+    "question": "\"A physical condition caused by a lack of oxygen to meet the needs of the body tissues, causing impaired thinking, poor judgement and slow reactions.\" This is the description for:",
+    "options": [
+      "hypoxia.",
+      "decompression sickness.",
+      "hyperventilation.",
+      "hyperthermia."
+    ],
+    "correct": null,
+    "id": 101
+  },
+  {
+    "question": "Which statement regarding the inhalation of carbon monoxide is true?",
+    "options": [
+      "Carbon monoxide is odourless and colourless and therefore it is very dangerous.",
+      "Carbon monoxide increases the oxygen saturation in the blood and therefore it is extremely dangerous.",
+      "With increasing altitude the negative effects of carbon monoxide poisoning can be compensated.",
+      "Carbon monoxide has no affinity to haemoglobin and therefore it is negligibly dangerous."
+    ],
+    "correct": null,
+    "id": 102
+  },
+  {
+    "question": "To minimize the risk of suffering from type 2 diabetes should be avoided.",
+    "options": [
+      "obesity",
+      "eating fish",
+      "carbohydrates",
+      "proteins"
+    ],
+    "correct": null,
+    "id": 103
+  },
+  {
+    "question": "How is the ability of the lens called, to alter its shape and focal length?",
+    "options": [
+      "Accommodation.",
+      "Binocular vision.",
+      "Depth perception.",
+      "Adaptation."
+    ],
+    "correct": null,
+    "id": 104
+  },
+  {
+    "question": "The measuring unit for blood pressure is normally ...",
+    "options": [
+      "mmHg.",
+      "inHg.",
+      "hectopascals.",
+      "millibars."
+    ],
+    "correct": null,
+    "id": 105
+  },
+  {
+    "question": "At rest the cardiac output (the quantity of blood pumped by the heart in one minute) of an adult is approximately ...",
+    "options": [
+      "5 litres/min.",
+      "450 ml/min.",
+      "15 litres/min.",
+      "750 ml/min."
+    ],
+    "correct": null,
+    "id": 106
+  },
+  {
+    "question": "A person with a deficiency in is referred to as \"anaemic\".",
+    "options": [
+      "haemoglobin",
+      "blood plasma",
+      "leucocytes",
+      "platelets"
+    ],
+    "correct": null,
+    "id": 107
+  },
+  {
+    "question": "To prevent dehydration and a loss of attention in flight, it is necessary to ...",
+    "options": [
+      "drink sufficient non-carbonated liquids.",
+      "drink a lot of caffeinated drinks.",
+      "drink cool soft drinks.",
+      "drink tea."
+    ],
+    "correct": null,
+    "id": 108
+  },
+  {
+    "question": "What should be avoided when suffering from gastro-intestinal upsets?",
+    "options": [
+      "Ice in cold drinks.",
+      "Cooked meats.",
+      "Hot drinks.",
+      "Gassy foods."
+    ],
+    "correct": null,
+    "id": 109
+  },
+  {
+    "question": "What should a pilot do if subjected to an illusion during a night flight?",
+    "options": [
+      "Continue on instruments.",
+      "Dim the cockpit lighting.",
+      "Scan the environment.",
+      "Put on the oxygen mask."
+    ],
+    "correct": null,
+    "id": 110
+  },
+  {
+    "question": "The duration of a human circadian rhythm is about ...",
+    "options": [
+      "5 hours.",
+      "12 hours.",
+      "36 hours.",
+      "25 hours."
+    ],
+    "correct": null,
+    "id": 111
+  },
+  {
+    "question": "Spatial disorientation is most likely to occur during flight ...",
+    "options": [
+      "if the brain receives conflicting information and the pilot does not believe the instruments.",
+      "when flying in and out of clouds and the pilot continuously cross check the instruments.",
+      "when flying in rainy conditions below the ceiling.",
+      "when flying in bright sunlight above a cloud layer."
+    ],
+    "correct": null,
+    "id": 112
+  },
+  {
+    "question": "Hypoxia can be caused by .... 1. alcohol abuse or by the chronic use of alcohol. 2. a reduced saturation of oxygen in the blood due to carbon monoxide attached to the haemoglobin. 3. a low partial pressure of oxygen in the atmosphere when flying at high altitudes without pressurisation and supplemental oxygen. 4. malfunction of the body cells due to metabolise oxygen.",
+    "options": [
+      "2, 3 and 4",
+      "1 and 2",
+      "2 and 4",
+      "1, 2 and 3"
+    ],
+    "correct": null,
+    "id": 113
+  },
+  {
+    "question": "What is the most dangerous type of incapacitation in flight?",
+    "options": [
+      "When it develops slowly and gradually (insidious).",
+      "When it occurs rapidly.",
+      "When there is not severe in its effect.",
+      "When it is temporary."
+    ],
+    "correct": null,
+    "id": 114
+  },
+  {
+    "question": "When getting a tattoo with the use of improperly sterilised needles may expose the person to contract ...",
+    "options": [
+      "Hepatitis B or C.",
+      "Diabetes.",
+      "Hypertension.",
+      "Osteoarthritis."
+    ],
+    "correct": null,
+    "id": 115
+  },
+  {
+    "question": "The duration of a period of sleep is dependant on the ...",
+    "options": [
+      "point within your circadian rhythm at which you try to sleep.",
+      "duration of your previous sleep.",
+      "duration you have been awake.",
+      "number of points you have in your \"credit/deficit\" system."
+    ],
+    "correct": null,
+    "id": 116
+  },
+  {
+    "question": "When combining the consumption of alcohol with taking drugs ...",
+    "options": [
+      "the effects of the drugs intensify.",
+      "the side effects of drugs get compensated.",
+      "undesired effects only occur during night flights.",
+      "the rate of alcohol elimination from the blood increases."
+    ],
+    "correct": null,
+    "id": 117
+  },
+  {
+    "question": "To optimise the night-vision performance, it is necessary to: 1. avoid lightning. 2. allow the eyes getting adapted to low levels of illumination. 3. increase the instrument panel lighting by dimming the cockpit lights. 4. avoid focussing on the point to be observed.",
+    "options": [
+      "1, 2 and 4",
+      "1, 3 and 4",
+      "2, 3 and 4",
+      "2 and 3 only"
+    ],
+    "correct": null,
+    "id": 118
+  },
+  {
+    "question": "Impact and effects of cosmic radiation on crews during flights at high altitude include (in order of relevance): 1. Altitude 2. Airspeed 3. Normal and random solar activity (flares) 4. Geographical latitude 5. Earth's magnetic field",
+    "options": [
+      "1, 4 and 3.",
+      "1, 2, 5 and 3.",
+      "1, 3, 5 and 4.",
+      "1, 2, 3 and 4."
+    ],
+    "correct": null,
+    "id": 119
+  },
+  {
+    "question": "Situations in which the sight of another aircraft may get lost in the blind spot are: 1. The pilot's field of view is restricted on one side 2. The pilot's field of view is unrestricted for both eyes. 3. Another aircraft positioned in the blind spot of the unobstructed eye. 4. The pilot's focus of view remains directly ahead. 5. The pilot scanning the area ahead and on either side of the aircraft.",
+    "options": [
+      "1, 3 and 4.",
+      "2, 3 and 5.",
+      "1, 3 and 5.",
+      "2, 3 and 4."
+    ],
+    "correct": null,
+    "id": 120
+  },
+  {
+    "question": "Colour blindness may be caused by:",
+    "options": [
+      "dysfunctional cones.",
+      "dysfunctional rods.",
+      "carbon monoxide poisoning.",
+      "sudden increase in brightness."
+    ],
+    "correct": null,
+    "id": 121
+  },
+  {
+    "question": "Pilot misinterpretation of the analogue three-point altimeter occurs between which two components of the SHELL model?",
+    "options": [
+      "Liveware - Hardware",
+      "Liveware - Software",
+      "Liveware - Environment",
+      "Liveware - Liveware"
+    ],
+    "correct": null,
+    "id": 122
+  },
+  {
+    "question": "A pilot will become skilled when he or she: 1. trains or practises regularly 2. knows how to manage himself/herself 3. possesses all the knowledge associated with the aircraft 4. knows how to keep resources in reserve for coping with the unexpected.",
+    "options": [
+      "1, 2 and 4",
+      "1, 3 and 4",
+      "1, 2 and 3",
+      "2, 3 and 4"
+    ],
+    "correct": null,
+    "id": 123
+  },
+  {
+    "question": "With regard to Threat and Error Management (TEM), which of the following is an example of a \"hard\" systemic-based countermeasure that flight crew use to manage threats, errors and undesired aircraft states?",
+    "options": [
+      "Airborne Collision Avoidance System (ACAS).",
+      "Standard Operating Procedures (SOPs).",
+      "Using standards in communication.",
+      "Reporting incidents to the Operator's Management System."
+    ],
+    "correct": null,
+    "id": 124
+  },
+  {
+    "question": "Referring to the SHELL Model, the letter S represents ...",
+    "options": [
+      "Software (including checklists).",
+      "Security (including checklists).",
+      "Self-awareness (including safety).",
+      "Self-effacement (including safety)"
+    ],
+    "correct": null,
+    "id": 125
+  },
+  {
+    "question": "Barotrauma caused by gas accumulation in the stomach and intestines can cause ...",
+    "options": [
+      "pressure pain or flatulence.",
+      "barotitis.",
+      "diarrhoea.",
+      "barosinusitis."
+    ],
+    "correct": null,
+    "id": 126
+  },
+  {
+    "question": "When a fire in flight occurs, the most fatalities are caused by ...",
+    "options": [
+      "suffocation from fumes caused by furnishing and wiring of the aircraft.",
+      "burn wound.",
+      "inhalation of hydrogen fumes.",
+      "cardiac arrest caused by stress and fear."
+    ],
+    "correct": null,
+    "id": 127
+  },
+  {
+    "question": "Sensory adaptation can be defined as ...",
+    "options": [
+      "an adjustment of the body for a better treatment of g-forces.",
+      "an adjustment of the rods and cones of the eye.",
+      "an adjustment of the brain in a constant level flight.",
+      "an adjustment of the brain while flying a curve with an unchanged turn rate for more than 30 seconds."
+    ],
+    "correct": null,
+    "id": 128
+  },
+  {
+    "question": "Orientation in flight is possible through the ...",
+    "options": [
+      "eyes, semi-circular canals and seat-of-the-pants sense together.",
+      "eyes and seat-of-the-pants sense only.",
+      "seat-of-the-pants sense and semi-circular canals only.",
+      "eyes only."
+    ],
+    "correct": null,
+    "id": 129
+  },
+  {
+    "question": "Why does smoking cigarettes reduce the capability of the blood to transport oxygen?",
+    "options": [
+      "Haemoglobin has a greater affinity for carbon monoxide than it has for oxygen.",
+      "Carbon monoxide in the smoke of cigarettes supports the diffusion of oxygen in the alveoli.",
+      "Carbon monoxide raises the partial pressure of oxygen in the alveoli.",
+      "The smoke of one cigarette can cause an obstruction in the respiratory tract."
+    ],
+    "correct": null,
+    "id": 130
+  },
+  {
+    "question": "Positive G-forces (\"z-accelerations\") will cause the blood flow to the brain to ...",
+    "options": [
+      "decrease.",
+      "remain constant.",
+      "increase.",
+      "first increase, then decrease."
+    ],
+    "correct": null,
+    "id": 131
+  },
+  {
+    "question": "High blood pressure, coronary problems and diabetes can be symptoms Of ...",
+    "options": [
+      "obesity.",
+      "anorexia nervosa.",
+      "cholera.",
+      "hypoxia."
+    ],
+    "correct": null,
+    "id": 132
+  },
+  {
+    "question": "The time of sleep required to make up a sleep deficit is ...",
+    "options": [
+      "approximately half the number of hours of sleep missing.",
+      "equal to the number of hours of sleep missing.",
+      "approximately twice the number of hours of sleep missing.",
+      "approximately one more complete night."
+    ],
+    "correct": null,
+    "id": 133
+  },
+  {
+    "question": "Is it possible that the symptoms of Aerodontalgia become more severe in the descent?",
+    "options": [
+      "Yes.",
+      "Yes, above 20000 ft AMSL.",
+      "Yes, in pressurised aircraft.",
+      "No."
+    ],
+    "correct": null,
+    "id": 134
+  },
+  {
+    "question": "Air sickness can be described as ...",
+    "options": [
+      "a sensory conflict in the vestibular system, symptoms including nausea or vomiting.",
+      "evaporation of gases in the blood resulting in nausea or vomiting.",
+      "euphoric state resulting from low partial pressure of oxygen.",
+      "pane due to inability of pressure equalization between middle ear and environmental air."
+    ],
+    "correct": null,
+    "id": 135
+  },
+  {
+    "question": "According ICAO Annex 1 on Personnel Licensing, an \"action or inaction taken by the flight crew which leads to deviations from organisational or flight intentions or expectations\" is defined as:",
+    "options": [
+      "an error.",
+      "error management.",
+      "airmanship.",
+      "assessment of competence."
+    ],
+    "correct": null,
+    "id": 136
+  },
+  {
+    "question": "With regard to training and assessment of pilots, which of the following is one of the eight \"core competencies\" defined by ICAO Doc 9995?",
+    "options": [
+      "Situational awareness.",
+      "Technical Knowledge.",
+      "Determination.",
+      "Superiority."
+    ],
+    "correct": null,
+    "id": 137
+  },
+  {
+    "question": "Which statement regarding the \"Seat-of-the-Pants\" sense is correct?",
+    "options": [
+      "It can give wrong inputs regarding the body's orientation when visual reference is lost.",
+      "It is a natural human instinct that always indicates the correct position of the body in space.",
+      "It can be used, if trained, to avoid spatial disorientation.",
+      "It can be used as a reference for determining attitude when operating in IMC."
+    ],
+    "correct": null,
+    "id": 138
+  },
+  {
+    "question": "With regard to Time of Useful Consciousness (TUC) and Effective Performance Time (EPT), which of the following statements is correct? 1. EPT is usually shorter than TUC. 2. At 40000ft, EPT for a person at rest is about 12 to 20 seconds.",
+    "options": [
+      "1 is correct, 2 is correct.",
+      "1 is incorrect, 2 is correct.",
+      "1 is correct, 2 is incorrect.",
+      "1 is incorrect, 2 is incorrect."
+    ],
+    "correct": null,
+    "id": 139
+  },
+  {
+    "question": "When pilots discuss private matters in the cockpit, it ...",
+    "options": [
+      "diminishes the captains authority.",
+      "is preferably during climb or descent.",
+      "can improve team spirit.",
+      "is considered to be unprofessional."
+    ],
+    "correct": null,
+    "id": 140
+  },
+  {
+    "question": "\"Stereotypes\" are preconceptions which may let us:",
+    "options": [
+      "act in the same way towards all people we get to know.",
+      "develop better teamwork by knowing other people better.",
+      "mis-judge individuals even if we have contact with them.",
+      "communicate verbally and non-verbally with a stranger."
+    ],
+    "correct": null,
+    "id": 141
+  },
+  {
+    "question": "The behavioural mode that enhances co-ordination of a flight crew is referred to as:",
+    "options": [
+      "Adult",
+      "Parent",
+      "Child.",
+      "Enfant"
+    ],
+    "correct": null,
+    "id": 142
+  },
+  {
+    "question": "Checking the aircraft configuration and flight control systems regularly, in an automated aircraft, is called (1)_and can be supported by (2) _.",
+    "options": [
+      "(1) environmental awareness, (2) call-outs",
+      "(1) configuration awareness, (2) focusing on single instruments",
+      "(1) system awareness, (2) focusing on single instruments",
+      "(1) mode awareness, (2) call-outs"
+    ],
+    "correct": null,
+    "id": 143
+  },
+  {
+    "question": "About short-term memory, one can say that it ...",
+    "options": [
+      "it is less sensitive to disturbances than long-term memory and therefore the preferred storage for data.",
+      "stores mainly procedural knowledge (skills) acquired from reading books or manuals.",
+      "holds information for immediate use and is limited in its capacity for storing and retaining data",
+      "holds information for immediate use and is not limited in its capacity for storing and retaining data"
+    ],
+    "correct": null,
+    "id": 144
+  },
+  {
+    "question": "A pilot meets the ground engineer on the apron. Before finishing the flight preparation, the pilot informs the engineer about the amount of fuel to be loaded, since he is used to flying this route. This behaviour results from ...",
+    "options": [
+      "pressure exerted by the engineer.",
+      "a decision bias due to group (social) pressure.",
+      "a lack of experience.",
+      "a decision bias due to habits (frequency bias)."
+    ],
+    "correct": null,
+    "id": 145
+  },
+  {
+    "question": "Acute stress will quickly lead to ...",
+    "options": [
+      "a state of overactivation initiating a permanent incapacitation.",
+      "a drop in the amount of resources mobilized to face the situation.",
+      "the mobilization of resources required to cope with the stressor.",
+      "a relaxed atmosphere due to a feeling of indifference."
+    ],
+    "correct": null,
+    "id": 146
+  },
+  {
+    "question": "Which description is characteristic of a \"laissez-faire\" cockpit?",
+    "options": [
+      "A passive approach by the captain allows decisions, choices and actions by other crew members",
+      "The captain displays a positive and professional attitude by making all decisions for the crew.",
+      "The high level of professionalism by the captain leads to a well run and controlled cockpit.",
+      "The captain leads with an overwhelming authority, leaving no space for other crew members' opinions."
+    ],
+    "correct": null,
+    "id": 147
+  },
+  {
+    "question": "When in conflict with a colleague, which of these techniques can be effective to solve the problem?",
+    "options": [
+      "Stubbornness, swearing and self-justification",
+      "Passive listening and ignoring the colleague 8",
+      "Ignorance, self-justification and listening",
+      "Active listening and metacommunication"
+    ],
+    "correct": null,
+    "id": 148
+  },
+  {
+    "question": "Which of the following statements correctly defines \"semantic memory\"?",
+    "options": [
+      "It is the meaning of words and general knowledge of the world; it lasts for a shorter period of time than episodic memory and tends to be less accurate.",
+      "It is the meaning of words and general knowledge of the world; it lasts for a longer period of time than episodic memory and tends to be more accurate.",
+      "It is the memory of events; it lasts for a shorter period of time than episodic memory and tends to be less accurate.",
+      "It is the memory of events; it lasts for a longer period of time than episodic memory and tends to be more accurate."
+    ],
+    "correct": null,
+    "id": 149
+  },
+  {
+    "question": "With regard to Error Management, a strategy to decrease human error is:",
+    "options": [
+      "Error detection.",
+      "Error evaluation.",
+      "Error analysis.",
+      "Error intolerance."
+    ],
+    "correct": null,
+    "id": 150
+  },
+  {
+    "question": "Information is stored in the short-term memory for ...",
+    "options": [
+      "about 20 seconds.",
+      "60 to 90 seconds.",
+      "30 to 45 minutes.",
+      "about 12 hours."
+    ],
+    "correct": null,
+    "id": 151
+  },
+  {
+    "question": "The \"ideal\" cockpit can be described by the term:",
+    "options": [
+      "Synergistic",
+      "Democratic 3",
+      "Equality",
+      "Laisser-faire"
+    ],
+    "correct": null,
+    "id": 152
+  },
+  {
+    "question": "What is the difference between \"status\" and \"role\"?",
+    "options": [
+      "While role defines the hierarchical position and its recognition by the group, status defines -via behaviour- the functions that must be performed by individuals",
+      "Unlike status, role is fixed and is modified either by the situation in flight or by the interactions of a new crew",
+      "Role is fixed and is not modified either by the situation in flight or by the interactions of a new crew, while a status is fixed independent of the situation.",
+      "While role defines - via behaviour - the functions that must be performed by individuals, status defines the hierarchical position and its recognition by the group"
+    ],
+    "correct": null,
+    "id": 153
+  },
+  {
+    "question": "Which two inputs are required for a simple model of stress?",
+    "options": [
+      "The ease of achieving the task and the level of importance to the pilot.",
+      "The perceived demand of the task to the pilot and the pilot's perceived ability to complete the task.",
+      "The difficulty of the task overall and its usefulness to the pilot trying to manage it.",
+      "The value of the task to the pilot and what the pilot can get out of it."
+    ],
+    "correct": null,
+    "id": 154
+  },
+  {
+    "question": "Which one of the following is an environmental stressor during flight?",
+    "options": [
+      "High workload 3",
+      "Relationship problems 3",
+      "Engine noise",
+      "Lack of sleep"
+    ],
+    "correct": null,
+    "id": 155
+  },
+  {
+    "question": "When disagreement escalates into a conflict on the flight deck, safety is seriously compromised. How best can the escalation of such human conflict be described?",
+    "options": [
+      "With people involved having different positions of authority, escalation of a disagreement into open conflict is most common",
+      "Conflict escalation always results in increasingly violent acts from all people involved",
+      "Conflict escalation is about verbal confrontation around increasingly adjacent point of views, but involves NO violence.",
+      "Initial tension or verbal dispute among opposing parties may escalate to a voicing of hostile threats and may involve violence"
+    ],
+    "correct": null,
+    "id": 156
+  },
+  {
+    "question": "With regard to \"complacency\", which of the following statements is correct? 1. Complacency is a dangerous attitude that can lead to a loss of awareness of danger. 2. Complacency is likely to occur when practising activities in which a person has a low level of skill.",
+    "options": [
+      "1 is incorrect, 2 is incorrect",
+      "1 is incorrect, 2 is correct",
+      "1 is correct, 2 is correct",
+      "1 is correct, 2 is incorrect"
+    ],
+    "correct": null,
+    "id": 157
+  },
+  {
+    "question": "A negative aspect of a highly automated cockpit can be:",
+    "options": [
+      "Pilots disregarding the automatic systems",
+      "Constant high workload regarding monitoring tasks",
+      "Complacency among the crewmembers",
+      "Less experienced pilots because of more transparent system details"
+    ],
+    "correct": null,
+    "id": 158
+  },
+  {
+    "question": "The main error sources in a pilot's decision-making mechanism include: 1. Situation assessment: defining the problem and assessing the associated levels of risk 2. Biases affecting unprejudiced decision making 3. Choosing an appropriate course of action 4. Assessment of environmental circumstances",
+    "options": [
+      "1, 2 and 3",
+      "2 and 4",
+      "2, 3 and 4",
+      "1 and 3"
+    ],
+    "correct": null,
+    "id": 159
+  },
+  {
+    "question": "Which of the following is an important aspect of situational awareness?",
+    "options": [
+      "When a pilot's perception fits to reality",
+      "When a pilot perceives the situation inside and outside the aircraft",
+      "When a pilot has a good relationship with the crew",
+      "When a pilot is mentally behind the aircraft"
+    ],
+    "correct": null,
+    "id": 160
+  },
+  {
+    "question": "In contrast to personality, attitudes ...",
+    "options": [
+      "are important driving forces behind changes in personality.",
+      "are the product of personal disposition and past experience with reference to an object or a situation.",
+      "are non-evolutive adaptation procedures regardless of the result of actions associated with them.",
+      "form part of personality and can therefore not be changed in an adult."
+    ],
+    "correct": null,
+    "id": 161
+  },
+  {
+    "question": "Which of the following is the role of communication in a well co-ordinated team?",
+    "options": [
+      "It helps to improve the language skills.",
+      "It supports exchange of crew members between different positions.",
+      "It assists the pilots to share the same mental model during a flight.",
+      "It ensures roles and line-of-command on the flight deck."
+    ],
+    "correct": null,
+    "id": 162
+  },
+  {
+    "question": "Which behaviour is typical for the resistance phase of the General Adaptation Syndrome (GAS)?",
+    "options": [
+      "Fight or flight",
+      "Preparing for action",
+      "The body recovers",
+      "Calm actions"
+    ],
+    "correct": null,
+    "id": 163
+  },
+  {
+    "question": "What are the two types of fatigue?",
+    "options": [
+      "Oppressive and positive",
+      "Chronic and short-term",
+      "Long-term and oppressive",
+      "Moderate and severe"
+    ],
+    "correct": null,
+    "id": 164
+  },
+  {
+    "question": "Which of the following lists all human factors that are either cumulative or tend to escalate?",
+    "options": [
+      "Errors, the effect of carbon monoxide poisoning and colour blindness only.",
+      "Stress factors, errors and the effect of carbon monoxide poisoning, but never human conflict.",
+      "Stress factors, errors, human conflict and the effect of carbon monoxide poisoning only.",
+      "Stress factors and the effect of carbon monoxide poisoning only."
+    ],
+    "correct": null,
+    "id": 165
+  },
+  {
+    "question": "Cohesion can be especially advantageous in times of:",
+    "options": [
+      "Difficulty",
+      "Agreement",
+      "Achievement",
+      "Victory"
+    ],
+    "correct": null,
+    "id": 166
+  },
+  {
+    "question": "In general, a pilot's behaviour is determined by ...",
+    "options": [
+      "age and training.",
+      "character and social life.",
+      "personality and attitude.",
+      "reputation and education."
+    ],
+    "correct": null,
+    "id": 167
+  },
+  {
+    "question": "Which strategy of coping involves the reduction of emotional and physiological impact of the stress?",
+    "options": [
+      "Active coping",
+      "Confrontive Coping",
+      "Counselling coping",
+      "Cognitive coping"
+    ],
+    "correct": null,
+    "id": 168
+  },
+  {
+    "question": "Which of these statements about \"conflicts\" is correct?",
+    "options": [
+      "Whichever the cause of a conflict is, its effective resolution must always involve an additional party",
+      "Conflicts are generally a negative form of communication and can only lead to a detachment of involved parties",
+      "Conflict management involves the participation of all involved parties in finding an acceptable collective solution",
+      "When there is a conflict between two parties, both of them automatically question the general abilities of the other party"
+    ],
+    "correct": null,
+    "id": 169
+  },
+  {
+    "question": "Typical examples of the effects of long-term fatigue are:",
+    "options": [
+      "Falling asleep for short periods without being aware of that",
+      "Increased concentration and vigilance.",
+      "Reduction in visual acuity",
+      "Chronic inability to sleep, increasing physiological or mental health problems"
+    ],
+    "correct": null,
+    "id": 170
+  },
+  {
+    "question": "Name one of the perceptual illusions, which has a high impact on pilots:",
+    "options": [
+      "Optical illusion",
+      "Tactile illusion",
+      "Coriolis illusion",
+      "Temporal illusion"
+    ],
+    "correct": null,
+    "id": 171
+  },
+  {
+    "question": "Which element of communication means that a message is measured and corrected to ensure common understanding?",
+    "options": [
+      "Coding",
+      "Answering",
+      "Feedback",
+      "Processing"
+    ],
+    "correct": null,
+    "id": 172
+  },
+  {
+    "question": "With regard to group role behaviour, which of the following statements is correct? 1. In a multi-crew situation, all crew members have similar roles. 2. Roles are defined purely by personality and behaviour.",
+    "options": [
+      "1 is incorrect, 2 is incorrect",
+      "1 is correct, 2 is incorrect",
+      "1 is correct, 2 is correct",
+      "1 is incorrect, 2 is correct"
+    ],
+    "correct": null,
+    "id": 173
+  },
+  {
+    "question": "Regarding communication in a cockpit, one can say that ...",
+    "options": [
+      "all characteristics of communication (output, duration, precision, clarity, etc.) are not affected by different workloads.",
+      "communication uses up resources, thus limiting the resources allocated to work in progress.",
+      "communication can only be effective when messages are kept short and sufficiently precise to limit their number.",
+      "communication never affects the available resources, because it is an automatic process."
+    ],
+    "correct": null,
+    "id": 174
+  },
+  {
+    "question": "Which of the answers below best describes the concept of an active error? An active error is ...",
+    "options": [
+      "produced by the operator and can be rapidly detected.",
+      "a hidden error which results in consequence at a later time.",
+      "a result of the application of a bad rule by aircraft designers.",
+      "rare in front-line actions and difficult to detect."
+    ],
+    "correct": null,
+    "id": 175
+  },
+  {
+    "question": "What does the body do in the alarm stage of responding to stress?",
+    "options": [
+      "Ignores the danger and slows the body down",
+      "Recognises the stressor and prepares the body for action",
+      "Maintains the arousal state to the continuing stress",
+      "Attempts to recover from damage caused by the stress"
+    ],
+    "correct": null,
+    "id": 176
+  },
+  {
+    "question": "The term \"confirmation bias\" in decision-making means ...",
+    "options": [
+      "a tendency to ignore that information which indicates that a hypothesis or decision is correct.",
+      "a tendency to ignore opinions or decisions made by others, insisting on one's own decision.",
+      "a tendency to ignore that information which indicates that a hypothesis or decision is poor.",
+      "a tendency to agree with the decision made by the captain or by a group of other crew members."
+    ],
+    "correct": null,
+    "id": 177
+  },
+  {
+    "question": "What is our mental model of the world based on?",
+    "options": [
+      "only on the sensory information we receive, but not on past experiences.",
+      "on both our past experiences and the sensory information we receive.",
+      "neither on experiences nor sensory information, only on our self- esteem.",
+      "only on our past experiences, but not on sensory information we receive."
+    ],
+    "correct": null,
+    "id": 178
+  },
+  {
+    "question": "An advantage of using mental schemata when performing a familiar, but rather complex task, is:",
+    "options": [
+      "Expectations can be driven by current perceptions.",
+      "It allows to base current actions on past experience.",
+      "It focuses attention to precisely defined areas.",
+      "It allows to base actions items on short-term memory items."
+    ],
+    "correct": null,
+    "id": 179
+  },
+  {
+    "question": "What is the likely result of a self-centred captain on the flight deck?",
+    "options": [
+      "The captain displays a professional attitude by making all decisions and allowing no input from the less experienced co-pilot",
+      "The high level of professionalism by the captain leads to a well run and controlled cockpit.",
+      "In a two-pilot flight deck, the co-pilot is ignored and may react by disengaging, showing delayed responses or aggression",
+      "Performance by the co-pilot is very good as self-centred behaviour leads to an increase of cooperation and efficiency"
+    ],
+    "correct": null,
+    "id": 180
+  },
+  {
+    "question": "Factors contributing to human error include: 1. Emotional state and affection 2. Motivation and attitudes 3. Standard operating procedures (SOPs) 4. Personality",
+    "options": [
+      "1, 2 and 4",
+      "1, 3 and 4",
+      "2, 3 and 4",
+      "1, 2 and 3"
+    ],
+    "correct": null,
+    "id": 181
+  },
+  {
+    "question": "How can decision-making be influenced by routine and/or habits?",
+    "options": [
+      "As habit is the product of experience, it should be used as a primary consideration in all decisions",
+      "There is a tendency to always select a choice in accordance with the company's usual practices",
+      "There is a tendency to thoroughly check all possible solutions, whether they are familiar or not, and give equal consideration to all",
+      "There is a tendency to select the most familiar solution first and foremost, sometimes to the detriment of achieving the best possible result"
+    ],
+    "correct": null,
+    "id": 182
+  },
+  {
+    "question": "Which of the statements given below is correct?",
+    "options": [
+      "Psychosomatic means that mental and/or emotional stressors can be manifested in physical reactions",
+      "A psychosomatic disorder is a disease involving only the mind, but not the body",
+      "Psychosomatic complaints are very rare in aviation because they are always inherited and lead to exclusion",
+      "Psychosomatic means that a physical problem is always followed by psychological stress"
+    ],
+    "correct": null,
+    "id": 183
+  },
+  {
+    "question": "Information received from the sensory organs is lost ...",
+    "options": [
+      "if you choose to store the information in one of the sensory memories (e.g. iconic or echoic memories).",
+      "within 10 - 20 seconds unless it is rehearsed and deliberately placed in the long-term memory.",
+      "within 45 - 60 minutes unless it is rehearsed and deliberately placed in the long-term memory.",
+      "only if you suffer from a disease affecting the brain, but automatically stored for healthy persons."
+    ],
+    "correct": null,
+    "id": 184
+  },
+  {
+    "question": "Which character traits are needed to be a good pilot? He/she should be ...",
+    "options": [
+      "personable and confident.",
+      "self-conscious and impatient.",
+      "uptight and frightened.",
+      "restrained and spontaneous."
+    ],
+    "correct": null,
+    "id": 185
+  },
+  {
+    "question": "When performing a complex task, high levels of arousal will ...",
+    "options": [
+      "always improve performance.",
+      "always reduce failures.",
+      "narrow the span of attention.",
+      "improve decision-making."
+    ],
+    "correct": null,
+    "id": 186
+  },
+  {
+    "question": "\"Selective attention\" can be described as:",
+    "options": [
+      "Paying attention to specific information while disregarding others.",
+      "Handling different information all at the same time.",
+      "One of different phases of attention controlled by the circadian cycle.",
+      "Open-mindedness for inputs from different aspects."
+    ],
+    "correct": null,
+    "id": 187
+  },
+  {
+    "question": "When a pilot has developed a certain way of thinking about a problem, he/she will probably find it ...",
+    "options": [
+      "impossible to get out of that way of thinking, no matter how hard he/she tries.",
+      "difficult to get out of that way of thinking and try a different interpretation of the data.",
+      "difficult to stick to his/her interpretation of the data and look for other interpretations.",
+      "easy to interpret the data in different ways, irrespective of their personal preference."
+    ],
+    "correct": null,
+    "id": 188
+  },
+  {
+    "question": "About the role automation should play with respect to flight safety, one can say:",
+    "options": [
+      "Manual flying should be allowed only in good weather conditions",
+      "A maximum of automation should be used in order to avoid human error",
+      "Automation should be used as an aid to the pilot and not as an end in itself",
+      "Automation should be used to assist pilots only in emergency situations"
+    ],
+    "correct": null,
+    "id": 189
+  },
+  {
+    "question": "Which of the options below are strategies for resolving conflict? 1. Seek arbitration 2. Actively listen to other people 3. Recognise early signs of conflict and address them 4. Strongly defend one's own position",
+    "options": [
+      "1, 2 and 4",
+      "2, 3 and 4",
+      "1, 3 and 4",
+      "1, 2 and 3"
+    ],
+    "correct": null,
+    "id": 190
+  },
+  {
+    "question": "Stress can be described as a ...",
+    "options": [
+      "poorly controlled emotion that leads to a reduction in capabilities of an individual.",
+      "normal phenomenon that enables an individual to adapt to encountered situations.",
+      "human reaction which must always be avoided in order to prevent mental diseases.",
+      "abnormal phenomenon that only affects psychologically fragile personalities."
+    ],
+    "correct": null,
+    "id": 191
+  },
+  {
+    "question": "Examples illustrating factors in external error generation in the flight crew compartment are: 1. Ergonomic: distraction followed by non-operation related discussions. 2. Economic: accepting a shortcut from ATC resulting in a too close turn to approach with following unstable approach.",
+    "options": [
+      "1 is incorrect, 2 is correct.",
+      "1 is correct, 2 is correct.",
+      "1 is correct, 2 is incorrect.",
+      "1 is incorrect, 2 is incorrect."
+    ],
+    "correct": null,
+    "id": 192
+  },
+  {
+    "question": "Which of the following answers best describes the leadership style of a captain who is interested in a friendly atmosphere, is always constructive and encouraging, usually compromises in interpersonal conflicts, trusts in his crew members' capabilities and leaves the crew freedom for own decisions?",
+    "options": [
+      "Low task-orientation and high relationship-orientation",
+      "Low task-orientation and low relationship-orientation",
+      "High task-orientation and high relationship-orientation",
+      "High task-orientation and low relationship-orientation"
+    ],
+    "correct": null,
+    "id": 193
+  },
+  {
+    "question": "Which main advantages does the human possess over a machine regarding the decision-making process?",
+    "options": [
+      "Analysing and memorising of data",
+      "Creativity, innovation and adaptability",
+      "The ability to analyse and compare",
+      "The ability to find irregularities"
+    ],
+    "correct": null,
+    "id": 194
+  },
+  {
+    "question": "The most serious non-professional stressor is generally considered to be ...",
+    "options": [
+      "marital separation.",
+      "personal injury or sickness.",
+      "the death of a spouse or partner.",
+      "loss of financial power."
+    ],
+    "correct": null,
+    "id": 195
+  },
+  {
+    "question": "The correlation between arousal and flying performance can be depicted as ...",
+    "options": [
+      "a strictly exponential function.",
+      "approximately the form of a W.",
+      "a strictly linear function.",
+      "approximately the form of an inverted U."
+    ],
+    "correct": null,
+    "id": 196
+  },
+  {
+    "question": "Cognitive evaluation leading to stress is based on ...",
+    "options": [
+      "the evaluation of the capabilities of the individual and the amount of self-confidence.",
+      "the evaluation of the situation and the instantaneous state of fatigue of the individual.",
+      "the evaluation of the situation and the evaluation of capabilities to cope with it.",
+      "the evaluation of the situation, but not on the evaluation of capabilities to cope with it."
+    ],
+    "correct": null,
+    "id": 197
+  },
+  {
+    "question": "The main purpose of a checklist is ...",
+    "options": [
+      "to enable the crew to carry out a procedure in a well-defined and orderly manner.",
+      "to give pilots an easy guidance on how to operate any airplane without a type rating.",
+      "to break the work flow of pilots, which is usually too fast, by forcing them to read.",
+      "to comply with the respective safety manual, whether the checklist is used or not."
+    ],
+    "correct": null,
+    "id": 198
+  },
+  {
+    "question": "Which of the statements below is correct about long-term memory?",
+    "options": [
+      "Information is stored in the Semantic, Episodic and Procedural memories.",
+      "Long-term memory is just another word for \"working memory\".",
+      "Information is stored in the Phonological, Connective and Visual memories.",
+      "Long-term memory is more limited in capacity than short-term memory."
+    ],
+    "correct": null,
+    "id": 199
+  },
+  {
+    "question": "Which of the options below correctly lists possible symptoms of stress? 1. Depression or anxiety 2. Low blood pressure 3. Sleep disturbances 4. Abuse of psychoactive substances",
+    "options": [
+      "1, 2 and 4",
+      "2, 3 and 4",
+      "1, 3 and 4",
+      "1, 2 and 3"
+    ],
+    "correct": null,
+    "id": 200
+  },
+  {
+    "question": "A behaviour most likely to promote a constructive solution of interpersonal conflicts is ...",
+    "options": [
+      "responding with arguments.",
+      "neglecting the own point of view.",
+      "active listening.",
+      "sticking to the own point of view."
+    ],
+    "correct": null,
+    "id": 201
+  },
+  {
+    "question": "Mention the common symptoms of human underload on the flight deck:",
+    "options": [
+      "During emergency procedure, failing to perform all required memory items",
+      "During cruise phase in good weather, repeatedly failing to pay attention to ATC instructions",
+      "Better than recently experienced manual flying performance",
+      "Incorrectly switching the fuel selector due to an incorrect understanding of the fuel system"
+    ],
+    "correct": null,
+    "id": 202
+  },
+  {
+    "question": "Which of the following statements is correct about the relationship between performance and stress?",
+    "options": [
+      "A moderate level of stress may improve performance",
+      "Optimum performance is achieved at the lowest stress level",
+      "A student will learn faster and better under severe stress",
+      "The higher the level of stress, the better the performance"
+    ],
+    "correct": null,
+    "id": 203
+  },
+  {
+    "question": "An error that is difficult to identify and may be hidden within a system for some time until its consequences take effect, is a/an:",
+    "options": [
+      "omission.",
+      "violation.",
+      "active error.",
+      "latent error."
+    ],
+    "correct": null,
+    "id": 204
+  },
+  {
+    "question": "Internal conflict within oneself is described by the term:",
+    "options": [
+      "Intra-personal conflict",
+      "Intro-personal conflict",
+      "Inter-personal conflict",
+      "Situational conflict"
+    ],
+    "correct": null,
+    "id": 205
+  },
+  {
+    "question": "When running an Autocratic cockpit, the commander is normally ...",
+    "options": [
+      "a better pilot.",
+      "very efficient.",
+      "under-loaded.",
+      "over-loaded."
+    ],
+    "correct": null,
+    "id": 206
+  },
+  {
+    "question": "An accident in 1977 happened with two B747 at Tenerife airport at very poor visibility with one B747 commencing take-off while another B747 still taxiing on the same runway. The B747 for take-off finished their clearance read back with the statement: \"We are now at take-off.\" Response from Tower: \"O.K. (pause) Stand by for take-off, I will call you.\" However, the remaining part of the Controller's statement was blocked due to someone else on the same frequency starting to talk. Assuming \"OK\" as a clearance for take-off, they commenced take-off roll having no visual contact to the other B747 still on the runway, and collided into it with huge loss of life. What type of communication and associated disadvantage are illustrated by this accident?",
+    "options": [
+      "Explicit communication open to interpretation by the flight crew or the Controller",
+      "Implicit communication prone to technical limitations, like multiple transmissions",
+      "Explicit communication which should have required clarification after interruption",
+      "Implicit communication with conflicts from verbal and non-verbal communication"
+    ],
+    "correct": null,
+    "id": 207
+  },
+  {
+    "question": "During a descent, how can the pain in the middle ear be reduced?",
+    "options": [
+      "By levelling off and possibly climbing.",
+      "By blocking the affected ear with the palm of your hand.",
+      "By raising the rate of descent.",
+      "By putting on the oxygen mask."
+    ],
+    "correct": null,
+    "id": 208
+  },
+  {
+    "question": "Which statement regarding a \"Graveyard Spin\" is correct?",
+    "options": [
+      "It is a spin in which the pilot, on recovery, tends to re-enter the spin due to the somatogyral illusion where the vestibular system no longer senses radial acceleration.",
+      "It is a fatal accident caused by a state of spinning the fluid in the brain.",
+      "It is a military spin manoeuvre that should only be performed by well-trained pilots.",
+      "It is an illusion caused by misperception of being higher than you really are when performing a spin."
+    ],
+    "correct": null,
+    "id": 209
+  },
+  {
+    "question": "Which of the following factors may lead to Hypoxia? 1. Flight at low altitude with increased partial pressure of oxygen. 2. Body inability to metabolize oxygen.",
+    "options": [
+      "1 is incorrect, 2 is correct.",
+      "1 is incorrect, 2 is incorrect.",
+      "1 is correct, 2 is incorrect.",
+      "1 is correct, 2 is correct."
+    ],
+    "correct": null,
+    "id": 210
+  },
+  {
+    "question": "All human senses tend to adapt.",
+    "options": [
+      "This statement is correct.",
+      "This statement is not correct. Smell is the exception.",
+      "This statement is not correct. None adapt.",
+      "This statement is not correct. Only sight adapts."
+    ],
+    "correct": null,
+    "id": 211
+  },
+  {
+    "question": "The supplier of blood for the heart muscle are ...",
+    "options": [
+      "the coronary arteries.",
+      "the auricles.",
+      "the ventricles.",
+      "the pulmonary veins."
+    ],
+    "correct": null,
+    "id": 212
+  },
+  {
+    "question": "An important role of water in the body is to ...",
+    "options": [
+      "absorb nutrients.",
+      "retain body waste material.",
+      "avoid high body temperature.",
+      "prevent tiredness."
+    ],
+    "correct": null,
+    "id": 213
+  },
+  {
+    "question": "Which action should be taken by a pilot if gastrointestinal problems occur before taking-off? 1. Use standard medicines, advise the doctor on returning from flight 2. Assess your ability to fly, if necessary ask a doctor for advise 3. Drop the cabin temperature and drink a large amount of water 4. If in doubt about fitness to fly - do not fly!",
+    "options": [
+      "2, 4.",
+      "1, 3.",
+      "2, 3.",
+      "1, 4."
+    ],
+    "correct": null,
+    "id": 214
+  },
+  {
+    "question": "As symptoms of air sickness may be observed:",
+    "options": [
+      "hyperventilation.",
+      "shivering.",
+      "euphoric state.",
+      "hyperactivity."
+    ],
+    "correct": null,
+    "id": 215
+  },
+  {
+    "question": "Which statement regarding the cones is true?",
+    "options": [
+      "They are mainly located in the fovea.",
+      "They are insensitive to lack of oxygen.",
+      "They enable the night vision.",
+      "They are concentrated at the peripheral visual field."
+    ],
+    "correct": null,
+    "id": 216
+  },
+  {
+    "question": "To improve the night vision (scotopic vision), a pilot should ...",
+    "options": [
+      "not smoke before start and during flight and avoid flash-blindness.",
+      "not eat food containing high amounts of vitamin A.",
+      "give the eyes 60 minutes for night adaption before he / she takes off.",
+      "select meals with high contents of vitamin B and"
+    ],
+    "correct": null,
+    "id": 217
+  },
+  {
+    "question": "When having a stop-over for less than 24 hours before returning to the homebase, it is recommended to ...",
+    "options": [
+      "maintain an eating and sleeping cycle based on the home time.",
+      "change the eating and sleeping cycle to the destination time.",
+      "have meals only at daytime and sleep at night time, to ensure sufficient sleep credit.",
+      "eat light meals only and have regular naps instead of a proper sleep."
+    ],
+    "correct": null,
+    "id": 218
+  },
+  {
+    "question": "When flying at night, the will be the affected first by a slight degree of hypoxia.",
+    "options": [
+      "vision",
+      "hearing",
+      "balance",
+      "touch"
+    ],
+    "correct": null,
+    "id": 219
+  },
+  {
+    "question": "What rule of thumb can be used by pilots to adjust the physiological rhythm to a new time zone?",
+    "options": [
+      "2 days for 50% of jetlag, thereafter 1 - 1.5 hours a day",
+      "2 - 2.5 hours a day",
+      "1 day for 50% of jetlag, thereafter 2 - 2.5 hours a day",
+      "4 - 4.5 hours a day"
+    ],
+    "correct": null,
+    "id": 220
+  },
+  {
+    "question": "The onset of motion sickness may be supported by:",
+    "options": [
+      "anxiety.",
+      "Matching visual and sensory inputs.",
+      "Frequent flying.",
+      "Fatigue."
+    ],
+    "correct": null,
+    "id": 221
+  },
+  {
+    "question": "The impact and effects of cosmic radiation for the crew depend on ...",
+    "options": [
+      "the flight altitude.",
+      "the weather conditions.",
+      "the altitude of the sun.",
+      "the clothing of the crew."
+    ],
+    "correct": null,
+    "id": 222
+  },
+  {
+    "question": "With regard to James Reason, an aviation organisation \"cultivating an atmosphere where people have confidence to report safety concerns without fear of blame\", follows which component of safety culture?",
+    "options": [
+      "reporting culture.",
+      "informed culture. 2",
+      "learning culture.",
+      "just culture."
+    ],
+    "correct": null,
+    "id": 223
+  },
+  {
+    "question": "The otoliths in the utriculus and sacculus is sensitive to ...",
+    "options": [
+      "gravity and linear acceleration.",
+      "gravity only.",
+      "linear acceleration and angular acceleration.",
+      "angular acceleration and gravity."
+    ],
+    "correct": null,
+    "id": 224
+  },
+  {
+    "question": "Cholera can be transmitted through ...",
+    "options": [
+      "contaminated food or water.",
+      "droplets in the air caused by the breath of an infected person.",
+      "insect bites.",
+      "bacteria in the form of spores via dermal injury."
+    ],
+    "correct": null,
+    "id": 225
+  },
+  {
+    "question": "Which of the following statements regarding information is true?",
+    "options": [
+      "70 % of information processed by man enters via the visual channel.",
+      "Hearing is the sense which collects most information in man.",
+      "50 % of information processed by man enters via the visual channel.",
+      "The kinaesthetic channel provides the most important information."
+    ],
+    "correct": null,
+    "id": 226
+  },
+  {
+    "question": "As an example for the effect of \"sensory adaption\" of human senses can be taken:",
+    "options": [
+      "Increase speed, pull up, push down and start all over with the pattern.",
+      "Flying at constant rate of descent with 250 knots or more.",
+      "Stall resulting from sudden decrease in speed.",
+      "Performing a turn with constant bank for a time of 30 seconds or more."
+    ],
+    "correct": null,
+    "id": 227
+  },
+  {
+    "question": "To prevent hyperventilation in a person it is necessary to ...",
+    "options": [
+      "speak soothingly and get the person to control his breathing.",
+      "get the person to hold their breath.",
+      "increase their level of activity.",
+      "raise their rate of breathing."
+    ],
+    "correct": null,
+    "id": 228
+  },
+  {
+    "question": "Flickering light when reflected from turning rotor blades ...",
+    "options": [
+      "can cause spatial disorientation and/or nausea.",
+      "has no impact on the human's body.",
+      "can be avoided when switching on the strobe-lights.",
+      "should be avoided, because it may destroy the optic nerve."
+    ],
+    "correct": null,
+    "id": 229
+  },
+  {
+    "question": "Equalization of pressure between the middle ear and the ambient atmosphere is disturbed, when ...",
+    "options": [
+      "the Eustachian tube is blocked.",
+      "the nose is hold.",
+      "breathing through the mouth.",
+      "a barotrauma exists in the sinuses."
+    ],
+    "correct": null,
+    "id": 230
+  },
+  {
+    "question": "When flying in fog or mist conditions, pilots can experience the illusion that objects ...",
+    "options": [
+      "are further away than in reality and this can result in a steep approaches.",
+      "are closer than in reality and this can result in shallow approaches.",
+      "are further away than in reality and this can result in shallow approaches.",
+      "closer than in reality and this can result in steep approaches."
+    ],
+    "correct": null,
+    "id": 231
+  },
+  {
+    "question": "When can an illusion of obtaining greater height above ground occur?",
+    "options": [
+      "When suddenly flying over small trees after prolonged flying over tall trees.",
+      "When accelerating at low altitudes.",
+      "When decelerating at low altitudes.",
+      "When flying over high terrain in good meteorological conditions."
+    ],
+    "correct": null,
+    "id": 232
+  },
+  {
+    "question": "The semi-circular canals are part of the ...",
+    "options": [
+      "inner ear.",
+      "middle ear.",
+      "ear drum.",
+      "external ear."
+    ],
+    "correct": null,
+    "id": 233
+  },
+  {
+    "question": "With regard to spatial illusion or disorientation, the description \"illusory sensation of turning in which the individual or surroundings appear to become dizzily\" refers to:",
+    "options": [
+      "Vertigo.",
+      "Coriolis effect.",
+      "Spatial disorientation.",
+      "Autokinesis."
+    ],
+    "correct": null,
+    "id": 234
+  },
+  {
+    "question": "Among the factors which may cause illusions while taxiing are ...",
+    "options": [
+      "relative movement and cockpit height above ground.",
+      "visibility and distance.",
+      "distance from the edge of the taxiway and taxiway lighting.",
+      "distance from the edge of the taxiway and cockpit lighting."
+    ],
+    "correct": null,
+    "id": 235
+  },
+  {
+    "question": "Where can haemoglobin be found?",
+    "options": [
+      "In the red blood cells.",
+      "In the platelets.",
+      "In the blood plasma.",
+      "In the white blood cells."
+    ],
+    "correct": null,
+    "id": 236
+  },
+  {
+    "question": "Hyperventilation causes a(n) _ in the blood.",
+    "options": [
+      "reduction of carbon dioxide",
+      "excess of carbon dioxide",
+      "increase of nitrogen",
+      "decrease of nitrogen"
+    ],
+    "correct": null,
+    "id": 237
+  },
+  {
+    "question": "The TEM model considers three categories of errors, which are:",
+    "options": [
+      "aircraft handling, procedural and communications.",
+      "anticipated, unanticipated and latent errors.",
+      "operational, organisational and environmental.",
+      "aircraft handling, navigation and aircraft configuration."
+    ],
+    "correct": null,
+    "id": 238
+  },
+  {
+    "question": "With regard to James Reason, an aviation organisation \"is able to learn from its mistakes and make changes. It will also ensure that people understand the SMS processes at a personal level\", follows which component of safety culture?",
+    "options": [
+      "learning culture.",
+      "informed culture.",
+      "reporting culture.",
+      "just culture."
+    ],
+    "correct": null,
+    "id": 239
+  },
+  {
+    "question": "Name one of the major causes of disability in flight:",
+    "options": [
+      "Fatigue",
+      "Headache",
+      "Low cabin temperature",
+      "Depending on smoking"
+    ],
+    "correct": null,
+    "id": 240
+  },
+  {
+    "question": "The most sensitive function to lack of oxygen is ...",
+    "options": [
+      "night vision.",
+      "motor coordination.",
+      "hearing.",
+      "touching."
+    ],
+    "correct": null,
+    "id": 241
+  },
+  {
+    "question": "Regarding to the humidity of air in a pressurised cabin, which of the following statements is true? 1. It varies between 5 % and 15 % 2. It varies between 50 % and 60 % 3. It may cause dehydration, resulting in a degradation of the crew performance 4. It has no impact on crew members",
+    "options": [
+      "2, 4",
+      "1, 4",
+      "1,3",
+      "2,3"
+    ],
+    "correct": null,
+    "id": 242
+  },
+  {
+    "question": "Which sensation does a pilot have when approaching an upsloping runway?",
+    "options": [
+      "The altitude may feel higher than it actually is, causing to land short.",
+      "Performing a steeper than normal approach, landing long.",
+      "Establishing a higher than normal approach speed.",
+      "Establishing a slower than normal approach speed with the risk of stalling."
+    ],
+    "correct": null,
+    "id": 243
+  },
+  {
+    "question": "An excessive consumption of caffeine can be defined as ...",
+    "options": [
+      "250 mg/day.",
+      "100 mg/day.",
+      "50 mg/day.",
+      "150 mg/day."
+    ],
+    "correct": null,
+    "id": 244
+  },
+  {
+    "question": "With regard to insidious incapacitation, which of the following statements is correct? 1. It is a most dangerous form of incapacitation as maybe remaining undetected by other crew members. 2. In case of insidious incapacitation, the other crew member should declare emergency and continue flight to destination with priority.",
+    "options": [
+      "1 is correct, 2 is incorrect.",
+      "1 is incorrect, 2 is incorrect.",
+      "1 is correct, 2 is correct.",
+      "1 is incorrect, 2 is correct."
+    ],
+    "correct": null,
+    "id": 245
+  },
+  {
+    "question": "Responsible for the oxygen transportation of human blood are ...",
+    "options": [
+      "the red blood cells.",
+      "white blood cells.",
+      "the platelets.",
+      "the blood plasma."
+    ],
+    "correct": null,
+    "id": 246
+  },
+  {
+    "question": "High blood pressure (hypertension) may lead to ...",
+    "options": [
+      "an increased risk of hard attack and stroke.",
+      "bends and chokes.",
+      "increased receptibility for carbon monoxide (CO).",
+      "reduced tendency for hyperventilation."
+    ],
+    "correct": null,
+    "id": 247
+  },
+  {
+    "question": "The partial pressure of oxygen in the inhaled air ...",
+    "options": [
+      "is a significant factor in ensuring that oxygen diffuses from the lungs to the blood.",
+      "remains constant at all altitudes.",
+      "will not change when using the oxygen mask.",
+      "is independent of the proportion of oxygen in the ambient air."
+    ],
+    "correct": null,
+    "id": 248
+  },
+  {
+    "question": "What are effective ways to prevent back pain? 1. Physiotherapy 2. Reduce the body weight, if overweight 3. Hypnosis. 4. Keep the body in good physical condition",
+    "options": [
+      "1, 2 and 4.",
+      "2, 3 and 4.",
+      "1 and 4 only.",
+      "2 and 3 only."
+    ],
+    "correct": null,
+    "id": 249
+  },
+  {
+    "question": "When flying while suffering from a cold, it can result in ...",
+    "options": [
+      "short term pain in the ear drum, but no consequential damages are expected.",
+      "swollen tissue in the inner ear.",
+      "swollen tissue in the Eustachian tube.",
+      "pain and damage to the eardrum, particularly during fast descents."
+    ],
+    "correct": null,
+    "id": 250
+  },
+  {
+    "question": "When does the risk of barotrauma of the middle ear increase?",
+    "options": [
+      "With colds and rapid descents.",
+      "With colds and rapid climbs.",
+      "With colds and slow descents.",
+      "When subjected to the Somatogravic Effect."
+    ],
+    "correct": null,
+    "id": 251
+  },
+  {
+    "question": "High quality sunglasses are needed to ...",
+    "options": [
+      "absorb enough visible light to eliminate glare without decreasing visual acuity.",
+      "fit to the pilot's individual taste.",
+      "eliminate deformation in aircraft windshields.",
+      "raise the time for dark adaptation."
+    ],
+    "correct": null,
+    "id": 252
+  },
+  {
+    "question": "Where are the ossicles (the malleus, incus and stapes) located?",
+    "options": [
+      "In the middle ear.",
+      "In the inner ear.",
+      "In the outer ear.",
+      "Below the outer ear."
+    ],
+    "correct": null,
+    "id": 253
+  },
+  {
+    "question": "For which of the following alternatives is the peripheral vision essential?",
+    "options": [
+      "For the detection of moving objects.",
+      "For the sharpness of vision.",
+      "For the binocular vision.",
+      "For the colour vision."
+    ],
+    "correct": null,
+    "id": 254
+  },
+  {
+    "question": "In case the pilot flying briefs the correct approach procedure, but during approach with the pilot non- flying monitoring altitude and speed, the speed increases above the published speed limit for the procedure flown, this can be an example of a ...",
+    "options": [
+      "handling error (pilot flying) and procedural error (pilot non-flying).",
+      "procedural error by the pilot flying.",
+      "standard operating procedure error by the pilot non-flying.",
+      "communication error due to high workload."
+    ],
+    "correct": null,
+    "id": 255
+  },
+  {
+    "question": "With regard to sensory inputs and illusions, which of the following statements is correct? 1. All human senses are often subject to competing sensory inputs that may create illusions. 2. Humans usually trust \"vision\" as their primary and most accurate sense even with other conflicting sensory inputs.",
+    "options": [
+      "1 is correct, 2 is correct.",
+      "1 is correct, 2 is incorrect.",
+      "1 is incorrect, 2 is correct.",
+      "1 is incorrect, 2 is incorrect."
+    ],
+    "correct": null,
+    "id": 256
+  },
+  {
+    "question": "Where is the ozone layer located?",
+    "options": [
+      "In the stratosphere.",
+      "In the troposphere.",
+      "In the thermosphere.",
+      "In the ionosphere."
+    ],
+    "correct": null,
+    "id": 257
+  },
+  {
+    "question": "Gastro-intestinal problems in tropical zones can be avoided by: 1. eating fresh salad. 2. peeling the fruits before eating them. 3. eating food which has been properly boiled. 4. eating ice-cream",
+    "options": [
+      "2 and 3 only",
+      "1 and 2 only",
+      "1, 2 and 3 only",
+      "2 and 4 only"
+    ],
+    "correct": null,
+    "id": 258
+  },
+  {
+    "question": "What can be a result when a pilot suffers from sleeplessness? 1. It is unlikely that he / she is aware of personal performance reduction. 2. Performance loss can still be present up to 20 minutes after awaking from a short sleep (nap)",
+    "options": [
+      "1 and 2 are both correct",
+      "1 is correct, 2 is false",
+      "1 is false, 2 is correct",
+      "1 and 2 are both false"
+    ],
+    "correct": null,
+    "id": 259
+  },
+  {
+    "question": "Positive acceleration (+ Gz) causes ... 1. a downward displacement or deformation of soft or mobile organs 2. a decreasing heart rate 3. a pooling of blood into lower parts of the body 4. a reduction in blood pressure above heart-level",
+    "options": [
+      "1, 3, 4",
+      "1,2,3 3",
+      "1 and 2 only",
+      "2 and 4 only."
+    ],
+    "correct": null,
+    "id": 260
+  },
+  {
+    "question": "Describe the expression \"internal respiration\".",
+    "options": [
+      "It is a metabolic process inside the cells whereby oxygen is used and carbon dioxide produced.",
+      "It is the respiration inside the pressure cabin.",
+      "It is the exchange of carbon dioxide and oxygen in the lung.",
+      "It is the process of inflating the lungs during mouth-to-mouth resuscitation."
+    ],
+    "correct": null,
+    "id": 261
+  },
+  {
+    "question": "To minimize the symptoms of a barotrauma of the middle ear, you should ...",
+    "options": [
+      "stop descending, climb again and then descend with a reduced rate.",
+      "raise the rate of descent.",
+      "stop chewing and avoid making any swallowing movements.",
+      "take drugs against a cold."
+    ],
+    "correct": null,
+    "id": 262
+  },
+  {
+    "question": "Hyperventilation causes a(n) in the blood.",
+    "options": [
+      "reduction of carbon dioxide",
+      "excess of carbon dioxide",
+      "increase of nitrogen",
+      "decrease of nitrogen"
+    ],
+    "correct": null,
+    "id": 263
+  },
+  {
+    "question": "Which statement regarding the rate at which alcohol is metabolised is correct?",
+    "options": [
+      "It cannot be speeded up.",
+      "It can be increased by eating while drinking alcohol.",
+      "It can be increased by drinking lot of coffee.",
+      "It can be increased by sleeping."
+    ],
+    "correct": null,
+    "id": 264
+  },
+  {
+    "question": "When drinking alcohol also in only small amounts ...",
+    "options": [
+      "can make brain cells more susceptible to hypoxia.",
+      "will increase the resistance to hypoxia.",
+      "will have no harmful effect on brain cells.",
+      "may make the symptoms of hypoxia recognised more easily."
+    ],
+    "correct": null,
+    "id": 265
+  },
+  {
+    "question": "What is the most typical symptom of decompression sickness?",
+    "options": [
+      "Bends (pain in the joints).",
+      "Chokes.",
+      "Red-coloured lips.",
+      "Neurological damage to the CNS."
+    ],
+    "correct": null,
+    "id": 266
+  },
+  {
+    "question": "Assuming a rapid decompression at 30000 feet, the TUC is between ...",
+    "options": [
+      "1 - 2 minutes.",
+      "30 to 90 seconds.",
+      "15 - 20 seconds.",
+      "30 minutes."
+    ],
+    "correct": null,
+    "id": 267
+  },
+  {
+    "question": "Which of the following statements is true regarding a pilot's exposure to carbon monoxide fumes?",
+    "options": [
+      "A short exposure to relatively high concentrations of carbon monoxide can seriously affect a pilot's ability to operate an aircraft.",
+      "Carbon monoxide is easily detected by its odour and taste.",
+      "Carbon monoxide can affect pilots only if they are exposed to it for a long period of time.",
+      "When exposed to carbon monoxide for a long period of time, the body will adapt to it and no effects are experienced."
+    ],
+    "correct": null,
+    "id": 268
+  },
+  {
+    "question": "Who is responsible to ensure that self medication has no adverse effect on the body?",
+    "options": [
+      "The concerned person itself.",
+      "The aeromedical examiner.",
+      "The aeromedical centre.",
+      "The physician of the family."
+    ],
+    "correct": null,
+    "id": 269
+  },
+  {
+    "question": "When flying at high altitudes, the visual acuity can be affected by ...",
+    "options": [
+      "carbon monoxide poisoning, smoking, age and hypoxia.",
+      "a lack of vitamin A, hypoxia, age and autokinesis.",
+      "hypoxia, carbon monoxide poisoning and a vitamin deficiency.",
+      "autokinesis, smoking and carbon monoxide poisoning."
+    ],
+    "correct": null,
+    "id": 270
+  },
+  {
+    "question": "The effects of sleep deprivation on performance (1) _with altitude and (2) _workload.",
+    "options": [
+      "(1) increase, (2) increasing",
+      "(1) increase, (2) decreasing",
+      "(1) decrease, (2) increasing",
+      "(1) decrease, (2) decreasing"
+    ],
+    "correct": null,
+    "id": 271
+  },
+  {
+    "question": "Healthy people are able to compensate a lack of oxygen up to ...",
+    "options": [
+      "10000 ft to 12000 ft.",
+      "15000 ft.",
+      "30000 ft.",
+      "25000 ft."
+    ],
+    "correct": null,
+    "id": 272
+  },
+  {
+    "question": "The Coriolis effect in spatial disorientation is caused by ...",
+    "options": [
+      "simultaneous stimulation of several semi-circular canals.",
+      "stimulation of the saccule and the utricle (otoliths) of the inner ear.",
+      "intense stimulation of the cochlea.",
+      "the absence of stimulation on the semi-circular canals."
+    ],
+    "correct": null,
+    "id": 273
+  },
+  {
+    "question": "The self-regulation restorative processed of the body for regulating tiredness / alertness are:",
+    "options": [
+      "sleep / wake homeostasis and circadian rhythm.",
+      "dark / light dark homeostasis and the circadian rhythm",
+      "exhaust and anxiety.",
+      "insomnia and parasomnia."
+    ],
+    "correct": null,
+    "id": 274
+  },
+  {
+    "question": "What is the correct order of symptoms which can be expected when suffering from G-forces?",
+    "options": [
+      "Grey-out, tunnel vision, black-out and unconsciousness.",
+      "Unconsciousness, black-out, tunnel vision and grey-out.",
+      "Black-out, grey-out, tunnel vision and unconsciousness.",
+      "Grey-out, black-out, unconsciousness and tunnel vision."
+    ],
+    "correct": null,
+    "id": 275
+  },
+  {
+    "question": "With regard to Noise Induced Hearing Loss (NIHL), which of the following statements is correct? 1. NIHL can be caused by a one-time exposure to impulse noise above 120 dB (Acoustic trauma) 2. NIHL can be caused by continuous exposure to noise above 85 dB.",
+    "options": [
+      "1 is correct, 2 is correct.",
+      "1 is correct, 2 is incorrect.",
+      "1 is incorrect, 2 is correct.",
+      "1 is incorrect, 2 is incorrect."
+    ],
+    "correct": null,
+    "id": 276
+  },
+  {
+    "question": "How much volume of air is exchanged during a normal breathing cycle (tidal volume)?",
+    "options": [
+      "750 ml.",
+      "250 ml.",
+      "50 ml.",
+      "500 ml."
+    ],
+    "correct": null,
+    "id": 277
+  },
+  {
+    "question": "Which of the following is an important aspect of situational awareness? When a pilot has a good relationship with the crew When a pilot's perception fits to reality When a pilot perceives the situation inside and outside the aircraft When a pilot is mentally behind the aircraft",
+    "options": [
+      "2, 3 and 4",
+      "1, 2 and 3",
+      "1, 2 and 4",
+      "1, 3 and 4"
+    ],
+    "correct": null,
+    "id": 278
+  },
+  {
+    "question": "Which of the following are characteristics of professional languages? 1. They use a limited vocabulary 2. They are highly descriptive which leads to ambiguities 3. Their grammar is rather complicated and complex 4. Context provides meaning and therefore reduces the risk of ambiguities",
+    "options": [
+      "2 and 3 are correct",
+      "1 and 3 are correct",
+      "1 and 4 are correct",
+      "1 and 2 are correct"
+    ],
+    "correct": null,
+    "id": 279
+  },
+  {
+    "question": "Although the anticipation of possible events is a good attitude for pilots to acquire, it can sometimes lead to hazardous situations. Which of the following could lead to such a hazard?",
+    "options": [
+      "Mishearing the contents of a reply from an air traffic controller when a non-standard procedure was given but a standard procedure was anticipated",
+      "Anticipating that the departure of a flight will be delayed or the flight may take longer time than planned",
+      "Anticipating the occurrence of a non-normal situation which would require the application of memory items and a non-normal checklist",
+      "Anticipating a deterioration in weather conditions and therefore taking more fuel than needed"
+    ],
+    "correct": null,
+    "id": 280
+  },
+  {
+    "question": "When one cannot cope with a stress situation, one will remain in the state of ...",
+    "options": [
+      "distress.",
+      "ignorance.",
+      "relaxation.",
+      "eustress."
+    ],
+    "correct": null,
+    "id": 281
+  },
+  {
+    "question": "Which of the options below may be affected by stress? 1. Attention 2. Concentration 3. Personality 4. Judgement",
+    "options": [
+      "1, 2 and 3",
+      "1, 2 and 4",
+      "1, 3 and 4",
+      "2, 3 and 4"
+    ],
+    "correct": null,
+    "id": 282
+  },
+  {
+    "question": "During cruise on a night flight with low workload, it is recommended that ...",
+    "options": [
+      "only vital instruments be lit in order to concentrate one's attention.",
+      "the lighting in the cockpit be dimmed in order to reduce fatigue of the eyes.",
+      "all sources of light in the cockpit be turned off in order to enable a good rest.",
+      "the lighting in the cockpit be increased in order to prevent low vigilance."
+    ],
+    "correct": null,
+    "id": 283
+  },
+  {
+    "question": "As an important aspect of non-verbal communication with regard to a person's accent or volume of speech, is referred to as:",
+    "options": [
+      "Active language",
+      "Voice-language",
+      "Paralanguage",
+      "Metalanguage"
+    ],
+    "correct": null,
+    "id": 284
+  },
+  {
+    "question": "A pilot has an apparently correct explanation for the problem in an abnormal situation. The chance to now ignore or devalue other information not fitting into the pilot's mental picture is ...",
+    "options": [
+      "impossible for professionals.",
+      "very little for captains.",
+      "very little.",
+      "not unusual."
+    ],
+    "correct": null,
+    "id": 285
+  },
+  {
+    "question": "Regarding interpersonal interactions: 1. If the sender perceives that the receiver is incompetent, he/she will simplify the message 2. If the receiver is of non-native tongue, the sender will reinforce what he is saying by using more complicated words so as to optimize understanding 3. If the sender considers there is doubt that the message has been correctly understood, he/she must seek clarification. 4. It is much safer to fly with a crew who know each other well because communication will always be excellent.",
+    "options": [
+      "1 and 2 are correct",
+      "2 and 3 are correct",
+      "1 and 3 are correct",
+      "2 and 4 are correct"
+    ],
+    "correct": null,
+    "id": 286
+  },
+  {
+    "question": "The two main categories of fatigue are ...",
+    "options": [
+      "moderate and short-term.",
+      "normal and severe.",
+      "acute (short-term) and chronic.",
+      "occasional and long-term."
+    ],
+    "correct": null,
+    "id": 287
+  },
+  {
+    "question": "When exposed to extreme or prolonged stress factors, a person can experience ...",
+    "options": [
+      "high stress.",
+      "eustress.",
+      "low stress.",
+      "distress."
+    ],
+    "correct": null,
+    "id": 288
+  },
+  {
+    "question": "Regarding the decision-making process in the cockpit ...",
+    "options": [
+      "habits and routines play no role as all alternatives will be given equal consideration.",
+      "the amount of time available has a large influence on the analysis of the situation.",
+      "a detailed analysis can always be made because there is always sufficient time available.",
+      "the flight crew should always decide to execute more than one alternative."
+    ],
+    "correct": null,
+    "id": 289
+  },
+  {
+    "question": "Methods to overcome the disadvantages of cockpit automation are ...",
+    "options": [
+      "the awareness of the current situation and to practice manual flying skills regularly.",
+      "committing procedures and checklists to memory to decide faster in case of an irregularity.",
+      "working strictly to Standard Operating Procedures and checklists and ignore other influencing factors.",
+      "focussing on deviating instruments and monitor the automatic procedures continuously."
+    ],
+    "correct": null,
+    "id": 290
+  },
+  {
+    "question": "Error tolerance aims at improving the system in its ability to (1) _, as for example by (2)",
+    "options": [
+      "(1) prevent all errors, (2) maximizing individual consequences for persons making errors.",
+      "(1) sustain in case of errors, (2) minimizing consequences errors may have.",
+      "(1) sustain in case of errors, (2) maximizing consequences errors may have.",
+      "(1) prevent all errors, (2) minimizing consequences errors may have."
+    ],
+    "correct": null,
+    "id": 291
+  },
+  {
+    "question": "Two types of attention are ...",
+    "options": [
+      "permanent and intuitive",
+      "divided and behavioural",
+      "selective and divided",
+      "connective and selective"
+    ],
+    "correct": null,
+    "id": 292
+  },
+  {
+    "question": "Which of these operations are performed more effectively by people than by automatic systems? 1. Qualitative decision-making 2. Waiting for an infrequent phenomenon 3. Monitoring to ensure that certain values are not exceeded 4. Detection of unusual conditions (smell, noise, etc.)",
+    "options": [
+      "2 and 4",
+      "1 and 2",
+      "1 and 3",
+      "1 and 4"
+    ],
+    "correct": null,
+    "id": 293
+  },
+  {
+    "question": "Long-term memory is influenced by ...",
+    "options": [
+      "experience, gender, intelligence, prosperity and expectations.",
+      "heart rate, experience, gender, suggestion and expectations.",
+      "desires and expectations, but not experience and repetition.",
+      "experience, repetition, suggestion, desires and expectations."
+    ],
+    "correct": null,
+    "id": 294
+  },
+  {
+    "question": "With regard to types of errors, which of the following statements is correct? 1. In case of NOT checking latest weather and wind and assuming incorrect (too large) amount of fuel on board, is a \"knowledge-based error\". 2. In case of missing a waypoint (or turning point) due to being focused on a technical problem, thereafter continuing the flight as planned, was a \"slip\".",
+    "options": [
+      "1 is correct, 2 is incorrect.",
+      "1 is correct, 2 is correct.",
+      "1 is incorrect, 2 is correct.",
+      "1 is incorrect, 2 is incorrect."
+    ],
+    "correct": null,
+    "id": 295
+  },
+  {
+    "question": "Internal factors that may cause error generation include: 1. Ergonomics 2. Over-confidence 3. Insufficient care 4. Improper technique 5. Social environment",
+    "options": [
+      "1, 2, 3 and 4.",
+      "2, 3 and 5.",
+      "1, 3 and 5.",
+      "2, 3 and 4."
+    ],
+    "correct": null,
+    "id": 296
+  },
+  {
+    "question": "Which options from the list below are the main features of latent errors? 1. They remain undetected in the system for a certain length of time. 2. They may only manifest themselves under certain conditions. 3. They are quickly detectable by the front-line operator whose mental schemas on the instantaneous situation filter out formal errors. 4. They lull pilots into a false sense of security",
+    "options": [
+      "1, 2 and 4",
+      "1 and 3",
+      "2, 3 and 4",
+      "2 and 3"
+    ],
+    "correct": null,
+    "id": 297
+  },
+  {
+    "question": "When facing a problem during flight, a pilot should ...",
+    "options": [
+      "take as much time as he needs and is available to make up his mind.",
+      "always take as much time as possible and make last-minute decisions.",
+      "always make quick decisions to have as much spare time as possible.",
+      "make an own decision without involving other crew members."
+    ],
+    "correct": null,
+    "id": 298
+  },
+  {
+    "question": "Stress occurs: 1. only in a situation of imminent danger 2. only when faced with a real, existing and actual situation 3. sometimes via the imagination, anticipating a situation or its outcome 4. because of the similarity with a formerly experienced stressful situation",
+    "options": [
+      "2 and 4",
+      "3 and 4",
+      "1 and 3",
+      "1 and 2"
+    ],
+    "correct": null,
+    "id": 299
+  },
+  {
+    "question": "Being able to monitor information indicating the development of a critical situation ...",
+    "options": [
+      "is necessary to maintain good situational awareness.",
+      "is dangerous, as it distracts attention from flying the aircraft.",
+      "is of no use, as the human information processing system is limited.",
+      "is negligible in modern aircraft with advanced systems."
+    ],
+    "correct": null,
+    "id": 300
+  },
+  {
+    "question": "Which statement about Stress Exposure Training (SET) is correct?",
+    "options": [
+      "This programme is a strategy for managing chronic stress, and it can help pilots to cope with all potential stressors in flight in an effective manner and in the long term",
+      "It is a short-term stress management method that can improve tolerance to stress in flight operations, if integrated in a continuous professional training programme",
+      "It is a symptom-directed coping strategy for reducing stress in the long term, improving the capacity of the pilot to modify how he/she reacts to stressors in flight",
+      "It is a long-term stress management method that can improve performance in flight operations, if integrated in a continuous professional training programme"
+    ],
+    "correct": null,
+    "id": 301
+  },
+  {
+    "question": "The term \"stress\" can be defined as ...",
+    "options": [
+      "the unresolved pressure, strain or force acting upon an individual's physical or mental systems and the human response.",
+      "a pressure acting on the individual's mental system, which inhibits completion of even the simplest tasks.",
+      "a physical limit acting upon the individual's physical systems, always resulting in improved performance.",
+      "a feeling of well-being enabling difficult tasks to be completed more easily when maximum level of stress is felt."
+    ],
+    "correct": null,
+    "id": 302
+  },
+  {
+    "question": "Which of the following statements about acute or chronic fatigue is incorrect?",
+    "options": [
+      "Acute fatigue generally has psychological roots",
+      "Chronic fatigue may lead to apathetic behaviour",
+      "Chronic fatigue can result from inadequate recuperation from acute fatigue",
+      "Acute fatigue is of relatively short, chronic fatigue of rather long duration"
+    ],
+    "correct": null,
+    "id": 303
+  },
+  {
+    "question": "The three phases of General Adaptation Syndrome are ...",
+    "options": [
+      "alert, resistance, performance.",
+      "alarm, resistance, exhaustion.",
+      "alarm, struggle, performance.",
+      "attention, resistance, ending."
+    ],
+    "correct": null,
+    "id": 304
+  },
+  {
+    "question": "The use of professional language brings the advantage of:",
+    "options": [
+      "A rather cryptic language that outsiders do not understand",
+      "Longer sentences with more precise grammar",
+      "Easier discussions also with professionals from another field",
+      "Quick comprehension and simplified grammar"
+    ],
+    "correct": null,
+    "id": 305
+  },
+  {
+    "question": "Which of the statements below is correct with regards to motivation?",
+    "options": [
+      "A high degree of motivation can always make up for insufficient knowledge.",
+      "Motivation reduces the susceptibility to somatogravic illusion.",
+      "The higher an individual's motivation, the better their performance.",
+      "Excessive motivation leads to stress, which adversely affects performance."
+    ],
+    "correct": null,
+    "id": 306
+  },
+  {
+    "question": "Decision making in an emergency situation requires at first ...",
+    "options": [
+      "delegation of tasks and crew coordination.",
+      "providing ATC with detailed information.",
+      "a reaction as quickly as possible.",
+      "all crew members to focus on the problem."
+    ],
+    "correct": null,
+    "id": 307
+  },
+  {
+    "question": "With regard to signs of reduced vigilance (hypovigilance), being in a state of reduced vigilance can be indicated by: 1. Crew member silent for some minutes 2. Staring at the instruments without moving 3. Looking at the instruments without noticing the indications 4. Omitting checklist items in emergency situations",
+    "options": [
+      "1, 2, 3 and 4.",
+      "2 and 4.",
+      "1, 2 and 3.",
+      "2, 3 and 4."
+    ],
+    "correct": null,
+    "id": 308
+  },
+  {
+    "question": "Which answer describes the current approach to human error?",
+    "options": [
+      "Realisation that humans are infallible and that systems/procedures should be designed to minimise human error.",
+      "Realisation that humans are infallible and that systems and procedures should be improved to be brought in line.",
+      "Realisation that humans are fallible and therefore all work should be done by systems, which are generally infallible.",
+      "Realisation that humans are fallible and that systems and procedures should be designed to minimise human error."
+    ],
+    "correct": null,
+    "id": 309
+  },
+  {
+    "question": "Which of the given options are symptoms of fatigue? 1. Diminished accommodation 2. Slowed reactions 3. Long-term memory access problems 4. Being over-talkative 5. Diminished motor skills",
+    "options": [
+      "1, 3, 4 and 5",
+      "1, 2 and 4",
+      "2, 4 and 5",
+      "1, 2, 3 and 5"
+    ],
+    "correct": null,
+    "id": 310
+  },
+  {
+    "question": "Which of the following are effects of stress on behaviour? 1. Manifestation of aggressiveness 2. Willingness to improve communication 3. Willingness for group cohesion 4. Tendency to withdrawal",
+    "options": [
+      "3 and 4",
+      "1 and 4",
+      "1 and 2",
+      "2 and 3"
+    ],
+    "correct": null,
+    "id": 311
+  },
+  {
+    "question": "A system can be said to be tolerant to error when ...",
+    "options": [
+      "the consequences of an error will not seriously jeopardise safety.",
+      "the consequences of an error will immediately jeopardise safety.",
+      "latent errors do not entail serious consequences for safety.",
+      "there is no chance of any possible error to happen in the system."
+    ],
+    "correct": null,
+    "id": 312
+  },
+  {
+    "question": "Extremely high ambition and the urgent need for achievement ...",
+    "options": [
+      "disturb the climate of cooperation.",
+      "generally improve teamwork.",
+      "are requirements for stress resistance.",
+      "improve coping with personal failures."
+    ],
+    "correct": null,
+    "id": 313
+  }
+]

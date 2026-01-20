@@ -1,0 +1,3412 @@
+[
+  {
+    "question": "According regulations on air operations, an operator must ensure that the MDH for an ILS approach without the glide path (LLZ only) is not lower than:",
+    "options": [
+      "250 ft",
+      "350 ft",
+      "200 ft",
+      "300 ft"
+    ],
+    "correct": null,
+    "id": 1
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, when flying VFR navigating by means other than by reference to the visual landmarks, the final reserve fuel should be sufficient to fly for ...",
+    "options": [
+      "30 minutes of flight at holding speed at 1500 ft above aerodrome elevation in standard conditions.",
+      "30 minutes of flight at best range speed at 1500 ft above aerodrome elevation in standard conditions.",
+      "20 minutes of flight at best range speed.",
+      "45 minutes of flight at holding speed at 1500 ft above aerodrome elevation in standard conditions."
+    ],
+    "correct": null,
+    "id": 2
+  },
+  {
+    "question": "According GM2 CAT.OP.MPA.250, when an aircraft is to be treated with the flight crew on board, the flight crew and personnel involved in the operation should confirm relevant information. The factors that the commander has to take into consideration are: 1. the fluid to be used 2. the extent of treatment required 3. any aircraft type-specific procedure(s) 4. planned flight level 5. any other information needed to apply to the HoT tables",
+    "options": [
+      "1, 2 and 4.",
+      "1, 2, 3 and 4.",
+      "1, 3 and 4.",
+      "1, 2, 3 and 5."
+    ],
+    "correct": null,
+    "id": 3
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, the minimum radio-communication and navigation equipment for a VFR flight conducted by reference to visual landmarks by day consists of ...",
+    "options": [
+      "two radio-communication equipment and one navigation equipment.",
+      "one radio-communication equipment, one navigation equipment and, when mandated by airspace requirements, one transponder.",
+      "two radio-communication equipment and one transponder.",
+      "one radio-communication equipment and one transponder."
+    ],
+    "correct": null,
+    "id": 4
+  },
+  {
+    "question": "For a twin-engine helicopter, if it is not possible to return to the heliport of departure due to meteorological reasons, the commander must select a take-off alternate within ...",
+    "options": [
+      "1 hour flight time at normal cruise speed.",
+      "1 hour at best range speed with one engine inoperative.",
+      "30 minutes at best range speed with one engine inoperative.",
+      "30 minutes at normal cruise speed."
+    ],
+    "correct": null,
+    "id": 5
+  },
+  {
+    "question": "According regulations on air operations, an operator must ensure that the lowest MDH for a VOR approach is:",
+    "options": [
+      "200 ft",
+      "300 ft",
+      "250 ft",
+      "350 ft"
+    ],
+    "correct": null,
+    "id": 6
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, without an ETOPS approval, the maximum distance from an adequate aerodrome for two-engined aeroplanes in Performance Class A, with a maximum take-off mass of 45360 kg or more, is the distance flown at the one-engine-inoperative cruise speed in still air, in:",
+    "options": [
+      "45 min",
+      "120 min",
+      "90 min",
+      "60 min"
+    ],
+    "correct": null,
+    "id": 7
+  },
+  {
+    "question": "According AMC1 ORO.GEN.205, who should ensure that the contracted organisation has the necessary authorisation or approval when required, and commands the resources and competence to undertake the task?",
+    "options": [
+      "The operator",
+      "The competent authority",
+      "The compliance monitoring manager",
+      "The safety manager"
+    ],
+    "correct": null,
+    "id": 8
+  },
+  {
+    "question": "At the point of entry into RVSM airspace between FL290 and FL410, which of the following equipment must be operating normally? 1. Two independent altitude measurement systems 2. An altitude alert system 3. An automatic altitude control system 4. GNSS navigation equipment.",
+    "options": [
+      "1, 2 and 3.",
+      "2, 3 and 4.",
+      "1, 3 and 4.",
+      "1, 2, 3 and 4."
+    ],
+    "correct": null,
+    "id": 9
+  },
+  {
+    "question": "According regulations on air operations, the amount of oxygen on-board a non-pressurised aircraft must be enough to fed the cabin crew members and all the passengers for the entire flight time at pressure altitudes above:",
+    "options": [
+      "13000 ft",
+      "10000 ft",
+      "15000 ft",
+      "14000 ft"
+    ],
+    "correct": null,
+    "id": 10
+  },
+  {
+    "question": "According ORO.GEN.205 Contracted activities, who shall ensure that when contracting or purchasing any part of its activity, the contracted or purchased service or product conforms to the applicable requirements?",
+    "options": [
+      "The compliance monitoring manager",
+      "The operator",
+      "The safety manager",
+      "The competent authority"
+    ],
+    "correct": null,
+    "id": 11
+  },
+  {
+    "question": "Given that MOCA (Minimum Obstacle Clearance Altitude) is defined as 8400 feet, what is the maximum obstacle or terrain altitude where this MOCA is applicable?",
+    "options": [
+      "6370 ft",
+      "6920 ft",
+      "7370 ft",
+      "5320 ft"
+    ],
+    "correct": null,
+    "id": 12
+  },
+  {
+    "question": "According SPA.ETOPS.110 ETOPS, prior to conducting an ETOPS flight, the operator shall ensure that an ETOPS en-route alternate aerodrome is available, within either the operator's approved diversion time, or a diversion time based (1) __ of the aeroplane, whichever is (2) __. .",
+    "options": [
+      "(1) on the AFM and commander's experience, (2) shorter",
+      "(1) on the MEL generated serviceability status, (2) shorter",
+      "(1) on the AFM and commander's experience, (2) longer",
+      "(1) on the MEL generated serviceability status, (2) longer"
+    ],
+    "correct": null,
+    "id": 13
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, for a non pressurised aircraft, all required cabin crew members shall be supplied with supplemental oxygen during:",
+    "options": [
+      "the entire flight time at pressure altitudes above 13000 ft and for any period exceeding 30 minutes at pressure altitudes above 10000 ft but not exceeding 13000 ft",
+      "the entire flight time at pressure altitudes above 13000 ft",
+      "the entire flight time at pressure altitudes above 10000 ft",
+      "the entire flight time after 30 minutes at pressure altitudes greater than 10000 ft but not exceeding 13000 ft"
+    ],
+    "correct": null,
+    "id": 14
+  },
+  {
+    "question": "Onboard an aeroplane, each crew member shall be properly secured by all safety belts and harnesses provided 1 - during taxiing 2 - during take-off 3 - during landing 4 - whenever assumed necessary by the commander in the interest of safety 5 - during other phases of the flight while at his station",
+    "options": [
+      "1, 2, 3, 4, 5",
+      "1, 2, 3, 4",
+      "2, 3, 4, 5",
+      "2, 3, 4."
+    ],
+    "correct": null,
+    "id": 15
+  },
+  {
+    "question": "According regulations on air operations, oxygen masks for use by flight crew members in pressurised aeroplanes shall be a quick donning type of mask for operations above:",
+    "options": [
+      "29000 ft",
+      "13000 ft",
+      "10000 ft",
+      "25000 ft"
+    ],
+    "correct": null,
+    "id": 16
+  },
+  {
+    "question": "According to ORO.FTL.235 Rest periods, in case the operator does NOT provide suitable accommodation to the crew member at home base, after a duty time of 8 hours, the minimum rest period provided before undertaking a Flight Duty Period (FDP) starting at home base shall be:",
+    "options": [
+      "10 hours",
+      "12 hours",
+      "8 hours",
+      "16 hours"
+    ],
+    "correct": null,
+    "id": 17
+  },
+  {
+    "question": "With regard to Strategic Lateral Offset Procedure (SLOP) in NAT HLA, which of the following statements is correct? 1. Collision risk is significantly reduced by application of SLOP. 2. SLOP may be flown centreline, or one or two miles left.",
+    "options": [
+      "1 is incorrect, 2 is incorrect.",
+      "1 is correct, 2 is correct.",
+      "1 is incorrect, 2 is correct.",
+      "1 is correct, 2 is incorrect."
+    ],
+    "correct": null,
+    "id": 18
+  },
+  {
+    "question": "When an aircraft is flying under VFR over routes that are navigated by reference to visual landmarks, radio-communication equipment is required that, assuming normal radio-propagation conditions, allows ...",
+    "options": [
+      "communication with the rescue and other services during an emergency.",
+      "communication with the operator's head office for monitoring of the flight.",
+      "communication with ATC from any point in controlled airspace within which flights are intended.",
+      "communication with appropriate ATC stations from any location outside the controlled airspace."
+    ],
+    "correct": null,
+    "id": 19
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, for a VFR flight by day with reference to visual landmarks, the final reserve fuel should be sufficient to fly for ...",
+    "options": [
+      "20 minutes of flight at best range speed.",
+      "30 minutes of flight at best range speed at 1500 ft above aerodrome elevation in standard conditions.",
+      "30 minutes of flight at best range speed.",
+      "30 minutes of flight at holding speed at 1500 ft above aerodrome elevation in standard conditions."
+    ],
+    "correct": null,
+    "id": 20
+  },
+  {
+    "question": "According AMC1 ORO.FC.105, the definition of \"an aerodrome that meets all of the following requirements: (1) an approved instrument approach procedure, (2) at least one runway with no performance limited procedure for take-off and/or landing, (3) published circling minima not higher than 1000 ft above aerodrome level and (4) night operations capability\", refers to which airport category?",
+    "options": [
+      "Standard Category",
+      "Category C",
+      "Category B",
+      "Category A"
+    ],
+    "correct": null,
+    "id": 21
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, EXCEPT for night VMC operations, the recent experience conditions of a commander assigned to a flight on a helicopter by an operator must not be less than:",
+    "options": [
+      "3 take-offs, 3 circuits and 3 landings as pilot flying on the same type of helicopter or flight simulator, of the helicopter type to be used, in the preceding 90 days",
+      "6 take-offs, 6 circuits and 6 landings as pilot flying on the same type of helicopter or flight simulator, of the helicopter type to be used, in the preceding 90 days",
+      "6 take-offs and 6 landings during the last 6 months",
+      "3 take-offs and 3 landings on this type of helicopter during the last 6 months"
+    ],
+    "correct": null,
+    "id": 22
+  },
+  {
+    "question": "According regulations on air operations (Aerodrome Operating Minima), for a Category III B approach, the RVR shall not be less than:",
+    "options": [
+      "50 m",
+      "100 m",
+      "75 m",
+      "150 m"
+    ],
+    "correct": null,
+    "id": 23
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, without special need to avoid obstacles visually, which of the following are included in the Aerodrome Operating Minima for a non-precision approach? 1 - the required RVR 2 - the ceiling 3 - the minimum descent height (MDH) 4 - the visibility",
+    "options": [
+      "1,4.",
+      "1, 2, 4.",
+      "1,3.",
+      "1, 2, 3."
+    ],
+    "correct": null,
+    "id": 24
+  },
+  {
+    "question": "According to AMC1 ORO.FC.125 Differences training and familiarisation training, which of the following statements is correct? 1. Differences training requires additional knowledge and training on the aircraft or an appropriate training device. 2. Familiarisation training requires only the acquisition of additional knowledge and may be conducted by self-study modules.",
+    "options": [
+      "1 is incorrect, 2 is correct",
+      "1 is incorrect, 2 is incorrect",
+      "1 is correct, 2 is correct",
+      "1 is correct, 2 is incorrect"
+    ],
+    "correct": null,
+    "id": 25
+  },
+  {
+    "question": "According ORO.FC.215, before commencing unsupervised line flying, the flight crew member shall have completed ...",
+    "options": [
+      "emergency and safety training.",
+      "an initial CRM training course by a qualified CRM trainer.",
+      "a recurrent CRM training course by a qualified CRM trainer.",
+      "operator proficiency checks on all current ratings."
+    ],
+    "correct": null,
+    "id": 26
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, the lowest minima to be used by an operator for circling with a category C aeroplane is a meteorological visibility of:",
+    "options": [
+      "2400 m",
+      "1600 m",
+      "3600 m",
+      "1500 m"
+    ],
+    "correct": null,
+    "id": 27
+  },
+  {
+    "question": "With regard to flying in NAT HLA, if an aircraft is unable to continue the flight in accordance with its ATC clearance, a revised clearance shall be obtained, whenever possible, prior to initiating any action. If prior clearance cannot be obtained, the following contingency procedures should be employed until a revised clearance is received ...",
+    "options": [
+      "leave the cleared route or track by initially at least 30 degrees to the right or left, in order to intercept and maintain a parallel, same direction track with an offset of 1.0 NM.",
+      "leave the cleared route or track by initially at least 30 degrees to the right or left, in order to intercept and maintain a parallel, same direction track with an offset of 5.0 NM.",
+      "leave the cleared route or track by initially at least 45 degrees to the right or left, in order to intercept and maintain a parallel, same direction track with an offset of 1.0 NM.",
+      "leave the cleared route or track by initially at least 45 degrees to the right or left, in order to intercept and maintain a parallel, same direction track with an offset of 5.0 NM."
+    ],
+    "correct": null,
+    "id": 28
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, who is responsible for establishing Aerodrome Operating Minima for each aerodrome planned to be used for commercial purposes?",
+    "options": [
+      "The State Authority",
+      "The Commander",
+      "The Operator",
+      "The designated aerodrome authority"
+    ],
+    "correct": null,
+    "id": 29
+  },
+  {
+    "question": "Before entering North Atlantic High Level Airspace (NAT HLA), when should the Inertial Reference System (IRS) be put into \"align mode\" for optimum performance?",
+    "options": [
+      "As soon as a flight crew member enters the flight deck to ensure that there is adequate time for the initial alignment",
+      "At least 30 minutes before reaching the boundary of the oceanic airspace.",
+      "As soon as the aircraft starts moving on it's own power.",
+      "Prior to take-off to ensure that there is adequate time for the initial alignment during enroute flight."
+    ],
+    "correct": null,
+    "id": 30
+  },
+  {
+    "question": "According regulations on air operations, the operator must ensure that the information contained in the aircraft technical log is stored for a minimum period of:",
+    "options": [
+      "36 months",
+      "24 months",
+      "12 months",
+      "6 months"
+    ],
+    "correct": null,
+    "id": 31
+  },
+  {
+    "question": "According regulations on air operations, 100 % of the passengers in a non-pressurised aircraft shall be supplied with supplemental oxygen for the entire flight time ...",
+    "options": [
+      "after 30 minutes at pressure altitudes greater than 10000 ft but not exceeding 13000 ft.",
+      "at pressure altitudes above 13000 ft.",
+      "at pressure altitudes above 10000 ft.",
+      "at pressure altitudes above 13000 ft and for any period exceeding 30 minutes at pressure altitudes above 10000 ft but not exceeding 13000 ft."
+    ],
+    "correct": null,
+    "id": 32
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, a life jacket is mandatory for each person on board a land aeroplane, when flying over water at a distance from the shore of more than:",
+    "options": [
+      "400 NM",
+      "100 NM",
+      "200 NM",
+      "50 NM"
+    ],
+    "correct": null,
+    "id": 33
+  },
+  {
+    "question": "With regard to EU regulations on oversight and enforcement in civil aviation, who is responsible for conducting investigations such as ramp inspections to prevent continuation of infringement?",
+    "options": [
+      "EASA",
+      "ICAO",
+      "EU member states",
+      "Operator"
+    ],
+    "correct": null,
+    "id": 34
+  },
+  {
+    "question": "With regard to NAT HLA airspace, which of the following statements is correct? 1. For NAT HLA and RVSM operations, the crew required ETOPS qualification. 2. NAT HLA and RVSM operations require crew training, because the precision and reliability of current navigational system can induce a sense of complacency, requiring an awareness of errors, standard procedures and crosschecks.",
+    "options": [
+      "1 is incorrect, 2 is correct.",
+      "1 is incorrect, 2 is incorrect.",
+      "1 is correct, 2 is incorrect.",
+      "1 is correct, 2 is correct."
+    ],
+    "correct": null,
+    "id": 35
+  },
+  {
+    "question": "When determining Minimum Time Routes, the factors to be taken into account include: 1. Great Circle distance between departure and destination 2. Airspace restrictions 3. ATC restrictions 4. Meteorological conditions (i.e. wind)",
+    "options": [
+      "1, 2, 3 and 4",
+      "1, 2 and 4",
+      "2, 3 and 4",
+      "1, 2 and 3"
+    ],
+    "correct": null,
+    "id": 36
+  },
+  {
+    "question": "According ORO.FC.200, there shall not be more than one inexperienced flight crew member in any flight crew.",
+    "options": [
+      "(1) 50 flight hours and flown 10 sectors, (2) 100 flight hours and flown 20 sectors",
+      "(1) 100 flight hours and flown 20 sectors, (2) 150 flight hours and flown 10 sectors",
+      "(1) 100 flight hours and flown 10 sectors, (2) 150 flight hours and flown 20 sectors",
+      "(1) 50 flight hours and flown 20 sectors, (2) 100 flight hours and flown 10 sectors"
+    ],
+    "correct": null,
+    "id": 37
+  },
+  {
+    "question": "During a night flight, an observer located in the cockpit, seeing an aircraft coming from front left on approximate opposite parallel track, will first see the ...",
+    "options": [
+      "green and white flashing light.",
+      "green steady light.",
+      "white steady light.",
+      "red steady light."
+    ],
+    "correct": null,
+    "id": 38
+  },
+  {
+    "question": "With regard to Commercial Air Transport (CAT) operations, who is responsible for approving the method of establishing minimum flight altitudes?",
+    "options": [
+      "EASA",
+      "The Commander",
+      "The Competent Authority",
+      "The Operator"
+    ],
+    "correct": null,
+    "id": 39
+  },
+  {
+    "question": "According regulations on air operations, refuelling with non wide cut fuel performed while passengers are embarking or disembarking the aircraft is acceptable provided, among other conditions:",
+    "options": [
+      "all flight crew remain at their station.",
+      "the fire brigade truck is close to the aircraft, ready for fire fighting.",
+      "all the aircraft doors are completely open.",
+      "the ground area beneath the exits intended for emergency evacuation and slide deployment areas must be kept clear."
+    ],
+    "correct": null,
+    "id": 40
+  },
+  {
+    "question": "According ORO.FC.235, Commanders whose duties require them to operate in either pilot seat and carry out the duties of a co-pilot, shall complete additional training and checking including at least the following: 1. an engine failure during take-off 2. an engine failure during descent 3. a one-engine-inoperative approach and go-around 4. a one-engine-inoperative landing",
+    "options": [
+      "1, 2, 3 and 4.",
+      "3 and 4 only.",
+      "1 and 4 only.",
+      "1, 3 and 4."
+    ],
+    "correct": null,
+    "id": 41
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, when a flight data recorder is required, it must start automatically to record the data ...",
+    "options": [
+      "prior to the aircraft being capable of moving under its own power.",
+      "when the landing gear is retracted.",
+      "when the electrical power is set on the aircraft.",
+      "when taking-off."
+    ],
+    "correct": null,
+    "id": 42
+  },
+  {
+    "question": "According regulations on air operations, all occupants of flight deck seats on flight deck duty in a non-pressurised aircraft shall be supplied with supplemental oxygen for the entire flight time ...",
+    "options": [
+      "at pressure altitudes above 13000 ft and for any period exceeding 30 minutes at pressure altitudes above 10000 ft but not exceeding 13000 ft.",
+      "after 30 minutes at pressure altitudes greater than 10000 ft but not exceeding 13000 ft.",
+      "at pressure altitudes above 10000 ft.",
+      "at pressure altitudes above 13000 ft."
+    ],
+    "correct": null,
+    "id": 43
+  },
+  {
+    "question": "According regulations on air operations, the operator shall ensure that ...",
+    "options": [
+      "for the conduct of VFR flights in class C airspace, × horizontal distance from clouds is at least 1000 m.",
+      "for the conduct of VFR flights in class E airspace, flight visibility",
+      "for the conduct of VFR flights in class F airspace, vertical distance from clouds is at least 250 m.",
+      "for the conduct of VFR flights in class B airspace, horizontal distance from clouds is at least 1500 m. 4"
+    ],
+    "correct": null,
+    "id": 44
+  },
+  {
+    "question": "According European Regulations on Air Operations, radio communication equipment must be in accordance with the applicable (1) _and include at least (2) _radio communication system(s).",
+    "options": [
+      "(1) airspace requirements, (2) two independent",
+      "(1) weather requirements, (2) two independent and an emergency",
+      "(1) weather requirements, (2) two independent",
+      "(1) airspace requirements, (2) two independent and an emergency"
+    ],
+    "correct": null,
+    "id": 45
+  },
+  {
+    "question": "According NAT operating procedures, any pilot providing position reports via data link should report manually information via voice or, if appropriate, via a CPDLC free text downlink message, when encountering: 1. Moderate or severe turbulence 2. Moderate or severe icing 3. Wind speed of more than 60 kt 4. Thunderstorms 5. Volcanic ash",
+    "options": [
+      "1, 2 and 3.",
+      "1, 2, 3 and 4.",
+      "1, 2, 3, 4 and 5.",
+      "1, 2, 4 and 5."
+    ],
+    "correct": null,
+    "id": 46
+  },
+  {
+    "question": "According regulations on air operations, an aeroplane whose maximum take-off mass exceeds 5 700 kg or whose maximum approved passenger seating configuration is greater than 9 seats and less than 200 seats must be equipped with:",
+    "options": [
+      "one crowbar on the flight deck and one crash axe in the passenger compartment.",
+      "one crash axe and one crowbar in the passenger compartment.",
+      "one crash axe or crowbar on the flight deck.",
+      "one crash axe on the flight deck and one crowbar in the passenger compartment."
+    ],
+    "correct": null,
+    "id": 47
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, \"airport standby\" will count in full for the purposes of cumulative ...",
+    "options": [
+      "Duty hours.",
+      "Rest hours.",
+      "Recovery hours.",
+      "Flight duty hours."
+    ],
+    "correct": null,
+    "id": 48
+  },
+  {
+    "question": "According ORO.FC.202, for single pilot operations under IFR and at night, the pilot shall have a minimum of (1) _under IFR on the relevant type or class of aeroplane a minimum of (2) _at night.",
+    "options": [
+      "(1) 10 hours flight time, (2) 5 hours flight time.",
+      "(1) 50 hours flight time, (2) 15 hours flight time.",
+      "(1) 100 hours flight time, (2) 50 hours flight time.",
+      "(1) 30 hours flight time, (2) 10 hours flight time."
+    ],
+    "correct": null,
+    "id": 49
+  },
+  {
+    "question": "According AMC1 ORO.GEN.205 Contracted activities, which of the following statements is correct? 1. The operator may decide to contract certain activities to external organisations. 2. A written agreement should exist between the operator and the contracted organisation clearly defining the contracted activities and the applicable requirements.",
+    "options": [
+      "1 is incorrect, 2 is incorrect",
+      "1 is correct, 2 is correct",
+      "1 is incorrect, 2 is correct",
+      "1 is correct, 2 is incorrect"
+    ],
+    "correct": null,
+    "id": 50
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, a helicopter with a passenger compartment seating capacity of 10 seats must be equipped with ...",
+    "options": [
+      "three hand fire-extinguishers in the passenger compartment.",
+      "two hand fire-extinguishers in the cockpit and two hand fire-extinguishers in the passenger compartment.",
+      "one hand fire-extinguisher in the cockpit and two hand fire-extinguishers in the passenger compartment.",
+      "one hand fire-extinguisher in the cockpit and one hand fire-extinguisher in the passenger compartment."
+    ],
+    "correct": null,
+    "id": 51
+  },
+  {
+    "question": "According regulations on air operations and when required, the number of life rafts to be carried on board an aeroplane must allow the transportation of the entire aeroplane occupants ...",
+    "options": [
+      "plus 30 %.",
+      "in the event of a loss of one raft of the largest rated capacity.",
+      "plus 20 %.",
+      "plus 10 %."
+    ],
+    "correct": null,
+    "id": 52
+  },
+  {
+    "question": "According ORO.FTL.235, the minimum rest period provided before undertaking an FDP starting away from home base shall be at least as long as the preceding duty period, or ...",
+    "options": [
+      "12 hours, whichever is greater.",
+      "10 hours, whichever is greater.",
+      "12 hours, whichever is lower.",
+      "10 hours, whichever is lower."
+    ],
+    "correct": null,
+    "id": 53
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, if no alternate aerodrome is required, the flight must be conducted so that the expected usable fuel remaining on arrival at the destination aerodrome is not less than ...",
+    "options": [
+      "fuel equal to 5 % of trip fuel.",
+      "fuel to fly 30 minutes at holding speed and FL100.",
+      "final reserve fuel.",
+      "fuel to fly 15 minutes at 1500 ft above the destination aerodrome."
+    ],
+    "correct": null,
+    "id": 54
+  },
+  {
+    "question": "With regard to CAT.IDE.A.160 \"Airborne weather detecting equipment\", in case thunderstorms are expected along the route, which of the following statements is correct? 1. A non-pressurized aeroplane with MCTOM of less that 5700 kg, operated at night, has to be equipped with weather radar. 2. A pressurized aeroplane, operated at night, has to be equipped with weather radar, regardless of mass.",
+    "options": [
+      "1 is correct, 2 is correct.",
+      "1 is correct, 2 is incorrect.",
+      "1 is incorrect, 2 is incorrect.",
+      "1 is incorrect, 2 is correct."
+    ],
+    "correct": null,
+    "id": 55
+  },
+  {
+    "question": "When flying within NAT HLA, to support air/ground ATC communications in the North Atlantic Region, frequencies have been allocated in (1) __ , ranging (2)",
+    "options": [
+      "(1) HF frequency band, (2) from 2.8 to 18 MHz",
+      "(1) UHF frequency band, (2) from 2.8 to 18 GHz",
+      "(1) MF frequency band, (2) from 1.8 to 28 MHz",
+      "(1) VHF frequency band, (2) from 28 to 180 MHz"
+    ],
+    "correct": null,
+    "id": 56
+  },
+  {
+    "question": "According CAT.IDE.A.305 \"Survival equipment\", aeroplanes operated over areas in which search and rescue would be especially difficult shall be equipped with: 1. signalling equipment to make the distress signals 2. at least two ELT(S) 3. additional survival equipment for the route to be flown taking account of the number of persons on board",
+    "options": [
+      "1, 2 and 3.",
+      "2 and 3.",
+      "1 and 3.",
+      "1 and 2."
+    ],
+    "correct": null,
+    "id": 57
+  },
+  {
+    "question": "EU Regulation on Air Operations requires that a co-pilot is not assigned to operate an aeroplane as part of the minimum certificated crew, unless ...",
+    "options": [
+      "he has operated the controls as a pilot for three take-offs and landings in an aeroplane in the previous 60 days.",
+      "he has operated the controls as a pilot for three take-offs and landings in the previous 60 days, in an aeroplane of the same type/class or in a flight simulator of the aeroplane type to be used.",
+      "he has carried out three take-offs and three landings in the previous 90 days, as pilot flying in an aeroplane, or in a flight simulator, of the same type/class.",
+      "he has operated the controls as a pilot for three take-offs and landings in an aeroplane in the previous 90 days."
+    ],
+    "correct": null,
+    "id": 58
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, for a non pressurised aircraft, 100% of passengers shall be supplied with supplemental oxygen during:",
+    "options": [
+      "the entire flight time after 30 minutes at pressure altitudes greater than 10000 ft but not exceeding 13000 ft",
+      "the entire flight time at pressure altitudes above 13000 ft",
+      "the entire flight time at pressure altitudes above 13000 ft and for any period exceeding 30 minutes at pressure altitudes above 10000 ft but not exceeding 13000 ft",
+      "the entire flight time at pressure altitudes above 10000 ft"
+    ],
+    "correct": null,
+    "id": 59
+  },
+  {
+    "question": "With regard to operation in RVSM airspace, which of the following statements is correct? 1. In case of system malfunctions required for operation in RVSM airspace during flight below RVSM airspace, no altitude restrictions apply as long as NOT entering RVSM airspace. 2. In case of system malfunctions required for operation in RVSM airspace during flight within RVSM airspace, ATC has to be informed and descent below RVSM airspace is to be expected.",
+    "options": [
+      "1 is incorrect, 2 is incorrect.",
+      "1 is incorrect, 2 is correct.",
+      "1 is correct, 2 is correct.",
+      "1 is correct, 2 is incorrect."
+    ],
+    "correct": null,
+    "id": 60
+  },
+  {
+    "question": "According regulations on air operations, if the flight is to be carried out at FL 290, demonstration concerning oxygen equipment must be completed before:",
+    "options": [
+      "the aircraft reaches FL 140.",
+      "the aircraft reaches FL 100.",
+      "taxiing.",
+      "take-off."
+    ],
+    "correct": null,
+    "id": 61
+  },
+  {
+    "question": "On a pressurised aeroplane, supplemental oxygen is used to ...",
+    "options": [
+      "provide passengers on board with oxygen following a cabin depressurisation.",
+      "assist a passenger with breathing disorders.",
+      "provide selected passengers with oxygen.",
+      "protect the aircrew fighting fires."
+    ],
+    "correct": null,
+    "id": 62
+  },
+  {
+    "question": "According Part-ORO.GEN.200, who shall establish, implement and maintain a management system that includes keeping personnel trained and competent to perform their tasks?",
+    "options": [
+      "The compliance monitoring manager",
+      "The safety manager",
+      "The operator",
+      "The competent authority"
+    ],
+    "correct": null,
+    "id": 63
+  },
+  {
+    "question": "Minimum time route is a route calculated for ...",
+    "options": [
+      "aircraft flying in MNPS airspace.",
+      "a period of 24 hours.",
+      "a period of 12 hours.",
+      "a given flight from departure to destination."
+    ],
+    "correct": null,
+    "id": 64
+  },
+  {
+    "question": "According AMC1 ORO.FC.125, when introducing a significant change of equipment and/or procedures on types or variants currently operated, and in the case of aeroplanes, when operating another variant of an aeroplane of the same type or another type of the same class currently operated, what type of training should be carried out?",
+    "options": [
+      "Self-study Training",
+      "Familiarization Training",
+      "Differences Training",
+      "Type Rating"
+    ],
+    "correct": null,
+    "id": 65
+  },
+  {
+    "question": "According regulations on air operations, to operate a helicopter at night in areas with potentially hazardous weather conditions, it must be equipped with an airborne weather radar when the helicopter has a maximum approved passenger configuration of more than ...",
+    "options": [
+      "9 seats.",
+      "6 seats.",
+      "7 seats.",
+      "4 seats."
+    ],
+    "correct": null,
+    "id": 66
+  },
+  {
+    "question": "According regulations on air operations, the operator must ensure that the mass and balance documentation of a flight is stored for a minimum period of:",
+    "options": [
+      "6 months",
+      "1 year",
+      "1 month",
+      "3 months"
+    ],
+    "correct": null,
+    "id": 67
+  },
+  {
+    "question": "According regulations on air operations and with the exception of amphibians and seaplanes, the carriage of a life jacket for each person on board is compulsory when the aeroplane is: 1. cruising at such a distance from the shore that it would not be able to return in the case of an engine failure. 2. is flying over water at a distance from the shore of more than 50 NM. 3. is using departure and arrival paths over water when a ditching probability exists. 4. is flying over a stretch of water at more than 40 NM off shore.",
+    "options": [
+      "1, 2, 3, 4",
+      "3,4",
+      "1,2",
+      "2, 3"
+    ],
+    "correct": null,
+    "id": 68
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, the Cockpit Voice Recorder (CVR) is compulsory on aeroplane:",
+    "options": [
+      "Aeroplane with a take-off mass in excess of 5700 kg.",
+      "Aeroplane where the minimum flight crew is two pilots.",
+      "Multi-engine turbine powered aeroplane.",
+      "Aeroplane operated in accordance with instrument flight rules."
+    ],
+    "correct": null,
+    "id": 69
+  },
+  {
+    "question": "According regulations on air operations, the amount of fuel to be carried by a helicopter on a VFR flight navigating by day with reference to visual landmarks, should include a final reserve fuel of quantity to fly ...",
+    "options": [
+      "20 minutes at holding speed at 1500 ft above the destination heliport.",
+      "30 minutes at best range speed.",
+      "30 minutes at holding speed at 1500 ft above the destination heliport.",
+      "20 minutes at best range speed."
+    ],
+    "correct": null,
+    "id": 70
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, an operator shall not operate an aeroplane authorized to carry more than 19 passengers for which individual Certificate of Airworthiness was first issued before 01 July 2008, unless it is equipped with, at least:",
+    "options": [
+      "one ELT of any type transmitting on 406 MHz",
+      "one automatic ELT or two ELT of any type",
+      "one automatic ELT and one ELT of any type",
+      "one survival ELT and life saving equipment"
+    ],
+    "correct": null,
+    "id": 71
+  },
+  {
+    "question": "According ORO.FTL.205 Flight duty period (FDP), what is the maximum duration of a basic daily FDP, excluding any extensions?",
+    "options": [
+      "10 hours",
+      "12 hours",
+      "8 hours",
+      "13 hours"
+    ],
+    "correct": null,
+    "id": 72
+  },
+  {
+    "question": "According regulations on air operations, on board a non-pressurised aircraft, the amount of oxygen on-board a non-pressurised aircraft must be enough to fed 10% of the passengers for the entire flight time after 30 minutes at pressure altitudes greater than:",
+    "options": [
+      "10000 ft but not exceeding 13000 ft",
+      "13000 ft but not exceeding 15000 ft",
+      "11000 ft but not exceeding 15000 ft",
+      "10000 ft but not exceeding 14000 ft"
+    ],
+    "correct": null,
+    "id": 73
+  },
+  {
+    "question": "According regulations on air operations, in an aeroplane in which fuses are used, the number of spare fuses available for use in flight must be at least:",
+    "options": [
+      "10% of the number of fuses of each rating or 1 of each rating, whichever is the greater",
+      "5% of the number fuses of each rating or 1 of each rating, whichever is the greater",
+      "10% of the number of fuses of each rating or 3 of each rating, whichever is the greater",
+      "20% of the number of fuses of each rating or 2 of each rating, whichever is the greater"
+    ],
+    "correct": null,
+    "id": 74
+  },
+  {
+    "question": "According SPA.ETOPS. 100 ETOPS, In commercial air transport operations, two-engined aeroplanes shall only be operated beyond the threshold distance determined in accordance with CAT.OP.MPA. 140 if _has been granted an ETOPS operational approval by the competent authority.",
+    "options": [
+      "the aircraft owner",
+      "the Operator",
+      "the Commander",
+      "the aeroplane"
+    ],
+    "correct": null,
+    "id": 75
+  },
+  {
+    "question": "During an ILS procedure, if the reported RVR / visibility is less than the applicable minima, the approach shall not be continued beyond ...",
+    "options": [
+      "the FAF, or 1500 ft above the aerodrome / heliport if there is no FAF.",
+      "the middle marker, or 500 ft above the aerodrome / heliport if there is no middle marker.",
+      "the glide slope intersection.",
+      "the outer marker or equivalent position, or 1000 ft above the aerodrome / heliport if there is no outer marker or equivalent."
+    ],
+    "correct": null,
+    "id": 76
+  },
+  {
+    "question": "Who must finally determine that the load and its distribution is such that the mass and balance limits of the aircraft are not exceeded and confirm their acceptance by countersigning the mass and balance document ?",
+    "options": [
+      "The airline's dispatcher.",
+      "The flight engineer.",
+      "The pilot in command",
+      "The station manager"
+    ],
+    "correct": null,
+    "id": 77
+  },
+  {
+    "question": "According ORO.FC.205, for a co-pilot to upgrade to commander, a command course includes line training (1) __ for a minimum of (2) _in the case of aeroplanes.",
+    "options": [
+      "(1) as commander, (2) 10 flight sectors",
+      "(1) as commander under supervision, (2) 10 flight hours",
+      "(1) as commander under supervision, (2) 10 flight sectors",
+      "(1) as commander, (2) 10 flight hours"
+    ],
+    "correct": null,
+    "id": 78
+  },
+  {
+    "question": "According ORO.FC.240, when a flight crew member operates both helicopters and aeroplanes, that flight crew member shall be limited to operations on ...",
+    "options": [
+      "those types of aeroplane and helicopter he/she has a current rating.",
+      "two types of aeroplane and two types of helicopter.",
+      "only one type of aeroplane and one type of helicopter.",
+      "only one type of helicopter and two types of aeroplane."
+    ],
+    "correct": null,
+    "id": 79
+  },
+  {
+    "question": "According AMC1 CAT.IDE.A.350, secondary surveillance radar (SSR) transponders of aircraft being operated under European air traffic control should comply with any applicable Single European Sky legislation. If the Single European Sky legislation is not applicable, the SSR transponders should operate in accordance with the relevant provisions of ...",
+    "options": [
+      "ICAO Annex 18.",
+      "ICAO Annex 8.",
+      "ICAO Annex 6.",
+      "ICAO Annex 10."
+    ],
+    "correct": null,
+    "id": 80
+  },
+  {
+    "question": "According AMC1 ORO.GEN.205 Contracted activities, in case of work being carried out by an outside contractor, who has NO approval from the competent authority for this work, it (1) conducted under the approval and oversight of the (2) _as a sub-contracted activity.",
+    "options": [
+      "(1) can be, (2) operator",
+      "(1) can be, (2) sub-contractor",
+      "(1) can NOT be, (2) sub-contractor",
+      "(1) can NOT be, (2) operator"
+    ],
+    "correct": null,
+    "id": 81
+  },
+  {
+    "question": "According AMC1 ORO.FC.105, the definition of \"an aerodrome ( ... ) which requires extra considerations such as (1) non-standard approach aids and/or approach patterns, (2) unusual local weather conditions, (3) unusual characteristics or performance limitations, or (4) any other relevant considerations, including obstructions, physical layout, lighting, etc.\", refers to which airport category?",
+    "options": [
+      "Category C",
+      "Standard Category",
+      "Category A",
+      "Category B"
+    ],
+    "correct": null,
+    "id": 82
+  },
+  {
+    "question": "According ORO.FTL.105 Definitions, \"the period between 0200 and 0559 hours in the time zone to which a crew member is acclimatised\" is referred to as ...",
+    "options": [
+      "night duty.",
+      "window of circadian low (WOCL)",
+      "rest period.",
+      "standby period."
+    ],
+    "correct": null,
+    "id": 83
+  },
+  {
+    "question": "As specified in the Performance-based Navigation Manual, although Area Navigation (RNAV) and Required Navigation Performance (RNP) are fundamentally similar but differ in requirements for on- board performance monitoring and alerting, RNAV 10 retains which RNP designation?",
+    "options": [
+      "RNP 5",
+      "RNP 10-1",
+      "RNP 10",
+      "RNP 1"
+    ],
+    "correct": null,
+    "id": 84
+  },
+  {
+    "question": "According regulations on air operations, for a pressurised aeroplane, certificated to fly at altitudes more than 25000 ft, all occupants of flight deck seats on flight deck duty shall be supplied with supplemental oxygen during a period in no case less than:",
+    "options": [
+      "10 minutes",
+      "30 minutes",
+      "1 hour",
+      "2 hours"
+    ],
+    "correct": null,
+    "id": 85
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, an operator shall not operate a turbine propeller powered aeroplane with a maximum certificated take-off mass in excess of 5700 kg or having a maximum approved passenger seating configuration of more than nine seats or a turbojet powered aeroplane unless it is equipped with an altitude alerting system capable of alerting the flight crew when:",
+    "options": [
+      "Exceeding the service ceiling of the aeroplane",
+      "Flying over terrain that exceeds the maximum one-engine-inoperative cruising altitude",
+      "Cabin altitude exceeds 10 000 ft (cabin pressure below 700 hPa)",
+      "Deviating from a preselected altitude"
+    ],
+    "correct": null,
+    "id": 86
+  },
+  {
+    "question": "According ICAO Annex 6, Part I and III, an operator shall establish a flight safety documents system, for the use and guidance as part of its safety management system, in order to: 1. distribute safety information 2. distribute operational information 3. to flight deck crew personnel only 4. to cabin crew personnel only 5. to all operational personnel with means to verify all relevant personnel has received the information.",
+    "options": [
+      "1, 2 and 5.",
+      "2 and 4.",
+      "1 and 3.",
+      "1, 2 and 3."
+    ],
+    "correct": null,
+    "id": 87
+  },
+  {
+    "question": "Provided there are NO unforeseen circumstances, the Flight Duty Period (FDP) on a long-haul flight may be extended ...",
+    "options": [
+      "on the commander's discretion.",
+      "on the operator's decision.",
+      "under no conditions.",
+      "when adequate in-flight rest is provided."
+    ],
+    "correct": null,
+    "id": 88
+  },
+  {
+    "question": "According regulations on air operations, the cockpit voice recorder, when required, must start to record automatically ...",
+    "options": [
+      "when full thrust is applied until the termination of the flight when the aeroplane is no longer capable of moving under its own power.",
+      "prior to the aeroplane moving under its own power until the termination of the flight when the aeroplane is no longer capable of moving under its own power.",
+      "when the parking brake is released until the termination of flight when the parking brake is set.",
+      "prior to the aeroplane moving under its own power until the termination of flight when the parking brake is set."
+    ],
+    "correct": null,
+    "id": 89
+  },
+  {
+    "question": "Consider the Commercial Air Transport (CAT) Operations. Who is responsible for establishing heliport/aerodrome operating minima for each departure, destination to alternate heliport/aerodrome to be used?",
+    "options": [
+      "The Operator",
+      "The Safety Manager",
+      "The Commander",
+      "The Competent Authority"
+    ],
+    "correct": null,
+    "id": 90
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, an aeroplane whose maximum approved passenger seating configuration is 10 seats must be equipped with ...",
+    "options": [
+      "one hand fire-extinguisher on the flight deck and two hand fire-extinguishers in the passenger compartment.",
+      "two hand fire-extinguishers in the passenger compartment.",
+      "one hand fire-extinguisher on the flight deck and one hand fire-extinguisher in the passenger compartment.",
+      "two hand fire-extinguishers on the flight deck and two hand fire-extinguishers in the passenger compartment."
+    ],
+    "correct": null,
+    "id": 91
+  },
+  {
+    "question": "According CAT.IDE.A.355 (c) \"Management of aeronautical database\", (1)_shall report to the database provider instances of erroneous, inconsistent or missing data that might be reasonably expected to constitute a hazard to flight, and inform (2) and shall ensure that the affected data is not used.",
+    "options": [
+      "(1) the Pilot in Command, (2) the competent authority",
+      "(1) the Operator, (2) flight crew and other personnel concerned",
+      "(1) the Pilot in Command, (2) flight crew and other personnel concerned",
+      "(1) the Operator, (2) the competent authority"
+    ],
+    "correct": null,
+    "id": 92
+  },
+  {
+    "question": "According AMC1 ORO.FC.105 (b) Aerodrome knowledge, which of the following statements is correct? 1. Aerodromes of Category B do not meet the category A requirements or require extra considerations. 2. Prior to operating to a category B aerodrome, the pilot-in-command should be briefed, or self-briefed by means of programmed instruction.",
+    "options": [
+      "1 is correct, 2 is correct.",
+      "1 is incorrect, 2 is correct.",
+      "1 is correct, 2 is incorrect.",
+      "1 is incorrect, 2 is incorrect."
+    ],
+    "correct": null,
+    "id": 93
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, for operations under IFR or at night the minimum flight crew is 2 pilots for ...",
+    "options": [
+      "all turbo-propeller aeroplanes and all turbo-jet aeroplanes with a maximum approved passenger seating configuration of more than 9",
+      "all turbo-propeller aeroplanes and all turbo-jet aeroplanes",
+      "all turbo-propeller aeroplanes with a maximum approved passenger seating configuration of more than 9 and for all turbo-jet aeroplanes",
+      "all turbo-propeller aeroplanes with a maximum approved passenger seating configuration of more than 19 and for all turbo-jet aeroplanes"
+    ],
+    "correct": null,
+    "id": 94
+  },
+  {
+    "question": "According regulations on air operations, for a non pressurised aircraft, all occupants of flight deck seats on flight deck duty shall be supplied with supplemental oxygen during:",
+    "options": [
+      "the entire flight time at pressure altitudes above 13000 ft",
+      "the entire flight time at pressure altitudes above 13000 ft and for any period exceeding 30 minutes at pressure altitudes above 10000 ft but not exceeding 13000 ft",
+      "the entire flight time after 30 minutes at pressure altitudes greater than 10000 ft but not exceeding 13000 ft",
+      "the entire flight time at pressure altitudes above 10000 ft"
+    ],
+    "correct": null,
+    "id": 95
+  },
+  {
+    "question": "According to Annex 6 Part I, \"flight time\" is defined as the total time from the moment an aircraft ...",
+    "options": [
+      "takes-off until the moment it finally comes to rest at the end of the flight.",
+      "first moves for the purpose of taking off until the moment it finally comes to rest at the end of the flight.",
+      "takes-off until the landing.",
+      "first moves for the purpose of taking off until the landing."
+    ],
+    "correct": null,
+    "id": 96
+  },
+  {
+    "question": "On overwater flights, for aeroplanes capable of continuing the flight to an aerodrome with the critical power unit(s) becoming inoperative at any point along the route or planned diversions, sufficient life-rafts to carry all persons on board are to be carried, to operate an aeroplane at a distance away from land, which is suitable for making an emergency landing, greater than that corresponding to (i) _ at cruising speed or (ii) _, whichever is the less.",
+    "options": [
+      "(i) 90 min (ii) 300 NM",
+      "(i) 120 min (ii) 400 NM",
+      "(i) 45 min (ii) 200 NM",
+      "(i) 30 min (ii) 100 NM"
+    ],
+    "correct": null,
+    "id": 97
+  },
+  {
+    "question": "According SPA.ETOPS. 110 ETOPS, prior to conducting an ETOPS flight, the operator shall ensure that an ETOPS en- route alternate aerodrome is available, within either the operator's approved diversion time, or a diversion time based (1) of the aeroplane, whichever is (2)_",
+    "options": [
+      "(1) on the AFM and commander's experience, (2) shorter",
+      "(1) on the MEL generated serviceability status, (2) longer",
+      "(1) on the MEL generated serviceability status, (2) shorter",
+      "(1) on the AFM and commander's experience, (2) longer"
+    ],
+    "correct": null,
+    "id": 98
+  },
+  {
+    "question": "According SPA.ETOPS.115 ETOPS, circling approach planning minima for an ETOPS En-Route Alternate Aerodrome are:",
+    "options": [
+      "MDA/H +400 ft / RVR/VIS +1500 m",
+      "DA/H +400 ft / RVR/VIS +1500 m",
+      "DA/H +200 ft / RVR/VIS +800 m",
+      "MDA/H +200 ft / RVR/VIS +1500 m"
+    ],
+    "correct": null,
+    "id": 99
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, what is the planning flight preparation minima for a destination alternate with a CAT II approach available?",
+    "options": [
+      "Non-precision minima plus 200 ft/1000 m",
+      "CAT 1 RVR",
+      "CAT 1 RVR + 200 m",
+      "CAT 1 + 50 ft / 200 m"
+    ],
+    "correct": null,
+    "id": 100
+  },
+  {
+    "question": "Which statement about the Canadian Northern Domestic Airspace (NDA) is correct?",
+    "options": [
+      "Horizontal component of earth's magnetic field is the strongest.",
+      "Magnetic Variation can be neglected.",
+      "Magnetic Variation is nearly constant with time.",
+      "VOR radials are referenced to True North (TN)"
+    ],
+    "correct": null,
+    "id": 101
+  },
+  {
+    "question": "According regulations on air operations, except if a different value is approved by the authority, the contingency fuel for an IFR helicopter flight should be ...",
+    "options": [
+      "5% of the planned trip fuel.",
+      "10% of the planned trip fuel.",
+      "an amount of fuel sufficient for 30 minutes flying at long range speed.",
+      "an amount of fuel sufficient for 15 minutes flying at long range speed."
+    ],
+    "correct": null,
+    "id": 102
+  },
+  {
+    "question": "According ICAO Annex 6, Part I, a Commercial Air Transport Operator of aeroplanes is required to establish a flight data analysis programme (FDAP) as part of the Safety Management System in case of operation of (1) __ with a Maximum Certificated Take-Off Mass (2) __.",
+    "options": [
+      "(1) one or more aeroplanes, (2) in excess of 27000 kg.",
+      "(1) one or more aeroplanes, (2) in excess of 20000 kg.",
+      "(1) 10 or more aeroplanes, (2) in excess of 20000 kg.",
+      "(1) 10 or more aeroplanes, (2) in excess of 5700 kg."
+    ],
+    "correct": null,
+    "id": 103
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, the flight preparation planning minima for a destination alternate with a CAT I approach available is:",
+    "options": [
+      "RVR according to CAT | + 200m",
+      "Circling minima",
+      "Non-precision minima plus 200 ft/1000 m",
+      "Non-precision minima (RVR and the ceiling at or above MDH / DH)"
+    ],
+    "correct": null,
+    "id": 104
+  },
+  {
+    "question": "Identify the factors that must be considered when establishing aerodrome operating minima: 1. The weather conditions at the time for the approach 2. The obstacle clearance altitude/height for the instrument approach procedures 3. The adequacy and performance of the available visual and non-visual ground aids 4. The type, performance, and handling characteristics of the aircraft 5. The dimensions and characteristics of the runways / Final Approach and Take-off areas (FATOs) that may be selected for use 6. The composition, competence, and experience of the flight crew",
+    "options": [
+      "1, 3, 4, 5 and 6",
+      "1, 2, 3 and 6",
+      "1, 3, 4 and 5",
+      "2, 3, 4, 5 and 6"
+    ],
+    "correct": null,
+    "id": 105
+  },
+  {
+    "question": "Standards and Recommended Practices described in ICAO Annex 6, Part I, are applicable for air carriers of Contracting States which are authorised to operate ...",
+    "options": [
+      "aeroplanes in international general aviation operation.",
+      "aeroplanes and helicopters for commercial reasons (CAT operations).",
+      "all types of aircraft for commercial air transport and general aviation.",
+      "aeroplanes in international commercial air transport (CAT) operations."
+    ],
+    "correct": null,
+    "id": 106
+  },
+  {
+    "question": "According ICAO Annex 6, Part I and III, a maintenance release shall contain a certification including: 1. basic details of the maintenance carried out 2. the date such maintenance was completed 3. the identity of the approved maintenance organization 4. the identity of the person or persons signing the release 5. procedures for after-maintenance checks / daily checks by the crew",
+    "options": [
+      "1, 2, 3 and 4.",
+      "1, 4 and 5.",
+      "1, 2, 4 and 5.",
+      "1, 2 and 3."
+    ],
+    "correct": null,
+    "id": 107
+  },
+  {
+    "question": "According regulations on air operations, for an aeroplane with turbine engine, the operator shall have a fuel policy including a final reserve fuel to fly above destination aerodrome elevation in standard conditions:",
+    "options": [
+      "30 minutes at holding speed at 1500 ft",
+      "45 minutes at holding speed at 1500 ft",
+      "30 minutes at long range speed at holding altitude",
+      "45 minutes at cruising speed at holding altitude"
+    ],
+    "correct": null,
+    "id": 108
+  },
+  {
+    "question": "According regulations on air operations, the purpose of the first aid oxygen is to:",
+    "options": [
+      "provide the cabin attendants with breathing protection.",
+      "provide undiluted oxygen to passengers for physiological reasons following a cabin depressurisation.",
+      "supply all the passengers in case of depressurisation.",
+      "provide the flight crew with breathing assistance after depressurisation."
+    ],
+    "correct": null,
+    "id": 109
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, a Category I operation is a precision instrument approach and landing with a decision height (DH) and with a runway visual range (RVR) not less than ...",
+    "options": [
+      "100 ft / 350 m",
+      "100 ft / 550 m",
+      "200 ft / 350 m",
+      "200 ft / 550 m"
+    ],
+    "correct": null,
+    "id": 110
+  },
+  {
+    "question": "According AMC1 ORO.AOC.130, Flight data monitoring - aeroplanes (a), who should be responsible for the identification and assessment of issues and their transmission to the manager(s) responsible for the process(es) concerned?",
+    "options": [
+      "The compliance monitoring manager",
+      "The accountable manager",
+      "The competent authority",
+      "The safety manager"
+    ],
+    "correct": null,
+    "id": 111
+  },
+  {
+    "question": "If no meteorological information is available for the destination, the operator must ...",
+    "options": [
+      "take extra fuel to fly one hour at holding speed, 1500 ft above the alternate aerodrome.",
+      "take extra fuel to fly two hours at holding speed.",
+      "select two destination alternates.",
+      "not take-off until obtaining destination meteorological forecast."
+    ],
+    "correct": null,
+    "id": 112
+  },
+  {
+    "question": "How long is the total duty period to which a crew member may be assigned?",
+    "options": [
+      "It shall not exceed 60 duty hours in any 28 consecutive days",
+      "It shall not exceed 190 duty hours in any 14 consecutive days",
+      "It shall not exceed 190 duty hours in any 90 consecutive days",
+      "It shall not exceed 60 duty hours in any 7 consecutive days"
+    ],
+    "correct": null,
+    "id": 113
+  },
+  {
+    "question": "With regard to Continuous Descent Final Approach (CDFA) according AMC3 CAT.OP.MPA. 115, who is responsible to establish procedures and instructions for flying approaches using the CDFA technique and not using it?",
+    "options": [
+      "The Operator",
+      "The Aerodrome",
+      "The Commander",
+      "The Competent Authority"
+    ],
+    "correct": null,
+    "id": 114
+  },
+  {
+    "question": "In accordance with EU Regulation on Air Operations, the minimum required recent experience in the single pilot role, for a pilot engaged in a single-pilot operation under IFR or at night shall be ...",
+    "options": [
+      "5 IFR flights, including 3 take-off and 3 landings carried out during the previous 90 days on the type or class of aeroplane.",
+      "5 IFR flights, including 3 take-off and 3 landings carried out during the previous 30 days on the type or class of aeroplane.",
+      "3 IFR flights, including 3 instrument approaches, carried out during the previous 90 days on the type or class of aeroplane.",
+      "5 IFR flights, including 3 instrument approaches, carried out during the previous 90 days on the type or class of aeroplane."
+    ],
+    "correct": null,
+    "id": 115
+  },
+  {
+    "question": "According regulations on air operations, an operator shall ensure that a copy of the operational flight plan is stored in an acceptable form for at least:",
+    "options": [
+      "3 months",
+      "3 years",
+      "15 months",
+      "12 months"
+    ],
+    "correct": null,
+    "id": 116
+  },
+  {
+    "question": "According GM2 CAT.OP.MPA.250, after anti-ice procedure and prior to take-off, the commander performs a pre-take-off check, which is an assessment of whether the applied holdover-time is still appropriate. This pre-take-off check includes: 1. Wing area to be anti-iced 2. Type and intensity of precipitation 3. Outside Air Temperature (OAT) 4. Aircraft type 5. Wind",
+    "options": [
+      "2, 3 and 4.",
+      "2, 3 and 5.",
+      "1, 3 and 5.",
+      "1, 2 and 5."
+    ],
+    "correct": null,
+    "id": 117
+  },
+  {
+    "question": "According AMC1 CAT.OP.MPA.195, when refuelling/defueling with passengers embarking, on board or disembarking, following precautions should be taken: 1. Two-way communication with qualified personnel should be established 2. Crew and passengers should be warned that re/defueling will take place 3. \"Fasten Seat Belts\" signs should be off 4. \"NO SMOKING\" signs and emergency exit lights should be on 5. Cabin crew should be all present and open all doors in case of emergency evacuation 6. Minimum required number of cabin crew should be on board and be prepared for an immediate emergency evacuation",
+    "options": [
+      "1, 2, 3, 4 and 5.",
+      "2, 3, and 5.",
+      "1, 3, 4 and 5.",
+      "1, 2, 3, 4 and 6."
+    ],
+    "correct": null,
+    "id": 118
+  },
+  {
+    "question": "According ORO.FTL. 105 Definitions, \"a duty period encroaching any portion of the period between 0200 and 0459 in the time zone to which the crew is acclimatised\" is referred to as ...",
+    "options": [
+      "rest period.",
+      "window of circadian low (WOCL)",
+      "standby period.",
+      "night duty."
+    ],
+    "correct": null,
+    "id": 119
+  },
+  {
+    "question": "According AMC1 ORO.GEN.220(b), the record-keeping system should ensure that all records are accessible whenever needed within ...",
+    "options": [
+      "a reasonable time.",
+      "30 calendar days.",
+      "10 calendar days.",
+      "2 working days."
+    ],
+    "correct": null,
+    "id": 120
+  },
+  {
+    "question": "With regard to using Portable Electronic Devices (PEDs) on board an aircraft, which of the following statements is correct? 1. Using PEDs is NOT permitted in case they would adversely affect the performance of the aircraft's systems. 2. According with the prescribed procedures, the Commander may insist on a specific PED on board being switched off.",
+    "options": [
+      "1 is incorrect, 2 is correct",
+      "1 is incorrect, 2 is incorrect",
+      "1 is correct, 2 is incorrect",
+      "1 is correct, 2 is correct"
+    ],
+    "correct": null,
+    "id": 121
+  },
+  {
+    "question": "When flying on routes close to the Magnetic North Pole and within the Canadian Northern Domestic Airspace (NDA), which of the following statements is correct? 1. No special procedures required with basic INS/IRS navigation. 2. Magnetic compass display becomes unreliable.",
+    "options": [
+      "1 is correct, 2 is incorrect.",
+      "1 is incorrect, 2 is correct.",
+      "1 is incorrect, 2 is incorrect.",
+      "1 is correct, 2 is correct."
+    ],
+    "correct": null,
+    "id": 122
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, for a non pressurised aircraft, the supplemental oxygen is:",
+    "options": [
+      "therapeutical oxygen specially carried for certain passengers",
+      "required to operate at pressure altitudes above 10000 ft",
+      "available for supply to passengers for physiological reasons",
+      "used for protection against smoke and carbon dioxide"
+    ],
+    "correct": null,
+    "id": 123
+  },
+  {
+    "question": "According CAT.IDE.A.345, aeroplanes operated under IFR or under VFR over routes that can NOT be navigated by reference to visual landmarks, shall be equipped with ...",
+    "options": [
+      "One VOR receiving system, one ADF system and two DME",
+      "radio communication, navigation and surveillance equipment in accordance with the applicable airspace requirements.",
+      "one short-range VHF, and one long-range (HF) communication system.",
+      "least one radio communication system necessary under normal operating conditions to communicate with an appropriate ground station from any point on the route, including diversions."
+    ],
+    "correct": null,
+    "id": 124
+  },
+  {
+    "question": "In case during pre-flight check the crew finds a maintenance item to be done in the technical log, which of the following statements is correct? 1. The aircraft can only depart if a maintenance release is issued and signed by an authorised person. 2. Technical personnel must certify having conducted any technical items according to the prescribed procedure, and a maintenance release must be issued and signed by an authorised person.",
+    "options": [
+      "1 is incorrect, 2 is incorrect",
+      "1 is correct, 2 is incorrect",
+      "1 is correct, 2 is correct",
+      "1 is incorrect, 2 is correct"
+    ],
+    "correct": null,
+    "id": 125
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, to operate a helicopter with a maximum approved passenger configuration of more than 9, along a route where thunderstorms or other potentially hazardous weather conditions are expected, an airborne weather radar equipment is required: 1 - for all day offshore operations 2 - at night 3 - for IFR flights 4 - if MCTOM is more than 3175 kg",
+    "options": [
+      "2, 3",
+      "1, 2, 3, 4",
+      "3, 4",
+      "1, 3,4"
+    ],
+    "correct": null,
+    "id": 126
+  },
+  {
+    "question": "With regard to operation in icing conditions, which of the following statements is correct? 1. When experiencing icing conditions exceeding the intensity the aircraft is certified for, the commander should ensure exiting the icing conditions immediately. 2. In case after de-icing and anti-icing an aircraft for departure, and the prevailing weather conditions may have reduced the not yet elapsed hold-over time noted, the commander should arrange a pre- takeoff contamination check.",
+    "options": [
+      "1 is incorrect, 2 is incorrect.",
+      "1 is incorrect, 2 is correct.",
+      "1 is correct, 2 is incorrect.",
+      "1 is correct, 2 is correct."
+    ],
+    "correct": null,
+    "id": 127
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, aeroplanes shall be equipped with \"FASTEN SEAT BELTS\" signs ...",
+    "options": [
+      "when the MOPSC is more than 9.",
+      "when moderate or severe turbulence is expected along the route.",
+      "when not all passenger seats are visible from the flight crew seat(s).",
+      "when the MCTOM is more than 5700 kg."
+    ],
+    "correct": null,
+    "id": 128
+  },
+  {
+    "question": "In polar regions, also small errors in determining the aircraft's actual position can produce large errors in determining the correct heading because of the ...",
+    "options": [
+      "use of polar stereographic charts to find true courses.",
+      "conversion of grid navigation data into compass navigation data.",
+      "convergence of the meridians.",
+      "special navigation equipment required to operate at latitudes beyond 60° N/S."
+    ],
+    "correct": null,
+    "id": 129
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, for acclimatised crews, the maximum daily Flight Duty Period (FDP) can be extended by the operator by up to ...",
+    "options": [
+      "2 hours, but not more than once in any 10 consecutive days.",
+      "1 hour, but not more than twice in any 7 consecutive days.",
+      "4 hours, but not more than twice in any 7 consecutive days.",
+      "3 hours, but not more than once in any 10 consecutive days."
+    ],
+    "correct": null,
+    "id": 130
+  },
+  {
+    "question": "When flying within NAT HLA and communicating with Oceanic control using CPDLC, when the CPDLC connection is automatically transferred to the next Oceanic control, the crew should ... establish contact with the next Oceanic control station on HF in the 2.8 MHz to 18 MHz frequency band.",
+    "options": [
+      "establish contact with the next Oceanic control station on VHF in the 118 MHz to 136.975 MHz frequency band.",
+      "establish contact with the next Oceanic control station on UHF in the 18 GHz to 28 GHz frequency band.",
+      "not take any further action once the CPDLC connection with the next Oceanic control station is established.",
+      "Edit View History"
+    ],
+    "correct": null,
+    "id": 131
+  },
+  {
+    "question": "With regard to CAT.IDE.A.355, Management of aeronautical databases states, (1) who shall report (2) to whom any instances of erroneous, inconsistent or missing data that might be reasonably expected to constitute a hazard to flight?",
+    "options": [
+      "(1) Pilot in Command, (2) ATC",
+      "(1) The Safety Manager, (2) Pilot in Command",
+      "(1) The Operator, (2) the database provider",
+      "(1) ATC, (2) the database provider"
+    ],
+    "correct": null,
+    "id": 132
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, for a category I precision approach, the runway visual range cannot be less than:",
+    "options": [
+      "300 m",
+      "800 m",
+      "500 m",
+      "550 m"
+    ],
+    "correct": null,
+    "id": 133
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, a windshield wiper or equivalent means to maintain a clear portion of the windshield during precipitation is required at each pilot station to operate an aeroplane with a:",
+    "options": [
+      "maximum certificated take-off mass of more than 5700 kg",
+      "maximum approved passenger configuration of more than 9 seats",
+      "maximum certificated take-off mass of more than 15000 kg",
+      "maximum approved passenger configuration of more than 6 seats"
+    ],
+    "correct": null,
+    "id": 134
+  },
+  {
+    "question": "According ORO.FC.A.201, in-flight relief of flight crew members, the co-pilot may be relieved by ...",
+    "options": [
+      "another pilot holding a valid Instrument Rating.",
+      "another pilot undergoing conversion training.",
+      "another pilot holding a valid CPL(A).",
+      "another suitably qualified pilot."
+    ],
+    "correct": null,
+    "id": 135
+  },
+  {
+    "question": "According ORO.FC.230 Recurrent training and checking, the validity period of the operator proficiency check shall be (1) _calendar months and shall be counted from the (2) _when the check was taken.",
+    "options": [
+      "(1) 12, (2) end of the month",
+      "(1) 12, (2) day",
+      "(1) 6, (2) day",
+      "(1) 6, (2) end of the month"
+    ],
+    "correct": null,
+    "id": 136
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, a pilot is not assigned to operate an aeroplane as part of the minimum certificated crew, either as pilot flying or pilot non-flying unless he/she has carried out ...",
+    "options": [
+      "6 take-offs and 6 landings during the previous 6 months.",
+      "6 take-offs and 6 landings as pilot flying on the same type of aeroplane or approved simulator, of the aeroplane type to be used.",
+      "3 take-offs and 3 landings on this type of aeroplane during the previous 6 months.",
+      "3 take-offs and 3 landings in the previous 90 days, as pilot flying in an aeroplane or in a flight simulator of the same type/class."
+    ],
+    "correct": null,
+    "id": 137
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, the correct definition of Window Of Circadian Low (WOCL), is the period between ...",
+    "options": [
+      "0200 hours and 0559 hours.",
+      "0300 hours and 0459 hours.",
+      "0000 hours and 0659 hours.",
+      "2200 hours and 0759 hours."
+    ],
+    "correct": null,
+    "id": 138
+  },
+  {
+    "question": "In case an operator conducting Civil Aviation Transport (CAT) with base in one EASA member state, on a flight from another member state, with the flight deck crew, cabin crew holding licences from different other member states, the member state to designate the Competent Authority for oversight of operation should be ...",
+    "options": [
+      "the member state where the flight is scheduled for departure.",
+      "the member stated where principal base of business is located.",
+      "the member state where the crew have been licensed according Part-FCL.",
+      "the member state where the flight is scheduled for arrival."
+    ],
+    "correct": null,
+    "id": 139
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, an operator must select two destination alternates when the appropriate weather reports or forecasts for the destination, or any combination thereof, indicate that the weather conditions will be below the applicable planning minima, during a period ...",
+    "options": [
+      "commencing 2 hours before and ending 2 hours after the estimated time of arrival.",
+      "commencing 1 hour before and ending 1 hour after the estimated time of arrival.",
+      "commencing at the estimated time of arrival and ending 1 hour after.",
+      "commencing 1 hour before and ending 2 hours after the estimated time of arrival."
+    ],
+    "correct": null,
+    "id": 140
+  },
+  {
+    "question": "For a pressurised aircraft, the first-aid oxygen is designed to ...",
+    "options": [
+      "protect the flight crew and cabin attendants against fumes and noxious gases.",
+      "provide oxygen to 10% of passengers at a cabin altitude exceeding 13000 ft after 30 minutes.",
+      "provide oxygen to passengers who would suffer the effects of low pressure decrease due to long flights at high altitude.",
+      "provide undiluted oxygen to passengers who might require oxygen following a cabin depressurisation."
+    ],
+    "correct": null,
+    "id": 141
+  },
+  {
+    "question": "According ORO.FTL.105 Definitions, \"a continuous, uninterrupted and defined period of time, following duty or prior to duty, during which a crew member is free of all duties, standby and reserve\" is referred to as ...",
+    "options": [
+      "night duty.",
+      "standby period.",
+      "rest period.",
+      "window of circadian low (WOCL)"
+    ],
+    "correct": null,
+    "id": 142
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, oxygen masks for use by flight crew members shall be a quick donning type of mask, in pressurised aeroplanes operating at pressure altitudes above ...",
+    "options": [
+      "10000 ft.",
+      "41000 ft.",
+      "39000 ft.",
+      "25000 ft."
+    ],
+    "correct": null,
+    "id": 143
+  },
+  {
+    "question": "According AMC1 ORO.FC.240, when a flight crew member operates more than one aeroplane class, type or variant for class-single pilot or type-single pilot, but not within a single licence endorsement, the operator should ensure that the flight crew member does not operate more than (1) _ reciprocating engine aeroplane types or variants or (2) _turbo-propeller aeroplane types or variants.",
+    "options": [
+      "(1) two, (2) three",
+      "(1) three, (2) two",
+      "(1) two, (2) two",
+      "(1) three, (2) three"
+    ],
+    "correct": null,
+    "id": 144
+  },
+  {
+    "question": "According regulations on air operations, on aeroplanes intended to be operated at pressure altitude above 25000 ft, the total number of oxygen dispensing units shall exceed the number of:",
+    "options": [
+      "passengers by 2%",
+      "passengers by 10%",
+      "seats by 10%",
+      "seats by 2%"
+    ],
+    "correct": null,
+    "id": 145
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, for two-engined aeroplanes in Performance class B or C without an ETOPS approval, the maximum distance from an adequate aerodrome is the less of the distance flown at the one-engine-inoperative cruise speed in ...",
+    "options": [
+      "60 minutes or 400 NM",
+      "120 minutes or 300 NM",
+      "60 minutes or 300 NM",
+      "120 minutes or 400 NM"
+    ],
+    "correct": null,
+    "id": 146
+  },
+  {
+    "question": "With regard to flying in NAT HLA, the minimum RNP designation for the application of the 50 NM lateral separation is:",
+    "options": [
+      "RNP 10-1",
+      "RNP 10",
+      "RNP 1",
+      "RNP 8"
+    ],
+    "correct": null,
+    "id": 147
+  },
+  {
+    "question": "According regulations on air operations, 10% of the passengers in a non-pressurised aircraft shall be supplied with supplemental oxygen for the entire flight time after 30 minutes at pressure altitudes greater than:",
+    "options": [
+      "10000 ft but not exceeding 15000 ft",
+      "10000 ft but not exceeding 13000 ft",
+      "14000 ft but not exceeding 15000 ft",
+      "10000 ft but not exceeding 14000 ft"
+    ],
+    "correct": null,
+    "id": 148
+  },
+  {
+    "question": "According ORO.FTL.205, Flight time specification schemes shall take into account: 1. the type of aircraft 2. the number of sectors flown 3. the minimum in-flight rest allocated to each crew member 4. the type of in-flight rest facilities 5. the augmentation of the basic flight crew",
+    "options": [
+      "1, 2 and 5.",
+      "2, 3, 4 and 5.",
+      "1, 2, 3 and 4.",
+      "1, 2 and 4."
+    ],
+    "correct": null,
+    "id": 149
+  },
+  {
+    "question": "In accordance with EU Regulation on Air Operations, an operator shall ensure that a pilot does not operate an aeroplane as commander unless ...",
+    "options": [
+      "he has carried out at least 3 take-offs and 3 landings in the previous 60 days, as pilot flying in any type of aeroplane or an approved simulator, under the supervision of an examiner.",
+      "he has carried out at least 3 flights as commander in the previous 90 days, in an aeroplane or an approved flight simulator of the type to be used.",
+      "he has carried out at least 3 take-offs and 3 landings in the previous 60 days, as pilot flying in an aeroplane or an approved flight simulator of the type to be used.",
+      "he has carried out at least 3 take-offs and 3 landings in the previous 90 days as pilot flying in an aeroplane or in a flight simulator of the same type/class."
+    ],
+    "correct": null,
+    "id": 150
+  },
+  {
+    "question": "According to ICAO Annex 6, Part I, the correct definition of \"commercial air transport operation\" (CAT) is aircraft operation ...",
+    "options": [
+      "for specialised services, such as agriculture, construction, photography, surveying, observation and patrol, search and rescue or aerial advertisement.",
+      "involving the transport of cargo or mail only for remuneration or hire.",
+      "involving the transport of passengers, cargo or mail for remuneration or hire.",
+      "involving in the transport of passengers, cargo or mail without remuneration or hire."
+    ],
+    "correct": null,
+    "id": 151
+  },
+  {
+    "question": "According ORO.GEN.200, which postholder in the management system of a Commercial Air Transport (CAT) operator has direct Safety Accountability?",
+    "options": [
+      "The accountable manager",
+      "The compliance monitoring manager",
+      "The competent authority",
+      "The safety manager"
+    ],
+    "correct": null,
+    "id": 152
+  },
+  {
+    "question": "IC-070-016 This table is for use when Flaps/Slats are deployed prior to De-/Anti-Icing Table: 90% adjusted Holdlover Time guidelines for SAE Type I fluid on critical aircraft surfaces composed predominantly of aluminium Outside Air Temperture 1,2 Wing Surface Approximate Holdover Times under various weather conditions (hours:minutes) Degrees Celcius Degrees Fahrenheit Freezing Fog or Ice Crystals Snow, Snow Grains or Icy Pellets 3 Freezing Drizzle 5 Light Freezing Rain Rain on Cold Soaked Wing 6 Other Very Light 4 Light 4 Moderate -3 and above",
+    "options": [
+      "27 and above",
+      "Aluminium",
+      "0:10 - 0:15",
+      "0:16 - 0:20"
+    ],
+    "correct": null,
+    "id": 153
+  },
+  {
+    "question": "What is the distance required when using a hand-held fire extinguisher?",
+    "options": [
+      "At least 1.5 m and 2.5 m away from the fire",
+      "At least 0.5 m and 1.5 m away from the fire",
+      "As close as possible to the fire",
+      "At least 5 m to 10 m away from the fire."
+    ],
+    "correct": null,
+    "id": 154
+  },
+  {
+    "question": "Due to a risk of tyre explosions when the brakes are very hot, the landing gear should be approached:",
+    "options": [
+      "from any direction.",
+      "from the outboard side.",
+      "from the inboard side.",
+      "either from the front or the rear."
+    ],
+    "correct": null,
+    "id": 155
+  },
+  {
+    "question": "During the passenger briefing for a flight requiring life jackets, the passengers shall be instructed to inflate their life jackets:",
+    "options": [
+      "immediately on ditching.",
+      "immediately on the opening of the exits.",
+      "as soon as ditching is prepared.",
+      "when outside the aircraft."
+    ],
+    "correct": null,
+    "id": 156
+  },
+  {
+    "question": "How is the uncleared part of a contaminated runway reported in a SNOWTAM?",
+    "options": [
+      "As a percentage of the total length of the runway available as the first item of a SNOWTAM",
+      "It is not reported",
+      "By a four figure group added to item D, which gives the length in meters",
+      "In plain language at item T (the final paragraph) of a SNOWTAM"
+    ],
+    "correct": null,
+    "id": 157
+  },
+  {
+    "question": "During a de-icing / anti-icing procedure carried out in two steps, the holdover time starts ...",
+    "options": [
+      "a the end of the first step (de-icing step).",
+      "at the end of the second step (anti-icing step).",
+      "at the beginning of the second step (anti-icing step).",
+      "at the beginning of the first step (de-icing step)."
+    ],
+    "correct": null,
+    "id": 158
+  },
+  {
+    "question": "Following a heavy mass landing on a short runway, you should pay attention to the ...",
+    "options": [
+      "temperature of the hydraulic fluid.",
+      "pressure of the pneumatic system.",
+      "temperature of the brakes.",
+      "pressure of the hydraulic fluid."
+    ],
+    "correct": null,
+    "id": 159
+  },
+  {
+    "question": "When flying at low altitude in areas with large populations of birds, like bird sanctuaries, what can be the implications on flight safety?",
+    "options": [
+      "The threat of bird strike can be reduced by choosing an altitude as low as possible.",
+      "To reduce the threat of bird strike, that area should be crossed as fast as possible.",
+      "In case a bird comes close to the flight path, an instant deviation manoeuvre has to be initiated.",
+      "A bird strike constitutes a serious hazard to an aircraft by damaging probes, sensors, engines, windscreens, airframes and degradation in vision."
+    ],
+    "correct": null,
+    "id": 160
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, the runway condition complying with the definition of a \"wet runway\" is:",
+    "options": [
+      "More than 25% of the runway surface area is covered by surface water which is more than 3 x mm deep.",
+      "The runway surface is not dry, but the moisture on it does not give it a shiny appearance.",
+      "There is sufficient moisture on the runway surface to cause it to appear reflective, but without significant areas of standing water.",
+      "Moisture is present on the runway, but it still has an \"effectively dry\" braking action."
+    ],
+    "correct": null,
+    "id": 161
+  },
+  {
+    "question": "Noise abatement should NOT be the determining factor in the designation of a runway for take-off, under the following circumstances: 1. When crosswind component, including gusts, exceeds 10 kt 2. When the tailwind component, including gusts, exceeds 5 kt 3. When the runway surface conditions are adversely affected 4. When the visibility is below 2900 m 5. When wind shear has been reported or forecast 6. When thunderstorms are expected to affect the approach or departure 7. When the ceiling is lower than 500 ft",
+    "options": [
+      "1, 2, 3 and 4",
+      "2, 3, 5 and 6.",
+      "1, 2, 4. 5 and 7.",
+      "1, 2, 3, 5, 6 and 7"
+    ],
+    "correct": null,
+    "id": 162
+  },
+  {
+    "question": "When an aircraft has come to a complete stop after ditching, crew members should immediately ...",
+    "options": [
+      "tell passengers to inflate their life jackets.",
+      "use pyrotechnics to attract attention.",
+      "try contacting aircraft in the vicinity.",
+      "begin with evacuation."
+    ],
+    "correct": null,
+    "id": 163
+  },
+  {
+    "question": "According to ICAO Annex 18, when offering dangerous goods for transportation by air, who initially is responsible for compliance with the regulations?",
+    "options": [
+      "The shipper",
+      "The aerodrome manager",
+      "The pilot in command",
+      "The station manager"
+    ],
+    "correct": null,
+    "id": 164
+  },
+  {
+    "question": "With regard to CAT operations, which document contains applicable limitations for flight in known icing conditions?",
+    "options": [
+      "Operations Manual Part B",
+      "Aircraft Flight Manual (AFM)",
+      "Operations Manual Part A",
+      "Master Minimum Equipment List (MMEL)"
+    ],
+    "correct": null,
+    "id": 165
+  },
+  {
+    "question": "After detection of a slow decompression and the automatic deployment of the oxygen masks from the passenger service units in the cabin, the cabin crew should at first ...",
+    "options": [
+      "confirm whether all passengers are using the masks correctly.",
+      "head to the crew station to alert the senior cabin crew member.",
+      "don the nearest oxygen mask and alert the commander.",
+      "release any masks that have not dropped with help from other cabin crew members."
+    ],
+    "correct": null,
+    "id": 166
+  },
+  {
+    "question": "According to ICAO Annex 17, following an unlawful interference, who shall take adequate measures for the safety of passengers and crew of an aircraft, until their journey can be continued?",
+    "options": [
+      "The commander of the aircraft",
+      "The aircraft's operator",
+      "ICAO",
+      "The Contracting State responsible for the air traffic services units concerned"
+    ],
+    "correct": null,
+    "id": 167
+  },
+  {
+    "question": "In case of engine fire on both engines of a twin-engine aircraft that is NOT equipped with a fire extinguisher system, the correct actions are, in sequence: 1. Prepare for an immediate forced landing 2. Engine Fire checklist to shut down and isolate the engines 3. Immediately extend flaps for landing 4. Extend the flaps when reaching the emergency landing area is assured",
+    "options": [
+      "2 - 1 - 4",
+      "2 - 3 - 1",
+      "3 - 2 - 1",
+      "3 - 1 - 2"
+    ],
+    "correct": null,
+    "id": 168
+  },
+  {
+    "question": "For a given ambient temperature and type of anti-icing fluid, in which of the following conditions will the holdover (protection) time be the shortest?",
+    "options": [
+      "Frost",
+      "Steady snow",
+      "Freezing rain",
+      "Freezing fog"
+    ],
+    "correct": null,
+    "id": 169
+  },
+  {
+    "question": "According to ICAO PANS OPS Doc 8168, noise abatement procedures during landing ...",
+    "options": [
+      "shall not prohibit the use of reverse thrust.",
+      "prohibit the use of reverse thrust.",
+      "apply in case of instrument approaches only.",
+      "apply in case of visual approaches only."
+    ],
+    "correct": null,
+    "id": 170
+  },
+  {
+    "question": "5.1 (See attachment IC-070-020) What kind of dangerous goods is specified by the label?",
+    "options": [
+      "Flammable gases",
+      "Corrosive substances",
+      "Flammable solids",
+      "Oxidising substances"
+    ],
+    "correct": null,
+    "id": 171
+  },
+  {
+    "question": "Documents on notification of special loads, including written information to the commander about Dangerous Goods, should be stored for:",
+    "options": [
+      "15 months",
+      "12 months",
+      "6 months",
+      "3 months"
+    ],
+    "correct": null,
+    "id": 172
+  },
+  {
+    "question": "With regard to emergency landing or ditching procedure, unless the AOM or OM state otherwise, which of the following statements is correct? 1. In case of ditching with strong wind, landing should generally be made perpendicular to the swell. 2. Prior to descend, to avoid a loss of radio contact, ATC shall be informed at first priority",
+    "options": [
+      "1 is correct, 2 is correct.",
+      "1 is incorrect, 2 is correct.",
+      "1 is incorrect, 2 is incorrect.",
+      "1 is correct, 2 is incorrect."
+    ],
+    "correct": null,
+    "id": 173
+  },
+  {
+    "question": "According Regulation (EU) No 965/2012, The validity period of the line check shall be:",
+    "options": [
+      "3 calendar months",
+      "6 calendar months",
+      "24 calendar months",
+      "12 calendar months"
+    ],
+    "correct": null,
+    "id": 174
+  },
+  {
+    "question": "Each Contracting State concerned with an act of unlawful interference shall provide all pertinent information concerning the security aspects of the act of unlawful interference as soon as practicable after the act is resolved to whom?",
+    "options": [
+      "ECAC",
+      "United Nations",
+      "EASA",
+      "ICAO"
+    ],
+    "correct": null,
+    "id": 175
+  },
+  {
+    "question": "What action should a pilot take after encountering a windshear after take-off?",
+    "options": [
+      "Pitch up quickly and positively, but make sure that the stick shaker (or equivalent) is NOT activated.",
+      "At the normal pitch rate, increase the pitch attitude towards a target maximum of 10° nose up.",
+      "Aggressively apply necessary thrust to ensure adequate aircraft performance.",
+      "Engage the autopilot as it can fly the aircraft better than a human pilot."
+    ],
+    "correct": null,
+    "id": 176
+  },
+  {
+    "question": "According ICAO Annex 17, the intention of the \"Screening\" process is ... to place suspicious baggage, cargo, or packages behind a screen in the passenger lounge for isolation purposes. *",
+    "options": [
+      "to detect weapons, explosives or other dangerous devices, articles or substances which may be used to commit an act of unlawful interference.",
+      "to move suspicious baggage, cargo, or packages airside, away from passengers.",
+      "to use technology such as X-rays to detect drugs and similar substances.",
+      "2 stv"
+    ],
+    "correct": null,
+    "id": 177
+  },
+  {
+    "question": "For an aeroplane with a tyre pressure of 12 bars, there is a risk of dynamic hydroplaning as soon as the ...",
+    "options": [
+      "Speed is greater than 83 kt.",
+      "Water depth is equal to the half of the depth of the tyre grooves.",
+      "Speed is greater than 119 kt.",
+      "Cross wind is greater than 10 kt."
+    ],
+    "correct": null,
+    "id": 178
+  },
+  {
+    "question": "Which regulation establishes common rules to protect civilization against acts of unlawful interference that jeopardise the security of civil aviation, and also provides the basis for a common interpretation of Annex 17 to the Chicago Convention on International Civil Aviation?",
+    "options": [
+      "Regulation (EU) 139/2014",
+      "Regulation (EU) No 376/2014",
+      "EGAST GA6",
+      "Regulation (EC) No 300/2008"
+    ],
+    "correct": null,
+    "id": 179
+  },
+  {
+    "question": "According ICAO Doc 4444 PANS-ATM, a wake turbulence non-radar separation minima of 2 minutes shall be applied to:",
+    "options": [
+      "MEDIUM aircraft taking-off behind a HEAVY aircraft from an intermediate part of a parallel runway separated by less than 760 m.",
+      "LIGHT aircraft landing behind a MEDIUM aircraft.",
+      "LIGHT aircraft taking-off behind a MEDIUM aircraft from an intermediate part of the same runway.",
+      "MEDIUM aircraft landing behind a HEAVY aircraft."
+    ],
+    "correct": null,
+    "id": 180
+  },
+  {
+    "question": "After a missed approach of a HEAVY aircraft, and a light aircraft is using an opposite-direction runway for take-off, the minimum separation that should be applied between these two aircrafts is:",
+    "options": [
+      "3 minutes",
+      "2 minutes",
+      "4 minutes",
+      "5 minutes"
+    ],
+    "correct": null,
+    "id": 181
+  },
+  {
+    "question": "Following an emergency landing, the commander should ...",
+    "options": [
+      "without delay safely taxi off the runway and then command an immediate evacuation.",
+      "command an immediate evacuation advising crew and passengers to use all available aircraft exits.",
+      "without delay safely taxi off the runway and ask for further assistance from Rescue and Fire Fighting Services.",
+      "determine if an immediate evacuation is necessary or if the aircraft can safely taxi off the runway."
+    ],
+    "correct": null,
+    "id": 182
+  },
+  {
+    "question": "Which are circumstances that can force a twin-turbine engine aeroplane to initiate an emergency landing?",
+    "options": [
+      "Loss of the automatic pressurisation system just after take-off",
+      "Loss of one of the three available hydraulic systems on an aircraft with hydraulically powered flight controls",
+      "Fire in the cabin that has been confirmed as extinguished",
+      "Multiple bird strikes during the take-off roll causing single engine failure and unreliable operation of the remaining engine"
+    ],
+    "correct": null,
+    "id": 183
+  },
+  {
+    "question": "According ICAO Annex 17, Each Contracting State shall have as its primary objective the safety of related to safeguarding against acts of unlawful interference with civil aviation. in all matters",
+    "options": [
+      "crew and passengers, ground personnel and aerodrome buildings.",
+      "passengers, crew, ground personnel and the general public.",
+      "the aircraft, aerodrome buildings and the general public.",
+      "crew and passengers, and aircraft and aerodrome buildings."
+    ],
+    "correct": null,
+    "id": 184
+  },
+  {
+    "question": "Dangerous Goods that are likely to react dangerously with one another, may ...",
+    "options": [
+      "be transported on different aircraft.",
+      "NOT be stowed next to each other.",
+      "NOT be stowed in the same compartment.",
+      "be stowed in a manned compartment."
+    ],
+    "correct": null,
+    "id": 185
+  },
+  {
+    "question": "If wind shear is encountered during take-off, the pilot should ...",
+    "options": [
+      "extend the flaps to increase lift and retract the landing gear to improve climb performance.",
+      "maintain the flaps configuration but retract the landing gear to improve climb performance.",
+      "reduce the flap extension to improve climb performance but maintain the landing gear extended.",
+      "maintain the flaps and landing gear configuration until terrain clearance is assured."
+    ],
+    "correct": null,
+    "id": 186
+  },
+  {
+    "question": "In the \"worst case\" scenario of recovery from the effects of a microburst, having increased to full go- around power, in co-ordinating power and pitch it may be necessary to ...",
+    "options": [
+      "climb away at Vat + 20 kt.",
+      "slowly increase speed whilst maintaining a positive rate of climb.",
+      "reduce speed to V2 and hold.",
+      "increase the pitch angle until the stick shaker is felt and hold at slightly below this angle."
+    ],
+    "correct": null,
+    "id": 187
+  },
+  {
+    "question": "To avoid wake turbulence, when flying behind and close to a large aeroplane, the pilot should manoeuvre whenever possible ...",
+    "options": [
+      "below and downwind from the large aeroplane.",
+      "above and downwind from the large aeroplane.",
+      "below and upwind from the large aeroplane.",
+      "above and upwind from the large aeroplane."
+    ],
+    "correct": null,
+    "id": 188
+  },
+  {
+    "question": "Who has the responsibility for establishing operating procedures for noise abatement purposes during instrument flight in compliance with ICAO PANS OPS 8168 the:",
+    "options": [
+      "Operator",
+      "State of the operator",
+      "State in which the aeroplane is operating",
+      "Commander"
+    ],
+    "correct": null,
+    "id": 189
+  },
+  {
+    "question": "Which part(s) of the Operations Manual (OM) contains the General/Basic section(s) comprising all non-type-related operational policies, instructions and procedures?",
+    "options": [
+      "Part A",
+      "Part B",
+      "Parts D",
+      "Part C"
+    ],
+    "correct": null,
+    "id": 190
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, the commander shall not commence take-off unless the external surfaces ...",
+    "options": [
+      "are clear of any deposit that might adversely affect aircraft performances, except as permitted by Aircraft Flight Manual.",
+      "are not covered with ice contamination that could exceed the mass and balance limits.",
+      "are still covered with anti-icing fluid and the aircraft is not to be operated in forecast icing conditions greater than moderate icing.",
+      "are free from any ice contamination greater than 5 mm."
+    ],
+    "correct": null,
+    "id": 191
+  },
+  {
+    "question": "At the pre-flight briefing for a flight from South Africa to Europe, the crew discusses a large area of CB activity up to FL500 associated with the Intertropical Convergence Zone (ITCZ) along the flight planned route. When approaching this area, the crew should especially aware of ...",
+    "options": [
+      "being prepared for light turbulence and turn on the fasten seat belts sign.",
+      "a reduced risk of a high-speed stall, therefore increasing the speed when approaching the area.",
+      "ice formation on all the pitot tubes and static vents, making use of standby pressure instruments required.",
+      "ice formation on angle-of-attack veins, giving false readings of the angle of attack."
+    ],
+    "correct": null,
+    "id": 192
+  },
+  {
+    "question": "When taking-off behind a heavy aircraft, with the wind coming from the left side, you adopt, whenever possible ...",
+    "options": [
+      "a different flight path from the preceding aircraft, by remaining to the right of and under its path.",
+      "a different flight path form the preceding aircraft, by remaining behind it and under its path.",
+      "an identical flight path to the one of the preceding aircraft.",
+      "a different flight path from the preceding aircraft, by remaining to the left of and above its path."
+    ],
+    "correct": null,
+    "id": 193
+  },
+  {
+    "question": "When an aeroplane encounters a downdraft during an approach, the ...",
+    "options": [
+      "aeroplane pitches up or down, depending on the strength of the downdraft.",
+      "downdraft causes the aeroplane to fly above the glide path.",
+      "aeroplane's rate of descent decreases.",
+      "aeroplane's angle of attack decreases."
+    ],
+    "correct": null,
+    "id": 194
+  },
+  {
+    "question": "According with the \"Noise Abatement Departure Procedure 1\" (NADP-1) as established in ICAO PANS OPS 8168, aircraft must climb at V2 + 10 to 20 kt, until reaching an height above aerodrome elevation of:",
+    "options": [
+      "3000 ft",
+      "1000 ft",
+      "1500 ft",
+      "800 ft"
+    ],
+    "correct": null,
+    "id": 195
+  },
+  {
+    "question": "Just after take-off an aircraft encounters a cumulonimbus situated directly ahead, generating a \"microburst\". The initial effects will be: 1 - an increase in head wind 2 - an increase in tail wind 3 - better climb performance 4 - a decrease in climb gradient",
+    "options": [
+      "1,3",
+      "2,3",
+      "2,4",
+      "1,4"
+    ],
+    "correct": null,
+    "id": 196
+  },
+  {
+    "question": "What is meant by the term \"dynamic hydroplaning\"?",
+    "options": [
+      "A condition that occurs when an aircraft uses heavy braking thus resulting in prolonged locked-wheel skid",
+      "A condition that occurs when an aircraft lands on wet runways and the fusible plugs melt due to braking inefficiency",
+      "A condition that occurs when an aircraft lands on a surface with standing water about half the tread depth of the tyres",
+      "A condition that is likely to occur when aircraft lands on a surface with standing water deeper than the tread depth of the tyres"
+    ],
+    "correct": null,
+    "id": 197
+  },
+  {
+    "question": "In icing conditions and after the application of an anti-icing fluid on an aeroplane, the commander should: 1. avoid positioning the aeroplane in the engine jet blast of the preceding aeroplane 2. avoid positioning the aeroplane in the turbo-prop wash of the preceding aeroplane 3. position the aeroplane in the engine jet blast of the preceding aeroplane 4. position the aeroplane in the turbo-prop wash of the preceding aeroplane",
+    "options": [
+      "1,4",
+      "1,2",
+      "2,3",
+      "3,4"
+    ],
+    "correct": null,
+    "id": 198
+  },
+  {
+    "question": "In accordance with EU regulations on CAT operations, unless otherwise specified, when carrying dangerous goods on board a public transport aircraft, they must be accompanied by ...",
+    "options": [
+      "an approval document issued by the Customs.",
+      "an approval document issued by the Operator.",
+      "a dangerous goods transport document.",
+      "a certificate of compliance issued by IATA."
+    ],
+    "correct": null,
+    "id": 199
+  },
+  {
+    "question": "List the action(s) to be taken in the event of a carburettor fire in a piston-engined aircraft during engine start, if the engine has already started:",
+    "options": [
+      "Move the mixture control to Idle Cut-Off and immediately evacuate the aircraft.",
+      "Move the mixture control to Idle Cut-Off, ensure that the throttle is fully open, and discharge the fire extinguisher.",
+      "Immediately carry out the drills for Engine Fire on the ground.",
+      "Keep the engine running, if the fire continues to burn, carry out the drills for Engine Fire on the ground"
+    ],
+    "correct": null,
+    "id": 200
+  },
+  {
+    "question": "Mist in the cabin, pressure and temperature drop are indications for ...",
+    "options": [
+      "an electrical fire.",
+      "a plastic fire.",
+      "a slow depressurization.",
+      "a rapid depressurization."
+    ],
+    "correct": null,
+    "id": 201
+  },
+  {
+    "question": "Regarding wake turbulence, what is the ICAO minimum non-radar separation time for a LIGHT aircraft behind a MEDIUM or HEAVY aeroplane on approach to the same runway?",
+    "options": [
+      "3 minutes",
+      "4 minutes",
+      "2 minutes",
+      "5 minutes"
+    ],
+    "correct": null,
+    "id": 202
+  },
+  {
+    "question": "According ICAO Doc 4444 PANS-ATM, a wake turbulence radar separation minima of 9.3 km (5.0 NM) shall be applied when a ...",
+    "options": [
+      "LIGHT aircraft is crossing behind a HEAVY aircraft, at the same altitude or less than 300m (1000 ft).",
+      "MEDIUM aircraft is crossing behind a MEDIUM aircraft, at the same altitude or less than 300m × (1000 ft),",
+      "LIGHT aircraft is crossing behind a MEDIUM aircraft, at the same altitude or less than 300m (1000 ft).",
+      "HEAVY aircraft is crossing behind a HEAVY aircraft, at the same altitude or less than 300m (1000 ft)."
+    ],
+    "correct": null,
+    "id": 203
+  },
+  {
+    "question": "According Regulation (EU) No 965/2012, the validity period of the operator proficiency check for commercial specialised operations shall be counted:",
+    "options": [
+      "12 months from the day the check was taken.",
+      "6 months from the end of the month when the check was taken.",
+      "6 months from the beginning of the month when the check was taken.",
+      "12 months from the end of the month when the check was taken."
+    ],
+    "correct": null,
+    "id": 204
+  },
+  {
+    "question": "What does the abbreviation \"SSR\" mean?",
+    "options": [
+      "Search and surveillance radar",
+      "Surface strength of runway",
+      "Secondary surveillance radar",
+      "Standard snow report"
+    ],
+    "correct": null,
+    "id": 205
+  },
+  {
+    "question": "Each category of air-ground radio telecommunication messages is associated with specific message types. Which of the following is a specific example of an urgency message?",
+    "options": [
+      "EMERGENCY",
+      "MAYDAY",
+      "LEVEL OFF",
+      "PAN PAN"
+    ],
+    "correct": null,
+    "id": 206
+  },
+  {
+    "question": "In which cases can the name of a location or call sign suffix be omitted? 1. If communication has been established. 2. If it will NOT cause any confusion. 3. If it is allowed by the Authority. 4.If a VFR flight plan has been filed.",
+    "options": [
+      "3 and 4",
+      "2 and 3",
+      "1 and 2",
+      "1 and 4"
+    ],
+    "correct": null,
+    "id": 207
+  },
+  {
+    "question": "Shall an ATC route clearance always be read back?",
+    "options": [
+      "Yes, unless authorized otherwise by the ATS authority concerned.",
+      "No, if the ATC route clearance is transmitted in a published form (e.g. Standard Instrument Departure Route/SID).",
+      "No, if the communication channel is overloaded.",
+      "No, if the content of the ATC clearance is clear and no confusion is likely to arise."
+    ],
+    "correct": null,
+    "id": 208
+  },
+  {
+    "question": "Your flight plan has been filed with the call sign GOLF ALFA CHARLIE ZULU GOLF. Air Traffic Control has instructed you to \"CHANGE YOUR CALLSIGN TO SKYFALL ZULU GOLF\" (Skyfall is your company name). Why would they have done so?",
+    "options": [
+      "ATC would refrain from asking you to do so",
+      "If your company has asked them to do so",
+      "If you have asked them to do so",
+      "Only for safety reasons"
+    ],
+    "correct": null,
+    "id": 209
+  },
+  {
+    "question": "\"STOP SQUAWK CHARLIE, WRONG INDICATION\" That means the controller ...",
+    "options": [
+      "has an incorrect position indication for your aircraft on his/her primary radar.",
+      "is informing you that he/she can only determine your bearing within 10 degrees.",
+      "wants you to switch off your transponder completely.",
+      "wants you to deselect the altitude reporting function on your transponder."
+    ],
+    "correct": null,
+    "id": 210
+  },
+  {
+    "question": "Which phrase shall be used if you want to say \"Pass me the following information ( ... )\"?",
+    "options": [
+      "\"REPORT\"",
+      "\"SAY\"",
+      "\"REQUEST\"",
+      "\"CHECK\""
+    ],
+    "correct": null,
+    "id": 211
+  },
+  {
+    "question": "In radiotelephony communication, which word shall be used to indicate that an error has been made in a transmission or message?",
+    "options": [
+      "\"DISREGARD\"",
+      "\"CORRECT\"",
+      "\"CORRECTION\"",
+      "\"NEGATIVE\""
+    ],
+    "correct": null,
+    "id": 212
+  },
+  {
+    "question": "In radiotelephony communication, what does the word \"NEGATIVE\" mean?",
+    "options": [
+      "Proposed action granted",
+      "Consider that transmission as not sent",
+      "Permission not granted",
+      "Disregard last instruction"
+    ],
+    "correct": null,
+    "id": 213
+  },
+  {
+    "question": "Upon reporting runway vacated, the tower controller passes taxi instructions specifying the route the aircraft should follow to get to its parking position, which the pilot reads back correctly. The controller then instructs the pilot to \"MONITOR GROUND 121,7\".",
+    "options": [
+      "Follow the correctly acknowledged taxi instructions and call the ground controller on the ground frequency with the aircraft's call sign only",
+      "Stop when the entire aircraft has crossed the runway-holding position line and call the ground controller on the ground frequency with the aircraft's call sign only",
+      "The action the pilot should take is:",
+      "Stop when the entire aircraft has crossed the runway-holding position line, having selected the ground frequency, wait for the ground controller to call"
+    ],
+    "correct": null,
+    "id": 214
+  },
+  {
+    "question": "What is the radiotelephony call sign for the aeronautical station providing flight information service?",
+    "options": [
+      "INFORMATION",
+      "FLIGHT INFORMATION CENTRE",
+      "CONTROL",
+      "FLIGHT CENTRE"
+    ],
+    "correct": null,
+    "id": 215
+  },
+  {
+    "question": "What is the correct way of spelling out HB-JYC in a radio message?",
+    "options": [
+      "Hotel Bravo Juliett Yankee Charlie.",
+      "Hotel Bravo India Yankee Charlie.",
+      "Hotel Bravo India Victor Charlie.",
+      "Hotel Bravo Juliett India Kilo."
+    ],
+    "correct": null,
+    "id": 216
+  },
+  {
+    "question": "If you are requested to \"REPORT FLIGHT CONDITIONS\", what does that mean?",
+    "options": [
+      "Indicate if visibility is sufficient for landing",
+      "Indicate whether you are flying in IMC or in VMC",
+      "Indicate weather conditions as wind, visibility, temperature",
+      "Indicate whether you are flying IFR or VFR"
+    ],
+    "correct": null,
+    "id": 217
+  },
+  {
+    "question": "What is the correct way of transmitting altitude 4300?",
+    "options": [
+      "Four three hundred",
+      "Four three zero zero",
+      "Four thousand three hundred",
+      "Forty-three hundred"
+    ],
+    "correct": null,
+    "id": 218
+  },
+  {
+    "question": "Three of the following call-signs suffixes indicate that you are in contact with an Air Traffic Services unit. Which call sign indicates contact with something other than an ATS unit?",
+    "options": [
+      "DISPATCH",
+      "INFORMATION",
+      "GROUND",
+      "TOWER"
+    ],
+    "correct": null,
+    "id": 219
+  },
+  {
+    "question": "Select the air traffic service in charge of control of local traffic, take-offs and landings at an airport:",
+    "options": [
+      "RADAR",
+      "TOWER",
+      "AIR TRAFFIC CENTRE",
+      "CONTROL"
+    ],
+    "correct": null,
+    "id": 220
+  },
+  {
+    "question": "Which form shall be used when first contacting a ground station, if the aircraft registration marking is used as a call sign?",
+    "options": [
+      "The first letter and the last two characters of the aircraft registration marking.",
+      "The last three characters of the aircraft registration marking.",
+      "The first three characters of the aircraft registration marking.",
+      "All characters of the aircraft registration marking."
+    ],
+    "correct": null,
+    "id": 221
+  },
+  {
+    "question": "In radiotelephony communication, on the readability scale what does \"Readability 4\" mean?",
+    "options": [
+      "Readable",
+      "Readable but with difficulty",
+      "Readable now and then",
+      "Perfectly readable"
+    ],
+    "correct": null,
+    "id": 222
+  },
+  {
+    "question": "When deviating from a clearance to perform a TCAS Resolution Advisory (RA), the correct phrase to inform ATC would be:",
+    "options": [
+      "\"FOLLOWING RA\"",
+      "\"TCAS ALERT\"",
+      "\"DEVIATING DUE TCAS RA\"",
+      "\"TCAS RA\""
+    ],
+    "correct": null,
+    "id": 223
+  },
+  {
+    "question": "Under normal conditions, the effective VHF transmission range is limited by which factors? 1. Earth's curvature 2. Line of sight 3. Height of the ionosphere 4. Angle of the radio wave with the vertical",
+    "options": [
+      "1 and 2",
+      "3 and 4",
+      "2 and 3",
+      "1 and 3"
+    ],
+    "correct": null,
+    "id": 224
+  },
+  {
+    "question": "Which is the High Frequency (HF) radio frequency band?",
+    "options": [
+      "300 kHz to 3000 KHz",
+      "300 MHz to 3000 MHz",
+      "30 MHz to 300 MHz",
+      "3 MHz to 30 MHZ"
+    ],
+    "correct": null,
+    "id": 225
+  },
+  {
+    "question": "Which is the minimum separation between assignable frequencies in the Aeronautical Mobile Service VHF band?",
+    "options": [
+      "83.3 kHz",
+      "2.5 kHz",
+      "25 kHz",
+      "8.33 KHz"
+    ],
+    "correct": null,
+    "id": 226
+  },
+  {
+    "question": "According to ICAO Doc 8168, a noise abatement departure procedure is NOT to be initiated at less than:",
+    "options": [
+      "800 ft above aerodrome elevation",
+      "2 000 ft above aerodrome elevation",
+      "1 000 ft above aerodrome elevation",
+      "1 500 ft above aerodrome elevation"
+    ],
+    "correct": null,
+    "id": 227
+  },
+  {
+    "question": "In case of a cargo compartment fire, the system which should be switched off is generally the ...",
+    "options": [
+      "alternate air.",
+      "pressurisation.",
+      "airplane air-conditioning.",
+      "air recycling of the cargo compartment."
+    ],
+    "correct": null,
+    "id": 228
+  },
+  {
+    "question": "Who shall notify by the most expeditious means the State of Registry of the aircraft and the State of the Operator, after an aircraft subjected to an act of unlawful interference has landed?",
+    "options": [
+      "The Contracting State where the aircraft has landed.",
+      "The Contracting State from where the aircraft departed.",
+      "The Operator of the aircraft.",
+      "The Pilot-in-Command."
+    ],
+    "correct": null,
+    "id": 229
+  },
+  {
+    "question": "\"Viscous hydroplaning\" occurs primarily if the runway is covered with a thin film of water and ...",
+    "options": [
+      "the runway is very smooth and dirty.",
+      "the tyre treads show minor cuts.",
+      "the runway has a rough surface.",
+      "the runway is very smooth and clean."
+    ],
+    "correct": null,
+    "id": 230
+  },
+  {
+    "question": "Who should establish training programmes with means to reduce opportunities of unlawful interference with flight:",
+    "options": [
+      "National Aviation Authority",
+      "EASA",
+      "The operator",
+      "ICAO"
+    ],
+    "correct": null,
+    "id": 231
+  },
+  {
+    "question": "Consider aircraft descent in little or no wind conditions. Until ground contact, the trailing vortices move horizontally away at a height approximately equal to a proportion of ...",
+    "options": [
+      "the wing span.",
+      "half the wing span.",
+      "four times the wing span.",
+      "the double wing span."
+    ],
+    "correct": null,
+    "id": 232
+  },
+  {
+    "question": "During a manual approach, the aeroplane is subjected to windshear with a decreasing head wind. In the absence of a pilot action, the aeroplane: 1. flies above the intended approach path 2. flies below the intended approach path 3. has an increasing true airspeed 4. has a decreasing true airspeed",
+    "options": [
+      "1,4",
+      "2, 4",
+      "1,3",
+      "2,3"
+    ],
+    "correct": null,
+    "id": 233
+  },
+  {
+    "question": "Regulation (EC) No 300/2008 shall apply to: 1. All civil airports or parts of airports located in the territory of a Member State 2. All military airports or parts of airports located in the territory of a Member State",
+    "options": [
+      "1 is incorrect, 2 is correct",
+      "1 is correct, 2 is incorrect",
+      "1 is correct, 2 is correct",
+      "1 is incorrect, 2 is incorrect"
+    ],
+    "correct": null,
+    "id": 234
+  },
+  {
+    "question": "Using a hand fire extinguisher in the cabin can expose a crew member to the risk of inhaling toxic fumes or smoke. To counter this treat, the crew member should ...",
+    "options": [
+      "Keep mouth and nose closed with one hand.",
+      "first put on portable Protective Breathing Equipment.",
+      "use a portable oxygen bottle with a mouth-mask.",
+      "Place a dry towel around their mouth and nose."
+    ],
+    "correct": null,
+    "id": 235
+  },
+  {
+    "question": "ICAO Annex 18 is a document dealing with ...",
+    "options": [
+      "the noise pollution of aircraft.",
+      "the air transport of live animals.",
+      "the technical operational use of aircraft.",
+      "the safety of transport of dangerous goods by air."
+    ],
+    "correct": null,
+    "id": 236
+  },
+  {
+    "question": "For an aeroplane with a tyre pressure of 14 bars, there is a risk of dynamic hydroplaning as soon as the ...",
+    "options": [
+      "Tail wind is greater than 10 kt.",
+      "Speed is greater than 129 kt.",
+      "Speed is greater than 95 kt.",
+      "Water depth is equal to the half of the depth of the tyre grooves."
+    ],
+    "correct": null,
+    "id": 237
+  },
+  {
+    "question": "Information, instructions and general guidance on the transport of dangerous goods are included in the ...",
+    "options": [
+      "Flight Manual.",
+      "Air Operator Certificate.",
+      "Operations Manual.",
+      "AIP."
+    ],
+    "correct": null,
+    "id": 238
+  },
+  {
+    "question": "In case during flight with a jet engine aeroplane, an engine fire is detected, the crew's initial action is to ...",
+    "options": [
+      "operate the engine fire extinguisher system.",
+      "use the flight crew oxygen masks.",
+      "use rudder trim to compensate for the impending yaw.",
+      "shut down the affected engine."
+    ],
+    "correct": null,
+    "id": 239
+  },
+  {
+    "question": "When an aircraft subjected to an act of unlawful interference must depart from its assigned track or its assigned cruising level without being able to make radiotelephony contact with ATS, the pilot-in- command should, generally, proceed at a level which differs from the cruising levels normally used for IFR flight by: 1. 150 m (500 ft) in an area where a vertical separation minimum of 300 m (1000 ft) is applied 2. 300 m (1000 ft) in an area where a vertical separation minimum of 600 m (2000 ft) is applied.",
+    "options": [
+      "1 is incorrect, 2 is correct",
+      "1 is correct, 2 is incorrect",
+      "1 is correct, 2 is correct",
+      "1 is incorrect, 2 is incorrect"
+    ],
+    "correct": null,
+    "id": 240
+  },
+  {
+    "question": "According ICAO DOC 9640, the definition \"precautionary procedure by which clean aircraft surfaces are protected against the formation of ice and frost and the accumulation of snow and slush for a limited period of time\" during ground procedures, refers to:",
+    "options": [
+      "Anti-Icing",
+      "Cold soak",
+      "De-Icing",
+      "Shear force"
+    ],
+    "correct": null,
+    "id": 241
+  },
+  {
+    "question": "According to Certification Specifications for Large Aeroplanes (CS 25), when an aeroplane needs to show compliance with the Emergency Evacuation requirements with an actual demonstration ...",
+    "options": [
+      "at least 10 infants, 2 years old or younger, must be carried by female passengers.",
+      "aisles and emergency exit access ways must be clear of all obstructions, to avoid injuries.",
+      "a full briefing on the procedures to be followed in the demonstration must be given to the passengers.",
+      "not more than 50 % of the emergency exits in the sides of the fuselage may be used."
+    ],
+    "correct": null,
+    "id": 242
+  },
+  {
+    "question": "In icing conditions, if you have exceeded the holdover time, the correct procedure is to ...",
+    "options": [
+      "de-ice the aircraft.",
+      "operate the aircraft de-icing/anti-icing systems.",
+      "de-ice the aircraft again, then apply anti-icing fluid.",
+      "apply directly anti-icing fluid without conducting previous de-icing procedures."
+    ],
+    "correct": null,
+    "id": 243
+  },
+  {
+    "question": "According Regulation (EU) No 965/2012, the task specialist shall report any fault, failure, malfunction or defect, which he/she believes may affect the airworthiness or safe operation of the aircraft to which person?",
+    "options": [
+      "To the Flight Operations Manager.",
+      "To the Operator.",
+      "To the competent authority.",
+      "To the Pilot in Command."
+    ],
+    "correct": null,
+    "id": 244
+  },
+  {
+    "question": "Which of the following Dangerous Goods are forbidden on aircraft unless exempted by the States concerned?",
+    "options": [
+      "Explosive solids",
+      "Radioactive materials",
+      "Infected live animals",
+      "Explosive liquids"
+    ],
+    "correct": null,
+    "id": 245
+  },
+  {
+    "question": "When taking-off, in winter conditions, the wing contamination by ice, snow or frost will cause the following effects: 1. Increase in the take-off distance 2. Decrease of the take-off run 3. Increase in the stalling speed 4. Decrease of the stalling speed 5. Decrease of the best climb gradient",
+    "options": [
+      "2, 3,5",
+      "1,2,3",
+      "2, 4,5",
+      "1, 3,5"
+    ],
+    "correct": null,
+    "id": 246
+  },
+  {
+    "question": "In addition to informing each State, whose citizens are known to be on board an aircraft, the State of the country in which an aircraft has landed after an act of unlawful interference must immediately notify the ...",
+    "options": [
+      "State of Registry of the aircraft and the State of the operator only.",
+      "State of the operator, the EASA and ICAO.",
+      "State of Registry of the aircraft and the EASA.",
+      "State of Registry of the aircraft, the State of the operator and ICAO."
+    ],
+    "correct": null,
+    "id": 247
+  },
+  {
+    "question": "With regard to ICAO Annex 17 \"Security\", which of the following statements is correct? 1. An aircraft that may be subjected to an act of unlawful interference shall be searched for concealed weapons, explosives or other dangerous devices, articles or substances. 2. An operator shall ensure that there is on board a checklist of the procedures to be followed in searching for a bomb (Aeroplane search procedure checklist).",
+    "options": [
+      "1 is correct, 2 is incorrect",
+      "1 is incorrect, 2 is correct",
+      "1 is incorrect, 2 is incorrect",
+      "1 is correct, 2 is correct"
+    ],
+    "correct": null,
+    "id": 248
+  },
+  {
+    "question": "In case of a ditching, the cabin attendants should: 1. evacuate women and children first 2. have the passengers embark directly in the life rafts 3. prevent passenger movements which may impede the aircraft's flotation ability 4. ensure the complete evacuation of the aircraft",
+    "options": [
+      "2, 3, 4 4",
+      "1, 2, 3, 4",
+      "1,4",
+      "2,3"
+    ],
+    "correct": null,
+    "id": 249
+  },
+  {
+    "question": "What is the most significant factor that affects the time of useful consciousness for each flight crew member?",
+    "options": [
+      "Cabin differential pressure",
+      "Previous training on decompression",
+      "Altitude",
+      "Time of day"
+    ],
+    "correct": null,
+    "id": 250
+  },
+  {
+    "question": "With regard to smoke and fire in the cabin, which of the following statements is correct? 1. If smoke appears in the air conditioning, the initial action to be taken by the flight deck crew is to put on the oxygen mask and goggles. 2. In case of smoke or fire in the cabin, the actions to be taken may be type specific.",
+    "options": [
+      "1 is correct, 2 is incorrect.",
+      "1 is incorrect, 2 is incorrect.",
+      "1 is incorrect, 2 is correct.",
+      "1 is correct, 2 is correct."
+    ],
+    "correct": null,
+    "id": 251
+  },
+  {
+    "question": "Which is an operational requirement concerning ice, snow, or frost on aircraft surfaces?",
+    "options": [
+      "Take-off may be attempted if there is no ice on the leading edges, and less than 5 mm ice on the rest of the wing upper surfaces and control surfaces",
+      "Take-off shall not be commenced unless the external surfaces are clear of any deposit which might adversely affect the performance and/or controllability of the aeroplane",
+      "Take-off may be attempted with snow, ice or frost adhering to the wings, stabiliser or control surfaces provided they are smooth",
+      "Take-off may be attempted with snow, ice or frost adhering to the wings, stabiliser or control surfaces provided they are smooth and anti-/de-icing equipment is in operation"
+    ],
+    "correct": null,
+    "id": 252
+  },
+  {
+    "question": "With regard to emergency landings with engine fire, unless the AOM or OM state otherwise, which of the following statements is correct? 1. Ignition should be switched OFF. 2. The engine should be secured by placing mixture to IDLE CUTOFF and fuel selector / shutoff valve to OFF.",
+    "options": [
+      "1 is incorrect, 2 is incorrect.",
+      "1 is correct, 2 is incorrect.",
+      "1 is incorrect, 2 is correct.",
+      "1 is correct, 2 is correct."
+    ],
+    "correct": null,
+    "id": 253
+  },
+  {
+    "question": "According EU regulations on CAT operations, a runway is considered \"Damp\" when:",
+    "options": [
+      "surface moisture gives it a shiny appearance.",
+      "it is covered with a film of water of less than 3 mm.",
+      "its surface is not dry, and when surface moisture does not give it a shiny appearance.",
+      "it is covered with a film of water of less than 1 mm."
+    ],
+    "correct": null,
+    "id": 254
+  },
+  {
+    "question": "According ICAO Annex 17, \"Security Restricted Areas\" at an aerodrome usually include:",
+    "options": [
+      "The area within a radius of 5.3 km of an airport",
+      "All airport buildings to which passengers have access",
+      "All passenger and baggage check-in areas",
+      "Airside catering and aircraft cleaning premises"
+    ],
+    "correct": null,
+    "id": 255
+  },
+  {
+    "question": "If obliged to jettison part of the fuel in flight, it would be best to do this ...",
+    "options": [
+      "in a straight line and at relatively high altitudes.",
+      "under flight level 50 (FL50).",
+      "during final phase of approach.",
+      "in a holding stack, after control clearance."
+    ],
+    "correct": null,
+    "id": 256
+  },
+  {
+    "question": "At a given configuration, the wake turbulence of an aeroplane is greater when the aeroplane is ...",
+    "options": [
+      "light at low airspeed.",
+      "heavy at high airspeed.",
+      "light at high airspeed.",
+      "heavy at low airspeed."
+    ],
+    "correct": null,
+    "id": 257
+  },
+  {
+    "question": "Following an act of unlawful interference, the who shall submit, without delay, a report of such an act to the designated local authority?",
+    "options": [
+      "EASA",
+      "The Pilot-in-Command",
+      "ATC",
+      "The Operator"
+    ],
+    "correct": null,
+    "id": 258
+  },
+  {
+    "question": "During an explosive decompression at flight level 370 (FL 370), the flight deck crew's first action will be ...",
+    "options": [
+      "to inform the passengers.",
+      "to inform ATC.",
+      "to set the transponder to 7700.",
+      "to put on the oxygen mask."
+    ],
+    "correct": null,
+    "id": 259
+  },
+  {
+    "question": "What does Part B of an Operations Manual for a Commercial Air Transport operator normally contain?",
+    "options": [
+      "Operating areas and routes",
+      "Type-related crew training information",
+      "Flight procedures and documents",
+      "Type-related aircraft operating information"
+    ],
+    "correct": null,
+    "id": 260
+  },
+  {
+    "question": "In case during take-off roll of a jet engine aeroplane, an engine fire is detected after V1, the crew's initial action is to ...",
+    "options": [
+      "shut down the affected engine.",
+      "stabilise the aircraft on a safe climb path.",
+      "advise ATC and the cabin crew.",
+      "operate the engine fire extinguisher system."
+    ],
+    "correct": null,
+    "id": 261
+  },
+  {
+    "question": "With regard to EU regulations on CAT operations, appropriate security measures such as training of flight crew and cabin staff to prevent acts of unlawful interference during a flight shall be taken by ...",
+    "options": [
+      "the ICAO.",
+      "the Operator.",
+      "the Pilot-in-Command.",
+      "the Contracting State an airport has departed."
+    ],
+    "correct": null,
+    "id": 262
+  },
+  {
+    "question": "According ICAO DOC 9640, the De-/Anti-Ice fluids available are referred to as:",
+    "options": [
+      "Type I and II",
+      "Type I, lla, Ilb, llc",
+      "Type I, II, Ill or IV",
+      "Type A and B"
+    ],
+    "correct": null,
+    "id": 263
+  },
+  {
+    "question": "In a light crosswind (approximately 5 kt) from the right behind an aeroplane taking off:",
+    "options": [
+      "The left wake vortex remains approximately on the runway",
+      "The right and left wake vortices remain approximately on the runway",
+      "The runway will be clear of any wake turbulence",
+      "The right wake vortex remains approximately on the runway"
+    ],
+    "correct": null,
+    "id": 264
+  },
+  {
+    "question": "Wake turbulence category HEAVY refers to aircraft which have a maximum certificated take-off mass of ...",
+    "options": [
+      "186000 kg or more.",
+      "between 136000 kg and 186000 kg.",
+      "146000 kg or more.",
+      "136000 kg or more."
+    ],
+    "correct": null,
+    "id": 265
+  },
+  {
+    "question": "For an aeroplane with a tyre pressure of 8 bars, there is a risk of dynamic hydroplaning as soon as the ...",
+    "options": [
+      "Cross wind is greater than 20 kt.",
+      "Speed is greater than 127 kt.",
+      "Water depth is equal to the half of the depth of tyre grooves.",
+      "Speed is greater than 97 kt."
+    ],
+    "correct": null,
+    "id": 266
+  },
+  {
+    "question": "When operating an aircraft with an inoperative item of equipment, which document should be used by the Commander as reference?",
+    "options": [
+      "Minimum Equipment List produced by the operator and approved by the Competent Authority Minimum Equipment List produced by the operator and based on the Aeroplane or Helicopter Flight Manual",
+      "Authority",
+      "Master Minimum Equipment List produced by the manufacturer and approved by the Competent Authority",
+      "Master Minimum Equipment List produced by the operator and approved by the Competent"
+    ],
+    "correct": null,
+    "id": 267
+  },
+  {
+    "question": "Choose the best action(s) an aircraft commander should take if microbursts are forecast and observed before approaching to land:",
+    "options": [
+      "Use the minimum approach descent to avoid the microbursts.",
+      "Hold until conditions improve or divert to another aerodrome.",
+      "Use maximum approach speed and reduce level of landing flaps extended.",
+      "Reduce the approach speed and the approach descent gradient."
+    ],
+    "correct": null,
+    "id": 268
+  },
+  {
+    "question": "3 (See attachment IC-070-017) What is the meaning of digit \"3\" on the label?",
+    "options": [
+      "Packing instruction",
+      "Hazard class",
+      "UN number",
+      "ID number"
+    ],
+    "correct": null,
+    "id": 269
+  },
+  {
+    "question": "When an aircraft encounters a strong downdraft it will experience similar effects as produced by ...",
+    "options": [
+      "an increasing headwind or increasing tailwind.",
+      "an increasing headwind or decreasing tailwind.",
+      "a decreasing headwind or decreasing tailwind.",
+      "a decreasing headwind or increasing tailwind."
+    ],
+    "correct": null,
+    "id": 270
+  },
+  {
+    "question": "After anti-icing has been completed, a pre-departure inspection reveals presence of frost, ice or snow.",
+    "options": [
+      "switch on all the aircraft anti-icing and de-icing systems until clear of icing conditions when airborne.",
+      "carry out a new de-icing/anti-icing procedure. complete departure as soon as possible to reduce the possibility of further contamination.",
+      "complete departure provided that the recommended anti-icing holdover (protection) time for the prevailing conditions and type of fluid used has not been exceeded.",
+      "The correct action is to ..."
+    ],
+    "correct": null,
+    "id": 271
+  },
+  {
+    "question": "What action should a pilot take if microbursts are forecast and observed before take-off?",
+    "options": [
+      "Use maximum take-off speeds.",
+      "Use minimum take-off speeds.",
+      "Perform a steep climb-out gradient.",
+      "Take-off should be delayed until the conditions improve."
+    ],
+    "correct": null,
+    "id": 272
+  },
+  {
+    "question": "With regard to cooling of hot brakes and wheel fires ...",
+    "options": [
+      "the best agent to extinguish brake fires is carbon dioxide.",
+      "only dry chemical agents will work.",
+      "water fog should never be used for cooling hot brakes.",
+      "an explosive failure of the wheel may occur due to rapid cooling of the hot wheel."
+    ],
+    "correct": null,
+    "id": 273
+  },
+  {
+    "question": "Which document contains type-related instructions and procedures for the aircraft flown?",
+    "options": [
+      "Aircraft Flight Manual Part A",
+      "Aircraft User Manual Part B",
+      "Aircraft Operating Manual Part A",
+      "Operations Manual Part B"
+    ],
+    "correct": null,
+    "id": 274
+  },
+  {
+    "question": "According ICAO Doc 4444 PANS-ATM, when a MEDIUM aircraft precedes a LIGHT aircraft using the same runway, or parallel runways separated by less than 760 m, the wake turbulence radar separation minima on the approach or departure phases of flight shall be:",
+    "options": [
+      "3 NM",
+      "5 NM",
+      "2 NM",
+      "4 NM"
+    ],
+    "correct": null,
+    "id": 275
+  },
+  {
+    "question": "According Regulation (EU) No 965/2012, the task specialist shall ensure that he/she is restrained when carrying out specialised tasks in which cases?",
+    "options": [
+      "When the aircraft becomes airborne",
+      "At altitudes above 10.000 ft MSL",
+      "When external doors are closed or attached",
+      "When external doors are opened or removed"
+    ],
+    "correct": null,
+    "id": 276
+  },
+  {
+    "question": "What necessary documents/publication should be checked by the Pilot-in-Command to find information about the published Noise Abatement Departure Procedures (NADP) for the departure airport?",
+    "options": [
+      "AD 2.21 of the National AIP",
+      "ICAO Doc 8168 (Volume I, Flight Procedures)",
+      "NOTAM for the aerodrome",
+      "ICAO Doc 7030 (Regional Supplementary Procedures)"
+    ],
+    "correct": null,
+    "id": 277
+  },
+  {
+    "question": "According ICAO Annex 17, the term \"Unidentified Baggage\" is defined as Baggage at an airport, ...",
+    "options": [
+      "with or without a baggage tag, which is not picked up by or identified with a passenger.",
+      "with a baggage tag, which has been mishandled and is in the process of being rushed to its intended destination.",
+      "without a baggage tag, which has been waiting to be picked up by a passenger for more than 24 hours.",
+      "with or without a baggage tag, which has been waiting to be picked up by a passenger for more than 72 hours."
+    ],
+    "correct": null,
+    "id": 278
+  },
+  {
+    "question": "In case of an emergency landing over water (ditching), what statement, unless the AOM or OM state otherwise, about procedure recommendations is correct? 1. Ditching should be performed with Landing gear UP and a nose-UP attitude 2. Ditching should be performed with minimum approach speed and maximum flaps",
+    "options": [
+      "1 is correct, 2 is correct.",
+      "1 is incorrect, 2 is incorrect.",
+      "1 is correct, 2 is incorrect.",
+      "1 is incorrect, 2 is correct."
+    ],
+    "correct": null,
+    "id": 279
+  },
+  {
+    "question": "Assuming contaminated runway conditions, if an aeroplane's main wheel tyre pressure is 206 PSI, the approximate speed above which dynamic hydroplaning may occur is:",
+    "options": [
+      "129 kt",
+      "114 kt",
+      "80 kt",
+      "100 kt"
+    ],
+    "correct": null,
+    "id": 280
+  },
+  {
+    "question": "When taking-off after a widebody aircraft which has just landed, you should take-off ...",
+    "options": [
+      "in front of the point where the aircraft's wheels have touched down.",
+      "at the point where the aircraft's wheels have touched the ground and on the down wind side of the runway.",
+      "at the point where the aircraft's wheels have touched down and on the wind side of the runway.",
+      "beyond the point where the aircraft's wheels have touched down."
+    ],
+    "correct": null,
+    "id": 281
+  },
+  {
+    "question": "Who should establish the procedures on the inspection of Dangerous Goods for damage, leakage or contamination?",
+    "options": [
+      "The commander",
+      "EASA",
+      "ICAO",
+      "The operator"
+    ],
+    "correct": null,
+    "id": 282
+  },
+  {
+    "question": "According to EU Regulation on Air Operations, the characteristics of de-icing and anti-icing fluids to be used for your aircraft can be found in ...",
+    "options": [
+      "the aircraft maintenance manual.",
+      "the operations manual.",
+      "the aircraft flight manual.",
+      "the weight and balance manual."
+    ],
+    "correct": null,
+    "id": 283
+  },
+  {
+    "question": "For the purpose of wake turbulence separation, what is the ICAO minimum radar separation distance if a HEAVY aeroplane is following directly behind another HEAVY aeroplane on the approach to the same runway?",
+    "options": [
+      "9.3 km (5 NM)",
+      "11.1 km (6 NM)",
+      "7.4 km (4 NM)",
+      "3.7 km (2 NM)"
+    ],
+    "correct": null,
+    "id": 284
+  },
+  {
+    "question": "Which of the following situations may lead to a light aircraft making a precautionary landing? 1. Oncoming darkness 2. Deteriorating weather 3. Sick passenger 4. Fuel shortage 5. Engine failure",
+    "options": [
+      "1, 2 and 5",
+      "2, 3 and 4",
+      "1, 2, 3, 4 and 5",
+      "1, 2 and 4"
+    ],
+    "correct": null,
+    "id": 285
+  },
+  {
+    "question": "Aeroplane wake turbulence during take off starts when ...",
+    "options": [
+      "slats and flaps are extended only.",
+      "the nose wheel lifts off the runway.",
+      "the take off roll commences.",
+      "out of ground effect."
+    ],
+    "correct": null,
+    "id": 286
+  },
+  {
+    "question": "Aircraft flight characteristics including performance, stability and control may be affected by icing. Compared to the effects of icing in flight, the effects encountered on ground ...",
+    "options": [
+      "may be totally different, due to the accumulation of frost, snow or ice on unprotected aircraft areas.",
+      "are dependent on the use of the ice and rain protection systems whilst on the ground.",
+      "are dependent on whether the aircraft is certified for operations in icing conditions.",
+      "are the same, as the characteristics resulting from frost, snow or ice accumulation are the same."
+    ],
+    "correct": null,
+    "id": 287
+  },
+  {
+    "question": "In accordance with ICAO PANS OPS 8168, noise preferential routes are established to ensure that departing and arriving aeroplanes avoid overflying noise-sensitive areas in the vicinity of the aerodrome as far as practicable. In establishing noise preferential routes ...",
+    "options": [
+      "turns during take-off and climb should not be required unless the aeroplane has reached and can maintain throughout the turn a height of no less than 100 m above terrain and the highest obstacle.",
+      "turns during take-off and climb should not be required unless the bank angle for turns is limited to 28° (climbing at V2 + 10 to 20 Kt)",
+      "no turns should be required coincident with a reduction of power associated with a noise abatement procedure.",
+      "turns during take-off and climb should not be required unless the bank angle for turns is limited to 20° (climbing at V2 + 10 to 20 Kt)"
+    ],
+    "correct": null,
+    "id": 288
+  },
+  {
+    "question": "What happens to the altimeter reading if the static port is blocked by ice during the climb phase?",
+    "options": [
+      "It will suddenly drop to zero indicating the icing effect.",
+      "It will over-read during further climb.",
+      "It will freeze at that altitude where the incident occurred.",
+      "It will under-read and finally display zero."
+    ],
+    "correct": null,
+    "id": 289
+  },
+  {
+    "question": "According to the recommended \"noise abatement take-off and climb procedure\" NADP 2, established in ICAO Doc 8168, acceleration and flaps/slats retraction is initiated at an height above aerodrome elevation:",
+    "options": [
+      "Not below 1000 ft",
+      "At 1500 ft",
+      "Not below 800 ft",
+      "At 3000 ft"
+    ],
+    "correct": null,
+    "id": 290
+  },
+  {
+    "question": "In the event of an engine exhaust pipe fire while on the ground, the pilot should abort the start or continue with the shutdown and ...",
+    "options": [
+      "fight the fire with a water fire-extinguisher.",
+      "carry out a damp crank of the engine.",
+      "pull fire shut off handle, trigger engine fire-extinguishers.",
+      "carry out a dry crank of the engine."
+    ],
+    "correct": null,
+    "id": 291
+  },
+  {
+    "question": "Which of the following is a possible immediate physiological effect of an explosive decompression?",
+    "options": [
+      "Hands and feet with a tingling sensation",
+      "Ruptured ear drums",
+      "Reduction in night vision",
+      "Minor ear discomfort"
+    ],
+    "correct": null,
+    "id": 292
+  },
+  {
+    "question": "To fight a fire in an air-conditioned cargo hold, the correct initial action is to ...",
+    "options": [
+      "evacuate the smoke.",
+      "discharge the fire extinguishers in the affected compartment.",
+      "confirm visually the fire.",
+      "shut off the ventilating airflow within the affected compartment."
+    ],
+    "correct": null,
+    "id": 293
+  },
+  {
+    "question": "IC-070-028 Guidelines for Holdover Times anticipated for Type II fluid mixtures as a function of weather conditions and OAT (valid for metallic and composite surfaces) Outside Air Temperture 1 Type II Fluid Concentration Neat-Fluid/Water Vol%/Vol% Approximate Holdover Times under various weather conditions (hours:minutes) Degrees Celcius Degrees Fahrenheit Freezing Fog Snow/ Snow Grains/ Snow Pellets Freezing Drizzle 3 Light Freezing Rain Rain on Cold Soaked Wing Other 4,5 -3° and above",
+    "options": [
+      "27 and above",
+      "100/0",
+      "0:35 - 1:30",
+      "0:20 - 0:45"
+    ],
+    "correct": null,
+    "id": 294
+  },
+  {
+    "question": "In final approach, you encounter a strong rear wind gust or strong down wind which forces you to go around. You 1- maintain the same aircraft configuration (gear and flaps) 2- reduce the drags (gear and flaps) 3- gradually increase the attitude up to triggering of stick shaker 4- avoid excessive attitude change",
+    "options": [
+      "1,3",
+      "1,4",
+      "2,3",
+      "2,4"
+    ],
+    "correct": null,
+    "id": 295
+  },
+  {
+    "question": "With regard to CAT.IDE.A/H.105 Minimum equipment for flight, which of the following statements is correct? 1. A flight shall not be commenced when any of the aircraft's equipment for the intended flight are inoperative, unless MEL allows for an equipment item to be inoperative. 2. An operator may be approved by the competent authority to operate the aircraft within the constraints of the master minimum equipment list (MMEL)",
+    "options": [
+      "1 is incorrect, 2 is incorrect",
+      "1 is correct, 2 is correct",
+      "1 is incorrect, 2 is correct",
+      "1 is correct, 2 is incorrect"
+    ],
+    "correct": null,
+    "id": 296
+  },
+  {
+    "question": "According to the Certification Specifications for Large Aeroplanes (CS-25) it must be shown that an aeroplane with a seating capacity of more than 44 passengers can be evacuated under simulated emergency conditions within:",
+    "options": [
+      "60 seconds.",
+      "2 minutes.",
+      "3 minutes.",
+      "90 seconds."
+    ],
+    "correct": null,
+    "id": 297
+  },
+  {
+    "question": "According ICAO DOC 9640, an acceptable contamination that does NOT require de-icing procedure, can be ...",
+    "options": [
+      "hoar frost on the propellers.",
+      "cold-soaked ice below the wings.",
+      "snow on the elevator.",
+      "light hoar frost on the fuselage."
+    ],
+    "correct": null,
+    "id": 298
+  },
+  {
+    "question": "When experiencing a wind component of 30 kt during final approach, what horizontal wind component can be expected below the centre of the microburst?",
+    "options": [
+      "15 kt",
+      "60 kt",
+      "30 kt",
+      "0 kt"
+    ],
+    "correct": null,
+    "id": 299
+  },
+  {
+    "question": "According ICAO DOC 9640, the definition of \"the process that removes ice, snow, slush or frost from aircraft surfaces\" refers to:",
+    "options": [
+      "Anti-Icing",
+      "Shear force",
+      "Cold soak",
+      "De-Icing"
+    ],
+    "correct": null,
+    "id": 300
+  },
+  {
+    "question": "With regard to differences in energy absorption of steel and carbon brakes, aeroplanes with STEEL brakes should be taxied at (1) __ , whereas the aeroplanes with CARBON brakes should be allowed for (2) _. .",
+    "options": [
+      "(1) lower speed using frequent, short brake applications, (2) higher taxi speed before slowing down.",
+      "(1) higher speed using only few, forceful brake applications, (2) lower taxi speed and not be slowed down.",
+      "(1) lower speed using only few, forceful brake applications, (2) higher taxi speed before slowing down.",
+      "(1) higher speed using frequent, short brake applications, (2) lower taxi speed and not be slowed down."
+    ],
+    "correct": null,
+    "id": 301
+  },
+  {
+    "question": "In calm wind conditions, an aircraft at take-off creates tip vortices that ...",
+    "options": [
+      "separate outwards on each side of the runway.",
+      "separate outwards to the left side only.",
+      "stagnate on the runway.",
+      "separate outwards to the right side only."
+    ],
+    "correct": null,
+    "id": 302
+  },
+  {
+    "question": "Assuming that an operator is approved by the Authority to transport dangerous goods, the carriage of dangerous goods is allowed provided that ...",
+    "options": [
+      "the dangerous goods transport document is approved by the national authority prior to each flight.",
+      "no passengers and dangerous goods are carried on the same flight.",
+      "the operator has certified the dangerous goods.",
+      "the operator complies with the Technical Instructions (ICAO DOC 9284)."
+    ],
+    "correct": null,
+    "id": 303
+  },
+  {
+    "question": "Whenever a potential bird hazard is observed, the commander ...",
+    "options": [
+      "shall inform the air traffic service (ATS) unit as soon as flight crew workload allows.",
+      "shall submit a written hazard bird strike report upon arrival and within 48 hours.",
+      "shall inform immediately the bird control unit (BCU) directly by radio.",
+      "shall inform other aircraft in the vicinity by radio."
+    ],
+    "correct": null,
+    "id": 304
+  },
+  {
+    "question": "In case of an unexpected encounter with windshear, you will: 1. set the maximum take-off thrust 2. increase the pitch-up attitude up to the limit actuating the stick shaker 3. retract gear and flaps, if they are extended 4. keep gear, flaps and slats in current configuration and retract the speed brakes 5. try to reach the maximum lift-to-drag ratio",
+    "options": [
+      "1, 3,5",
+      "2,3",
+      "3,5",
+      "1, 2,4"
+    ],
+    "correct": null,
+    "id": 305
+  },
+  {
+    "question": "According Regulation (EU) No 965/2012, each flight crew member shall complete operator proficiency checks to demonstrate his/her competence in carrying out: 1. normal procedures 2. abnormal procedures 3. emergency procedures 4. escape procedures",
+    "options": [
+      "1, 2 and 3.",
+      "1, 2 and 4.",
+      "2, 3 and 4",
+      "1 and 2."
+    ],
+    "correct": null,
+    "id": 306
+  },
+  {
+    "question": "In case a commercial multi-engined jet aircraft flying over water loses all engines and decides to make an emergency landing (ditching), which of the following has the highest priority?",
+    "options": [
+      "Instruct passengers to put on and inflate their life jackets",
+      "Maintain control of the aircraft",
+      "Inform everyone about your plans and needs",
+      "Make sure that the passengers remain seated"
+    ],
+    "correct": null,
+    "id": 307
+  },
+  {
+    "question": "For an aeroplane with a tyre pressure of 10 bars, there is a risk of dynamic hydroplaning as soon as the ...",
+    "options": [
+      "Speed is greater than 96 kt.",
+      "Runway temperature is greater than 40℃.",
+      "Water depth is equal to the half of the depth of the tyre grooves.",
+      "Speed is greater than 109 kt."
+    ],
+    "correct": null,
+    "id": 308
+  },
+  {
+    "question": "Regarding wake turbulence, what are the ICAO minimum radar separation distance and the minimum non-radar separation time for a MEDIUM aircraft behind a HEAVY aeroplane on approach to the same runway?",
+    "options": [
+      "9.3 km (5 NM) and 3 minutes",
+      "9.3 km (5 NM) and 2 minutes",
+      "11.1 km (6 NM) and 3 minutes",
+      "7.4 km (4 NM) and 2 minutes"
+    ],
+    "correct": null,
+    "id": 309
+  },
+  {
+    "question": "According ICAO Annex 17, the intention of the \"Screening\" process is ...",
+    "options": [
+      "to move suspicious baggage, cargo, or packages airside, away from passengers.",
+      "to detect weapons, explosives or other dangerous devices, articles or substances which may be used to commit an act of unlawful interference.",
+      "to use technology such as X-rays to detect drugs and similar substances.",
+      "to place suspicious baggage, cargo, or packages behind a screen in the passenger lounge for isolation purposes."
+    ],
+    "correct": null,
+    "id": 310
+  }
+]

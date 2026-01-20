@@ -1,0 +1,2741 @@
+[
+  {
+    "question": "The directional change of an electromagnetic wave caused by a change in its speed is called ...",
+    "options": [
+      "reflection.",
+      "diffraction.",
+      "interference.",
+      "refraction."
+    ],
+    "correct": null,
+    "id": 1
+  },
+  {
+    "question": "The maximum theoretical range at which an aircraft at FL 230 may receive signals from a VOR situated at mean sea level is ...",
+    "options": [
+      "198 NM.",
+      "187 NM.",
+      "220 NM.",
+      "171 NM."
+    ],
+    "correct": null,
+    "id": 2
+  },
+  {
+    "question": "An aircraft is flying: 1. directly towards a DME 2. directly away from a DME 3. a DME ARC 4. passing abeam a DME station. In which of the above situations will the DME give an accurate ground speed reading?",
+    "options": [
+      "2 and 4",
+      "1 and 2",
+      "1 and 3",
+      "3 and 4"
+    ],
+    "correct": null,
+    "id": 3
+  },
+  {
+    "question": "The integrity of a VOR system can be improved by using ...",
+    "options": [
+      "VOR test beacons at airfields and along airways.",
+      "several independent VOR receivers in the aircraft.",
+      "an automatic ground monitoring system.",
+      "several different frequencies for the same VOR."
+    ],
+    "correct": null,
+    "id": 4
+  },
+  {
+    "question": "A DME receiver in an aircraft is able to accept replies to its own transmissions and also to reject replies to other aircraft interrogations because ...",
+    "options": [
+      "each DME ground station serves one particular aircraft only.",
+      "interrogation signals and transponder responses are 12 MHz apart.",
+      "the time interval between pulse pairs is unique to that particular aircraft.",
+      "pulse pairs are amplitude-modulated with the aircraft registration."
+    ],
+    "correct": null,
+    "id": 5
+  },
+  {
+    "question": "Which of the following statements is true regarding the two modulation types of NDBs, NON/A1A and NON/A2A?",
+    "options": [
+      "The type of modulation generally has no effect on the bearing indicator.",
+      "The bearing indicator is erratic when an NON/A2A station is identifying.",
+      "The BFO needs to be activated when an NON/A2A station is identifying.",
+      "The bearing indicator is erratic when an NON/A1A station is identifying."
+    ],
+    "correct": null,
+    "id": 6
+  },
+  {
+    "question": "Which ILS marker is identified by a series of two dashes per second?",
+    "options": [
+      "Outer marker",
+      "Middle marker",
+      "Beacon.",
+      "Inner marker"
+    ],
+    "correct": null,
+    "id": 7
+  },
+  {
+    "question": "The front end of a VOR pointer on an RMI indicates the ...",
+    "options": [
+      "magnetic bearing from the station.",
+      "compass heading to the station.",
+      "radial plus 180°.",
+      "actual radial."
+    ],
+    "correct": null,
+    "id": 8
+  },
+  {
+    "question": "Which of the following frequencies can be used by a VOR?",
+    "options": [
+      "120.215 MHz.",
+      "111.935 MHz.",
+      "108.70 MHz.",
+      "108.20 MHz."
+    ],
+    "correct": null,
+    "id": 9
+  },
+  {
+    "question": "Which of the following lists the major ground-based components of a Microwave Landing System?",
+    "options": [
+      "Separate azimuth and elevation transmitters, marker beacons",
+      "Combined azimuth and elevation transmitter, marker beacons",
+      "Separate azimuth and elevation transmitters, DME facility",
+      "Combined azimuth and elevation transmitter, DME facility"
+    ],
+    "correct": null,
+    "id": 10
+  },
+  {
+    "question": "When comparing a parabolic reflector with a flat plate antenna of the same size, the flat plate antenna ...",
+    "options": [
+      "generates more side lobes than the parabolic reflector.",
+      "has a considerably smaller beam width.",
+      "generates less side lobes than the parabolic reflector.",
+      "has a considerably higher beam width."
+    ],
+    "correct": null,
+    "id": 11
+  },
+  {
+    "question": "When using pulsed signals with electromagnetic waves, the timely duration of a pulse is referred to as the ...",
+    "options": [
+      "pulse interval.",
+      "pulse length.",
+      "pulse time.",
+      "pulse power."
+    ],
+    "correct": null,
+    "id": 12
+  },
+  {
+    "question": "Which of the following frequencies corresponds to a wavelength of 12 cm?",
+    "options": [
+      "3600 KHz.",
+      "2500 KHz.",
+      "2500 MHZ.",
+      "3600 MHz."
+    ],
+    "correct": null,
+    "id": 13
+  },
+  {
+    "question": "In which frequency band does an ILS glide path operate?",
+    "options": [
+      "VLF",
+      "SHF",
+      "UHF",
+      "MF"
+    ],
+    "correct": null,
+    "id": 14
+  },
+  {
+    "question": "Which of the following frequency bands is allocated for aeronautical NDBs?",
+    "options": [
+      "236 kHz to 495 KHz",
+      "1440 kHz to 2180 KHz",
+      "300 kHz to 1500 MHz",
+      "190 kHz to 1750 kHz"
+    ],
+    "correct": null,
+    "id": 15
+  },
+  {
+    "question": "For an ADF to provide an aircraft with bearing information, the associated ground station emits a signal pattern which is ...",
+    "options": [
+      "unidirectional.",
+      "a rotating beam.",
+      "in the VHF band.",
+      "omnidirectional."
+    ],
+    "correct": null,
+    "id": 16
+  },
+  {
+    "question": "Which of the following frequencies can be an ILS localiser frequency?",
+    "options": [
+      "109.15 MHZ",
+      "108.65 MHz",
+      "109.80 MHz",
+      "112.10 MHz"
+    ],
+    "correct": null,
+    "id": 17
+  },
+  {
+    "question": "Which kind of warning is visible in the cockpit when the NDB fails?",
+    "options": [
+      "No warning",
+      "The message \"NDB fail\"",
+      "A failure flag on the ADF",
+      "A red button on a moving card ADF"
+    ],
+    "correct": null,
+    "id": 18
+  },
+  {
+    "question": "The flashing light of the inner marker of an ILS will be ...",
+    "options": [
+      "white.",
+      "magenta.",
+      "red.",
+      "amber."
+    ],
+    "correct": null,
+    "id": 19
+  },
+  {
+    "question": "What is the carrier frequency associated with the ILS inner marker?",
+    "options": [
+      "3000 Hz",
+      "870 Mhz",
+      "75 MHZ",
+      "400 Hz"
+    ],
+    "correct": null,
+    "id": 20
+  },
+  {
+    "question": "Which of the following statements is correct regarding the different types of VOR?",
+    "options": [
+      "A TVOR has a limited range",
+      "All VORs operate in the MF and HF band",
+      "The on-board instrument coupled with the VOR is the ADF",
+      "A DVOR is less accurate than a CVOR"
+    ],
+    "correct": null,
+    "id": 21
+  },
+  {
+    "question": "VHF waves propagate ...",
+    "options": [
+      "during daytime as \"ground waves\", during night time as \"sky waves\".",
+      "during daytime as \"sky waves\", during night time as \"ground waves\".",
+      "during daytime as \"ground waves\", during night time as \"sky waves\" and \"ground waves\".",
+      "during daytime and night time as \"space waves\" (direct waves)."
+    ],
+    "correct": null,
+    "id": 22
+  },
+  {
+    "question": "With regard to influence of the ionosphere on wave propagation, which of the following statements is correct? 1. The D-layer can absorb the LF / MF waves and prevent reflection at the higher E- and F-layers. 2. The D-layer is only present during daytime.",
+    "options": [
+      "1 is incorrect, 2 is correct.",
+      "1 is correct, 2 is correct.",
+      "1 is incorrect, 2 is incorrect.",
+      "1 is correct, 2 is incorrect."
+    ],
+    "correct": null,
+    "id": 23
+  },
+  {
+    "question": "Radio waves in the VHF, UHF, SHF and EHF propagate as ...",
+    "options": [
+      "space waves.",
+      "ground waves.",
+      "conduit waves.",
+      "sky waves."
+    ],
+    "correct": null,
+    "id": 24
+  },
+  {
+    "question": "Regarding the operation principle of an ILS LOC, the difference of 90 Hz and 150 Hz signals ...",
+    "options": [
+      "decreases linearly in relation to the angular displacement from the centreline.",
+      "increases linearly in relation to the angular displacement from the centreline.",
+      "decreases inversely in relation to the distance from the centreline",
+      "increases inversely in relation to the distance from the centreline."
+    ],
+    "correct": null,
+    "id": 25
+  },
+  {
+    "question": "The range of a locator beacon is shorter than the range of an NDB because ...",
+    "options": [
+      "locator beacons have a higher frequency.",
+      "locator beacons transmit in the VHF band.",
+      "locator beacons have a lower power output.",
+      "locator beacons are only used for test purposes."
+    ],
+    "correct": null,
+    "id": 26
+  },
+  {
+    "question": "Which frequency is associated with the middle marker beacon of an ILS?",
+    "options": [
+      "180 MHz",
+      "1200 Hz",
+      "90 MHz",
+      "75 MHz"
+    ],
+    "correct": null,
+    "id": 27
+  },
+  {
+    "question": "With regard to NDB procedures, \"homing\" can be used to fly (1) _ the station, while \"tracking\" can be used to fly _ the station.",
+    "options": [
+      "(1) to, (2) from",
+      "(1) from, (2) to",
+      "(1) to and from, (2) to",
+      "(1) to, (2) to and from"
+    ],
+    "correct": null,
+    "id": 28
+  },
+  {
+    "question": "Which of the following are factors for the range of VDF? 1. Line of sight formula 2. Power of transmitters 3. Intervening high ground",
+    "options": [
+      "1, 2, and 3",
+      "Only 3",
+      "1 and 2 only",
+      "2 and 3 only"
+    ],
+    "correct": null,
+    "id": 29
+  },
+  {
+    "question": "Due to the Doppler effect an apparent decrease in the transmitted frequency, which is proportional to the transmitter and receiver's relative velocity, will occur when ...",
+    "options": [
+      "the transmitter moves away from the receiver.",
+      "the transmitter and receiver move towards each other.",
+      "the transmitter moves toward the receiver.",
+      "there is no radial movement between the transmitter and the receiver."
+    ],
+    "correct": null,
+    "id": 30
+  },
+  {
+    "question": "Which statement regarding the skip distance is correct?",
+    "options": [
+      "It is the distance of the wavelength of a certain frequency",
+      "It is the most critical frequency distance",
+      "It is the term for the thickness of the ionosphere",
+      "It is the range from the transmitter to the first sky wave return"
+    ],
+    "correct": null,
+    "id": 31
+  },
+  {
+    "question": "Which ILS marker is identified by a series of dots (6/second)?",
+    "options": [
+      "Middle marker",
+      "Inner marker",
+      "Outer marker",
+      "Beacon"
+    ],
+    "correct": null,
+    "id": 32
+  },
+  {
+    "question": "Which ILS marker is identified visually by a blue flashing light?",
+    "options": [
+      "Inner marker",
+      "Outer marker",
+      "Middle marker",
+      "Beacon"
+    ],
+    "correct": null,
+    "id": 33
+  },
+  {
+    "question": "The frequency 108.35 MHz can only be ...",
+    "options": [
+      "an NDB frequency.",
+      "an MLS frequency.",
+      "an ATC frequency.",
+      "an ILS frequency."
+    ],
+    "correct": null,
+    "id": 34
+  },
+  {
+    "question": "A VDF can be used ...",
+    "options": [
+      "in combination with radar to solve the 180° ambiguity.",
+      "to provide the ATC controller with bearings of aircraft in the absence of radar.",
+      "to obtain a bearing and DME reading of any navigational station.",
+      "to facilitate a precision approach in the absence of a published ILS or MLS procedure."
+    ],
+    "correct": null,
+    "id": 35
+  },
+  {
+    "question": "A locator should have a range of:",
+    "options": [
+      "10 to 25 NM",
+      "12 to 18 NM",
+      "70 to 200 NM",
+      "100 to 180 NM"
+    ],
+    "correct": null,
+    "id": 36
+  },
+  {
+    "question": "The DME receiver of an aircraft passing at 12000 ft overhead a DME station will indicate ...",
+    "options": [
+      "approximately 2 NM.",
+      "0 NM.",
+      "1 NM by default.",
+      "a random number."
+    ],
+    "correct": null,
+    "id": 37
+  },
+  {
+    "question": "Marker beacons indicate the horizontal position of an airplane during approach, the associated colour sequence when passing over an Outer, Middle and Inner Marker is:",
+    "options": [
+      "green - red - white",
+      "blue - amber - white",
+      "blue - white - amber",
+      "amber - white - amber"
+    ],
+    "correct": null,
+    "id": 38
+  },
+  {
+    "question": "Which factors affect the performance and reliability of most NDB/ADF systems?",
+    "options": [
+      "altitude error - station interference - mountain effect",
+      "static interference - scalloping - saturation of the ground station",
+      "static interference - night effect - absence of failure warning system",
+      "coastal refraction - lane slip - inaccurate distance measurement"
+    ],
+    "correct": null,
+    "id": 39
+  },
+  {
+    "question": "The effect of \"antenna shadowing\" may occur in which of the following situations? 1. Weak signal from GPS while flying through a cloud layer. 2. Weak signal from a VOR, combined with performing a standard turn or orbiting.",
+    "options": [
+      "1 is correct, 2 is correct.",
+      "1 is incorrect, 2 is incorrect.",
+      "1 is incorrect, 2 is correct.",
+      "1 is correct, 2 is incorrect."
+    ],
+    "correct": null,
+    "id": 40
+  },
+  {
+    "question": "What is the correct definition of the skip-zone?",
+    "options": [
+      "It is the area, where only sky waves can be received.",
+      "It is the area, where both ground and sky waves can be received.",
+      "It is the area, where only ground waves can be received.",
+      "It is the area, where neither ground waves nor sky waves are received."
+    ],
+    "correct": null,
+    "id": 41
+  },
+  {
+    "question": "The OUTER MARKER of an Instrument Landing System (ILS) facility transmits on a frequency of ...",
+    "options": [
+      "75 MHz and is modulated by morse at alternate dots and dashes.",
+      "400 MHz and is modulated by morse at two dashes per second.",
+      "75 MHz and is modulated by morse at two dashes per second.",
+      "250 MHz and is modulated by morse at alternate dots and dashes."
+    ],
+    "correct": null,
+    "id": 42
+  },
+  {
+    "question": "Conducting an ILS approach, marker beacons indicate the horizontal position of the aircraft, you will pass these markers in the following order:",
+    "options": [
+      "OM, IM (if available), MM",
+      "OM, MM, IM (if available)",
+      "MM, OM, IM (if available)",
+      "IM (if available), MM, OM"
+    ],
+    "correct": null,
+    "id": 43
+  },
+  {
+    "question": "The back course of an ILS may be used for ...",
+    "options": [
+      "non-precision approach guidance for the main approach runway.",
+      "precision approach guidance for the reciprocal of the main approach runway.",
+      "precision approach guidance for the main approach runway.",
+      "non-precision approach guidance for the reciprocal of the main approach runway."
+    ],
+    "correct": null,
+    "id": 44
+  },
+  {
+    "question": "When performing a back-beam approach of an ILS, and having set the inbound track on the OBS, the deviation indicator will be (1) _ and the glidepath information will be (2) _.",
+    "options": [
+      "(1) reversed sensing, (2) reversed sensing.",
+      "(1) reversed sensing, (2) normal sensing.",
+      "(1) reversed sensing, (2) not available.",
+      "(1) normal sensing, (2) not available."
+    ],
+    "correct": null,
+    "id": 45
+  },
+  {
+    "question": "Which statement is correct regarding DME range?",
+    "options": [
+      "The operating principle of the DME is phase comparison.",
+      "The DME operates in the VHF band.",
+      "The range of DME is line of sight.",
+      "The DME utilises ground and sky wave propagation."
+    ],
+    "correct": null,
+    "id": 46
+  },
+  {
+    "question": "The on-board equipment required for the operation of a VHF direction finder is a ...",
+    "options": [
+      "Radio compass operating in the 200 kHz to 1750 kHz range.",
+      "Transmitter-receiver operating in the 100 MHz to 117 MHz range.",
+      "VHF transmitter-receiver operating in the 118 MHz to 136 MHz range.",
+      "VHF transmitter-receiver operating in the SHF or EHF band."
+    ],
+    "correct": null,
+    "id": 47
+  },
+  {
+    "question": "The circumstances in which warning flags will appear for both the LOC and the GP are: 1. Absence of the carrier frequency 2. Absence of the modulation (90 Hz and 150 Hz) simultaneously 3. LOC or GP captured on a side-lobe 4. Difference in depth of modulation is zero 5. Modulation percentage of the 90 Hz and 150 Hz signals is 0 %",
+    "options": [
+      "1, 2, 3 and 5.",
+      "1, 2 and 5.",
+      "2, 4 and 5.",
+      "1, 2 and 3."
+    ],
+    "correct": null,
+    "id": 48
+  },
+  {
+    "question": "The ILS receiver of an aircraft flying to the right of the runway centre line will receive ...",
+    "options": [
+      "only the signal from the 150 Hz modulation.",
+      "more of the 150 Hz localiser signal than the 90 Hz localiser signal.",
+      "the modulation from both lobes at equal amplitude.",
+      "more of the 90 Hz localiser signal than the 150 Hz localiser signal."
+    ],
+    "correct": null,
+    "id": 49
+  },
+  {
+    "question": "ILS marker beacons transmit at a frequency of:",
+    "options": [
+      "1230 Hz",
+      "90 MHZ",
+      "800 KHz",
+      "75 MHZ"
+    ],
+    "correct": null,
+    "id": 50
+  },
+  {
+    "question": "Radio waves utilized with NDB are associated with which frequency band, propagation path and range of frequencies?",
+    "options": [
+      "UHF, sky waves, 329.15 to 335 MHz.",
+      "HF, surface (ground) and sky waves, 3 to 30 MHz",
+      "VHF, direct waves, 108 to 117.975 MHz",
+      "LF/MF, surface (ground) waves, 190 to 1750 kHz"
+    ],
+    "correct": null,
+    "id": 51
+  },
+  {
+    "question": "Radio waves used with an ILS Localizer are associated with which frequency band, propagation path and range of frequencies?",
+    "options": [
+      "VHF, space (direct) waves, 108 MHz to 111.975 MHz",
+      "UHF, sky waves, 329.15 to 335 MHz",
+      "HF, surface (ground) and sky waves, 3 to 30 MHz",
+      "LF / MF, surface (ground) waves, 190 to 1750 kHz"
+    ],
+    "correct": null,
+    "id": 52
+  },
+  {
+    "question": "VHF radio waves propagate ...",
+    "options": [
+      "during daytime as ground waves, during night time as ground waves and sky waves.",
+      "during day and night time as ground waves.",
+      "as space waves during daytime and at night time.",
+      "during daytime as ground waves, during night time as sky waves."
+    ],
+    "correct": null,
+    "id": 53
+  },
+  {
+    "question": "When using a Microwave Landing System, the displayed information is a (1) _ presentation of a (2) -approach.",
+    "options": [
+      "(1) 2D, (2) 4D curved.",
+      "(1) 2D, (2) 3D segmented.",
+      "(1) 3D, (2) 3D curved.",
+      "(1) 3D, (2) 3D straight-in."
+    ],
+    "correct": null,
+    "id": 54
+  },
+  {
+    "question": "The range of a VDF transmission can be increased during flight by:",
+    "options": [
+      "talking louder.",
+      "staying clear of rain.",
+      "decreasing altitude.",
+      "increasing altitude."
+    ],
+    "correct": null,
+    "id": 55
+  },
+  {
+    "question": "Which statement is correct with regards to false beams on a glide path?",
+    "options": [
+      "False beams will only be found below the correct glide path.",
+      "False beams will only be found above the correct glide path.",
+      "False beams only occur when the airplane is left or right of the localiser.",
+      "False beams can only be present when the wrong frequency is tuned."
+    ],
+    "correct": null,
+    "id": 56
+  },
+  {
+    "question": "The back beam of a Localizer antenna ...",
+    "options": [
+      "may be used as guidance on departure, but not for an approach.",
+      "can only be used for test purposes, never as an approach aid.",
+      "may be used as a published precision approach.",
+      "may be used as a published non-precision approach."
+    ],
+    "correct": null,
+    "id": 57
+  },
+  {
+    "question": "An ILS produces ...",
+    "options": [
+      "a radiation pattern that is frequency modulated by a 90 Hz and a 150 Hz signal.",
+      "a radiation pattern that is frequency modulated by the VHF frequency of the ILS.",
+      "a radiation pattern that is amplitude modulated by a 90 Hz and a 150 Hz signal.",
+      "a radiation pattern that is amplitude modulated by a 50 Hz and a 400 Hz signal."
+    ],
+    "correct": null,
+    "id": 58
+  },
+  {
+    "question": "The location of the Glide Path (GP) antenna is approximately:",
+    "options": [
+      "at the aerodrome reference point.",
+      "100 m beyond the threshold.",
+      "300 m beyond the threshold",
+      "300 m from the far end of the runway"
+    ],
+    "correct": null,
+    "id": 59
+  },
+  {
+    "question": "The magnetic variation to convert RMI bearings to true bearings will occur at the ...",
+    "options": [
+      "beacon position for NDBs and at the beacon position for VORs.",
+      "beacon position for NDBs and at the aircraft position for VORs.",
+      "aircraft position for NDBs and at the beacon position for VORs.",
+      "aircraft position for NDBs and at the aircraft position for VORs."
+    ],
+    "correct": null,
+    "id": 60
+  },
+  {
+    "question": "The transmitters of an ILS use the ...",
+    "options": [
+      "VHF band only.",
+      "SHF band only.",
+      "MF, HF and VHF bands.",
+      "UHF and VHF bands."
+    ],
+    "correct": null,
+    "id": 61
+  },
+  {
+    "question": "Locators are: 1. High-powered NDBs used for en-route and airway navigation. 2. Low-powered NDBs used for airfield or runway approach. 3. Beacons usually with a range of 10 to 250 NM. 4. Beacons usually with a range of 10 to 25 NM.",
+    "options": [
+      "1 and 3.",
+      "2 and 3.",
+      "2 and 4.",
+      "1 and 4."
+    ],
+    "correct": null,
+    "id": 62
+  },
+  {
+    "question": "A DME receiver in an aircraft cannot lock on to interrogation signals which are reflected from the ground because ...",
+    "options": [
+      "reflections are subject to doppler frequency shift.",
+      "DME does not use a ground station for its operation.",
+      "the pulse recurrence rates are varied by the transmitter.",
+      "aircraft transmitter and DME ground station are transmitting on different frequencies."
+    ],
+    "correct": null,
+    "id": 63
+  },
+  {
+    "question": "The Microwave Landing System (MLS) operates in which frequency band?",
+    "options": [
+      "SHF",
+      "ULF",
+      "UHF",
+      "EHF"
+    ],
+    "correct": null,
+    "id": 64
+  },
+  {
+    "question": "VOR stations and receivers transmit in which frequency band?",
+    "options": [
+      "LF",
+      "VHF",
+      "UHF",
+      "EHF"
+    ],
+    "correct": null,
+    "id": 65
+  },
+  {
+    "question": "On a \"slaved\" RMI (automatically aligned) the reading at the tip of the needle is 300. Magnetic variation is 24W at the DR position and 22W at the NDB, the deviation is -2. Compass heading is 020. The true bearing is:",
+    "options": [
+      "274",
+      "278",
+      "098",
+      "094"
+    ],
+    "correct": null,
+    "id": 66
+  },
+  {
+    "question": "A VOR receiver operates in the frequency range from:",
+    "options": [
+      "108 to 116.95 KHz",
+      "118 to 135.95 KHz",
+      "108 to 135.95 MHz",
+      "108 to 117.95 MHZ"
+    ],
+    "correct": null,
+    "id": 67
+  },
+  {
+    "question": "What is the range of LF (Low Frequency) waves?",
+    "options": [
+      "3-30 KHz.",
+      "30-300 KHz.",
+      "300-3000 KHz.",
+      "30-300 MHz."
+    ],
+    "correct": null,
+    "id": 68
+  },
+  {
+    "question": "What is the wavelength of a radio signal with a frequency of 75 MHz?",
+    "options": [
+      "75 m",
+      "4 m",
+      "40 m",
+      "7.5 m"
+    ],
+    "correct": null,
+    "id": 69
+  },
+  {
+    "question": "When a wave bends because it has to pass around an impenetrable obstacle, it is called ...",
+    "options": [
+      "reflection.",
+      "refraction.",
+      "interference.",
+      "diffraction."
+    ],
+    "correct": null,
+    "id": 70
+  },
+  {
+    "question": "Assuming ISA conditions, an aircraft at FL 300 with a GS of 300 kt is about to pass overhead a DME station at MSL. The DME receiver is capable of determining ground speed. One minute before the overhead, DME speed and distance indications will be respectively ...",
+    "options": [
+      "300 kt and 7 NM.",
+      "more than 300 kt and 6 NM.",
+      "less than 300 kt and 7 NM.",
+      "300 kt and 6 NM."
+    ],
+    "correct": null,
+    "id": 71
+  },
+  {
+    "question": "An aircraft flies a Magnetic Heading of 290 and is on radial 280 of a VOR. Which course needs to be selected on the OBS to get the CDI centred with a TO-indication?",
+    "options": [
+      "280",
+      "110",
+      "100",
+      "290"
+    ],
+    "correct": null,
+    "id": 72
+  },
+  {
+    "question": "The principle used for the bearing measurement of a VOR is ...",
+    "options": [
+      "wave comparison.",
+      "phase comparison.",
+      "depth of modulation.",
+      "envelope adjustment."
+    ],
+    "correct": null,
+    "id": 73
+  },
+  {
+    "question": "What is the reason for pulse pairs being used in a DME instead of single pulses?",
+    "options": [
+      "To distinguish DME transmissions from transmissions of other (radar) systems utilising single pulses.",
+      "To increase the number of aircraft that can simultaneously use the DME station.",
+      "To increase the accuracy and reliability of the range measurement while at the same time saving costs.",
+      "To increase the number of DME stations that can transmit in the same part of the DME frequency band."
+    ],
+    "correct": null,
+    "id": 74
+  },
+  {
+    "question": "An aircraft is on a magnetic heading of 055, the ADF indicates a relative bearing of 325. What is the QDM?",
+    "options": [
+      "245",
+      "065",
+      "020",
+      "200"
+    ],
+    "correct": null,
+    "id": 75
+  },
+  {
+    "question": "The heading of your aircraft is 075(M). Course 025 is selected on the CDI. The VOR indications are TO with the needle showing right deflection. Relative to the station, you are situated in a quadrant defined by the radials:",
+    "options": [
+      "110 and 200",
+      "020 and 110",
+      "295 and 025",
+      "205 and 295"
+    ],
+    "correct": null,
+    "id": 76
+  },
+  {
+    "question": "Which of the following is an advantage of a Microwave Landing System (MLS) over an Instrument Landing System (ILS)?",
+    "options": [
+      "It does not require a separate transmitter for azimuth (localiser) and elevation coverage",
+      "Its operation is cheaper and it is more commonly used",
+      "It is insensitive to geographical site and can be installed at sites where it is not possible to use an ILS",
+      "It does not require additional distance measuring equipment"
+    ],
+    "correct": null,
+    "id": 77
+  },
+  {
+    "question": "Coastal refraction causes errors on NDB bearings. These errors (at lower altitudes) are maximum when the NDB is located ...",
+    "options": [
+      "inland and the bearing crosses the coast at an acute angle.",
+      "close to the coast and the bearing crosses the coast at an acute angle.",
+      "inland and the bearing crosses the coast at a right angle.",
+      "close to the coast and the bearing crosses the coast at a right angle."
+    ],
+    "correct": null,
+    "id": 78
+  },
+  {
+    "question": "What is the wavelength of a radio signal with a frequency of 121.95 MHz?",
+    "options": [
+      "24.60 cm",
+      "2.46 cm",
+      "24.60 m",
+      "2.46 m"
+    ],
+    "correct": null,
+    "id": 79
+  },
+  {
+    "question": "A radio signal can be classified by three symbols in agreement with the International Telecommunication Union (ITU) radio regulation. The Abbreviation A1A is used for the type of modulation where ...",
+    "options": [
+      "carrier with amplitude modulated Morse code as used by NDBs.",
+      "carrier without modulation as used by non-directional radio beacons (NDBs).",
+      "carrier with amplitude modulated speech is used for communication (VHF-COM).",
+      "carrier with keyed Morse code modulation as used by NDBs."
+    ],
+    "correct": null,
+    "id": 80
+  },
+  {
+    "question": "The \"Q\" code for a magnetic bearing from a VDF station is ...",
+    "options": [
+      "QDM",
+      "QFE",
+      "QDR",
+      "QUJ"
+    ],
+    "correct": null,
+    "id": 81
+  },
+  {
+    "question": "The transmission frequency of 110.35 MHz is used by what type of navigation aid?",
+    "options": [
+      "VDF",
+      "ILS Glide Path (GP)",
+      "VOR",
+      "ILS localizer (LLZ)"
+    ],
+    "correct": null,
+    "id": 82
+  },
+  {
+    "question": "Guidance during a segmented or curved MLS approach can be provided by ...",
+    "options": [
+      "GPS path deviation indicator.",
+      "Radio Magnetic Indicator (RMI).",
+      "CDI deviation indicator.",
+      "Flight Director (FD) bars."
+    ],
+    "correct": null,
+    "id": 83
+  },
+  {
+    "question": "When using VOR radial for a procedure turn, track guidance of a radial can be used, then initiating a 45 degrees turn to the left, followed by ...",
+    "options": [
+      "a right turn by 260° to intercept inbound track.",
+      "timed leg with constant heading, then 90° turn to the right to intercept inbound track.",
+      "timed leg with constant heading, then 180° turn to the right to intercept inbound track.",
+      "timed leg with constant track, then 90° turn to the left to intercept inbound track."
+    ],
+    "correct": null,
+    "id": 84
+  },
+  {
+    "question": "When tracking to and from an NDB with correction for wind, regardless of instrument type, the head or tail of the needle points ...",
+    "options": [
+      "slightly left or right of the top of the instrument by twice the Wind Correction Angle (WCA).",
+      "exactly on the top of the instrument while keeping the heading on the correct QDM or QDR.",
+      "slightly left or right of the top of the instrument while maintaining and indicating the correct QDM or QDR.",
+      "exactly on the top of the instrument while maintaining and indicating the correct QDM or QDR."
+    ],
+    "correct": null,
+    "id": 85
+  },
+  {
+    "question": "In CBs with lightning and thunderstorms, disturbances in radio communication and/or significant fluctuations in NDB bearings can occur. Which one of the following phenomena causes these disturbances or fluctuations?",
+    "options": [
+      "Statics",
+      "Scallopings",
+      "Polarisation",
+      "Absorption"
+    ],
+    "correct": null,
+    "id": 86
+  },
+  {
+    "question": "The MLS is primarily installed at airports where:",
+    "options": [
+      "meteorological conditions are likely to cause ILS ducting by super refraction.",
+      "topographical conditions preclude the installation of ILS localizer or glide path antennas.",
+      "the accuracy of an ILS is not sufficient for the expected meteorological conditions.",
+      "ILS encounters difficulties because of surrounding buildings and/or the terrain or interference from local music stations."
+    ],
+    "correct": null,
+    "id": 87
+  },
+  {
+    "question": "Radio waves utilized with single side band communications are associated with which frequency band, propagation path and range of frequencies?",
+    "options": [
+      "HF, surface (ground) and sky waves, 3 to 30 MHz",
+      "VHF, direct waves, 108 to 117.975 MHz",
+      "LF / MF, surface (ground) waves, 190 to 1750 kHz",
+      "UHF, sky waves, 329.15 to 335 MHz."
+    ],
+    "correct": null,
+    "id": 88
+  },
+  {
+    "question": "The type of antenna that may be used by an ADF receiver is a ...",
+    "options": [
+      "loop antenna.",
+      "helical antenna.",
+      "parabolic antenna.",
+      "slotted-plane antenna."
+    ],
+    "correct": null,
+    "id": 89
+  },
+  {
+    "question": "What is the name of the process by which electromagnetic energy is taken up by the atmosphere?",
+    "options": [
+      "Diffraction",
+      "Interference",
+      "Absorption",
+      "Refraction"
+    ],
+    "correct": null,
+    "id": 90
+  },
+  {
+    "question": "Relating to waves, \"phase\" or the \"phase angle\", expressed in degrees from 000° to 360°, is the ...",
+    "options": [
+      "fraction of one wavelength.",
+      "deflection on a wave.",
+      "angle of the modulation on a wavelength.",
+      "position of a modulation on a wavelength."
+    ],
+    "correct": null,
+    "id": 91
+  },
+  {
+    "question": "An aircraft is situated at 00°N, 005°E, where the magnetic variation is 10W. A VOR is located at 00°N, 013°E where the magnetic variation is 15W. The aircraft is situated on which VOR radial?",
+    "options": [
+      "105",
+      "285",
+      "280",
+      "100"
+    ],
+    "correct": null,
+    "id": 92
+  },
+  {
+    "question": "You are on a heading of 090(M) and on radial 255 from a VOR station. When 190° is set on your OBS, the deviation bar will show:",
+    "options": [
+      "Full scale right deflection and a 'to' indication",
+      "Full scale left deflection with a 'from' indication",
+      "Full scale right deflection and a 'from' indication",
+      "Full scale left deflection with a 'to' indication"
+    ],
+    "correct": null,
+    "id": 93
+  },
+  {
+    "question": "A Microwave Landing System (MLS) uses which method to indicate distance from the runway threshold?",
+    "options": [
+      "Measurement of the slant range from the onboard receiver to the ground station and also measuring the time interval.",
+      "Measurement of range by a precision facility DME frequency paired with the azimuth and elevation channels.",
+      "Timing the interval between the transmission and reception of GPS ephemeris data.",
+      "Timing the interval between the transmission and reception of primary radar pulses from the aircraft to MLS station."
+    ],
+    "correct": null,
+    "id": 94
+  },
+  {
+    "question": "What airborne equipment is required to enable a VDF let-down to be flown?",
+    "options": [
+      "GPS",
+      "ADF",
+      "VHF radio",
+      "VOR"
+    ],
+    "correct": null,
+    "id": 95
+  },
+  {
+    "question": "The so-called night effect is caused by ...",
+    "options": [
+      "Reflection of the space wave by the aircraft's fuselage.",
+      "The difference in velocity of the EM-waves over land and over sea, especially at night.",
+      "a change in the direction of the plane of polarisation due to reflection in the ionosphere.",
+      "Interference between the ground and the space wave caused by darkness."
+    ],
+    "correct": null,
+    "id": 96
+  },
+  {
+    "question": "How is the radiation pattern of the Instrument Landing System localiser (ILS LOC) correctly described?",
+    "options": [
+      "Only one lobe in the VHF frequency band",
+      "Two overlapping lobes on the same MF carrier frequency",
+      "Two overlapping lobes on the same VHF carrier frequency",
+      "Only one lobe in the MF frequency band"
+    ],
+    "correct": null,
+    "id": 97
+  },
+  {
+    "question": "According to ICAO Doc 8168, an aircraft is \"established\" on the final track of a VOR approach when ...",
+    "options": [
+      "deviation indicator showing half full-scale deflection.",
+      "+/- 5 NM within final approach track.",
+      "deviation indicator moving within full-scale deflection.",
+      "+/- 5° within final approach track."
+    ],
+    "correct": null,
+    "id": 98
+  },
+  {
+    "question": "Multipath signals (coming from the same aircraft) at the ground VHF direction finder station can have which effect?",
+    "options": [
+      "They always result in the extinction of the signals at the ground VHF station.",
+      "They may result in bearing errors.",
+      "They usually result in a higher accuracy.",
+      "They increase the range at which the direction finder receives signals."
+    ],
+    "correct": null,
+    "id": 99
+  },
+  {
+    "question": "In case two DME ranges are plotted on a chart to obtain an aircraft fix, which of the following statements is correct?",
+    "options": [
+      "Two circular position lines around the stations intersect at two points, with the distance from each transmitter given as a slant range",
+      "Two circular position lines around the stations intersect at one point, with the distance from each transmitter given as a slant range",
+      "Two circular position lines around the stations intersect at two points, with the distance from each transmitter given as a horizontal (plan) range",
+      "Two circular position lines around the stations intersect at one point, with the distance from each transmitter given as a horizontal (plan) range"
+    ],
+    "correct": null,
+    "id": 100
+  },
+  {
+    "question": "What is the range of VHF (Very High Frequency) waves?",
+    "options": [
+      "3 MHz - 30 MHz",
+      "30 MHz - 300 MHZ",
+      "300 MHz - 3000 MHz",
+      "3 GHZ - 30 GHZ"
+    ],
+    "correct": null,
+    "id": 101
+  },
+  {
+    "question": "When the glide slope indicator shows full deflection, the aircraft is approximately ...",
+    "options": [
+      "1.3° above or below the correct glide path.",
+      "2.5° above or below the correct glide path.",
+      "2.0° above or below the correct glide path.",
+      "0.7° above or below the correct glide path."
+    ],
+    "correct": null,
+    "id": 102
+  },
+  {
+    "question": "\"Frequency modulation\" can be achieved by adding information onto the carrier wave by ...",
+    "options": [
+      "modifying the frequency of the carrier.",
+      "modifying the amplitude of the carrier.",
+      "interrupting the carrier.",
+      "reversing the phases of the carrier."
+    ],
+    "correct": null,
+    "id": 103
+  },
+  {
+    "question": "The main factor limiting the range of an NDB is ...",
+    "options": [
+      "the altitude of the receiving aircraft.",
+      "the transmitted power.",
+      "the elevation of the station.",
+      "the identification modulation."
+    ],
+    "correct": null,
+    "id": 104
+  },
+  {
+    "question": "The audio frequency modulation of the middle marker is keyed as ...",
+    "options": [
+      "6 dashes per second continuously.",
+      "a continuous series of alternate dots and dashes.",
+      "2 dots per second continuously.",
+      "3 dots and 3 dashes per second continuously."
+    ],
+    "correct": null,
+    "id": 105
+  },
+  {
+    "question": "Regarding the operation of an ILS, the localiser needle will be centred when the difference in signal strength of the 90 Hz and 150 Hz signal is ...",
+    "options": [
+      "zero.",
+      "maximum.",
+      "more than 90 Hz.",
+      "150 Hz."
+    ],
+    "correct": null,
+    "id": 106
+  },
+  {
+    "question": "Which of the following is correct regarding the ILS?",
+    "options": [
+      "All markers transmit at 75 MHZ",
+      "All markers transmit at 90 MHz",
+      "The glide path transmitter is located 50 m to the right of the threshold",
+      "The localiser part of the frequency band is shared with the DME"
+    ],
+    "correct": null,
+    "id": 107
+  },
+  {
+    "question": "The operation of an ILS localiser (LOC) transmitter is based on two overlapping lobes transmitted on (1) _ frequencies and carry different (ii)",
+    "options": [
+      "(i) different (ii) phases",
+      "(i) the same (ii) modulation frequencies",
+      "(i) the same (ii) phases",
+      "(i) different (ii) modulation frequencies"
+    ],
+    "correct": null,
+    "id": 108
+  },
+  {
+    "question": "The abbreviation \"TVOR\" means a ...",
+    "options": [
+      "long-range VOR with a higher than usual power output.",
+      "DVOR in the frequency range 112 MHz - 118 MHz.",
+      "VOR with a limited range used in the terminal area.",
+      "VOR transmitting for test purposes only."
+    ],
+    "correct": null,
+    "id": 109
+  },
+  {
+    "question": "A sky wave originates from ...",
+    "options": [
+      "refraction.",
+      "diffraction.",
+      "interference.",
+      "absorption."
+    ],
+    "correct": null,
+    "id": 110
+  },
+  {
+    "question": "A DME operates in the:",
+    "options": [
+      "VHF band and uses one frequency",
+      "UHF band and uses one frequency",
+      "UHF band and uses two frequencies",
+      "VHF band and uses two frequencies"
+    ],
+    "correct": null,
+    "id": 111
+  },
+  {
+    "question": "The measured and indicated range from a DME station is the ...",
+    "options": [
+      "slant range.",
+      "air distance to overhead the station.",
+      "radio range.",
+      "ground range."
+    ],
+    "correct": null,
+    "id": 112
+  },
+  {
+    "question": "On final approach when you see the glide path needle deviate more than half fly-up deflection, you ...",
+    "options": [
+      "immediately initiate a missed approach procedure.",
+      "try to re-establish on the intended path at own discretion.",
+      "increase power and reduce the rate of descent.",
+      "fly level until the glide path needle is centred."
+    ],
+    "correct": null,
+    "id": 113
+  },
+  {
+    "question": "In order to provide a pilot with the position of the aircraft, when there is no radar coverage, ATC must have at least ...",
+    "options": [
+      "three VDFs.",
+      "one VDF only.",
+      "two co-located VDFs, able to take bearings simultaneously on the transmitted frequency.",
+      "two VDFs at different locations, able to take bearings simultaneously on the transmitted frequency."
+    ],
+    "correct": null,
+    "id": 114
+  },
+  {
+    "question": "Which type of modulation is associated with the ILS frequency carrier?",
+    "options": [
+      "Amplitude modulation.",
+      "Tone modulation.",
+      "Frequency modulation.",
+      "Double modulation."
+    ],
+    "correct": null,
+    "id": 115
+  },
+  {
+    "question": "Assuming you want to approach a VOR via the 104 radial. Which setting should be made on the VOR/ILS deviation indicator?",
+    "options": [
+      "104 and the FROM flag showing",
+      "284 with the TO flag showing",
+      "284 and the FROM flag showing",
+      "104 with the TO flag showing"
+    ],
+    "correct": null,
+    "id": 116
+  },
+  {
+    "question": "On the QDR 075 with a magnetic heading of 295 and the same variation at the station and the aircraft, what is the relative bearing on the ADF indicator?",
+    "options": [
+      "130",
+      "210",
+      "040",
+      "320"
+    ],
+    "correct": null,
+    "id": 117
+  },
+  {
+    "question": "Under which conditions will a DME most closely represent the ground speed of an aircraft flying at FL 400?",
+    "options": [
+      "When tracking directly towards the station at a range of 100 NM or more",
+      "When passing abeam the station at a range of 30-50 NM",
+      "When circling directly overhead the station",
+      "When tracking directly towards the station at a range of 10 NM"
+    ],
+    "correct": null,
+    "id": 118
+  },
+  {
+    "question": "Unsteady indication of the ADF needle when turning towards a tuned NDB is due to ...",
+    "options": [
+      "ionospheric reflection.",
+      "coastal refraction.",
+      "fading.",
+      "dip error."
+    ],
+    "correct": null,
+    "id": 119
+  },
+  {
+    "question": "An Airborne Weather Radar (AWR) usually does NOT detect ...",
+    "options": [
+      "wet snow.",
+      "clear air turbulence (CAT).",
+      "moderate precipitation.",
+      "turbulence in cloud associated with precipitation."
+    ],
+    "correct": null,
+    "id": 120
+  },
+  {
+    "question": "When an aircraft is operating its SSR in Mode C, information about the aircraft's indicated altitude are given in increments of:",
+    "options": [
+      "200 ft",
+      "50 ft",
+      "25 ft",
+      "100 ft"
+    ],
+    "correct": null,
+    "id": 121
+  },
+  {
+    "question": "An aircraft using Mode S can be uniquely interrogated and identified by using the ...",
+    "options": [
+      "long P2 pulse.",
+      "twelve-pulse train, giving 412 possible codes.",
+      "24-bits address code, giving more than 16 million possible codes.",
+      "SPI pulse."
+    ],
+    "correct": null,
+    "id": 122
+  },
+  {
+    "question": "The Mode C-transponder reports the pressure altitude in _increments.",
+    "options": [
+      "50 ft",
+      "100 ft",
+      "200 ft",
+      "25 ft"
+    ],
+    "correct": null,
+    "id": 123
+  },
+  {
+    "question": "3 cm is considered to be an optimum wavelength for an airborne weather radar system because ...",
+    "options": [
+      "it enables the weather radar to detect clear air turbulence.",
+      "larger water droplets and wet hailstones are best reflected.",
+      "static interference is reduced.",
+      "greater detail can be obtained at higher distant ranges for smaller water droplets."
+    ],
+    "correct": null,
+    "id": 124
+  },
+  {
+    "question": "The term 'Pulse Recurrence Frequency (PRF)' means the ...",
+    "options": [
+      "number of cycles per minute.",
+      "ratio of pulse period to pulse width.",
+      "number of pulses per second.",
+      "delay after which the process starts again."
+    ],
+    "correct": null,
+    "id": 125
+  },
+  {
+    "question": "With regard to Airborne Weather Radar (AWR), which of the following statements is correct? 1. Tilt-function is used to detect precipitation at different levels ahead of the aircraft. 2. MAP mode changes the shape of the radar beam and orientation down toward the ground.",
+    "options": [
+      "1 is correct, 2 is correct.",
+      "1 is incorrect, 2 is incorrect.",
+      "1 is correct, 2 is incorrect.",
+      "1 is incorrect, 2 is correct."
+    ],
+    "correct": null,
+    "id": 126
+  },
+  {
+    "question": "What can be adjusted when using the \"gain\" control button of an Airborne Weather Radar (AWR)?",
+    "options": [
+      "The power level of the transmitted energy is made dependent on the selected range",
+      "The receiver sensitivity in order to reach the optimum target acquisition",
+      "the range of colours used to indicate certain turbulence levels",
+      "The intensity of the display illumination"
+    ],
+    "correct": null,
+    "id": 127
+  },
+  {
+    "question": "The airborne transponder can provide coded reply signals in response to interrogation signals from: 1. aircraft equipped with TCAS 2. primary ground radar 3. ground secondary surveillance radar 4. aircraft equipped with a transponder",
+    "options": [
+      "2 and 3",
+      "1 and 3",
+      "1 and 4",
+      "2 and 4"
+    ],
+    "correct": null,
+    "id": 128
+  },
+  {
+    "question": "Which of the following statements about interrogation modes is correct?",
+    "options": [
+      "Mode S Selective triggers replies of all mode S transponders",
+      "Mode S Broadcast transmits information to all mode S transponders",
+      "Mode S Only all call triggers transponder replies of all mode A/C/S transponders",
+      "Intermode A/C/S all call and Intermode A/C only all call, differ in the pulse spacing"
+    ],
+    "correct": null,
+    "id": 129
+  },
+  {
+    "question": "What is an advantage of a secondary radar system compared to a primary radar system?",
+    "options": [
+      "The possibility of getting speed information of aircraft within range",
+      "The required power of transmission from the ground equipment is reduced",
+      "It is not limited to line of sight",
+      "The small ground antenna transmits no side lobes, thus reduces the danger of false replies from the airborne transponder"
+    ],
+    "correct": null,
+    "id": 130
+  },
+  {
+    "question": "Airborne data that can be used by modern weather radar systems to detect Wind Shear (WS) include: 1. Doppler-shift in frequency from aerosol particles 2. Doppler-shift in frequency from precipitation echos 3. Pulse-flattening in precipitation echos. 4. Comparison of inertial data and air data 5. Use of different wavelengths",
+    "options": [
+      "2, 3 and 5",
+      "1 and 3",
+      "2, 3 and 4.",
+      "1 and 5"
+    ],
+    "correct": null,
+    "id": 131
+  },
+  {
+    "question": "In case the Airborne Weather Radar (AWR) indicates an area with strong precipitation ahead, what has to be assumed about the situation behind that area?",
+    "options": [
+      "The weather conditions can be checked by adjusting the range accordingly.",
+      "The weather conditions behind the indicated precipitation are unknown.",
+      "In any case, the precipitation will continue behind the indicated area.",
+      "Since there is no indication on the AWR display, the conditions will be \"clear\"."
+    ],
+    "correct": null,
+    "id": 132
+  },
+  {
+    "question": "To make sure that a return is from a cloud at or above the height of the aircraft, the tilt control of an Airborne Weather Radar with a 5° beam width should be adjusted to ...",
+    "options": [
+      "2.5° up.",
+      "2.5° down.",
+      "3.5° up.",
+      "1.5° down."
+    ],
+    "correct": null,
+    "id": 133
+  },
+  {
+    "question": "A SSR transponder transmits its code by ...",
+    "options": [
+      "amplitude differences.",
+      "pulses.",
+      "frequency differences.",
+      "phase differences."
+    ],
+    "correct": null,
+    "id": 134
+  },
+  {
+    "question": "Relating to an Airborne Weather Radar that has a colour cathode display, when the severity of rain and turbulence increases, the colour changes from ...",
+    "options": [
+      "yellow to orange to blue and magenta.",
+      "green to yellow to red and magenta.",
+      "yellow to orange to red and magenta.",
+      "green to red to blue and magenta."
+    ],
+    "correct": null,
+    "id": 135
+  },
+  {
+    "question": "Relating to an airborne weather radar, what are the main factors that determine cloud detection?",
+    "options": [
+      "Rotational speed of the radar scanner and wavelength",
+      "Distance from cloud, wavelength and frequency",
+      "Size of the water drops, wavelength and frequency",
+      "Size of the water drops and the radar scanner's diameter"
+    ],
+    "correct": null,
+    "id": 136
+  },
+  {
+    "question": "An \"Airborne Weather Radar (AWR)\" can easily detect which cloud types?",
+    "options": [
+      "ST",
+      "AS",
+      "CC",
+      "CB"
+    ],
+    "correct": null,
+    "id": 137
+  },
+  {
+    "question": "The maximum range of primary radar is dependent on ...",
+    "options": [
+      "pulse length.",
+      "frequency.",
+      "wave length.",
+      "pulse repetition frequency."
+    ],
+    "correct": null,
+    "id": 138
+  },
+  {
+    "question": "The prime factor in determining the maximum unambiguous range of a primary radar is the ...",
+    "options": [
+      "size of the parabolic receiver aerial.",
+      "height of the transmitter above the ground.",
+      "power output.",
+      "pulse repetition frequency."
+    ],
+    "correct": null,
+    "id": 139
+  },
+  {
+    "question": "With regard to Secondary Surveillance Radar (SSR), which of the following statements is correct? 1. SSR mode S is NOT compatible with SSR modes A and C. 2. SSR mode S provides information for Automatic Dependent Surveillance-Broadcast (ADS-B)",
+    "options": [
+      "1 is correct, 2 is correct.",
+      "1 is incorrect, 2 is correct.",
+      "1 is incorrect, 2 is incorrect.",
+      "1 is correct, 2 is incorrect."
+    ],
+    "correct": null,
+    "id": 140
+  },
+  {
+    "question": "During line-up on the runway for departure, with thunderstorms and strong convective clouds in the vicinity, the Weather Radar should be set up with ...",
+    "options": [
+      "\"Gain\" should be reduced to minimum to ensure that all possible returns are displayed.",
+      "\"Ground clutter suppression\" should be switched OFF to only have weather echos on the display.",
+      "\"WX+T\" mode should be activated to detected Clear Air Turbulence between the clouds.",
+      "\"Tilt\" should be directed UP to check for significant precipitation in the climb-out area."
+    ],
+    "correct": null,
+    "id": 141
+  },
+  {
+    "question": "Heavy turbulence can be expected ...",
+    "options": [
+      "at about halfway between two thunderstorm cells.",
+      "directly in the core of a thunderstorm cell.",
+      "in the area of heaviest precipitation, normally at the core of the thunderstorm cell.",
+      "when the area of heaviest precipitation is close to the edge of the thunderstorm cell."
+    ],
+    "correct": null,
+    "id": 142
+  },
+  {
+    "question": "Which of the following are airborne weather radar antenna stabilisation axes? 1. Yaw axis 2. Pitch axis 3. Roll axis",
+    "options": [
+      "1 and 2",
+      "1 and 3",
+      "1, 2 and 3",
+      "2 and 3"
+    ],
+    "correct": null,
+    "id": 143
+  },
+  {
+    "question": "Information available to an air traffic controller's screen using SSR may include: 1. Pressure altitude / Flight level (FL) 2. Flight number or aircraft registration number 3. Ground speed (GS)",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "1, 2 and 3",
+      "2 and 3 only"
+    ],
+    "correct": null,
+    "id": 144
+  },
+  {
+    "question": "The \"WX+T\" mode on an Airborne Weather Radar (AWR) is activated to detect ...",
+    "options": [
+      "Weather Radar (WX) and activate the \"Auto-Tilt\" function.",
+      "Clear air turbulence (CAT) that is not accompanied by precipitation.",
+      "turbulence by Doppler shift of the signal reflected by precipitation.",
+      "Downdraft areas within clouds by detecting vertical motion of precipitation."
+    ],
+    "correct": null,
+    "id": 145
+  },
+  {
+    "question": "Relating to airborne weather radar systems, why are wavelengths of approximately 3 cm usually used?",
+    "options": [
+      "To detect wet hailstones",
+      "To detect snow and small water droplets",
+      "To transmit at a higher PRF for increased range",
+      "To detect large cloud formations"
+    ],
+    "correct": null,
+    "id": 146
+  },
+  {
+    "question": "Which of the following alternatives determines the theoretical maximum range for an AWR?",
+    "options": [
+      "Carrier wave frequency",
+      "Pulse length",
+      "PRF",
+      "Beam width"
+    ],
+    "correct": null,
+    "id": 147
+  },
+  {
+    "question": "When Mode C is selected on the aircraft's SSR transponder, the ...",
+    "options": [
+      "pressure altitude based on 1013.25 hPa is transmitted.",
+      "height of the aircraft based on subscale setting is transmitted.",
+      "height of the aircraft based on QFE is transmitted.",
+      "altitude based on local QNH is transmitted."
+    ],
+    "correct": null,
+    "id": 148
+  },
+  {
+    "question": "How does a primary radar work?",
+    "options": [
+      "On the principle of phase comparison",
+      "On the principle of continuous wave transmission",
+      "On the principle of pulse technique",
+      "On the principle of transponder interrogation"
+    ],
+    "correct": null,
+    "id": 149
+  },
+  {
+    "question": "The information displayed on an ATC radar screen connected to only a primary radar system is ...",
+    "options": [
+      "the position and altitude of the aircraft.",
+      "the position of the aircraft, SSR code and altitude.",
+      "the position of the aircraft and SSR code.",
+      "the bearing and distance (position) of the aircraft."
+    ],
+    "correct": null,
+    "id": 150
+  },
+  {
+    "question": "With regard to SSR compared with Primary Radar, which of the following statements is correct? 1. SSR range is increased due to the active participation of the airborne equipment. 2. SSR allows identification of primary radar targets by code and call sign.",
+    "options": [
+      "1 is incorrect, 2 is correct.",
+      "1 is correct, 2 is correct.",
+      "1 is correct, 2 is incorrect.",
+      "1 is incorrect, 2 is incorrect."
+    ],
+    "correct": null,
+    "id": 151
+  },
+  {
+    "question": "The principle of pulse technique is used by: 1. Airborne Weather Radar 2. Aerodrome Surface Movement Radar 3. Aerodrome Surveillance (approach) Radar 4. Secondary Surveillance Radar (SSR)",
+    "options": [
+      "1, 2, 3 and 4",
+      "2, 3 and 4 only",
+      "2 and 3 only",
+      "1, 2 and 4 only"
+    ],
+    "correct": null,
+    "id": 152
+  },
+  {
+    "question": "The tilt of an Airborne Weather Radar system (without auto tilt) be changed to a (1) _setting when descending over terrain, because otherwise the scanning range will be reduced and significant (2) _ may be displayed.",
+    "options": [
+      "(1) higher, (2) ground clutter",
+      "(1) higher, (2) clear air turbulence (CAT)",
+      "(1) lower, (2) clear air turbulence (CAT)",
+      "(1) lower, (2) ground clutter"
+    ],
+    "correct": null,
+    "id": 153
+  },
+  {
+    "question": "Using the tilt function of the Airborne Weather Radar (AWR), the vertical extend of a turbulence area can be estimated from ...",
+    "options": [
+      "the width of the coloured areas indicated specific intensities of echos/turbulence.",
+      "the colour of the echos and the tilt \"DOWN\" angle until the echos disappear.",
+      "the distance of the echos and the tilt \"UP\" angle until the echos disappear.",
+      "the flight level or altitude of the aircraft and the distance of the echos."
+    ],
+    "correct": null,
+    "id": 154
+  },
+  {
+    "question": "The tilt of an Airborne Weather Radar be pointed (1) _ when searching for thunderstorms during high-level cruise flight, because wet hail and rain provide best reflectivity, and these are found mainly in the (2) _ levels of a thunderstorm, (3) the freezing level.",
+    "options": [
+      "(1) upwards, (2) lower, (3) below",
+      "(1) downwards, (2) higher, (3) below",
+      "(1) upwards, (2) higher, (3) above",
+      "(1) downwards, (2) lower, (3) above"
+    ],
+    "correct": null,
+    "id": 155
+  },
+  {
+    "question": "Aircraft that are NOT equipped with an operating transponder in flight ...",
+    "options": [
+      "can only be detected when flying below a critical altitude.",
+      "can not be detected by civil types of RADAR.",
+      "can be detected using Primary Surveillance Radar (PSR).",
+      "can be detected using Secondary Surveillance Radar (SSR)."
+    ],
+    "correct": null,
+    "id": 156
+  },
+  {
+    "question": "What type of radar allows indication of the shape, and sometimes also the type of aircraft producing the echo?",
+    "options": [
+      "Aerodrome Surveillance Radar",
+      "Secondary Surveillance Radar",
+      "Airborne Weather Radar",
+      "Aerodrome Surface Movement Radar"
+    ],
+    "correct": null,
+    "id": 157
+  },
+  {
+    "question": "What is an advantage of the Secondary Surveillance Radar (SSR) system compared to a primary radar system?",
+    "options": [
+      "It provides a higher level of accuracy for bearings and distances",
+      "No special equipment is needed for the use of a SSR",
+      "Side lobes do not occur during transmission",
+      "Additional information are provided, such as altitude"
+    ],
+    "correct": null,
+    "id": 158
+  },
+  {
+    "question": "Relating to an airborne weather radar display, the areas of greatest turbulence are indicated as ...",
+    "options": [
+      "areas where no colour is shown.",
+      "colour zones of blue and yellow.",
+      "colour zones of green and orange.",
+      "colour zones of red and magenta."
+    ],
+    "correct": null,
+    "id": 159
+  },
+  {
+    "question": "An airborne weather radar is usually based on the use of ...",
+    "options": [
+      "primary radar in the SHF band.",
+      "secondary radar in the UHF band.",
+      "primary radar in the UHF band.",
+      "secondary radar in the SHF band."
+    ],
+    "correct": null,
+    "id": 160
+  },
+  {
+    "question": "Which one of the following equipment operates on the interrogator / transponder principle?",
+    "options": [
+      "Airborne Weather Radar (AWR)",
+      "Global Positioning System (GPS)",
+      "Secondary Surveillance Radar (SSR)",
+      "Aerodrome Surface Movement Radar (ASMR)"
+    ],
+    "correct": null,
+    "id": 161
+  },
+  {
+    "question": "Ground Secondary Surveillance Radar equipment integrates a transmitter and receiver that transmits and receives ...",
+    "options": [
+      "on different frequencies.",
+      "on the selected frequency.",
+      "on variable frequencies.",
+      "on the same frequencies."
+    ],
+    "correct": null,
+    "id": 162
+  },
+  {
+    "question": "What is necessary to double the effective range of a primary radar?",
+    "options": [
+      "To decrease the power output by a factor of 8.",
+      "To increase the power output by a factor of 16.",
+      "To increase the power output by a factor of 2.",
+      "To decrease the power output by a factor of 4."
+    ],
+    "correct": null,
+    "id": 163
+  },
+  {
+    "question": "Mode S transponder equipped with enhanced vertical tracking provide altitude reports in increments of:",
+    "options": [
+      "100 ft",
+      "200 ft",
+      "25 ft.",
+      "50 ft"
+    ],
+    "correct": null,
+    "id": 164
+  },
+  {
+    "question": "Which of the following statements regarding the selections on the transponder control panel is true?",
+    "options": [
+      "When ON is selected a reply in the modes A, C and S can be transmitted",
+      "The correct ICAO 24 bits aircraft address code must be entered on the control panel",
+      "With the selector button the digits of the squawk can be selected using the decimal symbols 0 × through 9",
+      "When ALT is selected a reply in the modes A, C and S can be transmitted"
+    ],
+    "correct": null,
+    "id": 165
+  },
+  {
+    "question": "Relating to a primary radar using pulse technique, what does the pulse repetition frequency determine?",
+    "options": [
+      "The maximum theoretical range",
+      "The target discrimination",
+      "The minimum range",
+      "The beam width"
+    ],
+    "correct": null,
+    "id": 166
+  },
+  {
+    "question": "When cruising at flight level close to the tropopause and adjusting Weather Radar for detecting Thunderstorms, best practice would recommend to ...",
+    "options": [
+      "reduce tilt angle (tilt DOWN) due \"look\" into altitude with supercooled water instead of ice crystals at high levels for better reflectivity.",
+      "increase tilt angle (tilt UP) due reduce cluttered signals from ground surface.",
+      "increase tilt angle (tilt UP) due \"look\" into altitude with ice crystals at high levels instead of supercooled water for better reflectivity.",
+      "reduce tilt angle (tilt DOWN) due \"look\" into compensate for the curvature of the earth's surface at large distances."
+    ],
+    "correct": null,
+    "id": 167
+  },
+  {
+    "question": "In relation to primary radar, pulse repetition frequency means the ...",
+    "options": [
+      "number of pulses transmitted per second.",
+      "radar frequency used.",
+      "number of revolutions performed by the radar antenna per minute.",
+      "time between each transmission of pulses."
+    ],
+    "correct": null,
+    "id": 168
+  },
+  {
+    "question": "What is the main function of a Airborne Weather Radar?",
+    "options": [
+      "To detect precipitation usually occurring with turbulence",
+      "To detect precipitation such as hail, snow and graupel",
+      "To detect areas of heavy clear air turbulence",
+      "To detect areas of wind sheer and clear air turbulence"
+    ],
+    "correct": null,
+    "id": 169
+  },
+  {
+    "question": "The Mode C-transponder reports the pressure altitude in _ increments.",
+    "options": [
+      "25 ft",
+      "200 ft",
+      "50 ft",
+      "100 ft"
+    ],
+    "correct": null,
+    "id": 170
+  },
+  {
+    "question": "The recommended procedure to avoid heavy turbulence associated with the occurrence of enroute thunderstorms would be ...",
+    "options": [
+      "increase altitude and try to overfly the thunderstorm through cirrus streaks.",
+      "decrease altitude, cross the thunderstorm above the freezing level.",
+      "pass the thunderstorm close to the down-wind side, try to pass through areas with quickly changing colours.",
+      "pass the thunderstorm on the up-wind side, avoid areas with quickly changing colours."
+    ],
+    "correct": null,
+    "id": 171
+  },
+  {
+    "question": "Primary radar principles onboard an aircraft are mainly used by a(n):",
+    "options": [
+      "Global Positioning System (GPS)",
+      "Distance Measuring Equipment (DME)",
+      "Airborne Weather Radar (AWR)",
+      "Secondary Surveillance Radar (SSR)"
+    ],
+    "correct": null,
+    "id": 172
+  },
+  {
+    "question": "Which of the following parameters can all be determined by a GNSS receiver which is tracking signals from 4 different satellites?",
+    "options": [
+      "Longitude, altitude and time",
+      "Latitude, longitude and time",
+      "Latitude and longitude only",
+      "Latitude, longitude, altitude and time"
+    ],
+    "correct": null,
+    "id": 173
+  },
+  {
+    "question": "The RAIM function used by GNSS receivers enables use of (1) _ range measurements to (2) calculated from the minimum number of satellites required to provide a 3D fix.",
+    "options": [
+      "(1) redundant, (2) verify the position",
+      "(1) minimum, (2) enhance precision of the position",
+      "(1) three, (2) enhance precision of the position",
+      "(1) four, (2) verify the position"
+    ],
+    "correct": null,
+    "id": 174
+  },
+  {
+    "question": "Almanac data stored in the receiver of the NAVSTAR/GPS system is used for the:",
+    "options": [
+      "fast identification of received signals coming from visible satellites",
+      "assignment of received PRN-codes to the respective satellite",
+      "correction of the receiver clock error",
+      "check of Selective Availability (SA) operation"
+    ],
+    "correct": null,
+    "id": 175
+  },
+  {
+    "question": "Aircraft Autonomous Integrity Monitoring (AAIM) is a type of Airborne Based Augmentation System which ...",
+    "options": [
+      "only relies on information from additional on-board sensors.",
+      "is self-contained and works without any equipment located outside the aircraft.",
+      "only relies on GNSS information.",
+      "relies on GNSS information as well as information from additional on-board sensors."
+    ],
+    "correct": null,
+    "id": 176
+  },
+  {
+    "question": "The type of clock used in NAVSTAR GPS satellites is ...",
+    "options": [
+      "atomic",
+      "mechanical",
+      "pendulum",
+      "electric"
+    ],
+    "correct": null,
+    "id": 177
+  },
+  {
+    "question": "Typical coverage for a GBAS station is projecting out (1) __ either side of the final approach path to 28 km (15 NM) and (2)_either side of the final approach path to 37 km (20 NM).",
+    "options": [
+      "(1) plus/minus 5°, (2) plus/minus 10°",
+      "(1) plus/minus 10°, (2) plus/minus 20°",
+      "(1) plus/minus 10°, (2) plus/minus 35°",
+      "(1) plus/minus 35°, (2) plus/minus 10°"
+    ],
+    "correct": null,
+    "id": 178
+  },
+  {
+    "question": "To improve integrity, Satellite-Based Augmentation System (SBAS) uses up to (1) _ satellites to improve accuracy to (2) _ horizontally and to advise any GPS malfunctions to users within (3)",
+    "options": [
+      "(1) six polar-orbiting, (2) 1 m, (3) 60 seconds",
+      "(1) four geostationary, (2) 1 m - 2 m, (3) 6 seconds",
+      "(1) four polar-orbiting, (2) 10 m, (3) 6 seconds",
+      "(1) six geostationary, (2) 5 m, (3) 60 seconds"
+    ],
+    "correct": null,
+    "id": 179
+  },
+  {
+    "question": "Which answer lists all functions of the control segment in the NAVSTAR/GPS system? 1. Monitoring of the constellation status 2. Correction of orbital parameters 3. Navigation data uploading",
+    "options": [
+      "2 and 3",
+      "1, 2 and 3",
+      "1 and 3",
+      "1 and 2"
+    ],
+    "correct": null,
+    "id": 180
+  },
+  {
+    "question": "According ICAO Doc 9316, a specific, curved path radius in a terminal or approach procedure defined by radius, arc length, and fix, is referred to as:",
+    "options": [
+      "Radius leg (RL).",
+      "Radius to fix (RF) leg.",
+      "Fly-by (FB) turn.",
+      "Fix-radius Transition (FRT)."
+    ],
+    "correct": null,
+    "id": 181
+  },
+  {
+    "question": "According ICAO Doc 9613, the difference between the on-board navigation specifications \"RNP\" and \"RNAV\" is:",
+    "options": [
+      "Performance-monitoring function is required for \"RNAV\" operations only.",
+      "Performance-monitoring and alerting function is required for \"RNP\" operations only.",
+      "Performance-monitoring and alerting function is required for \"RNAV\" operations only.",
+      "Alerting function is required for \"RNAV\" operations only."
+    ],
+    "correct": null,
+    "id": 182
+  },
+  {
+    "question": "With regard to PBN concept, which of the following statements is correct? 1. In the approach phases of flight, PBN accommodates linear laterally guided operations. 2. In the approach phases of flight, PBN accommodates angular laterally guided operations.",
+    "options": [
+      "1 is correct, 2 is correct.",
+      "1 is correct, 2 is incorrect.",
+      "1 is incorrect, 2 is correct.",
+      "1 is incorrect, 2 is incorrect."
+    ],
+    "correct": null,
+    "id": 183
+  },
+  {
+    "question": "With regard to RNP APCH to LNAV/VNAV minima based on Baro-VNAV, which of the statements is correct? 1. Temperature compensation systems with an airworthiness approval provide corrections to the Baro-VNAV guidance during Final approach segment. 2. High temperatures reduce the effective glide path angle.",
+    "options": [
+      "1 is incorrect, 2 is incorrect.",
+      "1 is incorrect, 2 is correct.",
+      "1 is correct, 2 is correct.",
+      "1 is correct, 2 is incorrect."
+    ],
+    "correct": null,
+    "id": 184
+  },
+  {
+    "question": "With regard to PBN concept, aircraft RNAV and RNP system performance requirements are defined by:",
+    "options": [
+      "terms of accuracy, integrity and continuity.",
+      "terms of redundancy, integrity and endurance.",
+      "terms of independence, continuity and reliability.",
+      "terms of endurance, precision and continuity."
+    ],
+    "correct": null,
+    "id": 185
+  },
+  {
+    "question": "With regard to PBN, which statement about Path Definition Error (PDE) is correct? 1. PDE depends on the database integrity and functional requirements on the defined path. 2. PDE is considered negligible.",
+    "options": [
+      "1 is incorrect, 2 is correct.",
+      "1 is correct, 2 is correct.",
+      "1 is correct, 2 is incorrect.",
+      "1 is incorrect, 2 is incorrect."
+    ],
+    "correct": null,
+    "id": 186
+  },
+  {
+    "question": "With regard to PBN navigation, an advanced navigation system like a FMS will evaluate an internal \"Flight Management (FM) position\" and an \"Estimated Position Error (EPE)\". This is done by ...",
+    "options": [
+      "FMS position is adjusted to the IRS position, with the difference resulting in the EPE.",
+      "In case of dual FMS operation, FMS positions will be compared, with the difference resulting in the EPE.",
+      "several sources will be used by FMS, and, depending on their expected accuracies, these position data are compared with the FM position.",
+      "In case of single FMS operation, comparing of calculated positions is not possible, thus making evaluation of EPE impossible."
+    ],
+    "correct": null,
+    "id": 187
+  },
+  {
+    "question": "A fix in a Satellite-Assisted Navigation System (GNSS) is obtained by:",
+    "options": [
+      "measuring the time taken for an aircraft's transmissions to reach all satellites of the system",
+      "measuring the time taken for a minimum number of satellites' transmissions, in known positions, to reach the aircraft's receiver",
+      "measuring the time taken for all of the system's satellites' transmissions to reach an aircraft",
+      "the aircraft's receiver measuring the phase angle of signals received from a number of satellites in known positions"
+    ],
+    "correct": null,
+    "id": 188
+  },
+  {
+    "question": "A GPS-based SBAS (Satellite-Based Augmentation System) uses satellites to transmit corrections to users' receivers. Which of the following statements about these satellites is true?",
+    "options": [
+      "Pseudo-range measurements to these satellites can be made as they are GPS satellites which are part of the GPS satellite constellation.",
+      "Pseudo-range measurements to these geostationary satellites cannot be made as they do not transmit on a GPS frequency.",
+      "Pseudo-range measurements to these geostationary satellites cannot be made as they do not transmit a valid GPS navigation message.",
+      "Pseudo-range measurements to these geostationary satellites can be made as they also transmit a valid GPS navigation message on the GPS frequency."
+    ],
+    "correct": null,
+    "id": 189
+  },
+  {
+    "question": "A range calculated by the GNSS receiver defines:",
+    "options": [
+      "an ellipse with its centre at the receiver.",
+      "a sphere with its centre at the receiver.",
+      "an ellipse with its centre at the satellite.",
+      "a sphere with its centre at the satellite."
+    ],
+    "correct": null,
+    "id": 190
+  },
+  {
+    "question": "The Doppler frequency shift of the received NAVSTAR/GPS carrier frequency may be used to ...",
+    "options": [
+      "calculate the height of the aircraft more accurately.",
+      "correct the calculated position for a change in receiver clock error.",
+      "determine the groundspeed of the aircraft.",
+      "correct the calculated position for frequency shifts."
+    ],
+    "correct": null,
+    "id": 191
+  },
+  {
+    "question": "To calculate an aircraft's groundspeed, a GNSS receiver measures the ...",
+    "options": [
+      "phase of the received satellite signal.",
+      "difference in depth of modulation.",
+      "time travelled by the satellite signal between satellite and receiver.",
+      "Space Vehicle (SV) Doppler shift of the satellite carrier frequency."
+    ],
+    "correct": null,
+    "id": 192
+  },
+  {
+    "question": "When using SBAS, in case of a GPS malfunction the users will be alerted by broadcasting data from geostationary satellites within ...",
+    "options": [
+      "6 seconds.",
+      "60 seconds.",
+      "0.6 seconds.",
+      "6 minutes."
+    ],
+    "correct": null,
+    "id": 193
+  },
+  {
+    "question": "Amongst others, a task of the GNSS control segment is:",
+    "options": [
+      "to transmit differential corrections to users.",
+      "to control whether the pilot flies the correct GPS track.",
+      "to control the motion of the GPS-satellites.",
+      "to detect the malfunctioning of satellites."
+    ],
+    "correct": null,
+    "id": 194
+  },
+  {
+    "question": "With regard to GBAS operations, one ground station can support (1) _ within its coverage providing the aircraft with approach data, corrections and integrity information for GNSS satellites in view via a (2) _.",
+    "options": [
+      "(1) all the aircraft subsystems, (2) VHF data broadcast (VDB)",
+      "(1) a maximum of 100 aircraft subsystems, (2) VHF data broadcast (VDB)",
+      "(1) all the aircraft subsystems, (2) Satellite broadcast datalink.",
+      "(1) a maximum of 100 aircraft subsystems, (2) Satellite broadcast datalink."
+    ],
+    "correct": null,
+    "id": 195
+  },
+  {
+    "question": "Data from GBAS defining the Final Approach Segment (FAS) is transmitted on (1) _ including position correction and (2)",
+    "options": [
+      "(1) UHF, (2) clock error correction information.",
+      "(1) UHF, (2) information about dilution of precision (DOP)",
+      "(1) SHF, (2) correction information about ionospheric errors.",
+      "(1) VHF, (2) integrity information about each satellite"
+    ],
+    "correct": null,
+    "id": 196
+  },
+  {
+    "question": "RNAV 1, RNAV 2, RNP 1, RNP 2 SIDs and STARs should be programmed into the FMS by:",
+    "options": [
+      "manual entry using the latitude and longitude of the waypoints.",
+      "route name from the on-board navigation database.",
+      "manual entry using place/bearing/distance information of the waypoints.",
+      "automatic transfer of the route via Electronic Flight Bag."
+    ],
+    "correct": null,
+    "id": 197
+  },
+  {
+    "question": "If the lateral guidance of an RNP APCH to LNAV/VNAV minima is based on GNSS, its vertical guidance is based on ....",
+    "options": [
+      "either Baro-VNAV or SBAS.",
+      "either RADAR ALT or GBAS.",
+      "either Baro-VNAV or RADAR ALT.",
+      "either SBAS or GBAS."
+    ],
+    "correct": null,
+    "id": 198
+  },
+  {
+    "question": "For PBN operations on a route for which RNP 10 is required (oceanic and remote continental navigation applications), the ground-based NAVAID infrastructure components require:",
+    "options": [
+      "No ground-based navaid infrastructure or assessment.",
+      "VOR/DME",
+      "VOR/NDB",
+      "DME/DME"
+    ],
+    "correct": null,
+    "id": 199
+  },
+  {
+    "question": "According ICAO Doc 9613, the components for the application of PBN include:",
+    "options": [
+      "airspace concept, navigation infrastructure, navigation application",
+      "navaid performance, navigation specification, aircraft type",
+      "navaid infrastructure, navigation specification, navigation application",
+      "lateral performance, vertical performance, ATS and ATM and Communication"
+    ],
+    "correct": null,
+    "id": 200
+  },
+  {
+    "question": "With regard to PBN, a navigation specification suitable for all phases of flight except for oceanic/remote and final approach, is:",
+    "options": [
+      "RNAV 10",
+      "RNP 4",
+      "RNP 2",
+      "RNP 0.3"
+    ],
+    "correct": null,
+    "id": 201
+  },
+  {
+    "question": "With regard to Airborne-Based Augmentation System (ABAS), a common method of integrity monitoring that relies on information from the GNSS and from additional on-board sensors (like IRS) is referred to as:",
+    "options": [
+      "RAIM (Receiver Autonomous Integrity Monitoring)",
+      "Local Area Augmentation System (LAAS)",
+      "GAIM (GNSS Autonomous Integrity Monitoring)",
+      "AAIM (Aircraft Autonomous Integrity Monitoring."
+    ],
+    "correct": null,
+    "id": 202
+  },
+  {
+    "question": "The time corrected by the clock correction parameters in the navigation message is ...",
+    "options": [
+      "the receiver time.",
+      "the satellite time and receiver time.",
+      "the coordinated time.",
+      "the satellite time."
+    ],
+    "correct": null,
+    "id": 203
+  },
+  {
+    "question": "The parameters of the model of the ionosphere are contained in the navigation message of a NAVSTAR/GPS satellite. This enables ...",
+    "options": [
+      "the receiver to select the satellites with the best geometric dilution of precision.",
+      "the receiver to use data from all satellites in the constellation simultaneously.",
+      "the receiver to calculate the delay of signals passing through the ionosphere.",
+      "the authorised users to work on the frequencies L1 and L2."
+    ],
+    "correct": null,
+    "id": 204
+  },
+  {
+    "question": "In which frequency bands do the L1 and L2 frequencies operate, which are used by the NAVSTAR/GPS system for transmission of the navigation message?",
+    "options": [
+      "LF",
+      "VHF",
+      "AHF",
+      "UHF"
+    ],
+    "correct": null,
+    "id": 205
+  },
+  {
+    "question": "With regard to Airborne-Based Augmentation System (ABAS), which on-board sensor can be used to augment GNSS positional information?",
+    "options": [
+      "EGNOS",
+      "VOR/DME",
+      "ADS-B",
+      "IRS"
+    ],
+    "correct": null,
+    "id": 206
+  },
+  {
+    "question": "Assume the case that a satellite used by a GNSS receiver is faulty. When the signals of 5 satellites, including the faulty one, are received, the receiver's RAIM software ...",
+    "options": [
+      "is able to detect one faulty signal but is unable to identify which is the faulty one.",
+      "will not work because the software needs at least 24 satellites to function correctly.",
+      "is able to detect one faulty signal and is able to identify the faulty one.",
+      "is unable to identify the faulty one and is also unable to detect that one satellite is faulty."
+    ],
+    "correct": null,
+    "id": 207
+  },
+  {
+    "question": "For differential GPS positioning error correction with GBAS, the (1) _ uses signals from at least (2) satellites to acquire the position error correction, which is relayed to (3)",
+    "options": [
+      "(1) the aircraft's GPS receiver, (2) five, (3) ground-based receiver",
+      "(1) ground-based receiver, (2) five, (3) the aircraft's GPS receiver",
+      "(1) ground-based receiver, (2) four, (3) the aircraft's GPS receiver",
+      "(1) the aircraft's GPS receiver, (2) four, (3) ground-based receiver"
+    ],
+    "correct": null,
+    "id": 208
+  },
+  {
+    "question": "The required navigation functionalities of RNAV and RNP specifications include: 1. Continuous indication of lateral deviation 2. Continuous indication of vertical deviation 3. Distance/bearing to active (TO) waypoint 4. Groundspeed / time to active (TO) waypoint 5. Navigation data storage",
+    "options": [
+      "1, 3, 4 and 5.",
+      "1, 2, 3, 4 and 5.",
+      "1, 2 and 3.",
+      "2, 3, 4 and 5."
+    ],
+    "correct": null,
+    "id": 209
+  },
+  {
+    "question": "With regard to PBN operation, which statements about the Estimated Position Error (EPE) is correct? 1. EPE is a measure for accuracy of the FMS position by applying specific validations on the available navigation inputs. 2. EPE is calculated using statistical models of position error probabilities.",
+    "options": [
+      "1 is correct, 2 is correct.",
+      "1 is incorrect, 2 is incorrect.",
+      "1 is correct, 2 is incorrect.",
+      "1 is incorrect, 2 is correct."
+    ],
+    "correct": null,
+    "id": 210
+  },
+  {
+    "question": "Basic functional requirements of RNAV and RNP specifications include continuous indication of: 1. Lateral deviation 2. Distance/bearing to the active (TO) waypoint 3. Display/distance and bearing from the previous (FROM) waypoint 4. Groundspeed/time to the active (TO) waypoint 5. Failure indication",
+    "options": [
+      "1, 2, 4 and 5.",
+      "3, 4 and 5.",
+      "1, 3, 4 and 5.",
+      "1, 2 and 3."
+    ],
+    "correct": null,
+    "id": 211
+  },
+  {
+    "question": "Select the correct way a pilot can retrieve RNAV / RNP1 / RNP2 SID or STAR:",
+    "options": [
+      "Referring to the route number according to NOTAM.",
+      "Using a route name conforming to the charted route.",
+      "Using individual route waypoints according to the charted route.",
+      "Using the company route database."
+    ],
+    "correct": null,
+    "id": 212
+  },
+  {
+    "question": "With regard to GNSS receivers, an estimation of position accuracy can be obtained by combining ...",
+    "options": [
+      "User Equivalent Range Error (UERE) with Geometric Dilution of Precision (GDOP)",
+      "Geometric Dilution of Precision (GDOP) Ionospheric Propagation Delay (IPD).",
+      "User Equivalent Range Error (UERE) with Satellite Clock Error.",
+      "Satellite Orbital Variations Error with Ionospheric Propagation Delay (IPD)."
+    ],
+    "correct": null,
+    "id": 213
+  },
+  {
+    "question": "A GNSS ground-based augmentation system transmits a correction for ...",
+    "options": [
+      "satellite failure and receiver clock errors.",
+      "ionospheric delays only.",
+      "single- and multipath errors and receiver errors.",
+      "tropospheric and ionospheric delays."
+    ],
+    "correct": null,
+    "id": 214
+  },
+  {
+    "question": "ATC informs to expect RNP Approach (RNP APCH) Runway 09. In case one waypoint of the RNP APCH is missing in the navigation database, the recommended action should be:",
+    "options": [
+      "to continue approach procedure, because RNP APCH waypoints may be omitted in accordance with ATC clearance.",
+      "to request a different approach procedure from ATC, because a RNP APCH requires to be retrievable from the on- board navigation database and to conform to the charted procedure.",
+      "to create a new RNP APCH to the on-board navigation database taking into account all waypoints from the charted procedure.",
+      "manually update the RNP APCH route retrieved from the on-board navigation database to conform to the charted procedure."
+    ],
+    "correct": null,
+    "id": 215
+  },
+  {
+    "question": "With regard to the L1/L2 frequencies used by NAVSTAR/GPS, which of the following statements is correct? 1. Standard Positioning Service (SPS, C/A) used L1 frequency only. 2. L1 and L2 frequencies are used for Precision Positioning Service (PPS).",
+    "options": [
+      "1 is correct, 2 is incorrect.",
+      "1 is incorrect, 2 is incorrect.",
+      "1 is incorrect, 2 is correct.",
+      "1 is correct, 2 is correct."
+    ],
+    "correct": null,
+    "id": 216
+  },
+  {
+    "question": "The receiver clock error in the NAVSTAR/GPS satellite navigation system is ...",
+    "options": [
+      "negligible because there are atomic clocks in the satellites.",
+      "the biggest part of the total error and cannot be corrected.",
+      "corrected by using signals from four satellites.",
+      "corrected by using signals from two satellites."
+    ],
+    "correct": null,
+    "id": 217
+  },
+  {
+    "question": "Compared to ILS, an advantage of GLS (GBAS Landing System) is that ...",
+    "options": [
+      "there is no need for any additional receivers to perform GBAS operations.",
+      "GLS approaches can be operated without further approval.",
+      "GLS allows for more precise navigation within the terminal area.",
+      "GLS approaches can be dynamically adjusted during the approach."
+    ],
+    "correct": null,
+    "id": 218
+  },
+  {
+    "question": "The frequency band used by Satellite-Assisted Navigation systems (GNSS) to provide position information available to civil aircraft is ...",
+    "options": [
+      "EHF",
+      "VHF",
+      "UHF",
+      "SHF"
+    ],
+    "correct": null,
+    "id": 219
+  },
+  {
+    "question": "Which of the following statements characterises a Satellite Based Augmentation System (SBAS)?",
+    "options": [
+      "SBAS is able to provide approach and landing operations with vertical guidance (three- O dimensional Type-A and Type-B approaches).",
+      "SBAS is an augmentation device for Ground Based Augmentation Systems (GBAS).",
+      "SBAS is able to provide approach and landing operations with horizontal guidance only.",
+      "SBAS is not able to provide guidance for any approach or landing operations."
+    ],
+    "correct": null,
+    "id": 220
+  },
+  {
+    "question": "With regard to Required Navigation Performance (RNP) operations, area navigation includes requirements for ...",
+    "options": [
+      "on-board performance monitoring and alerting.",
+      "satellite performance monitoring and alerting.",
+      "performance monitoring and alerting by ATC.",
+      "ground-based performance monitoring and alerting."
+    ],
+    "correct": null,
+    "id": 221
+  },
+  {
+    "question": "According ICAO Doc 9613, for oceanic/remote, en-route and terminal phases of flight, PBN is limited to operations with ...",
+    "options": [
+      "angular vertical performance requirements and time constraints.",
+      "angular lateral performance requirements and time constraints.",
+      "linear vertical performance requirements and time constraints.",
+      "linear lateral performance requirements and time constraints."
+    ],
+    "correct": null,
+    "id": 222
+  },
+  {
+    "question": "Regarding determining GNSS position:",
+    "options": [
+      "GPS can be used only for approach guidance, but not for enroute navigation",
+      "The DOP has to be more than 6 for position fixing in en-route navigation",
+      "There is no advantage in combining GPS and INS.",
+      "The clock error of the satellite clock is important for accurate position fixing"
+    ],
+    "correct": null,
+    "id": 223
+  },
+  {
+    "question": "With regard to PBN, what navigation error(s) of an on-board system can be monitored by the flight crew?",
+    "options": [
+      "TSE (Total System Error) and PDE (Path Deviation Error)",
+      "NSE (Navigation System Error) and FTE (Flight Technical Error)",
+      "FTE (Flight Technical Error) only",
+      "PDE (Path Deviation Error) and NSE (Navigation System Error)"
+    ],
+    "correct": null,
+    "id": 224
+  },
+  {
+    "question": "With regard to PBN, as a Non-Precision Approach (NPA) procedure is classified:",
+    "options": [
+      "RNP APCH to LPV minima.",
+      "RNP APCH to LNAV/VNAV minima.",
+      "RNP APCH to LNAV minima.",
+      "RNP APCH to GLS minima."
+    ],
+    "correct": null,
+    "id": 225
+  },
+  {
+    "question": "With regard to PBN navigation, the Total System Error (TSE) can be understood as ...",
+    "options": [
+      "as a measure for the navigation accuracy.",
+      "a measure for the 3D position fix accuracy.",
+      "a maximum value of the sum of all system errors.",
+      "a fixed system value determined during certification."
+    ],
+    "correct": null,
+    "id": 226
+  },
+  {
+    "question": "The influence of the ionosphere on the accuracy of the NAVSTAR/GPS system is ...",
+    "options": [
+      "significant only for satellites located at a small angle above the horizon.",
+      "minimised by computing the average accuracy of all signals.",
+      "very small and negligible for practical purposes.",
+      "reduced in Standard Positioning Service (SPS) receivers by using a model of the ionosphere transmitted by the satellites."
+    ],
+    "correct": null,
+    "id": 227
+  },
+  {
+    "question": "Which of the following correctly lists the most significant factors affecting the accuracy of the Satellite-Assisted Navigation System (GNSS/GPS)?",
+    "options": [
+      "Satellite frequency failure, satellite ephemeris, and atmospheric propagation, multipath, frequency drift.",
+      "Satellite orbit displacement, atmospheric propagation, Doppler frequency shift and satellite clock error.",
+      "Satellite mutual interference, frequency drift, and satellite-to-ground time lag.",
+      "Ionospheric propagation delay, dilution of precision, satellite clock error, satellite orbital variations, multipath."
+    ],
+    "correct": null,
+    "id": 228
+  },
+  {
+    "question": "Regarding the principle of SBAS operation, a correction signal is broadcast ...",
+    "options": [
+      "from geostationary satellites to GNSS receivers distributed over a wide area.",
+      "from geostationary satellites to GNSS receivers located an aerodrome's terminal area.",
+      "ground-based transmitters to GNSS receivers located an aerodrome's terminal area.",
+      "from polar-orbiting satellites to GNSS receivers distributed over a wide area."
+    ],
+    "correct": null,
+    "id": 229
+  },
+  {
+    "question": "Navigation specifications covered by A-RNP include:",
+    "options": [
+      "RNAV 5, RNAV 1, RNAV APCH and RNP APCH.",
+      "RNAV APCH, RNAV 1, RNP 1 / RNP 2 and RNP APCH.",
+      "RNAV 5, RNAV 1, RNP 1 / RNP 2 and RNAV APCH.",
+      "RNAV 5, RNAV 1, RNP 1 / RNP 2 and RNP APCH."
+    ],
+    "correct": null,
+    "id": 230
+  },
+  {
+    "question": "For PBN operations on a route for which RNP 5 is required, the ground-based NAVAID infrastructure components require input from _ of the following types of position sensors: VOR/DME, DME/DME, INS or IRS, GNSS.",
+    "options": [
+      "all",
+      "one or a combination",
+      "at least 2",
+      "none"
+    ],
+    "correct": null,
+    "id": 231
+  },
+  {
+    "question": "The different segments of the NAVSTAR/GPS system are the ...",
+    "options": [
+      "atomic clock, control, and transponder.",
+      "antenna, receiver, and space.",
+      "control, space, and user.",
+      "control station and monitoring station."
+    ],
+    "correct": null,
+    "id": 232
+  },
+  {
+    "question": "The RAIM function used by GNSS receivers enables use of (1)_ range measurements to (2) _ calculated from the minimum number of satellites required to provide a 3D fix.",
+    "options": [
+      "(1) minimum, (2) enhance precision of the position",
+      "(1) four, (2) verify the position",
+      "(1) redundant, (2) verify the position",
+      "(1) three, (2) enhance precision of the position"
+    ],
+    "correct": null,
+    "id": 233
+  },
+  {
+    "question": "Which of the following is the reason for a measured distance between a NAVSTAR/GPS satellite and a receiver being called a pseudo-range?",
+    "options": [
+      "The measured range is just a vague approximation.",
+      "The calculated range is based on the pseudo-random noise code.",
+      "The difference between GNSS receiver and satellite time references initially creates an erroneous range.",
+      "The calculated range is based on an idealised orbit."
+    ],
+    "correct": null,
+    "id": 234
+  },
+  {
+    "question": "Which frequency band is used by the datalink of a Satellite Based Augmentation System (SBAS)?",
+    "options": [
+      "VHF",
+      "LF",
+      "MF",
+      "UHF"
+    ],
+    "correct": null,
+    "id": 235
+  },
+  {
+    "question": "UTC parameters in the navigation message determine the difference between",
+    "options": [
+      "GPS time and local time.",
+      "GPS time and UTC.",
+      "Local time and UTC.",
+      "GMT and UTC."
+    ],
+    "correct": null,
+    "id": 236
+  },
+  {
+    "question": "With regard to PBN, the term \"Offset flight path\" is defined as:",
+    "options": [
+      "a path with a lateral offset from a defined route, to be intercepted with an angle of 45 degrees or more.",
+      "a path with a lateral offset from a defined route, to be flown in opposite direction of the cleared direction.",
+      "a path with a lateral offset from a defined route, specified in increments of 1 NM up to 20 NM.",
+      "a path with a lateral offset from a defined route, specified in increments of 5 NM up to 20 NM."
+    ],
+    "correct": null,
+    "id": 237
+  },
+  {
+    "question": "ARING 424 path terminators are described by a (1) _, which defines a specific type of flight path along a segment of a procedure and a specific type of termination of that flight path. They are assigned to (2) _in an airborne navigation database.",
+    "options": [
+      "(1) 3-letter code, (2) all RNAV, SID, STAR and approach procedure segments",
+      "(1) 2-letter code, (2) SID, STAR and approach procedure segments",
+      "(1) 2-letter code, (2) all RNAV, SID, STAR and approach procedure segments",
+      "(1) 3-letter code, (2) RNAV approach procedure segments"
+    ],
+    "correct": null,
+    "id": 238
+  },
+  {
+    "question": "With regard to GNSS receivers, the remaining error after corrections for the known, most significant errors, is referred to as:",
+    "options": [
+      "Ionospheric Propagation Delay (IPD)",
+      "Geometric Dilution of Precision (GDOP)",
+      "User Equivalent Range Error (UERE)",
+      "Satellite Orbital Variations Error"
+    ],
+    "correct": null,
+    "id": 239
+  },
+  {
+    "question": "Which characteristic do GPS, GLONASS, GALILEO and BEIDOU have in common?",
+    "options": [
+      "All four systems are based on the WGS 84 ellipsoid for position fixing.",
+      "They are all less accurate near the equator and more accurate near the pole.",
+      "They all use the same frequencies so a single receiver can work all systems.",
+      "All four systems use time measurement to determine a position."
+    ],
+    "correct": null,
+    "id": 240
+  },
+  {
+    "question": "A Ground-Based Augmentation System (GBAS) station has a typical coverage of plus/minus 35° up to (1) _, and plus/minus 10° up to (2) _ either side of the final approach path.",
+    "options": [
+      "(1) 15 NM, (2) 20 NM",
+      "(1) 5 NM, (2) 15 NM",
+      "(1) 28 NM, (2) 37 NM",
+      "(1) 10 NM, (2) 20 NM"
+    ],
+    "correct": null,
+    "id": 241
+  },
+  {
+    "question": "With regard to RNAV or RNP operations, which of the following statements is correct? 1. RNAV specifications include the requirement for ground-based performance monitoring and alerting. 2. RNP specifications include the requirement for on-board performance monitoring and alerting.",
+    "options": [
+      "1 is incorrect, 2 is incorrect.",
+      "1 is correct, 2 is correct.",
+      "1 is incorrect, 2 is correct.",
+      "1 is correct, 2 is incorrect."
+    ],
+    "correct": null,
+    "id": 242
+  },
+  {
+    "question": "The European Geostationary Navigation Overlay System (EGNOS) is a form of:",
+    "options": [
+      "Local Area Augmentation System (LAAS)",
+      "Ground-Based Augmentation System (GBAS)",
+      "Wide Area Differential GPS (WADGPS)",
+      "Local Area Differential System (LADGPS)"
+    ],
+    "correct": null,
+    "id": 243
+  },
+  {
+    "question": "A certain number of independent and serviceable Long Range Navigation Systems (LRNSs) are required for operation in the RNAV 10 airspace. The minimum number of equipment required includes:",
+    "options": [
+      "two LRNSs such as INS, IRS FMS or GNSS.",
+      "one LRNS such as INS, an IRS FMS or a GNSS.",
+      "two LRNSs using input from VOR/DME or DME/DME RNAV.",
+      "one LRNS using input from VOR/DME or DME/DME RNAV."
+    ],
+    "correct": null,
+    "id": 244
+  },
+  {
+    "question": "Related to the RNP specification for terminal and en-route applications, navigation aspects include ...",
+    "options": [
+      "Lateral navigation.",
+      "Lateral and vertical navigation.",
+      "Vertical angular navigation.",
+      "Vertical linear navigation."
+    ],
+    "correct": null,
+    "id": 245
+  },
+  {
+    "question": "For an aircraft flying an RNAV approach, which situations below would the contingency procedure of discontinuing the RNAV approach and reverting to a conventional arrival route apply? In case of: 1. Integrity monitoring loss 2. TCAS advisory message 3. CDI indication more than half scale displacement 4. Communications failure 5. Receiver failing to engage correct approach mode",
+    "options": [
+      "2, 3 and 5",
+      "1, 3 and 5",
+      "2, 4 and 5",
+      "1, 2 and 4"
+    ],
+    "correct": null,
+    "id": 246
+  },
+  {
+    "question": "Which of the following statements is true about the data in the navigation message of the GPS?",
+    "options": [
+      "The data contained in the navigation message are valid for a period of 28 days.",
+      "The navigation data are uploaded to the satellites by the GPS control segment.",
+      "The navigation data are checked and, if necessary, corrected by the satellite itself.",
+      "The data of a satellite are checked and, if necessary, corrected by other satellites in the constellation."
+    ],
+    "correct": null,
+    "id": 247
+  },
+  {
+    "question": "Which statement is correct about the L1 and L2 NAVSTAR/GPS transmission frequencies and codes?",
+    "options": [
+      "The lower frequency is used to transmit both the C/A and P codes.",
+      "C/A and P codes are transmitted at different times on both frequencies.",
+      "The higher frequency is used to transmit both the C/A and P codes.",
+      "C/A and P codes are transmitted simultaneously on both frequencies."
+    ],
+    "correct": null,
+    "id": 248
+  },
+  {
+    "question": "When comparing a SBAS (Satellite-Based Augmentation System) with a GBAS (Ground-Based Augmentation System), it can be stated that ...",
+    "options": [
+      "the dilution of precision of an SBAS is much smaller than those of a GBAS.",
+      "the coverage area of an SBAS is much larger than that of a GBAS.",
+      "an SBAS enables precision approaches at a higher final approach altitude.",
+      "an SBAS does not need ground stations for the pseudo-range corrections."
+    ],
+    "correct": null,
+    "id": 249
+  }
+]

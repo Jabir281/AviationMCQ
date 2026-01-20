@@ -1,0 +1,2114 @@
+[
+  {
+    "question": "Under normal conditions, the effective VHF transmission range is limited by which factors? 1. Earth's curvature 2. Line of sight 3. Height of the ionosphere 4. Angle of the radio wave with the vertical",
+    "options": [
+      "1 and 3",
+      "2 and 3",
+      "3 and 4",
+      "1 and 2"
+    ],
+    "correct": 3,
+    "id": 1
+  },
+  {
+    "question": "Which are the radio frequency bands normally used for aeronautical radio communications?",
+    "options": [
+      "UHF and VHF",
+      "VHF and MF",
+      "LF and VHF",
+      "VHF and HF"
+    ],
+    "correct": 3,
+    "id": 2
+  },
+  {
+    "question": "What is the range of the readability scale?",
+    "options": [
+      "1 to 10",
+      "0 to 10",
+      "1 to 5",
+      "0 to 5"
+    ],
+    "correct": 2,
+    "id": 3
+  },
+  {
+    "question": "In case a radar controller instructs you to \"STAND BY FOR SMALLVILLE PRECISION THIS FREQUENCY\", the correct action would be to ...",
+    "options": [
+      "change frequency to that published for Mudpark Precision and wait for the controller to call you on that frequency.",
+      "change frequency to that published for Mudpark Precision and establish communications on that frequency.",
+      "say nothing and wait for a different controller to call you on the frequency you are on now.",
+      "acknowledge the call and wait for a different controller to call you on the frequency you are on now."
+    ],
+    "correct": 2,
+    "id": 4
+  },
+  {
+    "question": "Which of these has to be transmitted by pronouncing each digit separately?",
+    "options": [
+      "Visibility 4000 m",
+      "Ceiling overcast 1300 ft",
+      "Altitude 2500 ft",
+      "QNH 1000"
+    ],
+    "correct": 3,
+    "id": 5
+  },
+  {
+    "question": "All aircraft operating above FL195 in the European region shall be equipped with radio equipment capable operating on a channel spacing of:",
+    "options": [
+      "25 kHz",
+      "8.33 kHz",
+      "50 KHz",
+      "12.5 kHz"
+    ],
+    "correct": 1,
+    "id": 6
+  },
+  {
+    "question": "In radiotelephony communication, what does the word \"RECLEARED\" mean?",
+    "options": [
+      "A change has been made to your last clearance",
+      "Permission for proposed action granted",
+      "Consider that transmission as not sent",
+      "An error has been made in my last transmission"
+    ],
+    "correct": 0,
+    "id": 7
+  },
+  {
+    "question": "In radiotelephony communication, what does the word \"APPROVED\" mean?",
+    "options": [
+      "Authorized to proceed under the conditions specified",
+      "I repeat for clarity or emphasis",
+      "That is correct",
+      "Permission for proposed action granted"
+    ],
+    "correct": 3,
+    "id": 8
+  },
+  {
+    "question": "What is the correct way to transmit and read back frequency 120.375 MHz (VHF channel separated by 25 KHz)?",
+    "options": [
+      "\"One two zero decimal three seven five\"",
+      "\"One twenty decimal three seven\"",
+      "\"One two zero decimal three seven\"",
+      "\"One two zero three seven\""
+    ],
+    "correct": 2,
+    "id": 9
+  },
+  {
+    "question": "After having completed an ACAS Resolution Advisory (RA) manoeuvre, the correct phrase to advise ATC to initiate return to the original clearance would be:",
+    "options": [
+      "\"CLEAR OF CONFLICT, REQUEST CLEARANCE\"",
+      "\"TCAS RA COMPLETED\"",
+      "\"CLEAR OF CONFLICT, RETURNING TO (last clearance)\"",
+      "\"CLEAR OF CONFLICT, TCAS RA COMPLETED\""
+    ],
+    "correct": 2,
+    "id": 10
+  },
+  {
+    "question": "What does the abbreviation \"RVR\" mean?",
+    "options": [
+      "Radar vectors requested",
+      "Runway visual range",
+      "Recleared via route",
+      "Runway visibility report"
+    ],
+    "correct": 2,
+    "id": 11
+  },
+  {
+    "question": "When plotting bearings from a VDF facility or NDB into a chart, the bearing that has to be used for drawing lines from the station to the aircraft in the chart is the ...",
+    "options": [
+      "QDM",
+      "QDR",
+      "QUJ",
+      "QTE"
+    ],
+    "correct": 3,
+    "id": 12
+  },
+  {
+    "question": "Which abbreviation is used for the term \"control zone\"?",
+    "options": [
+      "CTZ",
+      "CTA",
+      "CZ",
+      "CTR"
+    ],
+    "correct": 3,
+    "id": 13
+  },
+  {
+    "question": "When flying in accordance with IFR, which of the following best describes the term \"Visual approach\"?",
+    "options": [
+      "An extension of an instrument approach procedure to bring an aircraft into position for landing on a runway which is not suitably located for straight-in-approach.",
+      "An approach executed by an IFR flight unable to maintain VMC.",
+      "A visual manoeuvre executed by an IFR flight when the weather conditions at the aerodrome of destination are equal to or better than the required VMC minima.",
+      "History Bookmarks Window Help"
+    ],
+    "correct": 3,
+    "id": 14
+  },
+  {
+    "question": "According ICAO Annex 10 Vol II, a \"method in which telecommunication between two stations takes place in one direction at a time\" is defined as:",
+    "options": [
+      "Simplex communication",
+      "Ground-to-air communication",
+      "Broadcast",
+      "Duplex communication"
+    ],
+    "correct": 0,
+    "id": 15
+  },
+  {
+    "question": "What is the Q-code for \"true bearing from the station\"?",
+    "options": [
+      "QTE",
+      "QDM",
+      "QFE",
+      "QDR"
+    ],
+    "correct": 0,
+    "id": 16
+  },
+  {
+    "question": "RADAR instructs aircraft XY-ABC: \"X-BC RESET SQUAWK 1015\" What does this mean?",
+    "options": [
+      "X-BC has been identified by SSR code 1015",
+      "X-BC is requested to reselect SSR code 1015",
+      "X-BC is requested to set new code 1015",
+      "X-BC has been identified at time 1015 UTC"
+    ],
+    "correct": 1,
+    "id": 17
+  },
+  {
+    "question": "Which phrase shall be used if the repetition of an entire message is required?",
+    "options": [
+      "\"SAY AGAIN\"",
+      "\"REPEAT TRANSMISSION\"",
+      "\"REPEAT MESSAGE\"",
+      "\"WHAT MESSAGE\""
+    ],
+    "correct": 0,
+    "id": 18
+  },
+  {
+    "question": "The wind information \"120 degrees, 15 knots, gusting 25 knots\" should be transmitted as:",
+    "options": [
+      "wind one two zero degrees, fifteen knots, up to twenty five knots",
+      "wind one two zero degrees, one five knots, up to two five knots",
+      "wind one two zero degrees, fifteen knots, gusting twenty five knots",
+      "wind one two zero degrees, one five knots, gusting two five knots"
+    ],
+    "correct": 3,
+    "id": 19
+  },
+  {
+    "question": "The wind information \"240 degrees, 16 knots, gusting 30 knots\" should be transmitted as:",
+    "options": [
+      "wind two hundred fourty degrees, one six knots, up to two five knots",
+      "wind two four zero degrees, sixteen knots, gusting thirty knots",
+      "wind two four zero degrees, one six knots, gusting three zero knots",
+      "wind two hundred fourty degrees, sixteen knots, up to thirty knots"
+    ],
+    "correct": 2,
+    "id": 20
+  },
+  {
+    "question": "In radiotelephony, which words should be used to preface a general call made by a ground station?",
+    "options": [
+      "\"ALL AIRCRAFT\"",
+      "\"LISTEN EVERYBODY\"",
+      "\"ALL STATIONS\"",
+      "\"ALL RECEIVERS\""
+    ],
+    "correct": 2,
+    "id": 21
+  },
+  {
+    "question": "What is the radiotelephony call sign for the aeronautical station providing approach control (no radar service)?",
+    "options": [
+      "APPROACH",
+      "RADAR",
+      "CONTROL",
+      "ARRIVAL"
+    ],
+    "correct": 0,
+    "id": 22
+  },
+  {
+    "question": "What is the radiotelephony call sign suffix which indicates that the aeronautical station is providing area control without radar?",
+    "options": [
+      "CONTROL",
+      "CENTRE",
+      "APPROACH",
+      "RADAR"
+    ],
+    "correct": 0,
+    "id": 23
+  },
+  {
+    "question": "In case after touchdown, ATC wants an aircraft to taxi faster to vacate the runway quickly, the instruction would be:",
+    "options": [
+      "\"EXPEDITE TO VACATE\"",
+      "\"EXPEDITE TAXI, REPORT RUNWAY VACATED\"",
+      "\"INCREASE SPEED AND VACATE\"",
+      "\"SPEED TAXI FOR VACATION\""
+    ],
+    "correct": 1,
+    "id": 24
+  },
+  {
+    "question": "The correct phrase to inform ATC that you do NOT have RNAV capability is:",
+    "options": [
+      "\"NOT RNAV EQUIPPED\"",
+      "\"UNABLE TO COMPLY RNAV\"",
+      "\"DISREGARD RNAV\"",
+      "\"NEGATIVE RNAV\""
+    ],
+    "correct": 3,
+    "id": 25
+  },
+  {
+    "question": "Taxiing to the departure runway, ATC instructs you to hold short of a parallel runway at intersection Sierra 1 due to landing traffic. \"SKYRUNNER 234, BEHIND THE LANDING A319, VIA SIERRA 1, CROSS RUNWAY 05 LEFT, BEHIND\" The correct readback is:",
+    "options": [
+      "\"BEHIND THE LANDING AIRCRAFT, VIA SIERRA 1 CROSSING RUNWAY 05 LEFT, SKYRUNNER 234\"",
+      "\"LINING UP RUNWAY 05 LEFT AND REPORTING BEHIND THE LANDING A319, SKYRUNNER 234\"",
+      "\"BEHIND THE LANDING A319, VIA SIERRA 1, CROSSING RUNWAY 05 LEFT, BEHIND, SKYRUNNER 234\"",
+      "\"AFTER THE LANDING AIRBUS, VIA SIERRA 1, CLEARED TO CROSS RUNWAY 05 LEFT, SKYRUNNER 234\""
+    ],
+    "correct": 2,
+    "id": 26
+  },
+  {
+    "question": "In case of an aircraft experiences degradation in navigation performance making a GNSS approach unable to perform, the correct phrase to inform ATC would be:",
+    "options": [
+      "\"RNAV NEGATIVE\"",
+      "\"RNAV equipment fail\"",
+      "\"DISREGARD RNAV\"",
+      "\"UNABLE RNAV due equipment\""
+    ],
+    "correct": 3,
+    "id": 27
+  },
+  {
+    "question": "ATC issues the following instruction to an aircraft: \"Skyrunner 234 contact Bucharest Control 129.1\" What is the correct phraseology for the pilot to acknowledge the instruction?",
+    "options": [
+      "\"Skyrunner 234 contacting 129.1\"",
+      "\"Contacting Bucharest Control on 129.1 Skyrunner 234\"",
+      "\"129.1 Skyrunner 234\"",
+      "\"Bucharest Control on 129.1 Skyrunner 234\""
+    ],
+    "correct": 2,
+    "id": 28
+  },
+  {
+    "question": "\"SKYRUNNER 234, RESET SQUAWK CHARLIE 2345\" The correct action to this ATC instruction would be:",
+    "options": [
+      "Reselect code 2345, and transmit \"WILCO, D-IABC\"",
+      "Reselect code 2345, ensure pressure altitude is being transmitted, and transmit \"RESETTING CHARLIE 2345, D-IABC\"",
+      "Check that 3363 is displayed on your transponder with altitude also selected, and transmit \"SQUAWKING CHARLIE 2345, D-IABC\"",
+      "Check that 2345 is displayed on your transponder, select \"IDENT\" on your transponder, and transmit \"RESETTING CHARLIE 3363, D-IABC\""
+    ],
+    "correct": 1,
+    "id": 29
+  },
+  {
+    "question": "In contact with a radar Air Traffic Services unit, an aircraft receives the three following messages (call signs are omitted), which option lists correct responses to all of these messages? 1. \"Advise type of transponder capability\" 2. \"Check altimeter setting and confirm level\" 3. \"Turn left immediately heading 050 to avoid traffic 12 o'clock 3 miles\" 1. Transponder Sierra",
+    "options": [
+      "2. Altimeter 1008 altitude 2000 ft 3. Left heading 050",
+      "2. Altimeter 1008 altitude 2000 ft",
+      "2. Altimeter 1008 flight level 110",
+      "2. Altimeter 1008 flight level 110"
+    ],
+    "correct": 1,
+    "id": 30
+  },
+  {
+    "question": "RADAR instructs aircraft X-BC:\"X-BC SQUAWK STANDBY\" What does this mean?",
+    "options": [
+      "X-BC is requested to standby as the radar controller is busy",
+      "X-BC is requested to standby on the frequency",
+      "X-BC is requested to switch to standby position",
+      "X-BC is requested to standby for radar vectors"
+    ],
+    "correct": 2,
+    "id": 31
+  },
+  {
+    "question": "While flying at altitude 3000 ft with QNH 1022, ATC asks you to report your level. The correct reply would be:",
+    "options": [
+      "\"Skyrunner 234, maintaining level 2000 feet\"",
+      "\"Skyrunner 234, 3000 feet on QNH 1022\"",
+      "\"Skyrunner 234, level 2000 feet\"",
+      "\"Skyrunner 234, maintaining 3000 feet\""
+    ],
+    "correct": 3,
+    "id": 32
+  },
+  {
+    "question": "Three of the following call-signs suffixes indicate that you are in contact with an Air Traffic Services unit. Which call sign indicates contact with something other than an ATS unit?",
+    "options": [
+      "INFORMATION",
+      "GROUND",
+      "TOWER",
+      "DISPATCH"
+    ],
+    "correct": 3,
+    "id": 33
+  },
+  {
+    "question": "In radiotelephony communication, what does the word \"NEGATIVE\" mean?",
+    "options": [
+      "Permission not granted",
+      "Consider that transmission as not sent",
+      "Proposed action granted",
+      "Disregard last instruction"
+    ],
+    "correct": 0,
+    "id": 34
+  },
+  {
+    "question": "Atmospheric attenuation of VHF radio transmissions is affected by the characteristics of the transmission and of the air through which it travels. Attenuation increases as ...",
+    "options": [
+      "frequency increases and air density decreases.",
+      "air density increases and frequency decreases.",
+      "air density and frequency both decrease.",
+      "frequency and air density both increase."
+    ],
+    "correct": 3,
+    "id": 35
+  },
+  {
+    "question": "Which phenomena will usually have effect on the reception of VHF transmission?",
+    "options": [
+      "Level of aircraft and terrain elevations",
+      "Electrical discharges as they happen frequently in thunderstorms",
+      "Day- and night effect",
+      "The ionosphere"
+    ],
+    "correct": 0,
+    "id": 36
+  },
+  {
+    "question": "What is the range of frequencies that corresponds to the Very High Frequency (VHF) band?",
+    "options": [
+      "300 kHz to 3000 KHz",
+      "300 MHz to 3000 MHz",
+      "30 MHz to 300 MHZ",
+      "3 MHz to 30 MHz"
+    ],
+    "correct": 2,
+    "id": 37
+  },
+  {
+    "question": "The morse code for identifying radio navigation ground facilities consists of:",
+    "options": [
+      "two or three letters, coded by dots and dashes.",
+      "two (or three) letters, coded by dots only.",
+      "three or four letters, coded by dashes only.",
+      "three or four letters, coded by dots and dashes."
+    ],
+    "correct": null,
+    "id": 38
+  },
+  {
+    "question": "What is the order of priority of the following messages in the aeronautical mobile service?",
+    "options": [
+      "Flight safety message, direction finding message, urgency message.",
+      "Meteorological message, direction finding message, flight safety message.",
+      "Flight regularity message, distress message, meteorological message.",
+      "‹ Results"
+    ],
+    "correct": null,
+    "id": 39
+  },
+  {
+    "question": "What does the abbreviation \"FIR\" mean?",
+    "options": [
+      "Flight information region",
+      "Flight information required",
+      "Flight information radar",
+      "Flow information received"
+    ],
+    "correct": null,
+    "id": 40
+  },
+  {
+    "question": "In RTF air-ground communication, the Q-codes used for directions and bearings are:",
+    "options": [
+      "QDM and QDR",
+      "QFE and QDR",
+      "QDM and QNH",
+      "QFE and QNH"
+    ],
+    "correct": null,
+    "id": 41
+  },
+  {
+    "question": "With regard to establishing CPDLC connection, which of the following statements is correct? 1. A successful \"logon\" procedure enables CPDLC connection to be established between an ATS unit and the aircraft. 2. The purpose of \"logon\" procedure is to provide the ATS unit with information on the systems supported by the aircraft, i.e. unique identification of the aircraft.",
+    "options": [
+      "1 is incorrect, 2 is incorrect",
+      "1 is correct, 2 is incorrect",
+      "1 is incorrect, 2 is correct",
+      "1 is correct, 2 is correct"
+    ],
+    "correct": null,
+    "id": 42
+  },
+  {
+    "question": "With regard to temporary change of callsign, which of the following statements is correct? 1. In case of possible confusion with callsigns of other stations, an aircraft may be instructed to change the type of call sign temporarily. 2. Temporary change of callsign may be used by an aircraft in case confusion may occur because of similar call signs.",
+    "options": [
+      "1 is correct, 2 is correct",
+      "1 is correct, 2 is incorrect",
+      "1 is incorrect, 2 is correct",
+      "1 is incorrect, 2 is incorrect"
+    ],
+    "correct": null,
+    "id": 43
+  },
+  {
+    "question": "ATC clearance for taxi issued by a controller will always contain a clearance limit. This is the point at which the aircraft must stop, unless further permission to proceed is given. Which of the following statements is correct regarding this type of clearance?",
+    "options": [
+      "In the case the taxi instruction requires the crossing of a runway, the clearance limit will explicitly be to hold short of that runway.",
+      "The controller would never issue taxi instructions where these would take the aircraft to a clearance limit which would involve crossing a runway.",
+      "Taxi instructions never contain a clearance to cross a runway, even if the clearance limit is beyond that runway.",
+      "When a taxi instruction contains a taxi limit beyond a runway, it shall contain an explicit clearance to cross, or an instruction to hold short of that runway. 4"
+    ],
+    "correct": null,
+    "id": 44
+  },
+  {
+    "question": "Which of these statements best describes the meaning of the phrase \"STANDBY\"?",
+    "options": [
+      "Permission granted for action proposed",
+      "Select STANDBY on the SSR transponder",
+      "Continue on present heading and listen out",
+      "Wait and I will call you"
+    ],
+    "correct": null,
+    "id": 45
+  },
+  {
+    "question": "What phrase should a pilot use to acknowledge that they have received ATIS Information GOLF?",
+    "options": [
+      "Information GOLF",
+      "We have the information",
+      "We have the ATIS GOLF",
+      "Weather GOLF received"
+    ],
+    "correct": null,
+    "id": 46
+  },
+  {
+    "question": "The instruction \"SQUAWK CHARLIE\" from ATC means the controller ...",
+    "options": [
+      "is requesting transmission of your pressure altitude from your transponder.",
+      "is informing you that he/she can only determine your bearing within 10 degrees.",
+      "wants you to switch off your transponder.",
+      "is unable to see your aircraft on his/her primary radar."
+    ],
+    "correct": null,
+    "id": 47
+  },
+  {
+    "question": "Which of the following would affect the strength and quality of signals received in the band normally used for aeronautical mobile service voice communications?",
+    "options": [
+      "The composition of the surface of the Earth below the signal",
+      "Obstacles near the transmitter",
+      "The electron density in the lower ionosphere",
+      "The strength of the solar wind"
+    ],
+    "correct": null,
+    "id": 48
+  },
+  {
+    "question": "Which of the following can be expected to reduce the range at which an aircraft can receive VHF transmissions from a ground station?",
+    "options": [
+      "Building-construction work close to the transmitter 4",
+      "The receiving aircraft enters a climb",
+      "A forecast temperature inversion above the level at which the aircraft is flying",
+      "A change of frequency to one at the lower end of the VHF band"
+    ],
+    "correct": null,
+    "id": 49
+  },
+  {
+    "question": "Which abbreviation is used for \"Co-ordinated universal time\"?",
+    "options": [
+      "UTC",
+      "CUT",
+      "COUT",
+      "GMT"
+    ],
+    "correct": null,
+    "id": 50
+  },
+  {
+    "question": "How should a pilot terminate the read-back of an ATC clearance?",
+    "options": [
+      "With the word \"WILCO\"",
+      "With the word \"ROGER\"",
+      "With his own aircraft call sign",
+      "With the ATC ground station call sign"
+    ],
+    "correct": null,
+    "id": 51
+  },
+  {
+    "question": "While under Flight Information Service, you wish to use your single radio to request an ATC clearance from another ground station. What phraseology should you use?",
+    "options": [
+      "\"G-ACZG, request monitor ONE TWO FIVE DECIMAL SEVEN SEVEN FIVE.\"",
+      "\"G-ACZG, request change to ONE TWO FIVE DECIMAL SEVEN SEVEN FIVE.\"",
+      "\"G-ACZG, changing to ONE TWO FIVE POINT SEVEN SEVEN FIVE.\"",
+      "\"G-ACZG, request contact ONE TWO FIVE POINT SEVEN SEVEN FIVE.\""
+    ],
+    "correct": null,
+    "id": 52
+  },
+  {
+    "question": "How should 118.1 be transmitted to indicate a frequency?",
+    "options": [
+      "One eighteen one.",
+      "One one eight point one.",
+      "One one eight decimal one.",
+      "One one eight one."
+    ],
+    "correct": null,
+    "id": 53
+  },
+  {
+    "question": "After departure as a special VFR flight, when approaching the control zone boundary you ...",
+    "options": [
+      "can automatically contact the next ATC unit.",
+      "will be cleared to leave the control zone in accordance with established procedures.",
+      "should report passing the control zone boundary to ATC and include the phrase \"CANCELLING SPECIAL VFR\".",
+      "should broadcast a position report and the in-flight visibility on the current frequency."
+    ],
+    "correct": null,
+    "id": 54
+  },
+  {
+    "question": "What does the instruction \"GO AROUND\" mean?",
+    "options": [
+      "Initiate a missed approach",
+      "Proceed with your message",
+      "Overtake the aircraft ahead",
+      "Make a 360° turn"
+    ],
+    "correct": null,
+    "id": 55
+  },
+  {
+    "question": "A transmission as \"RADIO CHECK\" should not last longer than:",
+    "options": [
+      "20 seconds",
+      "10 seconds",
+      "5 seconds",
+      "30 seconds"
+    ],
+    "correct": null,
+    "id": 56
+  },
+  {
+    "question": "How shall a pilot ask for a QFE ?",
+    "options": [
+      "Normally speaking the letters as a complete word.",
+      "Using the Morse Codes.",
+      "Normally speaking using the constituent letters.",
+      "Using the spelling (phonetic)alphabet."
+    ],
+    "correct": null,
+    "id": 57
+  },
+  {
+    "question": "Aircraft X-BC has been instructed to contact Smallville TOWER on frequency 118.7. What is the correct response to indicate that it will follow this instruction?",
+    "options": [
+      "\"Smallville TOWER, X-BC\"",
+      "\"Changing over, X-BC\"",
+      "\"Will change to TOWER, X-BC\"",
+      "\"118.7, X-BC\""
+    ],
+    "correct": null,
+    "id": 58
+  },
+  {
+    "question": "Where no ATIS is provided the pilot may ask for current aerodrome information before requesting start up. What is the correct phraseology for making the request?",
+    "options": [
+      "\"Georgetown Ground, Fastair 345, VFR to Smallville, request departure information\"",
+      "\"Georgetown Departure, Fastair 345, VFR to Smallville, request aerodrome information\"",
+      "\"Georgetown Departure, Fastair 345, VFR to Smallville, request starting instructions\"",
+      "\"Georgetown Ground, Fastair 345, VFR to Smallville, request current ATIS information\""
+    ],
+    "correct": null,
+    "id": 59
+  },
+  {
+    "question": "Which of these phrases is used to communicate that \"Consider that transmission as not sent\"?",
+    "options": [
+      "\"DISREGARD\"",
+      "\"CANCEL LAST MESSAGE\"",
+      "\"LAST TRANSMISSION CANCELLED\"",
+      "\"CLEAR MESSAGE\""
+    ],
+    "correct": null,
+    "id": 60
+  },
+  {
+    "question": "D-CUBE receives the following information from the Tower: \"Runway 10 in use, wind 110 degrees 4 knots, cloud and visibility OK, QNH 1009, temperature 6 degrees, dew point 2 degrees\" What is the correct read-back?",
+    "options": [
+      "\"Runway 10 D-CUBE\"",
+      "\"Runway 10 QNH 1009\"",
+      "\"Runway 10 QNH 1009 D-BE\"",
+      "\"QNH 1009 D-CUBE\""
+    ],
+    "correct": null,
+    "id": 61
+  },
+  {
+    "question": "When deviating from a clearance to perform a TCAS Resolution Advisory (RA), the correct phrase to inform ATC would be:",
+    "options": [
+      "\"TCAS ALERT\"",
+      "\"DEVIATING DUE TCAS RA\"",
+      "\"FOLLOWING RA\"",
+      "\"TCAS RA\" 3"
+    ],
+    "correct": null,
+    "id": 62
+  },
+  {
+    "question": "In general, what is the radiotelephony call sign suffix for the aeronautical station providing radar service?",
+    "options": [
+      "RADAR-SERVICE",
+      "CONTROL",
+      "RADAR",
+      "RADAR-CONTROL"
+    ],
+    "correct": null,
+    "id": 63
+  },
+  {
+    "question": "What is the radio equipment channel spacing requirement for aircraft operating above FL 195 in the ICAO European Region?",
+    "options": [
+      "8.33 MHZ",
+      "25 MHZ",
+      "25 kHz",
+      "8.33 KHz"
+    ],
+    "correct": null,
+    "id": 64
+  },
+  {
+    "question": "Where does the VHF band fit within the radio frequency spectrum?",
+    "options": [
+      "Immediately above the MF band and immediately below the UHF band",
+      "Immediately above the HF band and immediately below the UHF band",
+      "Immediately above the HF band and immediately below the EHF band",
+      "Immediately below the SHF band and immediately above the HF band"
+    ],
+    "correct": null,
+    "id": 65
+  },
+  {
+    "question": "In the Aeronautical Mobile Service, which one of the following frequencies may be allocated in the normal band for voice communications?",
+    "options": [
+      "124.258 MHz",
+      "116.300 MHZ",
+      "142.775 MHz",
+      "151.055 MHz"
+    ],
+    "correct": null,
+    "id": 66
+  },
+  {
+    "question": "According ICAO Annex 10 Vol II, an \"Interpilot air-to-air communication\" is defined as a (1) _on a/an (2)_air-to-air channel to enable aircraft engaged in flights over (3) _to exchange necessary operational information and to facilitate the resolution of operational problems.",
+    "options": [
+      "(1) two-way communication,.",
+      "(2) arbitrary,",
+      "(2) designated,",
+      "(2) arbitrary,"
+    ],
+    "correct": null,
+    "id": 67
+  },
+  {
+    "question": "ATC clears Skyrunner 234 to descend from FL 100 to FL 80. The correct readback would be:",
+    "options": [
+      "\"Leaving flight level 100 descending to flight level 80, Skyrunner 234\"",
+      "\"Down to flight level 80, Skyrunner 234\"",
+      "\"Leaving 100 to 80, Skyrunner 234\"",
+      "\"Descending to 80, Skyrunner 234\""
+    ],
+    "correct": null,
+    "id": 68
+  },
+  {
+    "question": "In radio communication, crew members are mandated to read back items to air traffic controllers. Excluded from this requirement are items regarding ...",
+    "options": [
+      "traffic information.",
+      "SSR codes.",
+      "the runway in use.",
+      "transition levels."
+    ],
+    "correct": null,
+    "id": 69
+  },
+  {
+    "question": "For aircraft in the heavy wake turbulence category the word \"HEAVY\" shall be included immediately after the aircraft call sign in ...",
+    "options": [
+      "all radiotelephony contacts between such aircraft and ATS units.",
+      "the initial radiotelephony contact between such aircraft and tower units only.",
+      "the initial radiotelephony contact between such aircraft and ATS units.",
+      "all radiotelephony contact between such aircraft and the approach control unit."
+    ],
+    "correct": null,
+    "id": 70
+  },
+  {
+    "question": "In radiotelephony communication, what phrase shall be used when asking for the readability of a transmission?",
+    "options": [
+      "\"READ YOU LOUD AND CLEAR\"",
+      "\"REPORT READABILITY\"",
+      "\"READ BACK\"",
+      "\"RADIO CHECK\""
+    ],
+    "correct": null,
+    "id": 71
+  },
+  {
+    "question": "F-GTPO is a Robin HR-200 aeroplane. Which of the options below is a correct abbreviation of its call sign?",
+    "options": [
+      "Robin 200",
+      "Robin F-PO",
+      "T-PO",
+      "F-PO"
+    ],
+    "correct": null,
+    "id": 72
+  },
+  {
+    "question": "Aircraft D-CABC is doing a test transmission with Hamburg Ground on 121.8. The correct phraseology to reply to the test transmission in case it is perfectly readable, is:",
+    "options": [
+      "\"D-CABC Hamburg Ground on 121.8 read you 5\"",
+      "\"Hamburg Ground D-CABC read you 5\"",
+      "\"Hamburg Ground on 121.8 D-CABC read you perfectly\"",
+      "\"D-CABC Hamburg Ground read you 5\""
+    ],
+    "correct": null,
+    "id": 73
+  },
+  {
+    "question": "Shall an ATC route clearance always be read back?",
+    "options": [
+      "No, if the content of the ATC clearance is clear and no confusion is likely to arise.",
+      "No, if the ATC route clearance is transmitted in a published form (e.g. Standard Instrument Departure Route/SID).",
+      "No, if the communication channel is overloaded.",
+      "Yes, unless authorized otherwise by the ATS authority concerned."
+    ],
+    "correct": null,
+    "id": 74
+  },
+  {
+    "question": "Which statements are correct regarding VFR arrivals? 1. The pilot may be required to establish contact with approach control and request joining instructions. 2. Where there is an ATIS, the pilot should acknowledge and receive it. 3. Pilots must inform ATC of the SID designator and passing altitude. 4. Where ATIS is NOT provided, the controller will pass on aerodrome data. 5. Where ATIS is NOT provided, pilots must utilise VOLMET to obtain data. 6. Pilots flying under VFR will be given a special squawk code.",
+    "options": [
+      "2, 4, and 6",
+      "1, 3, and 5",
+      "1, 2, and 4",
+      "3, 5, and 6"
+    ],
+    "correct": null,
+    "id": 75
+  },
+  {
+    "question": "With regard to abbreviation of call signs, which of the following statements is correct? 1. An abbreviation is used only after communication has been established 2. An abbreviation is used only after ATC has initiated abbreviation 3. The call sign SKYRUNNER 421 may be abbreviated 4. An abbreviation can be used even with similar call signs on frequency 5. The call sign CESSNA D-GABC may be abbreviated 6. Abbreviation is used after an aircraft has previously abbreviated the call sign",
+    "options": [
+      "1, 3, and 4",
+      "3, 5, and 6",
+      "1, 2, and 5",
+      "2, 4,and 6"
+    ],
+    "correct": null,
+    "id": 76
+  },
+  {
+    "question": "In radiotelephony communication, what does the term \"VERIFY\" mean?",
+    "options": [
+      "Consider that transmission as not sent",
+      "Repeat your last transmission",
+      "Check and confirm with originator",
+      "Read back VDF bearing"
+    ],
+    "correct": null,
+    "id": 77
+  },
+  {
+    "question": "During the transmission of numbers containing a decimal point the term DECIMAL ...",
+    "options": [
+      "can be omitted if no chance of misunderstanding exists.",
+      "must always be transmitted.",
+      "can be omitted with friendly ATS units only.",
+      "must be spoken only if followed by three digits."
+    ],
+    "correct": null,
+    "id": 78
+  },
+  {
+    "question": "To which frequency band does the frequency 118.075 MHz correspond?",
+    "options": [
+      "HF (High Frequency)",
+      "MF (Medium Frequency)",
+      "UHF (Ultra High Frequency)",
+      "VHF (Very High Frequency)"
+    ],
+    "correct": null,
+    "id": 79
+  },
+  {
+    "question": "Which of the factors given below is most likely to degrade the quality of radio transmission on approach?",
+    "options": [
+      "A rapid temperature decrease",
+      "Strong headwind",
+      "Mountainous terrain",
+      "A solid layer of clouds"
+    ],
+    "correct": null,
+    "id": 80
+  },
+  {
+    "question": "What does the term \"blind transmission\" mean?",
+    "options": [
+      "A transmission where no reply is required from the receiving station.",
+      "A transmission from one station to another station in circumstances where two-way communication cannot be established but it is believed that the called station is able to receive V the transmission.",
+      "A transmission of information relating to air navigation that is not addressed to a specific station or stations.",
+      "A transmission of messages relating to en-route weather information which may affect the safety of aircraft operations that is not addressed to a specific station or stations."
+    ],
+    "correct": null,
+    "id": 81
+  },
+  {
+    "question": "Flight safety messages are ...",
+    "options": [
+      "messages relating to direction finding.",
+      "operation messages concerning non-routine landings.",
+      "air traffic control messages.",
+      "messages concerning the safety of an aircraft, a vessel, any other vehicle or a person."
+    ],
+    "correct": null,
+    "id": 82
+  },
+  {
+    "question": "Prior to commencing the approach, the pilot of an aircraft says to the Air Traffic Services Unit (ATSU) at the planned destination aerodrome: \"Please, call a taxi for us. We will arrive on schedule at 1045.\" Can this be considered a Flight Regularity Message?",
+    "options": [
+      "Yes, provided the ATSU has responsibility for ground handling services at the planned destination aerodrome.",
+      "Yes, because this is information for a representative of the aircraft's operating agency and may be relayed by the ATSU.",
+      "No, because this type of message can only be passed once the aircraft is on the ground and passed onto the DELIVERY controller.",
+      "No, because individual requirements of passengers or crew shall NOT be admissible in this type of message."
+    ],
+    "correct": null,
+    "id": 83
+  },
+  {
+    "question": "When asking for magnetic track to a VDF station, the phrasing to be used is:",
+    "options": [
+      "\"REQUEST QDM\"",
+      "\"CONFIRM QTE\"",
+      "\"REQUEST QTE\"",
+      "\"CONFIRM QDM\""
+    ],
+    "correct": null,
+    "id": 84
+  },
+  {
+    "question": "According to ICAO Annex 10, Aeronautical Telecommunications, which air-ground message has the highest priority?",
+    "options": [
+      "Emergency message",
+      "Urgency message",
+      "Flight safety message",
+      "Distress message"
+    ],
+    "correct": null,
+    "id": 85
+  },
+  {
+    "question": "Which phrase shall be used to confirm that a message has been repeated correctly?",
+    "options": [
+      "\"AFFIRM\"",
+      "\"THAT IS AFFIRMATIVE\"",
+      "\"CORRECT\"",
+      "\"RIGHT\""
+    ],
+    "correct": null,
+    "id": 86
+  },
+  {
+    "question": "How shall a pilot inform the control tower that he is prepared for take-off?",
+    "options": [
+      "\"READY TO LINE-UP\"",
+      "\"READY TO GO\"",
+      "\"READY\"",
+      "\"READY FOR TAKE-OFF\""
+    ],
+    "correct": null,
+    "id": 87
+  },
+  {
+    "question": "During radar vectoring, the controller asks the pilot of XY-ABC to turn on to heading 360º. What is the correct read back of this instruction?",
+    "options": [
+      "Heading three hundred sixty, X-BC",
+      "A read back is not necessary as XY-ABC has been identified",
+      "Heading north, X-BC",
+      "Heading three six zero, X-BC"
+    ],
+    "correct": null,
+    "id": 88
+  },
+  {
+    "question": "After landing, when should the pilot report \"RUNWAY VACATED\"?",
+    "options": [
+      "When the entire aircraft is beyond the runway-holding position",
+      "As soon as the aircraft is on the exit taxiway and at taxi speed",
+      "As soon as the aircraft has crossed the runway-edge line",
+      "When the aircraft starts turning to take the exit taxiway"
+    ],
+    "correct": null,
+    "id": 89
+  },
+  {
+    "question": "What is the meaning of the phrase \"RADAR SERVICE TERMINATED\"?",
+    "options": [
+      "You are now leaving the Terminal Area",
+      "ATC wants you to reset transponder",
+      "You will no longer be provided with radar control",
+      "ATC wants you to continue VFR"
+    ],
+    "correct": null,
+    "id": 90
+  },
+  {
+    "question": "The crew of Fastair 345 on stand 24 at Georgetown airport, having received their ATC clearance from DELIVERY, are advised to contact GROUND when they are ready. What phrase must be added to correctly complete the message below? \"GEORGETOWN GROUND, FASTAIR 345, STAND 24, _, INFORMATION BRAVO.\"",
+    "options": [
+      "REQUEST DEPARTURE",
+      "READY TO START ENGINES",
+      "\"REQUEST START UP\"",
+      "ENGINES READY"
+    ],
+    "correct": null,
+    "id": 91
+  },
+  {
+    "question": "An Airbus A340 with registration D-AIHC is scheduled as Lufthansa flight LH0023 using call sign \"Lufthansa\". The correct abbreviated call sign used by the pilot would be:",
+    "options": [
+      "Lufthansa AIHC",
+      "Lufthansa 23",
+      "A340 HC",
+      "Lufthansa HC"
+    ],
+    "correct": null,
+    "id": 92
+  },
+  {
+    "question": "The departure aerodrome ATIS is unserviceable. In your message to request departure information, which of the following items must be used and in what sequence? 1. Station being addressed 2. Planned altitude or level 3. Regional QNH 4. Route intentions 5. Information request 6. Aircraft call sign 7. Aircraft type",
+    "options": [
+      "6, 7, 3, 4",
+      "1, 5, 6, 2",
+      "6, 1, 7,2",
+      "1, 6, 4, 5"
+    ],
+    "correct": null,
+    "id": 93
+  },
+  {
+    "question": "Which statements are correct regarding regular VFR departures? 1. Pilots shall report the standard departure route designator 2. Pilots should report at the zone boundary 3. ATC may pass information about relevant known traffic to the pilot 4. Pilots will be given specific instructions to leave the control zone",
+    "options": [
+      "2 and 3",
+      "1 and 4",
+      "2 and 4",
+      "1 and 3"
+    ],
+    "correct": null,
+    "id": 94
+  },
+  {
+    "question": "The call sign of an aeronautical station consists of two parts, which are ...",
+    "options": [
+      "the name of the location being called followed by the unit or service available.",
+      "the designator of the location followed by the requested service.",
+      "the telephony designator of the aeronautical station followed by the service available.",
+      "the name of the aeronautical station being called followed by the service requested."
+    ],
+    "correct": null,
+    "id": 95
+  },
+  {
+    "question": "Each category of air-ground radio telecommunication messages is associated with specific message types. Which of the following is a specific example of an urgency message?",
+    "options": [
+      "PAN PAN",
+      "MAYDAY",
+      "EMERGENCY",
+      "LEVEL OFF"
+    ],
+    "correct": null,
+    "id": 96
+  },
+  {
+    "question": "Air traffic control messages (clearances, instructions, etc.) belong to the category of ...",
+    "options": [
+      "flight safety messages.",
+      "service messages.",
+      "class B messages.",
+      "flight regularity messages."
+    ],
+    "correct": null,
+    "id": 97
+  },
+  {
+    "question": "What is SELCAL?",
+    "options": [
+      "A system in which two-way radiotelephony communication can be established between two aircraft of the same operator",
+      "A system in which two-way radiotelephony communication between more than two stations can take place simultaneously, when they are in the area of jurisdiction of the same ATS unit",
+      "linking a ground station with the aircraft, which is unmonitored by the aircraft crew",
+      "A system provided for direct exchange of information between ATS units"
+    ],
+    "correct": null,
+    "id": 98
+  },
+  {
+    "question": "What is the correct phraseology for a temporary suspension of transponder operation?",
+    "options": [
+      "\"SQUAWK IDENT\"",
+      "\"XPDR STANDBY\"",
+      "\"SQUAWK STANDBY\"",
+      "\"XPDR OFF\""
+    ],
+    "correct": null,
+    "id": 99
+  },
+  {
+    "question": "The time is 1123 and Radar Control requests an estimate for next reporting point at AAL VOR/DME. If the estimated elapsed time to AAL is 12 minutes, what is the correct transmission is?",
+    "options": [
+      "Estimate AAL at eleven-thirty-five",
+      "Estimate AAL VOR/DME in one-two minutes",
+      "Have one-two minutes to go to AAL",
+      "Estimate AAL at three-five"
+    ],
+    "correct": null,
+    "id": 100
+  },
+  {
+    "question": "To indicate that the aircraft is no longer occupying the active runway, a pilot shall report to the controller:",
+    "options": [
+      "\"RUNWAY VACATED\"",
+      "\"RUNWAY FREE\"",
+      "\"CLEAR OF RUNWAY \"",
+      "\"RUNWAY CLEARED\""
+    ],
+    "correct": null,
+    "id": 101
+  },
+  {
+    "question": "When flying IFR in class D airspace and receiving the following message: \"Skyrunner 234, unknown traffic 12 o'clock 3 miles opposite direction, 600 feet below, descending\". The traffic is NOT yet in sight. The correct readback would be:",
+    "options": [
+      "\"Looking out, Skyrunner 234\", then advises the Air Traffic Services when in sight",
+      "\"Unknown traffic ahead 3 miles 600 feet below descending, not in sight\", then advises Air Traffic Services when in sight",
+      "\"Unknown traffic 12 o'clock 3 miles 600 feet below descending copied, looking out\", then files a report on this near collision",
+      "\"Unknown traffic ahead 3 miles 600 feet below descending, looking out\", then advises Air Traffic Services when in sight"
+    ],
+    "correct": null,
+    "id": 102
+  },
+  {
+    "question": "Which of the following abbreviated call signs of Cherokee XY-ABC is correct?",
+    "options": [
+      "Cherokee XY-BC",
+      "Cherokee X-BC",
+      "Cherokee BC",
+      "Cherokee X-ABC"
+    ],
+    "correct": null,
+    "id": 103
+  },
+  {
+    "question": "Which phrasing shall be used to ask a station whether you have correctly received a message, clearance or instruction?",
+    "options": [
+      "\"CORRECT\"",
+      "\"ACKNOWLEDGE\"",
+      "\"VERIFY\"",
+      "\"CONFIRM\" 4"
+    ],
+    "correct": null,
+    "id": 104
+  },
+  {
+    "question": "\"D-BC, identification lost due to radar failure.\" The correct read back to this instruction is:",
+    "options": [
+      "\"Identification lost, D-BC\" and the pilot shall disconnect the transponder as it may be the cause of the radar failure",
+      "\"Roger, D-BC\" and the pilot shall disconnect the transponder as it may be the cause of the radar failure",
+      "\"Identification lost, D-BC\" and the pilot may receive further instructions to establish and maintain procedural separation",
+      "\"Roger, D-BC\" and the pilot may receive further instructions to establish and maintain procedural separation"
+    ],
+    "correct": null,
+    "id": 105
+  },
+  {
+    "question": "RADAR informs aircraft X-BC: \"X-BC IDENTIFIED\" What does this mean?",
+    "options": [
+      "Radar identification has been achieved",
+      "X-BC should perform an identification turn",
+      "X-BC is not visible on the radar screen",
+      "X-BC should operate the IDENT-button"
+    ],
+    "correct": null,
+    "id": 106
+  },
+  {
+    "question": "An aircraft is flying north-east at 2500 feet. TOWER requests heading and level. What is the correct response?",
+    "options": [
+      "\"Heading north-east at level 25\"",
+      "\"045 and 2500\"",
+      "\"Heading 045 at 2500 feet\"",
+      "\"Heading 45 at 2500 feet\""
+    ],
+    "correct": null,
+    "id": 107
+  },
+  {
+    "question": "During flight in contact with Flight Information Service, you intent to request an ATC clearance from another ground station. The correct phraseology would be:",
+    "options": [
+      "\"D-IABC, request change to ONE TWO FIVE DECIMAL TWO TWO FIVE\"",
+      "\"D-IABC, change now to ONE TWO FIVE DECIMAL TWO TWO FIVE\"",
+      "\"D-IABC, switching ONE TWO FIVE DECIMAL TWO TWO FIVE\"",
+      "\"D-IABC, changing ONE TWO FIVE DECIMAL TWO TWO FIVE\""
+    ],
+    "correct": null,
+    "id": 108
+  },
+  {
+    "question": "The electromagnetic spectrum is divided into several bands, some of which are used for aeronautical mobile communications. Which of the following is correct?",
+    "options": [
+      "The VHF band is used for aeronautical mobile communications and contains higher frequencies than the UHF band",
+      "The VHF band is used for aeronautical mobile communications and contains lower frequencies than the SHF band",
+      "The UHF band is used for aeronautical mobile communications and contains lower frequencies than the VHF band",
+      "The HF band is used for aeronautical mobile communications and contains higher frequencies than the VHF band"
+    ],
+    "correct": null,
+    "id": 109
+  },
+  {
+    "question": "What is the meaning of the phrase \"BREAK BREAK\" when used by an Air Traffic Services unit?",
+    "options": [
+      "I hereby indicate the separation between messages transmitted to different aircraft in a very busy environment",
+      "I hereby indicate that an incident has occurred and that I will shortly cease to provide Air Traffic Services",
+      "I hereby indicate that all stations shall omit read-backs",
+      "I hereby indicate that an urgent message has to be transmitted by any receiving station to another station with which radiocommunication has previously been broken"
+    ],
+    "correct": null,
+    "id": 110
+  },
+  {
+    "question": "Which phrase shall be used if you want to say \"I would like to know ( ... )\" or \"I wish to obtain ( ... )\"?",
+    "options": [
+      "\"REPORT\"",
+      "\"ACKNOWLEDGE\"",
+      "\"CONFIRM\"",
+      "\"REQUEST\""
+    ],
+    "correct": null,
+    "id": 111
+  },
+  {
+    "question": "An aircraft with call sign D-IABC already in contact with ATC that indents to know the correct time should transmit: \"Delta India Alpha Bravo Charlie request ...",
+    "options": [
+      "local time\"",
+      "UTC\"",
+      "departure information\"",
+      "time check\""
+    ],
+    "correct": null,
+    "id": 112
+  },
+  {
+    "question": "Your flight plan has been filed with the call sign GOLF ALFA CHARLIE ZULU GOLF. Air Traffic Control has instructed you to \"CHANGE YOUR CALLSIGN TO SKYFALL ZULU GOLF\" (Skyfall is your company name). Why would they have done so?",
+    "options": [
+      "Only for safety reasons",
+      "ATC would refrain from asking you to do so",
+      "If your company has asked them to do so",
+      "If you have asked them to do so"
+    ],
+    "correct": null,
+    "id": 113
+  },
+  {
+    "question": "RADAR instructs aircraft X-BC: \"X-BC SQUAWK IDENT\" What does this mean?",
+    "options": [
+      "X-BC shall reselect his assigned mode and code",
+      "Radar identification has been achieved by correlating an observed radar blip with aircraft XY-",
+      "ABC",
+      "X-BC shall operate the IDENT button V X-BC should perform an identification turn of at least 020 degrees"
+    ],
+    "correct": null,
+    "id": 114
+  },
+  {
+    "question": "In radiotelephony communication, which word or phrase shall be used in order to repeat for clarity or emphasis?",
+    "options": [
+      "\"I SAY AGAIN\"",
+      "\"READ BACK\"",
+      "\"VERIFY\"",
+      "\"CONFIRM\""
+    ],
+    "correct": null,
+    "id": 115
+  },
+  {
+    "question": "When should the term \"TAKE-OFF\" be used by a pilot?",
+    "options": [
+      "To inform the control tower that the aircraft is ready for departure",
+      "When the aircraft has moved onto the active runway",
+      "To acknowledge take-off clearance",
+      "Never, it is used only by the control tower"
+    ],
+    "correct": null,
+    "id": 116
+  },
+  {
+    "question": "An aircraft experiencing severe turbulence in RVSM airspace becomes unable to maintain the height requirements for RVSM. To inform ATC about the situation, the phrase to be used should be:",
+    "options": [
+      "\"NEGATIVE RVSM\"",
+      "\"DISREGARD RVSM \"",
+      "\"UNABLE RVSM due turbulence\"",
+      "\"LEAVING RVSM due turbulence\""
+    ],
+    "correct": null,
+    "id": 117
+  },
+  {
+    "question": "When should words be spelt out in radiotelephony?",
+    "options": [
+      "Whenever so requested by the responsible aeronautical reporting and service office.",
+      "Since all words used in radiotelephony are clear, it is needless to spell them out.",
+      "Words, names and abbreviations must be spelt out unless exempted to do so.",
+      "Whenever the spelling of proper names, service abbreviations and words is doubtful. 4"
+    ],
+    "correct": null,
+    "id": 118
+  },
+  {
+    "question": "While flying at altitude 5000 ft with QNH 1033, ATC request you to descend to 1000 feet on QFE 1022 hPa. The correct reply would be:",
+    "options": [
+      "\"Skyrunner 234, descending to height 1000 feet, QFE 1022\"",
+      "\"Skyrunner 234, descending level 1000, QFE 1022\"",
+      "\"Skyrunner 234, descending altitude 1000 feet\"",
+      "\"Skyrunner 234, wilco, QFE 1022\""
+    ],
+    "correct": null,
+    "id": 119
+  },
+  {
+    "question": "Which of the following pairs of frequencies can both be found in the VHF band?",
+    "options": [
+      "132 MHz and 29 MHz",
+      "122 kHz and 112 kHz",
+      "49 MHz and 295 MHZ",
+      "108 GHz and 133 GHZ"
+    ],
+    "correct": null,
+    "id": 120
+  },
+  {
+    "question": "Which Q-code is used to report altitude?",
+    "options": [
+      "QNH",
+      "QFE",
+      "QNJ",
+      "QFF"
+    ],
+    "correct": null,
+    "id": 121
+  },
+  {
+    "question": "According ICAO Annex 10 Vol. II, \"Air-ground communication\" is (1) _communication between aircraft and stations or locations on the surface of the earth, which is defined as (2) .",
+    "options": [
+      "(1) one-way, (2) simplex",
+      "(1) two-way, (2) duplex",
+      "(1) two-way, (2) complex",
+      "(1) one-way, (2) duplex"
+    ],
+    "correct": null,
+    "id": 122
+  },
+  {
+    "question": "An approach should be reported as \"FINAL\" at a point at what distance to the runway (or less)?",
+    "options": [
+      "8 NM",
+      "10 NM",
+      "4 NM",
+      "2 NM"
+    ],
+    "correct": null,
+    "id": 123
+  },
+  {
+    "question": "In radiotelephony communication, on the readability scale what does \"Readability 1\" mean?",
+    "options": [
+      "Unreadable",
+      "Perfectly readable",
+      "Readable",
+      "Readable but with difficulty"
+    ],
+    "correct": null,
+    "id": 124
+  },
+  {
+    "question": "The proper read-back for following phase is: \"D-BC EXPECT ILS APPROACH RUNWAY 06\"",
+    "options": [
+      "\"EXPECTING ILS APPROACH RUNWAY 06 D-BC\"",
+      "\"AFFIRMATIVE ILS APPROACH 06 D-BC\"",
+      "\"ROGER, EXPECTING ILS APPROACH 06 D-BC\"",
+      "\"CLEARED ILS APPROACH RUNWAY 06 D-BC\""
+    ],
+    "correct": null,
+    "id": 125
+  },
+  {
+    "question": "After receiving the following landing clearance \"BIGJET 591, RUNWAY 09 CLEARED TO LAND, WIND CALM\", how shall the aircraft acknowledge the clearance?",
+    "options": [
+      "\"RUNWAY 09 CLEARED TO LAND, BIGJET 591\"",
+      "\"BIGJET 591 IS CLEARED TO LAND ON 09\"",
+      "\"BIGJET 591 LANDING RUNWAY 09, WIND CALM\"",
+      "\"CLEARED TO LAND, WIND CALM, BIGJET\""
+    ],
+    "correct": null,
+    "id": 126
+  },
+  {
+    "question": "You intend to carry out a RNAV approach on runway 24 via the initial approach fix (IAF) TWOGO. What is the correct phrase for the request?",
+    "options": [
+      "\"REQUEST RNAV APPROACH VIA TWOGO\"",
+      "\"REQUEST APPROACH CLEARANCE FOR RUNWAY 24\"",
+      "\"REQUEST RNAV APPROACH VIA TWOGO, RUNWAY 24\"",
+      "\"RNAV APPROACH RUNWAY 24\""
+    ],
+    "correct": null,
+    "id": 127
+  },
+  {
+    "question": "What does the word \"CHECK\" mean?",
+    "options": [
+      "Read back my last instruction",
+      "Confirm your last transmission",
+      "Examine a system or procedure",
+      "I understand your message"
+    ],
+    "correct": null,
+    "id": 128
+  },
+  {
+    "question": "What is the correct way of transmitting the number 13500 to indicate an altitude or cloud height?",
+    "options": [
+      "thirteen thousand five hundred",
+      "one three five zero zero",
+      "one three five hundred",
+      "one three thousand five hundred"
+    ],
+    "correct": null,
+    "id": 129
+  },
+  {
+    "question": "With regard to transmissions for radio check, which of the following statements is correct? 1. A test transmission should include call sign of station being called, aircraft identification, phrasing \"RADIO CHECK\" and frequency being used. 2. A test transmission should last at least 30 seconds.",
+    "options": [
+      "1 is incorrect, 2 is incorrect",
+      "1 is incorrect, 2 is correct",
+      "1 is correct, 2 is correct",
+      "1 is correct, 2 is incorrect"
+    ],
+    "correct": null,
+    "id": 130
+  },
+  {
+    "question": "Which word or phrase shall be used when giving authorization to proceed under specified conditions?",
+    "options": [
+      "\"APPROVED\"",
+      "\"PROCEED\"",
+      "\"CLEARED\"",
+      "\"GO AHEAD\""
+    ],
+    "correct": null,
+    "id": 131
+  },
+  {
+    "question": "An aircraft is instructed to hold short of the runway-in-use. What is the correct phraseology to indicate it will follow this instruction?",
+    "options": [
+      "\"WILCO\"",
+      "\"HOLDING SHORT\"",
+      "\"WILL STOP AT\"",
+      "\"ROGER\""
+    ],
+    "correct": null,
+    "id": 132
+  },
+  {
+    "question": "The correct phraseology from ATC to notify all aircraft of a CPDLC failure would be:",
+    "options": [
+      "CPDLC MESSAGE FAILURE (message type)",
+      "[ALL STATIONS] TERMINATE CPDLC REQUESTS (reason)",
+      "[ALL STATIONS] CPDLC FAILURE (instructions)",
+      "DISREGARD CPDLC (clearance, instruction, information or request)"
+    ],
+    "correct": null,
+    "id": 133
+  },
+  {
+    "question": "Fastair 345 has been instructed to contact Smallville ARRIVAL on frequency 118.0. How should the aircraft indicate that it will follow this instruction?",
+    "options": [
+      "\"118.0 Fastair 345\"",
+      "\"Smallville ARRIVAL Fastair 345\"",
+      "\"Changing to ARRIVAL Fastair 345\"",
+      "\"Changing over Fastair 345\""
+    ],
+    "correct": null,
+    "id": 134
+  },
+  {
+    "question": "Which factor reduces the effective range of ground-to-air VHF transmissions?",
+    "options": [
+      "Duct propagation, also called super-refraction",
+      "Increasing the aircraft's altitude",
+      "Raising the height of the ground transmitter aerial",
+      "High terrain interrupting the line of sight"
+    ],
+    "correct": null,
+    "id": 135
+  },
+  {
+    "question": "What are the propagation characteristics of VHF?",
+    "options": [
+      "Practically straight-line similar to light waves",
+      "The waves travel along the surface of the earth and penetrate into valleys in a way that topographical obstacles have no influence",
+      "The waves are reflected at the ionosphere at the height of about 100 km and reach the earth surface in the form of",
+      "Similar to short waves with practically no atmospheric disturbance"
+    ],
+    "correct": null,
+    "id": 136
+  },
+  {
+    "question": "Which of the following is most likely to reduce the strength and/or quality of a signal received by an aircraft in the normal frequency band used by the Aeronautical Mobile Service for voice communications?",
+    "options": [
+      "Static interference",
+      "Sky-wave interference",
+      "Shielding by part of the airframe",
+      "Ionospheric refraction"
+    ],
+    "correct": null,
+    "id": 137
+  },
+  {
+    "question": "Which is the minimum separation between assignable frequencies in the Aeronautical Mobile Service VHF band?",
+    "options": [
+      "8.33 kHz",
+      "83.3 kHz",
+      "2.5 kHz",
+      "25 kHz"
+    ],
+    "correct": null,
+    "id": 138
+  },
+  {
+    "question": "With regard to abbreviations used in aeronautical communication, which of the following statements is correct? 1. \"TA\" may stand for \"Transition Altitude\" or \"Traffic Advisory\". 2. \"MSAW\" stands for \"Minimum Safe Altitude Warning\".",
+    "options": [
+      "1 is incorrect, 2 is incorrect",
+      "1 is correct, 2 is correct",
+      "1 is incorrect, 2 is correct",
+      "1 is correct, 2 is incorrect"
+    ],
+    "correct": null,
+    "id": 139
+  },
+  {
+    "question": "Which option correctly lists, in descending order of priority, the message categories handled by the aeronautical mobile service?",
+    "options": [
+      "Flight safety, Urgency, Direction finding, Meteorological",
+      "Urgency, Direction finding, Flight safety, Meteorological",
+      "Urgency, Flight Safety, Meteorological, Direction finding",
+      "Urgency, Flight safety, Direction finding, Meteorological"
+    ],
+    "correct": null,
+    "id": 140
+  },
+  {
+    "question": "What type of message is the following? \"Mayday Mayday Mayday, Lille Tower, Sunny Air 125, engine shut down, passing FL80, making forced landing in Brussels\"",
+    "options": [
+      "Distress",
+      "Urgency",
+      "Flight regularity",
+      "Flight safety"
+    ],
+    "correct": null,
+    "id": 141
+  },
+  {
+    "question": "At 2337 local standard time (UTC + 0) in London Gatwick on 20 December, a pilot requests a time check before start up. What will be the answer of the controller, omitting the call sign?",
+    "options": [
+      "Time two three three seven",
+      "Time check three seven UTC",
+      "Time check two three three seven UTC",
+      "Time one one three seven papa mike"
+    ],
+    "correct": null,
+    "id": 142
+  },
+  {
+    "question": "Aircraft XY-ABC is making a test transmission with Smallville TOWER on frequency 118.7. What is the correct phrasing for this transmission?",
+    "options": [
+      "Smallville TOWER, XY-ABC radio check 118.7",
+      "Smallville TOWER, XY-ABC pre-flight check",
+      "Smallville TOWER, XY-ABC frequency check",
+      "Smallville TOWER, XY-ABC signal check"
+    ],
+    "correct": null,
+    "id": 143
+  },
+  {
+    "question": "Which phraseology is to be used to ask the control tower for permission to taxi on a runway in the direction opposite to that in use?",
+    "options": [
+      "\"CLEARANCE TO BACKTRACK\"",
+      "\"BACKTRACK CLEARANCE\"",
+      "\"TO ENTER BACK RUNWAY\"",
+      "\"REQUEST BACKTRACK\""
+    ],
+    "correct": null,
+    "id": 144
+  },
+  {
+    "question": "The radar controller is transmitting: \"CONFIRM SQUAWK\" What does this mean?",
+    "options": [
+      "The controller wants to know which code is set on the transponder",
+      "The controller requests the registration of the aircraft",
+      "The controller wants you to transmit your bearing",
+      "The controller wants you to repeat your last transmission once again"
+    ],
+    "correct": null,
+    "id": 145
+  },
+  {
+    "question": "When may the name of the location or the call sign suffix in the call sign of an aeronautical station be omitted?",
+    "options": [
+      "The call sign suffix should be used in radiotelephony communication under any circumstances when calling an aeronautical station.",
+      "When satisfactory communication has been established and provided it will not be confusing V to do so.",
+      "Only after the aeronautical station has used the abbreviated call sign.",
+      "In dense traffic during rush hours."
+    ],
+    "correct": null,
+    "id": 146
+  },
+  {
+    "question": "When shall an aircraft in the suitable wake-turbulence category include the word \"HEAVY\" or \"SUPER\" immediately after its call sign?",
+    "options": [
+      "In all calls to the aerodrome tower and the approach control unit.",
+      "In all calls.",
+      "In the initial call to the aerodrome control tower and the approach control unit.",
+      "It can be avoided because it is visible on the flight plan."
+    ],
+    "correct": null,
+    "id": 147
+  },
+  {
+    "question": "The intention of an ATC instruction \"ADVISE IF ABLE TO PROCEED PARALLEL OFFSET\" is to tell if you can ...",
+    "options": [
+      "return to track under your own navigation if the controller vectors you off track.",
+      "join formation with another aircraft travelling on the same track.",
+      "overtake another aircraft flying in the same direction.",
+      "maintain a track parallel to the one for which you have already been cleared."
+    ],
+    "correct": null,
+    "id": 148
+  },
+  {
+    "question": "In radiotelephony communication, which word or phrase shall be used if you want to say: \"Reduce your rate of speech\"?",
+    "options": [
+      "\"SAY AGAIN\"",
+      "\"SPEAK SLOWER\"",
+      "\"REPEAT\"",
+      "\"WORDS TWICE\""
+    ],
+    "correct": null,
+    "id": 149
+  },
+  {
+    "question": "Which is the High Frequency (HF) radio frequency band?",
+    "options": [
+      "3 MHz to 30 MHZ",
+      "300 MHz to 3000 MHZ",
+      "300 kHz to 3000 KHz",
+      "30 MHz to 300 MHz"
+    ],
+    "correct": null,
+    "id": 150
+  },
+  {
+    "question": "According ICAO Annex 10 Vol. II, \"Broadcast\" is defined as ...",
+    "options": [
+      "two-way communication between aircraft and stations or locations on the surface of the earth.",
+      "one-way communication from aircraft to stations or locations on the surface of the earth.",
+      "one-way communication from stations or locations on the surface of the earth to aircraft.",
+      "a transmission of information relating to air navigation that is not addressed to a specific station or stations."
+    ],
+    "correct": null,
+    "id": 151
+  },
+  {
+    "question": "Select the air traffic service in charge of control of local traffic, take-offs and landings at an airport:",
+    "options": [
+      "TOWER",
+      "RADAR",
+      "CONTROL",
+      "AIR TRAFFIC CENTRE"
+    ],
+    "correct": null,
+    "id": 152
+  },
+  {
+    "question": "In accordance with ICAO radiotelephony communication procedures what is the meaning of the phrase \"CONFIRM\"?",
+    "options": [
+      "My last transmission is ended, and I expect a response from you in due time",
+      "I have received your: clearance, instruction, action, information",
+      "I request verification of: a clearance, instruction, action, information",
+      "Examine a system or procedure to identify an obvious or possible problem"
+    ],
+    "correct": null,
+    "id": 153
+  },
+  {
+    "question": "Your flight plan has been filed with the call sign \"GOLF ALFA CHARLIE ZULU GOLF\". At 1515, Air Traffic Control instructed you to \"CHANGE YOUR CALLSIGN TO SKYFALL ZULU GOLF\" with no additional information. When should you change back to using \"GOLF ALFA CHARLIE ZULU GOLF\"?",
+    "options": [
+      "Automatically on passing the next reporting point, or when instructed by ATC to do so",
+      "When instructed by ATC to do so, or automatically at 1545",
+      "Automatically on making the next frequency change, or when instructed by ATC to do so",
+      "Only when instructed to \"REVERT TO FLIGHTPLAN CALLSIGN GOLF ALFA CHARLIE ZULU GOLF.\""
+    ],
+    "correct": null,
+    "id": 154
+  },
+  {
+    "question": "When is an aircraft station allowed to use its abbreviated call sign?",
+    "options": [
+      "In dense traffic.",
+      "Only after satisfactory communication has been established.",
+      "After it has been addressed in this manner by the aeronautical ground station.",
+      "Provided no confusion is likely to result."
+    ],
+    "correct": null,
+    "id": 155
+  },
+  {
+    "question": "With your position approximately 10 NM east of airfield Cedar Creek, your position report would be:",
+    "options": [
+      "\"D-IABC ZERO NINE ZERO ONE ZERO CEDAR CREEK\"",
+      "\"D-IABC CEDAR CREEKTEN MILES ZERO NINE ZERO\"",
+      "\"D-IABC POSITION CEDAR CREEKTEN MILES EAST\"",
+      "\"D-IABC POSITION TEN MILES EAST OF CEDAR CREEK\""
+    ],
+    "correct": null,
+    "id": 156
+  },
+  {
+    "question": "The correct way to transmit the VHF channel 128.100 in radiotelephony communication is ...",
+    "options": [
+      "twenty-eight one.",
+      "twenty-eight decimal one.",
+      "one two eight one hundred.",
+      "one two eight decimal one."
+    ],
+    "correct": null,
+    "id": 157
+  },
+  {
+    "question": "What does the word \"REPORT\" mean?",
+    "options": [
+      "Pass me the following information",
+      "Listen out on (frequency)",
+      "Repeat all of this message back to me exactly as received",
+      "Proceed with your message"
+    ],
+    "correct": null,
+    "id": 158
+  },
+  {
+    "question": "Which of the following calls is a \"GENERAL CALL\"?",
+    "options": [
+      "\"ALL STATIONS London CONTROL\"",
+      "\"YX-ABC, YX-BCD, YX-CDE London CONTROL\"",
+      "\"YX-DEF London CONTROL\"",
+      "\"YX-EFG, YX-FGH over\""
+    ],
+    "correct": null,
+    "id": 159
+  },
+  {
+    "question": "Aircraft X-BC has been instructed to listen on ATIS frequency 123.25, on which information is being broadcast. What is the correct response to indicate that it will follow this instruction?",
+    "options": [
+      "\"Checking 123.25, X-BC\"",
+      "\"Monitoring 123.25, X-BC\"",
+      "\"Changing to 123.25, X-BC\"",
+      "\"Will contact 123.25, X-BC\""
+    ],
+    "correct": null,
+    "id": 160
+  },
+  {
+    "question": "Which is the frequency band containing frequencies of the Aeronautical Mobile Service?",
+    "options": [
+      "118.000 - 136.975 MHZ",
+      "11650 - 13200 KHz",
+      "108.000 - 117.975 MHz",
+      "1810 - 2850 KHz"
+    ],
+    "correct": null,
+    "id": 161
+  },
+  {
+    "question": "The clearance \"cleared for immediate take-off runway 03\" is ...",
+    "options": [
+      "a flight safety message.",
+      "an unauthorized message.",
+      "a flight regularity message.",
+      "an urgency message."
+    ],
+    "correct": null,
+    "id": 162
+  },
+  {
+    "question": "An \"Automatic Terminal Information Service\" provides ...",
+    "options": [
+      "routine information to arriving and departing aircraft by means of continuous and repetitive broadcast.",
+      "current meteorological and operational information essential for the safety of the air navigation within a FIR.",
+      "information concerning en-route weather phenomena which may effect the safety of aircraft operation.",
+      "weather reports related to a specific number of aerodromes located within a flight information region (FIR)."
+    ],
+    "correct": null,
+    "id": 163
+  },
+  {
+    "question": "What does the abbreviation \"SSR\" mean?",
+    "options": [
+      "Search and surveillance radar",
+      "Surface strength of runway",
+      "Secondary surveillance radar",
+      "Standard snow report"
+    ],
+    "correct": null,
+    "id": 164
+  },
+  {
+    "question": "The priority of the pilot's message \"request QDM\" is:",
+    "options": [
+      "less than \"descend to flight level ... \"",
+      "greater than \"turn left heading ... \"",
+      "less than \"request climb to flight level ... \"",
+      "same as \"latest QNH 1018\""
+    ],
+    "correct": null,
+    "id": 165
+  },
+  {
+    "question": "In which cases can the name of a location or call sign suffix be omitted? 1. If communication has been established. 2. If it will NOT cause any confusion. 3. If it is allowed by the Authority. 4.If a VFR flight plan has been filed.",
+    "options": [
+      "3 and 4",
+      "2 and 3",
+      "1 and 2",
+      "1 and 4"
+    ],
+    "correct": null,
+    "id": 166
+  },
+  {
+    "question": "\"STOP SQUAWK CHARLIE, WRONG INDICATION\" That means the controller ...",
+    "options": [
+      "has an incorrect position indication for your aircraft on his/her primary radar.",
+      "is informing you that he/she can only determine your bearing within 10 degrees.",
+      "wants you to switch off your transponder completely.",
+      "wants you to deselect the altitude reporting function on your transponder."
+    ],
+    "correct": null,
+    "id": 167
+  },
+  {
+    "question": "Which phrase shall be used if you want to say \"Pass me the following information ( ... )\"?",
+    "options": [
+      "\"REPORT\"",
+      "\"SAY\"",
+      "\"REQUEST\"",
+      "\"CHECK\""
+    ],
+    "correct": null,
+    "id": 168
+  },
+  {
+    "question": "In radiotelephony communication, which word shall be used to indicate that an error has been made in a transmission or message?",
+    "options": [
+      "\"DISREGARD\"",
+      "\"CORRECT\"",
+      "\"CORRECTION\"",
+      "\"NEGATIVE\""
+    ],
+    "correct": null,
+    "id": 169
+  },
+  {
+    "question": "What is the radiotelephony call sign for the aeronautical station providing flight information service?",
+    "options": [
+      "INFORMATION",
+      "FLIGHT INFORMATION CENTRE",
+      "CONTROL",
+      "FLIGHT CENTRE"
+    ],
+    "correct": null,
+    "id": 170
+  },
+  {
+    "question": "What is the correct way of spelling out HB-JYC in a radio message?",
+    "options": [
+      "Hotel Bravo Juliett Yankee Charlie.",
+      "Hotel Bravo India Yankee Charlie.",
+      "Hotel Bravo India Victor Charlie.",
+      "Hotel Bravo Juliett India Kilo."
+    ],
+    "correct": null,
+    "id": 171
+  },
+  {
+    "question": "If you are requested to \"REPORT FLIGHT CONDITIONS\", what does that mean?",
+    "options": [
+      "Indicate if visibility is sufficient for landing",
+      "Indicate whether you are flying in IMC or in VMC",
+      "Indicate weather conditions as wind, visibility, temperature",
+      "Indicate whether you are flying IFR or VFR"
+    ],
+    "correct": null,
+    "id": 172
+  },
+  {
+    "question": "What is the correct way of transmitting altitude 4300?",
+    "options": [
+      "Four three hundred",
+      "Four three zero zero",
+      "Four thousand three hundred",
+      "Forty-three hundred"
+    ],
+    "correct": null,
+    "id": 173
+  },
+  {
+    "question": "The VHF frequency band includes which pair of frequencies?",
+    "options": [
+      "45 MHz and 291 MHZ",
+      "119 kHz and 134 kHz",
+      "119 MHz and 29 MHz",
+      "134 kHz and 29 MHz"
+    ],
+    "correct": null,
+    "id": 174
+  },
+  {
+    "question": "What does the term \"significant point\" mean?",
+    "options": [
+      "A specified geographical position used to define an area navigation route or the flight path of an aircraft employing area navigation. 4",
+      "A term used to define a specified and identifiable location on the manoeuvring area of an aerodrome.",
+      "A defined position on an aerodrome used for the calibration of the inertial navigation system.",
+      "A signal indicating the direction of the runway-in-use."
+    ],
+    "correct": null,
+    "id": 175
+  },
+  {
+    "question": "Which of the following only lists instructions and information that should always be read back?",
+    "options": [
+      "SSR code, QNH, take-off clearance, and speed instructions",
+      "QNH, SSR code, and approach aid serviceability",
+      "ATC clearance, speed instructions, and runway state information",
+      "QNH, weather information, and runway-in-use"
+    ],
+    "correct": null,
+    "id": 176
+  },
+  {
+    "question": "The correct reply of aircraft D-IABC on the following ATC instruction is: \"D-BC, when passing 1500 ft, contact Lille Approach 126.475\"",
+    "options": [
+      "\"When passing 1500 ft, 126.475, D-BC\"",
+      "\"Contacting 126.475, D-BC\"",
+      "\"126.475, D-BC\"",
+      "\"When passing 1500 ft, contacting 126.475, D-BC\""
+    ],
+    "correct": null,
+    "id": 177
+  },
+  {
+    "question": "Which of the following is correct as regards the use of the words \"OVER\" and/or \"OUT\"?",
+    "options": [
+      "\"OVER\" and \"OUT\" are NOT normally used in VHF communications",
+      "\"OVER\" has to be used at the end of every VHF transmission to indicate that the transmission is over and that an answer is expected",
+      "\"OVER\" and \"OUT\" are NOT normally used in HF communications if SELCAL is available",
+      "\"Out\" at the end of a transmission indicates that you are leaving a VHF frequency"
+    ],
+    "correct": null,
+    "id": 178
+  },
+  {
+    "question": "In case of an aircraft is unable to perform a cleared RNAV departure ONEGO 2A, the correct phrase to inform ATC would be:",
+    "options": [
+      "\"NEGATIVE ONEGO two alpha departure due RNAV type\"",
+      "\"DISREGARD RNAV departure, UNABLE\"",
+      "\"UNABLE RNAV\"",
+      "\"UNABLE ONEGO two alpha departure due RNAV type\""
+    ],
+    "correct": null,
+    "id": 179
+  },
+  {
+    "question": "When receiving a message via Aircraft Communication Addressing Reporting System (ACARS) reading \"MAINTAIN PRESENT SPEED\", the correct phrase for response would be:",
+    "options": [
+      "\"AFFIRM\"",
+      "\"ROGER\"",
+      "\"MAINTAINING\"",
+      "\"WILCO\""
+    ],
+    "correct": null,
+    "id": 180
+  },
+  {
+    "question": "The abbreviation \"MSA\" stands for:",
+    "options": [
+      "Minimum Safe Altitude",
+      "Minimum Sector Altitude",
+      "Mandatory Secure Area",
+      "Mandatory Sector Altitude"
+    ],
+    "correct": null,
+    "id": 181
+  },
+  {
+    "question": "What is the correct suffix to use when establishing radio contact with an area control centre?",
+    "options": [
+      "CONTROL CENTRE",
+      "CENTRE",
+      "RADIO",
+      "CONTROL"
+    ],
+    "correct": null,
+    "id": 182
+  },
+  {
+    "question": "What does the phrase \"READ BACK\" mean?",
+    "options": [
+      "Check and confirm with originator",
+      "Did you correctly receive this message?",
+      "Repeat all, or the specified part, of this message back to me exactly as received",
+      "Let me know that you have received and understood this message"
+    ],
+    "correct": null,
+    "id": 183
+  },
+  {
+    "question": "An aircraft call sign can be abbreviated after satisfactory communication has been established, no confusion is likely to arise, and ...",
+    "options": [
+      "after the aircraft station and ground station agree to use the abbreviated call sign.",
+      "if the aircraft station deems it necessary to call the ground station with its abbreviated call sign.",
+      "if there are a lot of other communications on the frequency.",
+      "after the abbreviated call sign has been used by the ground station."
+    ],
+    "correct": null,
+    "id": 184
+  },
+  {
+    "question": "What radiotelephony transmission should be made when an aircraft starts a descent?",
+    "options": [
+      "\"Leaving level 200 for level 120\"",
+      "\"Starting descent\"",
+      "\"Leaving FL 200\"",
+      "\"Leaving FL 200, descending to FL 120\""
+    ],
+    "correct": null,
+    "id": 185
+  },
+  {
+    "question": "What is the pilot's read back for the ATC instruction \"Climb to 2500 feet\"?",
+    "options": [
+      "\"Climbing to two thousand five hundred\"",
+      "\"Up to two thousand five hundred\"",
+      "\"Climbing to two point five\"",
+      "\"Climbing to two thousand five hundred feet\""
+    ],
+    "correct": null,
+    "id": 186
+  },
+  {
+    "question": "A departing VFR flight is being handled by approach control. Upon reaching the boundary of the area over which the approach control has responsibility, the pilot should ...",
+    "options": [
+      "report that he/she is leaving the area of jurisdiction.",
+      "request a clearance to leave controlled airspace.",
+      "free-call the en-route frequency requesting an appropriate level of ATC service.",
+      "report the intended route of the flight and when he/she will make a position report."
+    ],
+    "correct": null,
+    "id": 187
+  },
+  {
+    "question": "How should a pilot inform the control tower that they have to abandon the take-off manoeuvre?",
+    "options": [
+      "\"ABANDONING TAKE-OFF\"",
+      "\"ABORTING TAKE-OFF\"",
+      "\"CANCELLING TAKE-OFF\"",
+      "\"STOPPING\""
+    ],
+    "correct": null,
+    "id": 188
+  },
+  {
+    "question": "What is the abbreviated call sign of Skyrunner 2345?",
+    "options": [
+      "Skyrunner 345",
+      "2345",
+      "Skyrunner 45",
+      "No abbreviated form"
+    ],
+    "correct": null,
+    "id": 189
+  },
+  {
+    "question": "Which R/T phrase should the pilot use if he/she receives an instruction from ATC that he/she cannot carry out?",
+    "options": [
+      "\"UNABLE\" followed by a reason",
+      "\"IMPOSSIBLE TO MAKE\"",
+      "\"DISREGARD\" with an explanation why",
+      "\"NEGATIVE INSTRUCTION\""
+    ],
+    "correct": null,
+    "id": 190
+  },
+  {
+    "question": "Which of the following statements is correct about the band normally used for the Aeronautical Mobile Service voice communications?",
+    "options": [
+      "It is situated two bands below the SHF band and contains frequency 288.0 MHZ",
+      "It is called the VLF band and contains frequency 130.450 kHz",
+      "It is immediately above the MF band and its frequencies are measured in MHz",
+      "It is immediately below the UHF band and its frequencies are measured in kHz"
+    ],
+    "correct": null,
+    "id": 191
+  },
+  {
+    "question": "To which frequency bands do the frequencies 118.000 - 136.975 MHz of the Aeronautical Mobile Service belong?",
+    "options": [
+      "Very low frequency",
+      "Medium frequency",
+      "Very high frequency",
+      "Low frequency"
+    ],
+    "correct": null,
+    "id": 192
+  }
+]

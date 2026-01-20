@@ -1,0 +1,32 @@
+<?php
+// Copy this file to config.php and fill in your Hostinger MySQL credentials.
+// IMPORTANT: Do not commit your real config.php to a public repo.
+
+return [
+    'db' => [
+        'host' => 'localhost',
+        'name' => 'YOUR_DB_NAME',
+        'user' => 'YOUR_DB_USER',
+        'pass' => 'YOUR_DB_PASSWORD',
+        'charset' => 'utf8mb4',
+    ],
+
+    // Used only for one-time setup endpoint.
+    // Set a long random string, then keep it secret.
+    'setupToken' => 'CHANGE_ME_TO_A_LONG_RANDOM_STRING',
+
+    // Initial admin accounts created by setup.php (only if no admins exist).
+    'initialAdmins' => [
+        ['username' => 'admin1', 'password' => 'CHANGE_ME_ADMIN_PASSWORD_1'],
+        ['username' => 'admin2', 'password' => 'CHANGE_ME_ADMIN_PASSWORD_2'],
+    ],
+
+    // Restrict which subject JSON files can be imported.
+    'importFiles' => [
+        'COMS' => __DIR__ . '/../data/COMS_extracted.json',
+        'HPL'  => __DIR__ . '/../data/HPL_extracted.json',
+        'OPS'  => __DIR__ . '/../data/OPS_extracted.json',
+        'RNAV' => __DIR__ . '/../data/RNAV_extracted.json',
+        'FPL'  => __DIR__ . '/../data/FPL_extracted.json',
+    ],
+];
