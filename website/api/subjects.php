@@ -7,7 +7,7 @@ $pdo = db();
 
 // Returns array: [{ id: 'COMS', name: 'Communications', questionCount: 192 }, ...]
 $stmt = $pdo->query(
-    "SELECT s.code, s.name, COUNT(q.id) AS question_count
+    "SELECT s.code, s.name, s.icon, COUNT(q.id) AS question_count
      FROM subjects s
      LEFT JOIN questions q ON q.subject_id = s.id
      GROUP BY s.id
@@ -19,6 +19,7 @@ $subjects = array_map(function ($r) {
     return [
         'id' => strtoupper($r['code']),
         'name' => $r['name'],
+        'icon' => $r['icon'] === null ? null : (string)$r['icon'],
         'questionCount' => (int)$r['question_count'],
     ];
 }, $rows);

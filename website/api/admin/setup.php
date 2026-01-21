@@ -27,6 +27,13 @@ try {
     json_error('Failed creating schema', 500);
 }
 
+// Lightweight migrations (for existing installs)
+try {
+    $pdo->exec('ALTER TABLE subjects ADD COLUMN icon VARCHAR(16) NULL');
+} catch (Throwable $e) {
+    // ignore (likely column already exists)
+}
+
 // Seed admins only if none exist
 $count = (int)$pdo->query('SELECT COUNT(*) AS c FROM admin_users')->fetch()['c'];
 if ($count === 0) {

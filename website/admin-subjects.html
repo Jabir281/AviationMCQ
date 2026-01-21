@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Subject - Aviation MCQ Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <header class="admin-header">
+        <div class="header-left">
+            <a href="admin-dashboard.html" class="header-home">← Dashboard</a>
+            <h1>➕ Upload New Subject</h1>
+        </div>
+        <div class="header-right">
+            <button class="btn btn-outline-light" onclick="logout()">Logout</button>
+        </div>
+    </header>
+
+    <main class="dashboard-main">
+        <div class="dashboard-container">
+            <h2>Add a subject</h2>
+            <p class="dashboard-subtitle">Upload a JSON file and we will import it to MySQL.</p>
+
+            <div class="card" style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px; padding: 16px; max-width: 720px;">
+                <form id="upload-form">
+                    <div class="form-group">
+                        <label class="form-label" for="subject-code">Subject code</label>
+                        <input class="form-input" id="subject-code" name="code" placeholder="e.g. MET" maxlength="10" required />
+                        <div class="form-hint">2–10 letters/numbers. This is shown as the short code.</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="subject-name">Subject name</label>
+                        <input class="form-input" id="subject-name" name="name" placeholder="e.g. Meteorology" maxlength="255" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="subject-icon">Icon</label>
+                        <select class="form-input" id="subject-icon" name="icon">
+                            <option value="">(default)</option>
+                            <option value="📚">📚 Books</option>
+                            <option value="✈️">✈️ Airplane</option>
+                            <option value="🧠">🧠 Brain</option>
+                            <option value="📡">📡 Antenna</option>
+                            <option value="🛰️">🛰️ Satellite</option>
+                            <option value="🧭">🧭 Compass</option>
+                            <option value="🌤️">🌤️ Weather</option>
+                            <option value="🗺️">🗺️ Map</option>
+                            <option value="📋">📋 Clipboard</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="json-file">Questions JSON file</label>
+                        <input class="form-input" id="json-file" name="jsonFile" type="file" accept="application/json,.json" required />
+                        <div class="form-hint">Format: an array of questions like <code>{question, options[4], correct}</code> (same as existing extracted JSON).</div>
+                    </div>
+
+                    <div style="display:flex; gap: 10px; align-items:center; flex-wrap: wrap;">
+                        <button class="btn btn-primary" type="submit" id="submit-btn">Upload & Import</button>
+                        <a class="btn btn-outline" href="admin-dashboard.html">Cancel</a>
+                        <span id="status" style="font-weight:600;"></span>
+                    </div>
+
+                    <pre id="result" style="margin-top: 12px; background: rgba(255,255,255,0.04); border: 1px solid var(--border); border-radius: 12px; padding: 12px; overflow:auto; display:none;"></pre>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        async function requireApiAdmin() {
+            try {
+                const res = await fetch('api/admin/me.php', { cache: 'no-store' });
+                if (!res.ok) throw new Error('Unauthorized');
+                const data = await res.json();
+                if (!data || data.ok !== true) throw new Error('Unauthorized');
+            } catch (_) {
+                window.location.href = 'admin.html';
+            }
+        }
+
+        async function logout() {
+            try {
+                await fetch('api/admin/logout.php', { cache: 'no-store' });
+            } catch (_) {}
+            window.location.href = 'admin.html';
+        }
+
+        function setStatus(text, ok) {
+            const el = document.getElementById('status');
+            el.textContent = text;
+            el.style.color = ok === true ? '#2ecc71' : (ok === false ? '#ff6b6b' : '');
+        }
+
+        function showResult(obj) {
+            const pre = document.getElementById('result');
+            pre.style.display = 'block';
+            pre.textContent = typeof obj === 'string' ? obj : JSON.stringify(obj, null, 2);
+        }
+
+        requireApiAdmin();
+
+        document.getElementById('upload-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const btn = document.getElementById('submit-btn');
+            btn.disabled = true;
+            setStatus('Uploading…', null);
+            showResult('');
+
+            try {
+                const codeEl = document.getElementById('subject-code');
+                codeEl.value = String(codeEl.value || '').trim().toUpperCase();
+
+                const fd = new FormData(e.target);
+
+                const res = await fetch('api/admin/upload_subject.php', {
+                    method: 'POST',
+                    body: fd,
+                    cache: 'no-store'
+                });
+
+                const data = await res.json().catch(() => null);
+                if (!res.ok || !data || data.ok !== true) {
+                    setStatus('Failed', false);
+                    showResult(data || { ok: false, error: 'Upload failed' });
+                    return;
+                }
+
+                setStatus(`Imported ${data.imported} questions`, true);
+                showResult(data);
+            } catch (err) {
+                setStatus('Failed', false);
+                showResult({ ok: false, error: String(err) });
+            } finally {
+                btn.disabled = false;
+            }
+        });
+    </script>
+</body>
+</html>

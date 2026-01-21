@@ -136,7 +136,7 @@ async function loadSubjects() {
             const subject = state.subjects[code];
             if (!subject) return;
 
-            const icon = subjectIcons[code] || subjectIcons.default;
+            const icon = subject.icon || subjectIcons[code] || subjectIcons.default;
 
             const card = document.createElement('div');
             card.className = 'subject-card';
