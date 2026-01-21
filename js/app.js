@@ -95,16 +95,33 @@ function openSubjectSectionPicker(actionAfterPick) {
 function closeSubjectSectionPicker() {
     const overlay = document.getElementById('subject-section-overlay');
     if (overlay) overlay.classList.remove('active');
+}
+
+function cancelSubjectSectionPicker() {
+    closeSubjectSectionPicker();
     postSubjectSectionAction = null;
+
+    // Give a clear prompt so users don't think the app is stuck.
+    const grid = document.getElementById('subject-grid');
+    if (grid) {
+        grid.innerHTML = `
+            <div class="history-empty" style="max-width: 520px; margin: 0 auto;">
+                <div class="empty-icon">📚</div>
+                <p>Please choose <strong>Seen</strong> or <strong>Unseen</strong> to view subjects.</p>
+                <button class="btn btn-primary" onclick="openSubjectSectionPicker(() => loadSubjects())">Choose Now</button>
+            </div>
+        `;
+    }
 }
 
 function chooseSubjectSection(section) {
     const s = String(section || '').toLowerCase();
     if (s !== 'seen' && s !== 'unseen') return;
     state.subjectSection = s;
-    closeSubjectSectionPicker();
+
     const next = postSubjectSectionAction;
     postSubjectSectionAction = null;
+    closeSubjectSectionPicker();
     if (typeof next === 'function') next();
 }
 
