@@ -11,7 +11,7 @@ $stmt = $pdo->query(
     "SELECT s.code, s.name, s.icon, s.section, COUNT(q.id) AS question_count
      FROM subjects s
      LEFT JOIN questions q ON q.subject_id = s.id
-     GROUP BY s.id
+    GROUP BY s.id, s.code, s.name, s.icon, s.section
      ORDER BY s.code"
 );
 
