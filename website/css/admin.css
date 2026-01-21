@@ -8,12 +8,64 @@
     box-sizing: border-box;
 }
 
+:root {
+    --card-bg: rgba(255, 255, 255, 0.08);
+    --border: rgba(255, 255, 255, 0.18);
+}
+
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     background: #f5f7fa;
     min-height: 100vh;
     color: #333;
     line-height: 1.6;
+}
+
+/* Better contrast for dark (dashboard-style) pages */
+.dashboard-main .card {
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.dashboard-main .form-group label {
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.form-hint {
+    margin-top: 6px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.dashboard-main .form-hint {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.dashboard-main .form-group input,
+.dashboard-main .form-group textarea,
+.dashboard-main .form-group select {
+    background: rgba(0, 0, 0, 0.25);
+    border-color: rgba(255, 255, 255, 0.18);
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.dashboard-main .form-group input:focus,
+.dashboard-main .form-group textarea:focus,
+.dashboard-main .form-group select:focus {
+    border-color: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.35);
+}
+
+.dashboard-main input::placeholder,
+.dashboard-main textarea::placeholder {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.dashboard-main code {
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.dashboard-main pre {
+    color: rgba(255, 255, 255, 0.92);
 }
 
 /* Page Management */
