@@ -6,7 +6,7 @@
     <title>Upload Subject - Aviation MCQ Admin</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/admin.css?v=20260122">
 </head>
 <body>
     <header class="admin-header">
@@ -89,7 +89,7 @@
     <script>
         async function requireApiAdmin() {
             try {
-                const res = await fetch('api/admin/me.php', { cache: 'no-store' });
+                const res = await fetch('api/admin/me.php', { cache: 'no-store', credentials: 'include' });
                 if (!res.ok) throw new Error('Unauthorized');
                 const data = await res.json();
                 if (!data || data.ok !== true) throw new Error('Unauthorized');
@@ -119,6 +119,12 @@
 
         requireApiAdmin();
 
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = String(text ?? '');
+            return div.innerHTML;
+        }
+
         document.getElementById('upload-form').addEventListener('submit', async (e) => {
             e.preventDefault();
 
@@ -136,7 +142,8 @@
                 const res = await fetch('api/admin/upload_subject.php', {
                     method: 'POST',
                     body: fd,
-                    cache: 'no-store'
+                    cache: 'no-store',
+                    credentials: 'include'
                 });
 
                 const data = await res.json().catch(() => null);
@@ -162,10 +169,13 @@
             box.innerHTML = '<div style="opacity:0.9;">Loading subjects…</div>';
 
             try {
-                const res = await fetch('api/admin/subjects.php', { cache: 'no-store' });
-                const data = await res.json().catch(() => null);
+                const res = await fetch('api/admin/subjects.php', { cache: 'no-store', credentials: 'include' });
+                const text = await res.text();
+                const data = (() => { try { return JSON.parse(text); } catch (_) { return null; } })();
                 if (!res.ok || !data || data.ok !== true || !Array.isArray(data.subjects)) {
-                    box.innerHTML = '<div style="color:#ff6b6b;">Failed to load subjects.</div>';
+                    const msg = (data && data.error) ? data.error : text;
+                    const hint = res.status === 401 ? ' (session expired — login again)' : '';
+                    box.innerHTML = `<div style="color:#ff6b6b;">Failed to load subjects${hint}. HTTP ${res.status}.<br><small style="opacity:0.9;">${escapeHtml(String(msg).slice(0, 220))}</small></div>`;
                     return;
                 }
 
@@ -205,7 +215,8 @@
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ code, section }),
-                    cache: 'no-store'
+                    cache: 'no-store',
+                    credentials: 'include'
                 });
                 const data = await res.json().catch(() => null);
                 if (!res.ok || !data || data.ok !== true) {
@@ -227,7 +238,8 @@
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ code }),
-                    cache: 'no-store'
+                    cache: 'no-store',
+                    credentials: 'include'
                 });
                 const data = await res.json().catch(() => null);
                 if (!res.ok || !data || data.ok !== true) {
@@ -240,8 +252,10 @@
                 alert('Failed to delete subject.');
             }
         }
-
-        loadSubjectsList();
+        document.addEventListener('DOMContentLoaded', async () => {
+            await requireApiAdmin();
+            await loadSubjectsList();
+        });
     </script>
 </body>
 </html>
