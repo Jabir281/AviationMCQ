@@ -23,6 +23,7 @@ const state = {
 };
 
 const LAST_MOCK_CONFIG_KEY = 'lastMockExamConfig';
+const LAST_MOCK_WRONG_CONFIG_KEY = 'lastMockWrongExamConfig';
 
 let postUserLoginAction = null;
 let cachedUserLoggedIn = null;
@@ -90,6 +91,22 @@ function showQuiz() {
 function showResults() {
     showPage('results-page');
     displayResults();
+}
+
+function refreshRetryWrongNav() {
+    const link = document.getElementById('nav-retry-wrong');
+    if (!link) return;
+
+    let hasWrong = false;
+    try {
+        const raw = localStorage.getItem(LAST_MOCK_WRONG_CONFIG_KEY);
+        const parsed = raw ? JSON.parse(raw) : null;
+        hasWrong = !!(parsed && parsed.subjectCode && Array.isArray(parsed.questionIds) && parsed.questionIds.length > 0);
+    } catch (_) {
+        hasWrong = false;
+    }
+
+    link.style.display = hasWrong ? 'flex' : 'none';
 }
 
 // ============================================
@@ -399,7 +416,8 @@ async function startExam(subjectCode) {
         : Math.max(1, Number(config.questionCount));
 
     // Persist last MOCK config for "Retake Exam" (practice should NOT overwrite it)
-    if (state.mode === 'mock') {
+    // Some flows (e.g., retry-wrong) should not overwrite the main retake config.
+    if (state.mode === 'mock' && config.skipPersistLastMock !== true) {
         try {
             localStorage.setItem(
                 LAST_MOCK_CONFIG_KEY,
@@ -422,8 +440,23 @@ async function startExam(subjectCode) {
         return;
     }
     
+    // If a fixed set of question IDs is provided (e.g., retry wrong questions), filter first.
+    let working = [...state.questions];
+    if (Array.isArray(config.questionIds) && config.questionIds.length > 0) {
+        const idSet = new Set(config.questionIds.map(id => Number(id)));
+        working = working.filter(q => idSet.has(Number(q.id)));
+
+        if (working.length === 0) {
+            alert('No matching questions found for the retry set. Please run a mock test again.');
+            return;
+        }
+
+        // When using an explicit list, ignore any question limit and use all matching.
+        state.questionLimit = null;
+    }
+
     // Shuffle questions (always randomized)
-    let randomized = shuffleArray([...state.questions]);
+    let randomized = shuffleArray(working);
 
     // Apply question limit if provided
     if (state.questionLimit && Number.isFinite(state.questionLimit)) {
@@ -724,6 +757,35 @@ function displayResults() {
     
     const total = state.questions.length;
     const percentage = Math.round((correct / total) * 100);
+
+    // Persist retry-wrong config for mock tests
+    if (state.mode === 'mock') {
+        const wrongIds = [];
+        state.questions.forEach((question, index) => {
+            const userAnswer = state.userAnswers[index];
+            if (userAnswer !== -1 && userAnswer !== question.correct) {
+                if (question && question.id !== undefined && question.id !== null) wrongIds.push(question.id);
+            }
+        });
+
+        try {
+            if (wrongIds.length > 0) {
+                localStorage.setItem(
+                    LAST_MOCK_WRONG_CONFIG_KEY,
+                    JSON.stringify({
+                        subjectCode: state.currentSubject,
+                        timePerQuestionSec: state.timePerQuestionSec,
+                        questionIds: wrongIds
+                    })
+                );
+            } else {
+                localStorage.removeItem(LAST_MOCK_WRONG_CONFIG_KEY);
+            }
+        } catch (_) {
+            // ignore
+        }
+        refreshRetryWrongNav();
+    }
     
     // Save to history
     const subjectName = state.subjects[state.currentSubject].name;
@@ -752,6 +814,29 @@ function displayResults() {
     
     // Animate score
     animateScore(percentage);
+}
+
+function retryWrongQuestions() {
+    let last = null;
+    try {
+        const raw = localStorage.getItem(LAST_MOCK_WRONG_CONFIG_KEY);
+        last = raw ? JSON.parse(raw) : null;
+    } catch (_) {
+        last = null;
+    }
+
+    if (!last || !last.subjectCode || !Array.isArray(last.questionIds) || last.questionIds.length === 0) {
+        alert('No wrong questions found from your last mock test yet.');
+        return;
+    }
+
+    startExam(last.subjectCode, {
+        mode: 'mock',
+        timePerQuestionSec: Number(last.timePerQuestionSec || 0),
+        questionIds: last.questionIds,
+        // Keep the main "Retake Exam" config intact (the full mock settings)
+        skipPersistLastMock: true
+    });
 }
 
 async function persistAttemptToApi(mode, computed) {
@@ -1043,5 +1128,6 @@ function clearHistory() {
 document.addEventListener('DOMContentLoaded', () => {
     showPage('home-page');
     refreshUserNav();
+    refreshRetryWrongNav();
 });
 
