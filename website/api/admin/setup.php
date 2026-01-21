@@ -34,6 +34,43 @@ try {
     // ignore (likely column already exists)
 }
 
+try {
+    $pdo->exec(
+        'CREATE TABLE IF NOT EXISTS users (
+            id INT AUTO_INCREMENT PRIMARY KEY,
+            access_code_hash VARCHAR(255) NOT NULL UNIQUE,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            last_seen_at TIMESTAMP NULL
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4'
+    );
+} catch (Throwable $e) {
+    json_error('Failed creating users table', 500);
+}
+
+try {
+    $pdo->exec(
+        'CREATE TABLE IF NOT EXISTS exam_attempts (
+            id BIGINT AUTO_INCREMENT PRIMARY KEY,
+            user_id INT NOT NULL,
+            subject_code VARCHAR(10) NOT NULL,
+            mode VARCHAR(16) NOT NULL,
+            score_percent INT NULL,
+            correct_count INT NULL,
+            wrong_count INT NULL,
+            skipped_count INT NULL,
+            total_count INT NULL,
+            started_at TIMESTAMP NULL,
+            finished_at TIMESTAMP NULL,
+            payload_json LONGTEXT NULL,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            KEY idx_user_created (user_id, created_at),
+            CONSTRAINT fk_attempts_user FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4'
+    );
+} catch (Throwable $e) {
+    json_error('Failed creating exam_attempts table', 500);
+}
+
 // Seed admins only if none exist
 $count = (int)$pdo->query('SELECT COUNT(*) AS c FROM admin_users')->fetch()['c'];
 if ($count === 0) {

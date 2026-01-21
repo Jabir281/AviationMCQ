@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Passwords - Aviation MCQ Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <header class="admin-header">
+        <div class="header-left">
+            <a href="admin-dashboard.html" class="header-home">← Dashboard</a>
+            <h1>👤 User Passwords</h1>
+        </div>
+        <div class="header-right">
+            <button class="btn btn-outline-light" onclick="logout()">Logout</button>
+        </div>
+    </header>
+
+    <main class="dashboard-main">
+        <div class="dashboard-container">
+            <h2>Create passwords for users</h2>
+            <p class="dashboard-subtitle">Each user logs in with a unique password you provide.</p>
+
+            <div class="card" style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px; padding: 16px; max-width: 720px;">
+                <div style="display:flex; gap: 10px; flex-wrap: wrap; align-items: center;">
+                    <button class="btn btn-primary" id="gen-btn" onclick="createUser()">Generate New Password</button>
+                    <button class="btn btn-outline" onclick="loadUsers()">Refresh List</button>
+                    <span id="status" style="font-weight:600;"></span>
+                </div>
+
+                <div id="new-pass" style="margin-top: 12px; display:none;">
+                    <div style="font-weight:700; margin-bottom: 6px;">New user password (copy and send to user):</div>
+                    <div style="font-size: 20px; letter-spacing: 1px; padding: 12px; border-radius: 12px; border: 1px solid var(--border); background: rgba(255,255,255,0.05); display:inline-block;" id="new-pass-value"></div>
+                    <div style="margin-top: 8px; opacity: 0.85;">This will not be shown again (only you can copy it now).</div>
+                </div>
+
+                <h3 style="margin-top: 18px;">Users</h3>
+                <div id="users" style="margin-top: 10px;"></div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        async function requireApiAdmin() {
+            try {
+                const res = await fetch('api/admin/me.php', { cache: 'no-store' });
+                if (!res.ok) throw new Error('Unauthorized');
+                const data = await res.json();
+                if (!data || data.ok !== true) throw new Error('Unauthorized');
+            } catch (_) {
+                window.location.href = 'admin.html';
+            }
+        }
+
+        async function logout() {
+            try { await fetch('api/admin/logout.php', { cache: 'no-store' }); } catch (_) {}
+            window.location.href = 'admin.html';
+        }
+
+        function setStatus(text, ok) {
+            const el = document.getElementById('status');
+            el.textContent = text;
+            el.style.color = ok === true ? '#2ecc71' : (ok === false ? '#ff6b6b' : '');
+        }
+
+        function renderUsers(list) {
+            const el = document.getElementById('users');
+            if (!Array.isArray(list) || list.length === 0) {
+                el.innerHTML = '<div style="opacity:0.85;">No users yet.</div>';
+                return;
+            }
+
+            const rows = list.map(u => {
+                const created = new Date(u.createdAt).toLocaleString();
+                const seen = u.lastSeenAt ? new Date(u.lastSeenAt).toLocaleString() : 'Never';
+                return `
+                    <div style="display:flex; justify-content: space-between; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--border);">
+                        <div><strong>User #${u.id}</strong></div>
+                        <div style="opacity:0.9;">Created: ${created}</div>
+                        <div style="opacity:0.9;">Last seen: ${seen}</div>
+                    </div>
+                `;
+            }).join('');
+
+            el.innerHTML = rows;
+        }
+
+        async function loadUsers() {
+            setStatus('Loading…', null);
+            try {
+                const res = await fetch('api/admin/users.php?limit=200', { cache: 'no-store' });
+                const data = await res.json().catch(() => null);
+                if (!res.ok || !data || data.ok !== true) {
+                    setStatus('Failed', false);
+                    return;
+                }
+                renderUsers(data.users);
+                setStatus(`Loaded ${data.users.length}`, true);
+            } catch (_) {
+                setStatus('Failed', false);
+            }
+        }
+
+        async function createUser() {
+            const btn = document.getElementById('gen-btn');
+            btn.disabled = true;
+            setStatus('Generating…', null);
+            document.getElementById('new-pass').style.display = 'none';
+
+            try {
+                const res = await fetch('api/admin/create_user.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({}),
+                    cache: 'no-store'
+                });
+                const data = await res.json().catch(() => null);
+                if (!res.ok || !data || data.ok !== true) {
+                    setStatus((data && data.error) ? data.error : 'Failed', false);
+                    return;
+                }
+
+                document.getElementById('new-pass-value').textContent = data.password;
+                document.getElementById('new-pass').style.display = 'block';
+                setStatus('Created', true);
+                await loadUsers();
+            } catch (_) {
+                setStatus('Failed', false);
+            } finally {
+                btn.disabled = false;
+            }
+        }
+
+        requireApiAdmin();
+        loadUsers();
+    </script>
+</body>
+</html>

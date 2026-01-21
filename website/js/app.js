@@ -24,6 +24,9 @@ const state = {
 
 const LAST_MOCK_CONFIG_KEY = 'lastMockExamConfig';
 
+let postUserLoginAction = null;
+let cachedUserLoggedIn = null;
+
 // Subject icons mapping
 const subjectIcons = {
     'COMS': '📡',
@@ -74,8 +77,10 @@ function goHome() {
 }
 
 function showSubjects() {
-    showPage('subject-page');
-    loadSubjects();
+    requireUserLogin(() => {
+        showPage('subject-page');
+        loadSubjects();
+    });
 }
 
 function showQuiz() {
@@ -94,8 +99,14 @@ async function fetchJsonApiFirst(apiUrl, fallbackUrl) {
     // Try API first (Hostinger). If it fails (e.g. local static server), use fallback.
     try {
         const apiRes = await fetch(apiUrl, { cache: 'no-store' });
+        const apiData = await apiRes.json().catch(() => null);
+
+        // If API exists but requires login, do NOT fall back to local JSON.
+        if (apiRes.status === 401 || apiRes.status === 403) {
+            throw Object.assign(new Error('AUTH_REQUIRED'), { authRequired: true, apiData });
+        }
+
         if (apiRes.ok) {
-            const apiData = await apiRes.json();
             // Our API wraps responses as { ok: true, subjects/questions: [...] }
             if (apiData && apiData.ok === true) return apiData;
         }
@@ -105,6 +116,135 @@ async function fetchJsonApiFirst(apiUrl, fallbackUrl) {
 
     const res = await fetch(fallbackUrl, { cache: 'no-store' });
     return res.json();
+}
+
+async function apiIsAvailable() {
+    // A lightweight probe: if api/user/me.php exists, we consider backend available.
+    try {
+        const res = await fetch('api/user/me.php', { cache: 'no-store' });
+        // 200 = logged in, 401 = not logged in but backend exists
+        if (res.status === 200 || res.status === 401) return true;
+    } catch (_) {
+        // ignore
+    }
+    return false;
+}
+
+async function apiIsUserLoggedIn() {
+    if (cachedUserLoggedIn !== null) return cachedUserLoggedIn;
+    try {
+        const res = await fetch('api/user/me.php', { cache: 'no-store' });
+        cachedUserLoggedIn = res.status === 200;
+        return cachedUserLoggedIn;
+    } catch (_) {
+        cachedUserLoggedIn = null;
+        return false;
+    }
+}
+
+function showUserLogin(actionAfterLogin) {
+    postUserLoginAction = typeof actionAfterLogin === 'function' ? actionAfterLogin : null;
+    const err = document.getElementById('user-login-error');
+    if (err) {
+        err.style.display = 'none';
+        err.textContent = '';
+    }
+    const pw = document.getElementById('user-password');
+    if (pw) pw.value = '';
+    showPage('login-page');
+}
+
+async function requireUserLogin(action) {
+    const hasApi = await apiIsAvailable();
+    if (!hasApi) {
+        // GitHub/static mode
+        action();
+        return;
+    }
+
+    const loggedIn = await apiIsUserLoggedIn();
+    if (loggedIn) {
+        refreshUserNav();
+        action();
+        return;
+    }
+
+    showUserLogin(action);
+}
+
+async function submitUserLogin() {
+    const btn = document.getElementById('user-login-btn');
+    const err = document.getElementById('user-login-error');
+    const pw = document.getElementById('user-password');
+    const password = String(pw?.value || '').trim();
+
+    if (!password) {
+        if (err) {
+            err.textContent = 'Please enter your password.';
+            err.style.display = 'block';
+        }
+        return;
+    }
+
+    if (btn) btn.disabled = true;
+    if (err) err.style.display = 'none';
+
+    try {
+        const res = await fetch('api/user/login.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ password }),
+            cache: 'no-store'
+        });
+
+        const data = await res.json().catch(() => null);
+        if (!res.ok || !data || data.ok !== true) {
+            if (err) {
+                err.textContent = (data && data.error) ? data.error : 'Login failed.';
+                err.style.display = 'block';
+            }
+            return;
+        }
+
+        cachedUserLoggedIn = true;
+        refreshUserNav();
+        const next = postUserLoginAction;
+        postUserLoginAction = null;
+        if (typeof next === 'function') next();
+        else goHome();
+    } catch (e) {
+        if (err) {
+            err.textContent = 'Login failed.';
+            err.style.display = 'block';
+        }
+    } finally {
+        if (btn) btn.disabled = false;
+    }
+}
+
+async function userLogout() {
+    try {
+        await fetch('api/user/logout.php', { cache: 'no-store' });
+    } catch (_) {
+        // ignore
+    }
+    cachedUserLoggedIn = false;
+    refreshUserNav();
+    goHome();
+}
+
+async function refreshUserNav() {
+    const link = document.getElementById('nav-user-logout');
+    if (!link) return;
+
+    const hasApi = await apiIsAvailable();
+    if (!hasApi) {
+        link.style.display = 'none';
+        return;
+    }
+
+    const loggedIn = await apiIsUserLoggedIn();
+    link.style.display = loggedIn ? 'flex' : 'none';
 }
 
 async function loadSubjects() {
@@ -502,6 +642,11 @@ function finishExam() {
     clearQuestionTimer();
     state.examFinished = true;
 
+    // Persist practice sessions too (no results screen)
+    if (state.mode === 'practice') {
+        persistAttemptToApi('practice');
+    }
+
     if (state.mode === 'practice') {
         // Practice has instant feedback; no results screen.
         // Reset to subject selection so user can pick another/same subject.
@@ -584,6 +729,7 @@ function displayResults() {
     const subjectName = state.subjects[state.currentSubject].name;
     const subjectLabel = `${state.currentSubject} - ${subjectName}`;
     saveExamResult(subjectLabel, percentage, correct, wrong, skipped, total);
+    persistAttemptToApi('mock', { percentage, correct, wrong, skipped, total });
     
     // Update UI
     document.getElementById('results-subject').textContent = subjectLabel;
@@ -606,6 +752,61 @@ function displayResults() {
     
     // Animate score
     animateScore(percentage);
+}
+
+async function persistAttemptToApi(mode, computed) {
+    const hasApi = await apiIsAvailable();
+    if (!hasApi) return;
+    const loggedIn = await apiIsUserLoggedIn();
+    if (!loggedIn) return;
+
+    let correct = null, wrong = null, skipped = null, total = null, score = null;
+    if (computed) {
+        score = computed.percentage ?? null;
+        correct = computed.correct ?? null;
+        wrong = computed.wrong ?? null;
+        skipped = computed.skipped ?? null;
+        total = computed.total ?? null;
+    } else {
+        // Best-effort compute
+        correct = 0; wrong = 0; skipped = 0;
+        state.questions.forEach((q, i) => {
+            const a = state.userAnswers[i];
+            if (a === -1) skipped++;
+            else if (q.correct === null || q.correct === undefined) skipped++;
+            else if (a === q.correct) correct++;
+            else wrong++;
+        });
+        total = state.questions.length;
+        score = total > 0 ? Math.round((correct / total) * 100) : null;
+    }
+
+    const payload = {
+        subject: state.currentSubject,
+        mode,
+        score,
+        correct,
+        wrong,
+        skipped,
+        total,
+        startedAt: null,
+        finishedAt: new Date().toISOString(),
+        payload: {
+            questionIds: state.questions.map(q => q.id),
+            userAnswers: state.userAnswers,
+        }
+    };
+
+    try {
+        await fetch('api/user/save_attempt.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload),
+            cache: 'no-store'
+        });
+    } catch (_) {
+        // ignore
+    }
 }
 
 function animateScore(target) {
@@ -729,13 +930,32 @@ function shuffleArray(array) {
 // Exam History Functions
 // ============================================
 function showExamHistory() {
-    showPage('history-page');
-    renderExamHistory();
+    requireUserLogin(() => {
+        showPage('history-page');
+        renderExamHistory();
+    });
 }
 
 function getExamHistory() {
     const history = localStorage.getItem('examHistory');
     return history ? JSON.parse(history) : [];
+}
+
+async function getExamHistoryApiFirst() {
+    const hasApi = await apiIsAvailable();
+    if (!hasApi) return null;
+    const loggedIn = await apiIsUserLoggedIn();
+    if (!loggedIn) return null;
+
+    try {
+        const res = await fetch('api/user/history.php?limit=50', { cache: 'no-store' });
+        if (!res.ok) return null;
+        const data = await res.json();
+        if (!data || data.ok !== true || !Array.isArray(data.history)) return null;
+        return data.history;
+    } catch (_) {
+        return null;
+    }
 }
 
 function saveExamResult(subjectName, score, correct, wrong, skipped, total) {
@@ -760,43 +980,54 @@ function saveExamResult(subjectName, score, correct, wrong, skipped, total) {
 
 function renderExamHistory() {
     const container = document.getElementById('history-list');
-    const history = getExamHistory();
+
+    getExamHistoryApiFirst().then((apiHistory) => {
+        const history = apiHistory || getExamHistory();
     
-    if (history.length === 0) {
-        container.innerHTML = `
-            <div class="history-empty">
-                <div class="empty-icon">📋</div>
-                <p>No exam history yet</p>
-                <p>Complete an exam to see your results here</p>
-            </div>
-        `;
-        return;
-    }
-    
-    container.innerHTML = history.map(item => {
-        const date = new Date(item.date);
-        const dateStr = date.toLocaleDateString('en-US', { 
-            month: 'short', 
-            day: 'numeric',
-            year: 'numeric',
-            hour: '2-digit',
-            minute: '2-digit'
-        });
-        const scoreClass = item.score >= 75 ? 'good' : item.score < 50 ? 'bad' : '';
-        
-        return `
-            <div class="history-item">
-                <div class="history-info">
-                    <h3>${item.subject}</h3>
-                    <p>${item.correct}/${item.total} correct • ${item.wrong} wrong • ${item.skipped} skipped</p>
+        if (history.length === 0) {
+            container.innerHTML = `
+                <div class="history-empty">
+                    <div class="empty-icon">📋</div>
+                    <p>No exam history yet</p>
+                    <p>Complete an exam to see your results here</p>
                 </div>
-                <div class="history-score">
-                    <div class="score ${scoreClass}">${item.score}%</div>
-                    <div class="date">${dateStr}</div>
+            `;
+            return;
+        }
+
+        container.innerHTML = history.map(item => {
+            const date = new Date(item.date);
+            const dateStr = date.toLocaleDateString('en-US', {
+                month: 'short',
+                day: 'numeric',
+                year: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+
+            const score = item.score === null || item.score === undefined ? 0 : item.score;
+            const total = item.total === null || item.total === undefined ? 0 : item.total;
+            const correct = item.correct === null || item.correct === undefined ? 0 : item.correct;
+            const wrong = item.wrong === null || item.wrong === undefined ? 0 : item.wrong;
+            const skipped = item.skipped === null || item.skipped === undefined ? 0 : item.skipped;
+            const scoreClass = score >= 75 ? 'good' : score < 50 ? 'bad' : '';
+
+            const modeLabel = item.mode ? ` • ${String(item.mode).toUpperCase()}` : '';
+
+            return `
+                <div class="history-item">
+                    <div class="history-info">
+                        <h3>${item.subject}${modeLabel}</h3>
+                        <p>${correct}/${total} correct • ${wrong} wrong • ${skipped} skipped</p>
+                    </div>
+                    <div class="history-score">
+                        <div class="score ${scoreClass}">${score}%</div>
+                        <div class="date">${dateStr}</div>
+                    </div>
                 </div>
-            </div>
-        `;
-    }).join('');
+            `;
+        }).join('');
+    });
 }
 
 function clearHistory() {
@@ -810,10 +1041,7 @@ function clearHistory() {
 // Initialize
 // ============================================
 document.addEventListener('DOMContentLoaded', () => {
-    // Preload subjects for home page stats
-    loadSubjects().then(() => {
-        // Show home page
-        showPage('home-page');
-    });
+    showPage('home-page');
+    refreshUserNav();
 });
 

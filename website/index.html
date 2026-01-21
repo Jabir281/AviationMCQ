@@ -39,6 +39,9 @@
             <a href="admin.html" class="nav-link">
                 <span class="nav-icon">🔐</span> Admin
             </a>
+            <a href="#" class="nav-link" id="nav-user-logout" onclick="userLogout(); closeNav();" style="display:none;">
+                <span class="nav-icon">🚪</span> Logout
+            </a>
         </div>
     </nav>
 
@@ -54,6 +57,24 @@
                         Get Started
                         <span class="arrow">→</span>
                     </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- User Login Page -->
+        <div id="login-page" class="page">
+            <div class="container">
+                <button class="btn-back" onclick="goHome()">← Back</button>
+                <h2>Login</h2>
+                <p class="page-subtitle">Enter the password provided by your admin</p>
+
+                <div class="question-card" style="max-width: 520px; margin: 0 auto;">
+                    <div class="form-group" style="margin-bottom: 12px;">
+                        <label for="user-password" style="display:block; font-weight:600; margin-bottom: 8px;">Password</label>
+                        <input id="user-password" type="password" placeholder="Enter your password" style="width:100%; padding: 12px 14px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.06); color: inherit;" />
+                    </div>
+                    <button class="btn btn-primary" id="user-login-btn" onclick="submitUserLogin()">Login</button>
+                    <p id="user-login-error" style="margin-top: 10px; color: #ff6b6b; display:none;"></p>
                 </div>
             </div>
         </div>

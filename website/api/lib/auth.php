@@ -20,3 +20,29 @@ function require_admin(): array {
         'username' => $_SESSION['admin_username'] ?? null,
     ];
 }
+
+function require_user(): array {
+    ensure_session();
+    if (!isset($_SESSION['user_id'])) {
+        json_error('Unauthorized', 401);
+    }
+    return [
+        'id' => (int)$_SESSION['user_id'],
+    ];
+}
+
+function login_user(int $userId): void {
+    ensure_session();
+    $_SESSION['user_id'] = $userId;
+}
+
+function logout_user(): void {
+    ensure_session();
+    unset($_SESSION['user_id']);
+}
+
+function logout_admin(): void {
+    ensure_session();
+    unset($_SESSION['admin_id']);
+    unset($_SESSION['admin_username']);
+}

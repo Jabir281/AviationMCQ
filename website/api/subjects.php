@@ -1,7 +1,13 @@
 <?php
 
 require_once __DIR__ . '/lib/db.php';
+require_once __DIR__ . '/lib/auth.php';
 require_once __DIR__ . '/lib/response.php';
+
+$cfg = api_config();
+if (($cfg['requireUserAuth'] ?? false) === true) {
+    require_user();
+}
 
 $pdo = db();
 

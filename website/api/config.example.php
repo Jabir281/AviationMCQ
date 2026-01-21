@@ -21,6 +21,10 @@ return [
         ['username' => 'admin2', 'password' => 'CHANGE_ME_ADMIN_PASSWORD_2'],
     ],
 
+    // If true, the quiz API requires users to log in using a password (access code)
+    // created by an admin. Recommended for Hostinger production.
+    'requireUserAuth' => false,
+
     // Restrict which subject JSON files can be imported.
     'importFiles' => [
         'COMS' => __DIR__ . '/../data/COMS_extracted.json',
