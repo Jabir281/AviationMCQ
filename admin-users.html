@@ -34,7 +34,7 @@
                 <div id="new-pass" style="margin-top: 12px; display:none;">
                     <div style="font-weight:700; margin-bottom: 6px;">New user password (copy and send to user):</div>
                     <div style="font-size: 20px; letter-spacing: 1px; padding: 12px; border-radius: 12px; border: 1px solid var(--border); background: rgba(255,255,255,0.05); display:inline-block;" id="new-pass-value"></div>
-                    <div style="margin-top: 8px; opacity: 0.85;">This will not be shown again (only you can copy it now).</div>
+                    <div style="margin-top: 8px;">This will not be shown again (only you can copy it now).</div>
                 </div>
 
                 <h3 style="margin-top: 18px;">Users</h3>
@@ -69,7 +69,7 @@
         function renderUsers(list) {
             const el = document.getElementById('users');
             if (!Array.isArray(list) || list.length === 0) {
-                el.innerHTML = '<div style="opacity:0.85;">No users yet.</div>';
+                el.innerHTML = '<div>No users yet.</div>';
                 return;
             }
 
@@ -79,8 +79,8 @@
                 return `
                     <div style="display:flex; justify-content: space-between; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--border);">
                         <div><strong>User #${u.id}</strong></div>
-                        <div style="opacity:0.9;">Created: ${created}</div>
-                        <div style="opacity:0.9;">Last seen: ${seen}</div>
+                        <div>Created: ${created}</div>
+                        <div>Last seen: ${seen}</div>
                     </div>
                 `;
             }).join('');
