@@ -664,17 +664,23 @@ function selectOption(index) {
 function applyPracticeFeedback() {
     const question = state.questions[state.currentQuestionIndex];
     const correctIndex = question.correct;
+    const userIndex = state.userAnswers[state.currentQuestionIndex];
 
     document.querySelectorAll('#options-container .option').forEach((opt, i) => {
         opt.classList.remove('selected');
         opt.classList.add('disabled');
 
-        if (i === correctIndex) {
+        // Practice mode: only show the correct answer (green). Do not mark wrong answers in red.
+        opt.classList.remove('wrong');
+        opt.classList.remove('correct');
+
+        if (correctIndex !== null && correctIndex !== undefined && i === correctIndex) {
             opt.classList.add('correct');
-            opt.classList.remove('wrong');
-        } else {
-            opt.classList.add('wrong');
-            opt.classList.remove('correct');
+        }
+
+        // Keep the user's chosen option visually selected (blue) without any red styling.
+        if (userIndex !== -1 && i === userIndex) {
+            opt.classList.add('selected');
         }
 
         opt.onclick = null;
