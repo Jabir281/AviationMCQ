@@ -758,24 +758,30 @@ function displayResults() {
     const total = state.questions.length;
     const percentage = Math.round((correct / total) * 100);
 
-    // Persist retry-wrong config for mock tests
+    // Persist retry set (wrong + skipped) for mock tests
     if (state.mode === 'mock') {
-        const wrongIds = [];
+        const retryIds = [];
         state.questions.forEach((question, index) => {
             const userAnswer = state.userAnswers[index];
-            if (userAnswer !== -1 && userAnswer !== question.correct) {
-                if (question && question.id !== undefined && question.id !== null) wrongIds.push(question.id);
+            const correctIndex = question?.correct;
+            const isSkipped = (userAnswer === -1);
+            const isWrong = (!isSkipped && correctIndex !== null && correctIndex !== undefined && userAnswer !== correctIndex);
+
+            // If correct answer is not set, treat as skipped (can't mark wrong)
+            const noCorrect = (correctIndex === null || correctIndex === undefined);
+            if (isSkipped || isWrong || noCorrect) {
+                if (question && question.id !== undefined && question.id !== null) retryIds.push(question.id);
             }
         });
 
         try {
-            if (wrongIds.length > 0) {
+            if (retryIds.length > 0) {
                 localStorage.setItem(
                     LAST_MOCK_WRONG_CONFIG_KEY,
                     JSON.stringify({
                         subjectCode: state.currentSubject,
                         timePerQuestionSec: state.timePerQuestionSec,
-                        questionIds: wrongIds
+                        questionIds: retryIds
                     })
                 );
             } else {
@@ -826,7 +832,7 @@ function retryWrongQuestions() {
     }
 
     if (!last || !last.subjectCode || !Array.isArray(last.questionIds) || last.questionIds.length === 0) {
-        alert('No wrong questions found from your last mock test yet.');
+        alert('No wrong/skipped questions found from your last mock test yet.');
         return;
     }
 
