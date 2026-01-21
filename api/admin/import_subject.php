@@ -12,6 +12,11 @@ if ($subject === '') {
     json_error('Missing subject', 400);
 }
 
+$section = strtolower(trim((string)($_GET['section'] ?? 'seen')));
+if ($section !== 'seen' && $section !== 'unseen') {
+    json_error('Invalid section. Use seen or unseen.', 400);
+}
+
 if (!isset($files[$subject])) {
     json_error('Import not allowed for this subject', 403);
 }
@@ -30,8 +35,10 @@ if (!is_array($items)) {
 $pdo = db();
 
 // Ensure subject row
-$pdo->prepare('INSERT IGNORE INTO subjects (code, name) VALUES (?, ?)')
-    ->execute([$subject, $subject]);
+$pdo->prepare(
+    'INSERT INTO subjects (code, name, section) VALUES (?, ?, ?)
+     ON DUPLICATE KEY UPDATE section = VALUES(section)'
+)->execute([$subject, $subject, $section]);
 
 $subRow = $pdo->prepare('SELECT id FROM subjects WHERE code = ?');
 $subRow->execute([$subject]);
@@ -77,4 +84,4 @@ foreach ($items as $idx => $q) {
     $imported++;
 }
 
-json_response(['ok' => true, 'subject' => $subject, 'imported' => $imported]);
+json_response(['ok' => true, 'subject' => $subject, 'section' => $section, 'imported' => $imported]);

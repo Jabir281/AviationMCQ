@@ -54,6 +54,15 @@
                     </div>
 
                     <div class="form-group">
+                        <label class="form-label" for="subject-section">Show in</label>
+                        <select class="form-input" id="subject-section" name="section">
+                            <option value="seen">Seen</option>
+                            <option value="unseen">Unseen</option>
+                        </select>
+                        <div class="form-hint">Controls whether this subject appears under Seen or Unseen for users.</div>
+                    </div>
+
+                    <div class="form-group">
                         <label class="form-label" for="json-file">Questions JSON file</label>
                         <input class="form-input" id="json-file" name="jsonFile" type="file" accept="application/json,.json" required />
                         <div class="form-hint">Format: an array of questions like <code>{question, options[4], correct}</code> (same as existing extracted JSON).</div>
@@ -67,6 +76,12 @@
 
                     <pre id="result" style="margin-top: 12px; background: rgba(255,255,255,0.04); border: 1px solid var(--border); border-radius: 12px; padding: 12px; overflow:auto; display:none;"></pre>
                 </form>
+            </div>
+
+            <div class="card" style="margin-top: 18px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px; padding: 16px; max-width: 720px;">
+                <h3 style="margin-bottom: 8px;">Existing subjects</h3>
+                <p class="form-hint">Change where a subject appears for users (Seen / Unseen).</p>
+                <div id="existing-subjects"></div>
             </div>
         </div>
     </main>
@@ -140,6 +155,69 @@
                 btn.disabled = false;
             }
         });
+
+        async function loadSubjectsList() {
+            const box = document.getElementById('existing-subjects');
+            if (!box) return;
+            box.innerHTML = '<div style="opacity:0.9;">Loading subjects…</div>';
+
+            try {
+                const res = await fetch('api/admin/subjects.php', { cache: 'no-store' });
+                const data = await res.json().catch(() => null);
+                if (!res.ok || !data || data.ok !== true || !Array.isArray(data.subjects)) {
+                    box.innerHTML = '<div style="color:#ff6b6b;">Failed to load subjects.</div>';
+                    return;
+                }
+
+                const rows = data.subjects.map(s => {
+                    const code = String(s.code || '');
+                    const name = String(s.name || '');
+                    const section = (String(s.section || 'seen') === 'unseen') ? 'unseen' : 'seen';
+                    const qn = Number(s.questionCount || 0);
+                    return `
+                        <div style="display:flex; gap:10px; align-items:center; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border);">
+                            <div style="min-width: 140px;"><strong>${code}</strong></div>
+                            <div style="flex:1; opacity: 0.95;">${name} <span style="opacity:0.85;">(${qn} questions)</span></div>
+                            <div style="display:flex; gap:8px; align-items:center;">
+                                <select data-code="${code}" class="form-input" style="width: 140px; padding: 8px 10px;">
+                                    <option value="seen" ${section === 'seen' ? 'selected' : ''}>Seen</option>
+                                    <option value="unseen" ${section === 'unseen' ? 'selected' : ''}>Unseen</option>
+                                </select>
+                                <button class="btn btn-outline" style="padding: 10px 14px;" onclick="updateSection('${code}')">Update</button>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+
+                box.innerHTML = rows || '<div style="opacity:0.9;">No subjects found.</div>';
+            } catch (_) {
+                box.innerHTML = '<div style="color:#ff6b6b;">Failed to load subjects.</div>';
+            }
+        }
+
+        async function updateSection(code) {
+            const sel = document.querySelector(`select[data-code="${code}"]`);
+            const section = String(sel?.value || 'seen');
+
+            try {
+                const res = await fetch('api/admin/update_subject.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ code, section }),
+                    cache: 'no-store'
+                });
+                const data = await res.json().catch(() => null);
+                if (!res.ok || !data || data.ok !== true) {
+                    alert('Failed to update subject section.');
+                    return;
+                }
+                setStatus(`Updated ${code} → ${section}`, true);
+            } catch (_) {
+                alert('Failed to update subject section.');
+            }
+        }
+
+        loadSubjectsList();
     </script>
 </body>
 </html>

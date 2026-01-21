@@ -12,6 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 $code = strtoupper(trim((string)($_POST['code'] ?? '')));
 $name = trim((string)($_POST['name'] ?? ''));
 $icon = trim((string)($_POST['icon'] ?? ''));
+$section = strtolower(trim((string)($_POST['section'] ?? 'seen')));
 
 if ($code === '' || !preg_match('/^[A-Z0-9]{2,10}$/', $code)) {
     json_error('Invalid subject code. Use 2-10 letters/numbers (e.g. MET, NAV1).', 400);
@@ -23,6 +24,10 @@ if ($name === '' || mb_strlen($name) > 255) {
 
 if ($icon !== '' && mb_strlen($icon) > 16) {
     json_error('Invalid icon.', 400);
+}
+
+if ($section !== 'seen' && $section !== 'unseen') {
+    json_error('Invalid section. Use seen or unseen.', 400);
 }
 
 if (!isset($_FILES['jsonFile'])) {
@@ -68,9 +73,9 @@ $pdo->beginTransaction();
 try {
     // Upsert subject
     $pdo->prepare(
-        'INSERT INTO subjects (code, name, icon) VALUES (?, ?, ?)
-         ON DUPLICATE KEY UPDATE name = VALUES(name), icon = VALUES(icon)'
-    )->execute([$code, $name, ($icon === '' ? null : $icon)]);
+        'INSERT INTO subjects (code, name, icon, section) VALUES (?, ?, ?, ?)
+         ON DUPLICATE KEY UPDATE name = VALUES(name), icon = VALUES(icon), section = VALUES(section)'
+    )->execute([$code, $name, ($icon === '' ? null : $icon), $section]);
 
     $subRow = $pdo->prepare('SELECT id FROM subjects WHERE code = ?');
     $subRow->execute([$code]);
@@ -127,4 +132,4 @@ try {
     json_error('Import failed.', 500);
 }
 
-json_response(['ok' => true, 'subject' => $code, 'name' => $name, 'icon' => ($icon === '' ? null : $icon), 'imported' => $imported]);
+json_response(['ok' => true, 'subject' => $code, 'name' => $name, 'icon' => ($icon === '' ? null : $icon), 'section' => $section, 'imported' => $imported]);

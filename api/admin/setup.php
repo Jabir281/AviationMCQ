@@ -35,6 +35,19 @@ try {
 }
 
 try {
+    $pdo->exec("ALTER TABLE subjects ADD COLUMN section VARCHAR(10) NOT NULL DEFAULT 'seen'");
+} catch (Throwable $e) {
+    // ignore (likely column already exists)
+}
+
+// Backfill section for older installs
+try {
+    $pdo->exec("UPDATE subjects SET section = 'seen' WHERE section IS NULL OR section = ''");
+} catch (Throwable $e) {
+    // ignore (older installs without the column)
+}
+
+try {
     $pdo->exec(
         'CREATE TABLE IF NOT EXISTS users (
             id INT AUTO_INCREMENT PRIMARY KEY,

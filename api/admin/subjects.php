@@ -1,17 +1,12 @@
 <?php
 
-require_once __DIR__ . '/lib/db.php';
-require_once __DIR__ . '/lib/auth.php';
-require_once __DIR__ . '/lib/response.php';
+require_once __DIR__ . '/../lib/auth.php';
+require_once __DIR__ . '/../lib/response.php';
 
-$cfg = api_config();
-if (($cfg['requireUserAuth'] ?? false) === true) {
-    require_user();
-}
+require_admin();
 
 $pdo = db();
 
-// Returns array: [{ id: 'COMS', name: 'Communications', questionCount: 192 }, ...]
 $stmt = $pdo->query(
     "SELECT s.code, s.name, s.icon, s.section, COUNT(q.id) AS question_count
      FROM subjects s
@@ -23,8 +18,8 @@ $stmt = $pdo->query(
 $rows = $stmt->fetchAll();
 $subjects = array_map(function ($r) {
     return [
-        'id' => strtoupper($r['code']),
-        'name' => $r['name'],
+        'code' => strtoupper((string)$r['code']),
+        'name' => (string)$r['name'],
         'icon' => $r['icon'] === null ? null : (string)$r['icon'],
         'section' => ($r['section'] === null || $r['section'] === '') ? 'seen' : (string)$r['section'],
         'questionCount' => (int)$r['question_count'],

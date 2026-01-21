@@ -11,6 +11,7 @@ const state = {
     subjectOrder: [],
     pendingSubject: null,
     currentSubject: null,
+    subjectSection: null, // 'seen' | 'unseen'
     mode: null, // 'mock' | 'practice'
     timePerQuestionSec: 0,
     questionLimit: null,
@@ -27,6 +28,7 @@ const LAST_MOCK_WRONG_CONFIG_KEY = 'lastMockWrongExamConfig';
 
 let postUserLoginAction = null;
 let cachedUserLoggedIn = null;
+let postSubjectSectionAction = null;
 
 // Subject icons mapping
 const subjectIcons = {
@@ -80,8 +82,30 @@ function goHome() {
 function showSubjects() {
     requireUserLogin(() => {
         showPage('subject-page');
-        loadSubjects();
+        openSubjectSectionPicker(() => loadSubjects());
     });
+}
+
+function openSubjectSectionPicker(actionAfterPick) {
+    postSubjectSectionAction = typeof actionAfterPick === 'function' ? actionAfterPick : null;
+    const overlay = document.getElementById('subject-section-overlay');
+    if (overlay) overlay.classList.add('active');
+}
+
+function closeSubjectSectionPicker() {
+    const overlay = document.getElementById('subject-section-overlay');
+    if (overlay) overlay.classList.remove('active');
+    postSubjectSectionAction = null;
+}
+
+function chooseSubjectSection(section) {
+    const s = String(section || '').toLowerCase();
+    if (s !== 'seen' && s !== 'unseen') return;
+    state.subjectSection = s;
+    closeSubjectSectionPicker();
+    const next = postSubjectSectionAction;
+    postSubjectSectionAction = null;
+    if (typeof next === 'function') next();
 }
 
 function showQuiz() {
@@ -289,7 +313,25 @@ async function loadSubjects() {
 
         grid.innerHTML = '';
 
-        state.subjectOrder.forEach((code, index) => {
+        const section = state.subjectSection || 'seen';
+        const displayCodes = state.subjectOrder.filter((code) => {
+            const subject = state.subjects[code];
+            const s = String(subject?.section || 'seen').toLowerCase();
+            return (s === 'unseen' ? 'unseen' : 'seen') === section;
+        });
+
+        if (displayCodes.length === 0) {
+            grid.innerHTML = `
+                <div class="history-empty" style="max-width: 520px; margin: 0 auto;">
+                    <div class="empty-icon">📚</div>
+                    <p>No subjects found in this section.</p>
+                    <button class="btn btn-outline" onclick="openSubjectSectionPicker(() => loadSubjects())">Choose Seen/Unseen</button>
+                </div>
+            `;
+            return;
+        }
+
+        displayCodes.forEach((code, index) => {
             const subject = state.subjects[code];
             if (!subject) return;
 
