@@ -230,6 +230,7 @@
                             <span class="question-id">#${index + 1} | ${q.id || 'No ID'}</span>
                             <div class="question-actions">
                                 <button class="edit-btn" onclick="openEditModal(${index})">✏️ Edit</button>
+                                <button class="btn btn-danger icon-btn" title="Delete question" onclick="deleteQuestion(${index})">🗑️</button>
                             </div>
                         </div>
                         <div class="question-text">${escapeHtml(q.question)}</div>
@@ -327,6 +328,36 @@
             } catch (error) {
                 console.error('Error saving question:', error);
                 showToast('Error saving to database', 'error');
+            }
+        }
+
+        async function deleteQuestion(index) {
+            const q = questions[index];
+            if (!q || !currentSubject || !q.id) {
+                showToast('Missing question id', 'error');
+                return;
+            }
+
+            const ok = confirm('Delete this question? This cannot be undone.');
+            if (!ok) return;
+
+            try {
+                const res = await fetch('api/admin/delete_question.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ subject: currentSubject, id: q.id }),
+                    cache: 'no-store'
+                });
+                const data = await res.json().catch(() => null);
+                if (!res.ok || !data || data.ok !== true) {
+                    showToast('Failed to delete', 'error');
+                    return;
+                }
+
+                await loadQuestions();
+                showToast('Deleted ✅', 'success');
+            } catch (_) {
+                showToast('Failed to delete', 'error');
             }
         }
 

@@ -211,6 +211,26 @@ body {
     box-shadow: 0 4px 12px rgba(17, 153, 142, 0.4);
 }
 
+.btn-danger {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white;
+}
+
+.btn-danger:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(231, 76, 60, 0.35);
+}
+
+.icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border-radius: 10px;
+}
+
 .btn-outline {
     background: transparent;
     border: 2px solid #667eea;

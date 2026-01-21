@@ -184,6 +184,7 @@
                                     <option value="unseen" ${section === 'unseen' ? 'selected' : ''}>Unseen</option>
                                 </select>
                                 <button class="btn btn-outline" style="padding: 10px 14px;" onclick="updateSection('${code}')">Update</button>
+                                <button class="btn btn-danger icon-btn" title="Delete subject" onclick="deleteSubject('${code}')">🗑️</button>
                             </div>
                         </div>
                     `;
@@ -214,6 +215,29 @@
                 setStatus(`Updated ${code} → ${section}`, true);
             } catch (_) {
                 alert('Failed to update subject section.');
+            }
+        }
+
+        async function deleteSubject(code) {
+            const ok = confirm(`Delete subject ${code}? This will permanently delete ALL questions in this subject.`);
+            if (!ok) return;
+
+            try {
+                const res = await fetch('api/admin/delete_subject.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ code }),
+                    cache: 'no-store'
+                });
+                const data = await res.json().catch(() => null);
+                if (!res.ok || !data || data.ok !== true) {
+                    alert('Failed to delete subject.');
+                    return;
+                }
+                setStatus(`Deleted ${code}`, true);
+                await loadSubjectsList();
+            } catch (_) {
+                alert('Failed to delete subject.');
             }
         }
 
