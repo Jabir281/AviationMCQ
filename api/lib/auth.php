@@ -36,12 +36,26 @@ function require_user(): array {
     // If an admin deleted this user, immediately invalidate the session.
     try {
         $pdo = db();
-        $stmt = $pdo->prepare('SELECT id FROM users WHERE id = ?');
+        $stmt = $pdo->prepare('SELECT id, active_session_id FROM users WHERE id = ?');
         $stmt->execute([$userId]);
         $row = $stmt->fetch();
         if (!$row) {
             logout_user();
             json_error('Unauthorized', 401);
+        }
+
+        // Optional: enforce one device (one PHP session) per user.
+        $cfg = api_config();
+        if (($cfg['singleDevicePerUser'] ?? false) === true) {
+            $active = $row['active_session_id'] ?? null;
+            $sid = session_id();
+            if (!$active || !is_string($active) || $active === '') {
+                // If there's no active session recorded yet (e.g., old data), bind it to this session.
+                $pdo->prepare('UPDATE users SET active_session_id = ? WHERE id = ?')->execute([$sid, $userId]);
+            } elseif (!hash_equals((string)$active, (string)$sid)) {
+                logout_user();
+                json_error('Unauthorized', 401);
+            }
         }
     } catch (Throwable $e) {
         // On DB errors, fail closed.

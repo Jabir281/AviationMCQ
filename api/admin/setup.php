@@ -52,12 +52,20 @@ try {
         'CREATE TABLE IF NOT EXISTS users (
             id INT AUTO_INCREMENT PRIMARY KEY,
             access_code_hash VARCHAR(255) NOT NULL UNIQUE,
+            active_session_id VARCHAR(128) NULL,
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
             last_seen_at TIMESTAMP NULL
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4'
     );
 } catch (Throwable $e) {
     json_error('Failed creating users table', 500);
+}
+
+// Add active_session_id for existing installs
+try {
+    $pdo->exec('ALTER TABLE users ADD COLUMN active_session_id VARCHAR(128) NULL');
+} catch (Throwable $e) {
+    // ignore (likely column already exists)
 }
 
 try {

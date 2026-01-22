@@ -34,7 +34,25 @@ if ($foundId === null) {
     json_error('Invalid password', 401);
 }
 
+// Prevent session fixation and support single-device enforcement.
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+@session_regenerate_id(true);
+
 login_user($foundId);
+
+// If enabled, only allow one active session per user (last login wins).
+try {
+    $cfg = api_config();
+    if (($cfg['singleDevicePerUser'] ?? false) === true) {
+        $sid = session_id();
+        $set = $pdo->prepare('UPDATE users SET active_session_id = ? WHERE id = ?');
+        $set->execute([$sid, $foundId]);
+    }
+} catch (Throwable $e) {
+    // ignore
+}
 
 try {
     $up = $pdo->prepare('UPDATE users SET last_seen_at = CURRENT_TIMESTAMP WHERE id = ?');
