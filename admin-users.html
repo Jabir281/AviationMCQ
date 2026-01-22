@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <title>User Passwords - Aviation MCQ Admin</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -55,6 +58,17 @@
     </main>
 
     <script>
+        // Bust aggressive HTML caching by forcing a versioned URL.
+        (function ensureVersionedUrl() {
+            const VERSION = '20260122_3';
+            if (typeof window === 'undefined') return;
+            const params = new URLSearchParams(window.location.search || '');
+            if (params.has('v')) return;
+            params.set('v', VERSION);
+            const newUrl = `${window.location.pathname}?${params.toString()}${window.location.hash || ''}`;
+            window.location.replace(newUrl);
+        })();
+
         async function requireApiAdmin() {
             try {
                 const res = await fetch('api/admin/me.php', { cache: 'no-store', credentials: 'include' });
