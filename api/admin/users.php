@@ -12,7 +12,7 @@ if ($limit <= 0) $limit = 200;
 if ($limit > 500) $limit = 500;
 
 $stmt = $pdo->query(
-    'SELECT id, created_at, last_seen_at
+    'SELECT id, created_at, last_seen_at, active_session_id
      FROM users
      ORDER BY created_at DESC
      LIMIT ' . (int)$limit
@@ -20,10 +20,12 @@ $stmt = $pdo->query(
 
 $rows = $stmt->fetchAll();
 $users = array_map(function ($r) {
+    $active = $r['active_session_id'] ?? null;
     return [
         'id' => (int)$r['id'],
         'createdAt' => (string)$r['created_at'],
         'lastSeenAt' => $r['last_seen_at'] === null ? null : (string)$r['last_seen_at'],
+        'locked' => is_string($active) && $active !== '',
     ];
 }, $rows);
 

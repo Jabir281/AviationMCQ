@@ -6,7 +6,7 @@
     <title>User Passwords - Aviation MCQ Admin</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/admin.css?v=20260122">
+    <link rel="stylesheet" href="css/admin.css?v=20260122_2">
 </head>
 <body>
     <header class="admin-header">
@@ -89,12 +89,15 @@
             const rows = list.map(u => {
                 const created = new Date(u.createdAt).toLocaleString();
                 const seen = u.lastSeenAt ? new Date(u.lastSeenAt).toLocaleString() : 'Never';
+                const locked = !!u.locked;
                 return `
                     <div style="display:flex; justify-content: space-between; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--border); align-items:center;">
                         <div style="min-width: 110px;"><strong>User #${u.id}</strong></div>
                         <div style="flex: 1;">Created: ${escapeHtml(created)}</div>
                         <div style="flex: 1;">Last seen: ${escapeHtml(seen)}</div>
+                        <div style="min-width: 110px; opacity: 0.9;">${locked ? '🔒 Locked' : '🔓 Unlocked'}</div>
                         <div style="display:flex; gap: 8px;">
+                            <button class="btn btn-outline icon-btn" title="Reset device lock" onclick="resetUserSession(${u.id})">🔓</button>
                             <button class="btn btn-danger icon-btn" title="Revoke access" onclick="deleteUser(${u.id})">🗑️</button>
                         </div>
                     </div>
@@ -205,6 +208,32 @@
                     return;
                 }
                 setStatus(data.deleted ? `Revoked User #${id}` : `User #${id} not found`, true);
+                await loadUsers();
+            } catch (_) {
+                setStatus('Failed', false);
+            }
+        }
+
+        async function resetUserSession(id) {
+            const ok = confirm(`Reset device lock for User #${id}? This allows the password to be used on a new device.`);
+            if (!ok) return;
+
+            setStatus('Resetting…', null);
+            try {
+                const res = await fetch('api/admin/reset_user_session.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ userId: id }),
+                    cache: 'no-store',
+                    credentials: 'include'
+                });
+                const data = await res.json().catch(() => null);
+                if (!res.ok || !data || data.ok !== true) {
+                    setStatus((data && data.error) ? data.error : 'Failed', false);
+                    return;
+                }
+
+                setStatus(data.updated ? `Reset lock for User #${id}` : `User #${id} not found`, true);
                 await loadUsers();
             } catch (_) {
                 setStatus('Failed', false);

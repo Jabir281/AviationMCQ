@@ -40,19 +40,33 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 @session_regenerate_id(true);
 
-login_user($foundId);
+$sid = session_id();
 
-// If enabled, only allow one active session per user (last login wins).
+// Optional: enforce one device (one PHP session) per user.
+// When enabled, the first device that logs in owns the password until logout
+// (or an admin resets the lock).
 try {
     $cfg = api_config();
     if (($cfg['singleDevicePerUser'] ?? false) === true) {
-        $sid = session_id();
-        $set = $pdo->prepare('UPDATE users SET active_session_id = ? WHERE id = ?');
-        $set->execute([$sid, $foundId]);
+        $stmt = $pdo->prepare('SELECT active_session_id FROM users WHERE id = ?');
+        $stmt->execute([$foundId]);
+        $row = $stmt->fetch();
+        $active = $row ? ($row['active_session_id'] ?? null) : null;
+
+        if ($active && is_string($active) && $active !== '' && !hash_equals((string)$active, (string)$sid)) {
+            json_error('This password is already in use on another device.', 403);
+        }
+
+        if (!$active || !is_string($active) || $active === '') {
+            $set = $pdo->prepare('UPDATE users SET active_session_id = ? WHERE id = ?');
+            $set->execute([$sid, $foundId]);
+        }
     }
 } catch (Throwable $e) {
     // ignore
 }
+
+login_user($foundId);
 
 try {
     $up = $pdo->prepare('UPDATE users SET last_seen_at = CURRENT_TIMESTAMP WHERE id = ?');
