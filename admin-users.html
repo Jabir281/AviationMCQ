@@ -27,8 +27,15 @@
             <div class="card" style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px; padding: 16px; max-width: 720px;">
                 <div style="display:flex; gap: 10px; flex-wrap: wrap; align-items: center;">
                     <button class="btn btn-primary" id="gen-btn" onclick="createUser()">Generate New Password</button>
+                    <button class="btn btn-outline" id="create-specific-btn" onclick="createSpecificUser()">Create Specific Password</button>
                     <button class="btn btn-outline" onclick="loadUsers()">Refresh List</button>
                     <span id="status" style="font-weight:600;"></span>
+                </div>
+
+                <div class="form-group" style="margin-top: 12px; max-width: 520px;">
+                    <label class="form-label" for="specific-pass">Specific password (optional)</label>
+                    <input class="form-input" id="specific-pass" placeholder="6–64 characters" maxlength="64" />
+                    <div class="form-hint">Use this if you want a custom password for a user. Leave empty to auto-generate.</div>
                 </div>
 
                 <div id="new-pass" style="margin-top: 12px; display:none;">
@@ -46,7 +53,7 @@
     <script>
         async function requireApiAdmin() {
             try {
-                const res = await fetch('api/admin/me.php', { cache: 'no-store' });
+                const res = await fetch('api/admin/me.php', { cache: 'no-store', credentials: 'include' });
                 if (!res.ok) throw new Error('Unauthorized');
                 const data = await res.json();
                 if (!data || data.ok !== true) throw new Error('Unauthorized');
@@ -56,8 +63,14 @@
         }
 
         async function logout() {
-            try { await fetch('api/admin/logout.php', { cache: 'no-store' }); } catch (_) {}
+            try { await fetch('api/admin/logout.php', { cache: 'no-store', credentials: 'include' }); } catch (_) {}
             window.location.href = 'admin.html';
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = String(text ?? '');
+            return div.innerHTML;
         }
 
         function setStatus(text, ok) {
@@ -77,10 +90,13 @@
                 const created = new Date(u.createdAt).toLocaleString();
                 const seen = u.lastSeenAt ? new Date(u.lastSeenAt).toLocaleString() : 'Never';
                 return `
-                    <div style="display:flex; justify-content: space-between; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--border);">
-                        <div><strong>User #${u.id}</strong></div>
-                        <div>Created: ${created}</div>
-                        <div>Last seen: ${seen}</div>
+                    <div style="display:flex; justify-content: space-between; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--border); align-items:center;">
+                        <div style="min-width: 110px;"><strong>User #${u.id}</strong></div>
+                        <div style="flex: 1;">Created: ${escapeHtml(created)}</div>
+                        <div style="flex: 1;">Last seen: ${escapeHtml(seen)}</div>
+                        <div style="display:flex; gap: 8px;">
+                            <button class="btn btn-danger icon-btn" title="Revoke access" onclick="deleteUser(${u.id})">🗑️</button>
+                        </div>
                     </div>
                 `;
             }).join('');
@@ -91,7 +107,7 @@
         async function loadUsers() {
             setStatus('Loading…', null);
             try {
-                const res = await fetch('api/admin/users.php?limit=200', { cache: 'no-store' });
+                const res = await fetch('api/admin/users.php?limit=200', { cache: 'no-store', credentials: 'include' });
                 const data = await res.json().catch(() => null);
                 if (!res.ok || !data || data.ok !== true) {
                     setStatus('Failed', false);
@@ -115,7 +131,8 @@
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({}),
-                    cache: 'no-store'
+                    cache: 'no-store',
+                    credentials: 'include'
                 });
                 const data = await res.json().catch(() => null);
                 if (!res.ok || !data || data.ok !== true) {
@@ -131,6 +148,66 @@
                 setStatus('Failed', false);
             } finally {
                 btn.disabled = false;
+            }
+        }
+
+        async function createSpecificUser() {
+            const btn = document.getElementById('create-specific-btn');
+            const passEl = document.getElementById('specific-pass');
+            const password = String(passEl?.value || '').trim();
+
+            btn.disabled = true;
+            setStatus('Creating…', null);
+            document.getElementById('new-pass').style.display = 'none';
+
+            try {
+                const res = await fetch('api/admin/create_user.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ password }),
+                    cache: 'no-store',
+                    credentials: 'include'
+                });
+                const data = await res.json().catch(() => null);
+                if (!res.ok || !data || data.ok !== true) {
+                    setStatus((data && data.error) ? data.error : 'Failed', false);
+                    return;
+                }
+
+                document.getElementById('new-pass-value').textContent = data.password;
+                document.getElementById('new-pass').style.display = 'block';
+                setStatus(`Created User #${data.userId}`, true);
+                if (passEl) passEl.value = '';
+                await loadUsers();
+            } catch (_) {
+                setStatus('Failed', false);
+            } finally {
+                btn.disabled = false;
+            }
+        }
+
+        async function deleteUser(id) {
+            const ok = confirm(`Revoke access for User #${id}? This will delete the user and their saved history.`);
+            if (!ok) return;
+
+            setStatus('Revoking…', null);
+            try {
+                const res = await fetch('api/admin/delete_user.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ userId: id }),
+                    cache: 'no-store',
+                    credentials: 'include'
+                });
+                const data = await res.json().catch(() => null);
+                if (!res.ok || !data || data.ok !== true) {
+                    setStatus((data && data.error) ? data.error : 'Failed', false);
+                    return;
+                }
+                setStatus(data.deleted ? `Revoked User #${id}` : `User #${id} not found`, true);
+                await loadUsers();
+            } catch (_) {
+                setStatus('Failed', false);
             }
         }
 

@@ -26,8 +26,31 @@ function require_user(): array {
     if (!isset($_SESSION['user_id'])) {
         json_error('Unauthorized', 401);
     }
+
+    $userId = (int)$_SESSION['user_id'];
+    if ($userId <= 0) {
+        logout_user();
+        json_error('Unauthorized', 401);
+    }
+
+    // If an admin deleted this user, immediately invalidate the session.
+    try {
+        $pdo = db();
+        $stmt = $pdo->prepare('SELECT id FROM users WHERE id = ?');
+        $stmt->execute([$userId]);
+        $row = $stmt->fetch();
+        if (!$row) {
+            logout_user();
+            json_error('Unauthorized', 401);
+        }
+    } catch (Throwable $e) {
+        // On DB errors, fail closed.
+        logout_user();
+        json_error('Unauthorized', 401);
+    }
+
     return [
-        'id' => (int)$_SESSION['user_id'],
+        'id' => $userId,
     ];
 }
 
