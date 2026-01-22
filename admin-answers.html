@@ -6,7 +6,7 @@
     <title>Set Correct Answers - Admin</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/admin.css?v=20260122">
+    <link rel="stylesheet" href="css/admin.css?v=20260123_2">
 </head>
 <body>
     <header class="admin-header">
@@ -88,15 +88,17 @@
 
         async function loadSubjects() {
             try {
-                const response = await fetch('api/subjects.php', { cache: 'no-store' });
+                const response = await fetch('api/admin/subjects.php', { cache: 'no-store' });
                 const data = await response.json();
                 const subjects = data.subjects || [];
                 const select = document.getElementById('subject-select');
                 
                 subjects.forEach(subject => {
-                    subjectsInfo[subject.id] = subject;
+                    const code = subject.code || subject.id;
+                    if (!code) return;
+                    subjectsInfo[code] = subject;
                     const option = document.createElement('option');
-                    option.value = subject.id;
+                    option.value = code;
                     option.textContent = `${subject.name} (${subject.questionCount} Q)`;
                     select.appendChild(option);
                 });
