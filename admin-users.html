@@ -40,8 +40,12 @@
 
                 <div id="new-pass" style="margin-top: 12px; display:none;">
                     <div style="font-weight:700; margin-bottom: 6px;">New user password (copy and send to user):</div>
+                    <div style="margin-bottom: 6px; opacity: 0.9;" id="new-pass-user"></div>
                     <div style="font-size: 20px; letter-spacing: 1px; padding: 12px; border-radius: 12px; border: 1px solid var(--border); background: rgba(255,255,255,0.05); display:inline-block;" id="new-pass-value"></div>
                     <div style="margin-top: 8px;">This will not be shown again (only you can copy it now).</div>
+                    <div style="margin-top: 10px;">
+                        <button class="btn btn-danger" id="revoke-new-user-btn" style="display:none;" onclick="revokeLastCreatedUser()">🗑️ Revoke this password</button>
+                    </div>
                 </div>
 
                 <h3 style="margin-top: 18px;">Users</h3>
@@ -97,8 +101,8 @@
                         <div style="flex: 1;">Last seen: ${escapeHtml(seen)}</div>
                         <div style="min-width: 110px; opacity: 0.9;">${locked ? '🔒 Locked' : '🔓 Unlocked'}</div>
                         <div style="display:flex; gap: 8px;">
-                            <button class="btn btn-outline icon-btn" title="Reset device lock" onclick="resetUserSession(${u.id})">🔓</button>
-                            <button class="btn btn-danger icon-btn" title="Revoke access" onclick="deleteUser(${u.id})">🗑️</button>
+                            <button class="btn btn-outline" title="Reset device lock" onclick="resetUserSession(${u.id})">🔓 Unlock</button>
+                            <button class="btn btn-danger" title="Revoke access" onclick="deleteUser(${u.id})">🗑️ Revoke</button>
                         </div>
                     </div>
                 `;
@@ -143,8 +147,11 @@
                     return;
                 }
 
+                window.__lastCreatedUserId = data.userId;
+                document.getElementById('new-pass-user').textContent = `User #${data.userId}`;
                 document.getElementById('new-pass-value').textContent = data.password;
                 document.getElementById('new-pass').style.display = 'block';
+                document.getElementById('revoke-new-user-btn').style.display = 'inline-flex';
                 setStatus('Created', true);
                 await loadUsers();
             } catch (_) {
@@ -177,8 +184,11 @@
                     return;
                 }
 
+                window.__lastCreatedUserId = data.userId;
+                document.getElementById('new-pass-user').textContent = `User #${data.userId}`;
                 document.getElementById('new-pass-value').textContent = data.password;
                 document.getElementById('new-pass').style.display = 'block';
+                document.getElementById('revoke-new-user-btn').style.display = 'inline-flex';
                 setStatus(`Created User #${data.userId}`, true);
                 if (passEl) passEl.value = '';
                 await loadUsers();
@@ -187,6 +197,18 @@
             } finally {
                 btn.disabled = false;
             }
+        }
+
+        async function revokeLastCreatedUser() {
+            const id = Number(window.__lastCreatedUserId || 0);
+            if (!id) {
+                setStatus('No newly created user to revoke.', false);
+                return;
+            }
+            await deleteUser(id);
+            // Hide the button after revocation attempt.
+            const btn = document.getElementById('revoke-new-user-btn');
+            if (btn) btn.style.display = 'none';
         }
 
         async function deleteUser(id) {
