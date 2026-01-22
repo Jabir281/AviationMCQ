@@ -6,7 +6,7 @@
     <title>Edit Questions - Admin</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/admin.css?v=20260122">
+    <link rel="stylesheet" href="css/admin.css?v=20260123_1">
 </head>
 <body>
     <header class="admin-header">
@@ -38,7 +38,10 @@
 
         <main class="main-content">
             <div class="content-header">
-                <h2>Fix typos, update options, or modify questions</h2>
+                <div style="display:flex; justify-content: space-between; gap: 12px; align-items: center; flex-wrap: wrap;">
+                    <h2 style="margin: 0;">Fix typos, update options, or modify questions</h2>
+                    <button class="btn btn-primary" id="add-q-btn" onclick="openAddModal()" disabled>➕ Add Question</button>
+                </div>
             </div>
             <div id="questions-list" class="questions-list">
                 <div class="empty-state">
@@ -47,6 +50,53 @@
                 </div>
             </div>
         </main>
+    </div>
+
+    <!-- Add Modal -->
+    <div id="add-modal" class="modal">
+        <div class="modal-overlay" onclick="closeAddModal()"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Add Question</h3>
+                <button class="modal-close" onclick="closeAddModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>Question Text</label>
+                    <textarea id="add-question-text" rows="4" placeholder="Type the question..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Option A</label>
+                    <input type="text" id="add-option-0" placeholder="Option A">
+                </div>
+                <div class="form-group">
+                    <label>Option B</label>
+                    <input type="text" id="add-option-1" placeholder="Option B">
+                </div>
+                <div class="form-group">
+                    <label>Option C</label>
+                    <input type="text" id="add-option-2" placeholder="Option C">
+                </div>
+                <div class="form-group">
+                    <label>Option D</label>
+                    <input type="text" id="add-option-3" placeholder="Option D">
+                </div>
+                <div class="form-group">
+                    <label>Correct Answer</label>
+                    <select id="add-correct">
+                        <option value="">Not Set</option>
+                        <option value="0">A</option>
+                        <option value="1">B</option>
+                        <option value="2">C</option>
+                        <option value="3">D</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" onclick="closeAddModal()">Cancel</button>
+                <button class="btn btn-primary" id="add-save-btn" onclick="saveNewQuestion()">Add</button>
+            </div>
+        </div>
     </div>
 
     <!-- Edit Modal -->
@@ -152,12 +202,14 @@
             if (!subjectId) {
                 questions = [];
                 currentSubject = null;
+                document.getElementById('add-q-btn').disabled = true;
                 renderQuestions();
                 updateStats();
                 return;
             }
             
             currentSubject = subjectId;
+            document.getElementById('add-q-btn').disabled = false;
             const subject = subjectsInfo[subjectId];
             
             try {
@@ -286,6 +338,66 @@
             currentEditIndex = null;
         }
 
+        function openAddModal() {
+            if (!currentSubject) {
+                showToast('Select a subject first', 'error');
+                return;
+            }
+            document.getElementById('add-question-text').value = '';
+            for (let i = 0; i < 4; i++) {
+                document.getElementById(`add-option-${i}`).value = '';
+            }
+            document.getElementById('add-correct').value = '';
+            document.getElementById('add-modal').classList.add('active');
+        }
+
+        function closeAddModal() {
+            document.getElementById('add-modal').classList.remove('active');
+        }
+
+        async function saveNewQuestion() {
+            if (!currentSubject) return;
+
+            const btn = document.getElementById('add-save-btn');
+            btn.disabled = true;
+
+            const questionText = document.getElementById('add-question-text').value;
+            const options = [];
+            for (let i = 0; i < 4; i++) {
+                options.push(document.getElementById(`add-option-${i}`).value);
+            }
+            const correctValue = document.getElementById('add-correct').value;
+            const correct = correctValue === '' ? null : parseInt(correctValue);
+
+            try {
+                const res = await fetch('api/admin/create_question.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        subject: currentSubject,
+                        question: questionText,
+                        options,
+                        correct
+                    }),
+                    cache: 'no-store'
+                });
+                const data = await res.json().catch(() => null);
+                if (!res.ok || !data || data.ok !== true) {
+                    showToast((data && data.error) ? data.error : 'Failed to add question', 'error');
+                    return;
+                }
+
+                closeAddModal();
+                await loadQuestions();
+                showToast('Added ✅', 'success');
+            } catch (error) {
+                console.error('Error adding question:', error);
+                showToast('Error adding question', 'error');
+            } finally {
+                btn.disabled = false;
+            }
+        }
+
         async function saveQuestionEdit() {
             if (currentEditIndex === null) return;
             
@@ -376,7 +488,10 @@
 
         // Close modal on escape
         document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') closeEditModal();
+            if (e.key === 'Escape') {
+                closeEditModal();
+                closeAddModal();
+            }
         });
     </script>
 </body>
