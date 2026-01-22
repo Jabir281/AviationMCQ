@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Admins - Aviation MCQ Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/admin.css?v=20260122">
+</head>
+<body>
+    <header class="admin-header">
+        <div class="header-left">
+            <a href="admin-dashboard.html" class="header-home">← Dashboard</a>
+            <h1>🛡️ Manage Admins</h1>
+        </div>
+        <div class="header-right">
+            <button class="btn btn-outline-light" onclick="logout()">Logout</button>
+        </div>
+    </header>
+
+    <main class="dashboard-main">
+        <div class="dashboard-container">
+            <h2>Add another admin</h2>
+            <p class="dashboard-subtitle">Admins can upload subjects, edit questions, and delete content. Share passwords carefully.</p>
+
+            <div class="card" style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px; padding: 16px; max-width: 720px;">
+                <div class="form-group">
+                    <label class="form-label" for="admin-username">Username</label>
+                    <input class="form-input" id="admin-username" placeholder="e.g. admin2" maxlength="50" />
+                    <div class="form-hint">3–50 chars: letters/numbers/underscore/dot/dash.</div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="admin-password">Password</label>
+                    <input class="form-input" id="admin-password" placeholder="6–64 characters" maxlength="64" />
+                </div>
+
+                <div style="display:flex; gap: 10px; flex-wrap: wrap; align-items: center;">
+                    <button class="btn btn-primary" id="create-admin-btn" onclick="createAdmin()">Create Admin</button>
+                    <button class="btn btn-outline" onclick="loadAdmins()">Refresh List</button>
+                    <span id="status" style="font-weight:600;"></span>
+                </div>
+
+                <h3 style="margin-top: 18px;">Existing admins</h3>
+                <div id="admins" style="margin-top: 10px;"></div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        async function requireApiAdmin() {
+            try {
+                const res = await fetch('api/admin/me.php', { cache: 'no-store', credentials: 'include' });
+                if (!res.ok) throw new Error('Unauthorized');
+                const data = await res.json();
+                if (!data || data.ok !== true) throw new Error('Unauthorized');
+            } catch (_) {
+                window.location.href = 'admin.html';
+            }
+        }
+
+        async function logout() {
+            try { await fetch('api/admin/logout.php', { cache: 'no-store', credentials: 'include' }); } catch (_) {}
+            window.location.href = 'admin.html';
+        }
+
+        function setStatus(text, ok) {
+            const el = document.getElementById('status');
+            el.textContent = text;
+            el.style.color = ok === true ? '#2ecc71' : (ok === false ? '#ff6b6b' : '');
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = String(text ?? '');
+            return div.innerHTML;
+        }
+
+        async function loadAdmins() {
+            const box = document.getElementById('admins');
+            box.innerHTML = '<div style="opacity:0.9;">Loading…</div>';
+
+            try {
+                const res = await fetch('api/admin/admins.php', { cache: 'no-store', credentials: 'include' });
+                const data = await res.json().catch(() => null);
+                if (!res.ok || !data || data.ok !== true || !Array.isArray(data.admins)) {
+                    box.innerHTML = '<div style="color:#ff6b6b;">Failed to load admins.</div>';
+                    return;
+                }
+
+                if (data.admins.length === 0) {
+                    box.innerHTML = '<div style="opacity:0.9;">No admins found.</div>';
+                    return;
+                }
+
+                box.innerHTML = data.admins.map(a => {
+                    return `
+                        <div style="display:flex; gap:10px; align-items:center; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border);">
+                            <div><strong>${escapeHtml(a.username)}</strong></div>
+                            <div style="opacity:0.85; font-size: 0.95rem;">Created: ${escapeHtml(a.createdAt)}</div>
+                        </div>
+                    `;
+                }).join('');
+            } catch (_) {
+                box.innerHTML = '<div style="color:#ff6b6b;">Failed to load admins.</div>';
+            }
+        }
+
+        async function createAdmin() {
+            const btn = document.getElementById('create-admin-btn');
+            const username = String(document.getElementById('admin-username')?.value || '').trim();
+            const password = String(document.getElementById('admin-password')?.value || '').trim();
+
+            if (!username || !password) {
+                setStatus('Enter username and password.', false);
+                return;
+            }
+
+            btn.disabled = true;
+            setStatus('Creating…', null);
+
+            try {
+                const res = await fetch('api/admin/create_admin.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ username, password }),
+                    cache: 'no-store',
+                    credentials: 'include'
+                });
+
+                const data = await res.json().catch(() => null);
+                if (!res.ok || !data || data.ok !== true) {
+                    setStatus((data && data.error) ? data.error : 'Failed', false);
+                    return;
+                }
+
+                setStatus(`Created admin: ${data.username}`, true);
+                document.getElementById('admin-password').value = '';
+                await loadAdmins();
+            } catch (e) {
+                setStatus('Failed', false);
+            } finally {
+                btn.disabled = false;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            await requireApiAdmin();
+            await loadAdmins();
+        });
+    </script>
+</body>
+</html>
