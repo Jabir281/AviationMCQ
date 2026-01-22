@@ -6,7 +6,7 @@
     <title>Manage Admins - Aviation MCQ Admin</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/admin.css?v=20260122">
+    <link rel="stylesheet" href="css/admin.css?v=20260122_3">
 </head>
 <body>
     <header class="admin-header">
@@ -77,6 +77,19 @@
             return div.innerHTML;
         }
 
+        function getMyAdminId() {
+            return Number(window.__meAdminId || 0);
+        }
+
+        async function fetchMe() {
+            const res = await fetch('api/admin/me.php', { cache: 'no-store', credentials: 'include' });
+            if (!res.ok) throw new Error('Unauthorized');
+            const data = await res.json();
+            if (!data || data.ok !== true || !data.admin) throw new Error('Unauthorized');
+            window.__meAdminId = Number(data.admin.id || 0);
+            return data.admin;
+        }
+
         async function loadAdmins() {
             const box = document.getElementById('admins');
             box.innerHTML = '<div style="opacity:0.9;">Loading…</div>';
@@ -94,16 +107,78 @@
                     return;
                 }
 
+                const meId = getMyAdminId();
                 box.innerHTML = data.admins.map(a => {
+                    const isMe = meId && Number(a.id) === meId;
                     return `
                         <div style="display:flex; gap:10px; align-items:center; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border);">
-                            <div><strong>${escapeHtml(a.username)}</strong></div>
-                            <div style="opacity:0.85; font-size: 0.95rem;">Created: ${escapeHtml(a.createdAt)}</div>
+                            <div>
+                                <div><strong>${escapeHtml(a.username)}</strong> ${isMe ? '<span style="opacity:0.85; font-size: 0.9rem;">(you)</span>' : ''}</div>
+                                <div style="opacity:0.85; font-size: 0.95rem;">Created: ${escapeHtml(a.createdAt)}</div>
+                            </div>
+                            <div style="display:flex; gap:8px; align-items:center;">
+                                <button class="btn btn-outline" onclick="changeAdminPassword(${Number(a.id)})">🔑 Change password</button>
+                                <button class="btn btn-danger" ${isMe ? 'disabled title="You cannot revoke yourself"' : ''} onclick="revokeAdmin(${Number(a.id)}, '${escapeHtml(a.username)}')">🗑️ Revoke</button>
+                            </div>
                         </div>
                     `;
                 }).join('');
             } catch (_) {
                 box.innerHTML = '<div style="color:#ff6b6b;">Failed to load admins.</div>';
+            }
+        }
+
+        async function changeAdminPassword(adminId) {
+            const pwd = prompt('Enter a NEW password for this admin (6–64 characters):');
+            if (pwd === null) return;
+            const password = String(pwd || '').trim();
+            if (password.length < 6 || password.length > 64) {
+                setStatus('Password must be 6-64 characters.', false);
+                return;
+            }
+
+            setStatus('Updating password…', null);
+            try {
+                const res = await fetch('api/admin/change_admin_password.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ adminId, password }),
+                    cache: 'no-store',
+                    credentials: 'include'
+                });
+                const data = await res.json().catch(() => null);
+                if (!res.ok || !data || data.ok !== true) {
+                    setStatus((data && data.error) ? data.error : 'Failed', false);
+                    return;
+                }
+                setStatus('Password updated.', true);
+            } catch (_) {
+                setStatus('Failed', false);
+            }
+        }
+
+        async function revokeAdmin(adminId, username) {
+            const ok = confirm(`Revoke admin "${username}"? They will lose access to the admin dashboard.`);
+            if (!ok) return;
+
+            setStatus('Revoking…', null);
+            try {
+                const res = await fetch('api/admin/delete_admin.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ adminId }),
+                    cache: 'no-store',
+                    credentials: 'include'
+                });
+                const data = await res.json().catch(() => null);
+                if (!res.ok || !data || data.ok !== true) {
+                    setStatus((data && data.error) ? data.error : 'Failed', false);
+                    return;
+                }
+                setStatus('Revoked.', true);
+                await loadAdmins();
+            } catch (_) {
+                setStatus('Failed', false);
             }
         }
 
@@ -147,6 +222,7 @@
 
         document.addEventListener('DOMContentLoaded', async () => {
             await requireApiAdmin();
+            try { await fetchMe(); } catch (_) {}
             await loadAdmins();
         });
     </script>
