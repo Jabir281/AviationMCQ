@@ -161,6 +161,7 @@ async function fetchJsonApiFirst(apiUrl, fallbackUrl) {
 
         // If API exists but requires login, do NOT fall back to local JSON.
         if (apiRes.status === 401 || apiRes.status === 403) {
+            cachedUserLoggedIn = false;
             throw Object.assign(new Error('AUTH_REQUIRED'), { authRequired: true, apiData });
         }
 
@@ -168,8 +169,10 @@ async function fetchJsonApiFirst(apiUrl, fallbackUrl) {
             // Our API wraps responses as { ok: true, subjects/questions: [...] }
             if (apiData && apiData.ok === true) return apiData;
         }
-    } catch (_) {
-        // ignore
+    } catch (err) {
+        // If auth is required, do NOT fall back.
+        if (err && err.authRequired === true) throw err;
+        // Otherwise ignore and try fallback.
     }
 
     const res = await fetch(fallbackUrl, { cache: 'no-store' });
@@ -189,7 +192,6 @@ async function apiIsAvailable() {
 }
 
 async function apiIsUserLoggedIn() {
-    if (cachedUserLoggedIn !== null) return cachedUserLoggedIn;
     try {
         const res = await fetch('api/user/me.php', { cache: 'no-store' });
         cachedUserLoggedIn = res.status === 200;
