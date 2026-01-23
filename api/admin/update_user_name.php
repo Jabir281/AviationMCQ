@@ -28,7 +28,7 @@ try {
     $stmt = $pdo->prepare('UPDATE users SET display_name = ? WHERE id = ?');
     $stmt->execute([($name === '' ? null : $name), $userId]);
 } catch (Throwable $e) {
-    json_error('Failed updating name', 500);
+    json_error('Failed updating name (database not migrated yet). Run api/admin/setup.php?token=... then try again.', 500);
 }
 
 json_response(['ok' => true, 'userId' => $userId, 'name' => ($name === '' ? null : $name)]);

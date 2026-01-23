@@ -156,13 +156,17 @@
                 const res = await fetch('api/admin/users.php?limit=200', { cache: 'no-store', credentials: 'include' });
                 const data = await res.json().catch(() => null);
                 if (!res.ok || !data || data.ok !== true) {
-                    setStatus('Failed', false);
+                    setStatus((data && data.error) ? data.error : 'Failed loading users (check DB migration/setup).', false);
                     return;
                 }
                 renderUsers(data.users);
-                setStatus(`Loaded ${data.users.length}`, true);
+                if (data.warning) {
+                    setStatus(String(data.warning), false);
+                } else {
+                    setStatus(`Loaded ${data.users.length}`, true);
+                }
             } catch (_) {
-                setStatus('Failed', false);
+                setStatus('Failed loading users (check DB migration/setup).', false);
             }
         }
 

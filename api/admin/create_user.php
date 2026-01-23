@@ -38,15 +38,29 @@ if (strlen($code) < 6 || strlen($code) > 64) {
 }
 
 $hash = password_hash($code, PASSWORD_DEFAULT);
-$enc = encrypt_access_code($code);
+$enc = null;
+try {
+    $enc = encrypt_access_code($code);
+} catch (Throwable $e) {
+    // If encryption isn't configured yet, keep working (password reveal will be unavailable).
+    $enc = null;
+}
 $pdo = db();
 
 try {
+    // Preferred (new schema)
     $stmt = $pdo->prepare('INSERT INTO users (access_code_hash, access_code_enc, display_name) VALUES (?, ?, ?)');
     $stmt->execute([$hash, $enc, ($name === '' ? null : $name)]);
     $id = (int)$pdo->lastInsertId();
 } catch (Throwable $e) {
-    json_error('Failed creating user (try again).', 500);
+    // Backward compatibility: old schema only has access_code_hash.
+    try {
+        $stmt = $pdo->prepare('INSERT INTO users (access_code_hash) VALUES (?)');
+        $stmt->execute([$hash]);
+        $id = (int)$pdo->lastInsertId();
+    } catch (Throwable $e2) {
+        json_error('Failed creating user (try again).', 500);
+    }
 }
 
 json_response(['ok' => true, 'userId' => $id, 'password' => $code, 'name' => ($name === '' ? null : $name)]);
