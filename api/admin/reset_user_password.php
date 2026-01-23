@@ -44,7 +44,12 @@ if (!$check->fetch()) {
 }
 
 $hash = password_hash($code, PASSWORD_DEFAULT);
-$enc = encrypt_access_code($code);
+$enc = null;
+try {
+    $enc = encrypt_access_code($code);
+} catch (Throwable $e) {
+    $enc = null;
+}
 
 try {
     $stmt = $pdo->prepare('UPDATE users SET access_code_hash = ?, access_code_enc = ?, active_session_id = NULL WHERE id = ?');

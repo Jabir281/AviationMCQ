@@ -9,7 +9,7 @@ function access_code_key_bytes(): string {
     $raw = trim($raw);
 
     if ($raw === '') {
-        json_error('Server not configured (missing accessCodeKey in api/config.php).', 500);
+        throw new RuntimeException('Server not configured (missing accessCodeKey in api/config.php).');
     }
 
     // Prefer base64 (recommended).
@@ -20,7 +20,7 @@ function access_code_key_bytes(): string {
 
     // Fallback: treat as raw string.
     if (strlen($raw) < 32) {
-        json_error('Server not configured (accessCodeKey must be at least 32 chars or base64 of 32+ bytes).', 500);
+        throw new RuntimeException('Server not configured (accessCodeKey must be at least 32 chars or base64 of 32+ bytes).');
     }
 
     return substr(hash('sha256', $raw, true), 0, 32);
@@ -41,7 +41,7 @@ function encrypt_access_code(string $plain): string {
     );
 
     if ($ciphertext === false || $tag === '') {
-        json_error('Encryption failed.', 500);
+        throw new RuntimeException('Encryption failed.');
     }
 
     // Pack as: v1:<b64(iv)>.<b64(tag)>.<b64(ct)>
@@ -68,7 +68,12 @@ function decrypt_access_code(?string $packed): ?string {
 
     if ($iv === false || $tag === false || $ct === false) return null;
 
-    $key = access_code_key_bytes();
+    try {
+        $key = access_code_key_bytes();
+    } catch (Throwable $e) {
+        return null;
+    }
+
     $plain = openssl_decrypt(
         $ct,
         'aes-256-gcm',
