@@ -385,11 +385,11 @@ body {
 
 /* Sidebar Toggle Button */
 .sidebar-toggle {
-    position: absolute;
+    position: fixed;
     left: 280px;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 100;
+    z-index: 1000;
     width: 24px;
     height: 48px;
     background: #667eea;
