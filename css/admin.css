@@ -472,6 +472,43 @@ body {
     margin-bottom: 25px;
 }
 
+.sidebar-section.collapsible .section-toggle {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    padding: 6px 8px;
+    margin: -6px -8px 10px -8px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.sidebar-section.collapsible .section-toggle:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.sidebar-section.collapsible .toggle-icon {
+    font-size: 0.7rem;
+    transition: transform 0.2s;
+}
+
+.sidebar-section.collapsible.collapsed .toggle-icon {
+    transform: rotate(-90deg);
+}
+
+.sidebar-section.collapsible .section-content {
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.2s ease;
+    max-height: 500px;
+    opacity: 1;
+}
+
+.sidebar-section.collapsible.collapsed .section-content {
+    max-height: 0;
+    opacity: 0;
+}
+
 .sidebar-section h3 {
     font-size: 0.75rem;
     text-transform: uppercase;

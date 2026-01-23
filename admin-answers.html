@@ -6,7 +6,7 @@
     <title>Set Correct Answers - Admin</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/admin.css?v=20260123_2">
+    <link rel="stylesheet" href="css/admin.css?v=20260124">
 </head>
 <body>
     <header class="admin-header">
@@ -21,22 +21,31 @@
 
     <div class="page-layout">
         <aside class="sidebar">
-            <div class="sidebar-section">
-                <h3>Select Subject</h3>
-                <select id="subject-select" class="subject-dropdown">
-                    <option value="">-- Choose Subject --</option>
-                </select>
-            </div>
-            <div class="sidebar-section">
-                <h3>Filter</h3>
-                <div class="filter-buttons">
-                    <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="unanswered">Unanswered</button>
-                    <button class="filter-btn" data-filter="answered">Answered</button>
+            <div class="sidebar-section collapsible">
+                <h3 class="section-toggle" onclick="toggleSection(this)">Select Subject <span class="toggle-icon">▼</span></h3>
+                <div class="section-content">
+                    <select id="subject-select" class="subject-dropdown">
+                        <option value="">-- Choose Subject --</option>
+                    </select>
                 </div>
             </div>
-            <div class="sidebar-section stats-box" id="stats-box">
-                <p class="placeholder">Select a subject</p>
+            <div class="sidebar-section collapsible">
+                <h3 class="section-toggle" onclick="toggleSection(this)">Filter <span class="toggle-icon">▼</span></h3>
+                <div class="section-content">
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="unanswered">Unanswered</button>
+                        <button class="filter-btn" data-filter="answered">Answered</button>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-section collapsible">
+                <h3 class="section-toggle" onclick="toggleSection(this)">Stats <span class="toggle-icon">▼</span></h3>
+                <div class="section-content">
+                    <div class="stats-box" id="stats-box">
+                        <p class="placeholder">Select a subject</p>
+                    </div>
+                </div>
             </div>
         </aside>
 
@@ -61,6 +70,14 @@
     <div id="toast" class="toast"></div>
 
     <script>
+        // Toggle sidebar section collapse/expand
+        function toggleSection(headerEl) {
+            const section = headerEl.closest('.sidebar-section');
+            if (section) {
+                section.classList.toggle('collapsed');
+            }
+        }
+
         async function requireApiAdmin() {
             try {
                 const res = await fetch('api/admin/me.php', { cache: 'no-store' });
