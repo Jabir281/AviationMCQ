@@ -12,11 +12,11 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 
 $body = read_json_body();
+$userId = (int)($body['userId'] ?? 0);
 $requested = trim((string)($body['password'] ?? $body['code'] ?? ''));
-$name = trim((string)($body['name'] ?? $body['displayName'] ?? $body['userName'] ?? ''));
 
-if ($name !== '' && strlen($name) > 120) {
-    json_error('Name must be 0-120 characters.', 400);
+if ($userId <= 0) {
+    json_error('Missing userId', 400);
 }
 
 function random_code(int $len = 10): string {
@@ -28,25 +28,29 @@ function random_code(int $len = 10): string {
     return $out;
 }
 
-$code = $requested;
-if ($code === '') {
-    $code = random_code(10);
-}
+$code = $requested !== '' ? $requested : random_code(10);
 
 if (strlen($code) < 6 || strlen($code) > 64) {
     json_error('Password must be 6-64 characters.', 400);
 }
 
-$hash = password_hash($code, PASSWORD_DEFAULT);
-$enc = encrypt_access_code($code);
 $pdo = db();
 
-try {
-    $stmt = $pdo->prepare('INSERT INTO users (access_code_hash, access_code_enc, display_name) VALUES (?, ?, ?)');
-    $stmt->execute([$hash, $enc, ($name === '' ? null : $name)]);
-    $id = (int)$pdo->lastInsertId();
-} catch (Throwable $e) {
-    json_error('Failed creating user (try again).', 500);
+// Ensure user exists
+$check = $pdo->prepare('SELECT id FROM users WHERE id = ?');
+$check->execute([$userId]);
+if (!$check->fetch()) {
+    json_error('User not found', 404);
 }
 
-json_response(['ok' => true, 'userId' => $id, 'password' => $code, 'name' => ($name === '' ? null : $name)]);
+$hash = password_hash($code, PASSWORD_DEFAULT);
+$enc = encrypt_access_code($code);
+
+try {
+    $stmt = $pdo->prepare('UPDATE users SET access_code_hash = ?, access_code_enc = ?, active_session_id = NULL WHERE id = ?');
+    $stmt->execute([$hash, $enc, $userId]);
+} catch (Throwable $e) {
+    json_error('Failed resetting password', 500);
+}
+
+json_response(['ok' => true, 'userId' => $userId, 'password' => $code]);

@@ -25,6 +25,12 @@ return [
     // created by an admin. Recommended for Hostinger production.
     'requireUserAuth' => false,
 
+    // Encryption key used to store user access codes (passwords) so admins can reveal/reset them later.
+    // Recommended: generate 32 random bytes and base64-encode them.
+    // Example (Linux/macOS): `openssl rand -base64 32`
+    // Example (Windows PowerShell): `[Convert]::ToBase64String((1..32 | ForEach-Object {Get-Random -Max 256}))`
+    'accessCodeKey' => 'CHANGE_ME_BASE64_32_BYTES',
+
     // Restrict which subject JSON files can be imported.
     'importFiles' => [
         'COMS' => __DIR__ . '/../data/COMS_extracted.json',

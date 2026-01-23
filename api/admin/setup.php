@@ -52,6 +52,8 @@ try {
         'CREATE TABLE IF NOT EXISTS users (
             id INT AUTO_INCREMENT PRIMARY KEY,
             access_code_hash VARCHAR(255) NOT NULL UNIQUE,
+            access_code_enc TEXT NULL,
+            display_name VARCHAR(120) NULL,
             active_session_id VARCHAR(128) NULL,
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
             last_seen_at TIMESTAMP NULL
@@ -64,6 +66,20 @@ try {
 // Add active_session_id for existing installs
 try {
     $pdo->exec('ALTER TABLE users ADD COLUMN active_session_id VARCHAR(128) NULL');
+} catch (Throwable $e) {
+    // ignore (likely column already exists)
+}
+
+// Add access_code_enc for existing installs
+try {
+    $pdo->exec('ALTER TABLE users ADD COLUMN access_code_enc TEXT NULL');
+} catch (Throwable $e) {
+    // ignore (likely column already exists)
+}
+
+// Add display_name for existing installs
+try {
+    $pdo->exec('ALTER TABLE users ADD COLUMN display_name VARCHAR(120) NULL');
 } catch (Throwable $e) {
     // ignore (likely column already exists)
 }
