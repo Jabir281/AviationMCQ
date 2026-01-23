@@ -732,7 +732,7 @@ function confirmEndExam() {
 
     if (state.mode === 'practice') {
         if (titleEl) titleEl.textContent = 'End Practice?';
-        if (messageEl) messageEl.textContent = 'Are you sure you want to end practice? Your results will not be calculated.';
+        if (messageEl) messageEl.textContent = 'Are you sure you want to end practice? Your progress will be saved and results will be shown.';
         if (confirmBtn) confirmBtn.textContent = 'End Practice';
         if (continueBtn) continueBtn.textContent = 'Continue Practice';
     } else {
