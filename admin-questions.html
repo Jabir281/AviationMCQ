@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Manager - Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/admin.css?v=20260124_4">
+</head>
+<body>
+    <header class="admin-header">
+        <div class="header-left">
+            <a href="admin-dashboard.html" class="header-home">← Back to Dashboard</a>
+            <h1>📝 Question Manager</h1>
+        </div>
+        <div class="header-right">
+            <span class="header-hint">Click options to set correct answer • Click ✏️ to edit text</span>
+        </div>
+    </header>
+
+    <div class="page-layout">
+        <button class="sidebar-toggle" id="sidebar-toggle" onclick="toggleSidebar()" title="Toggle Sidebar">
+            <span class="toggle-arrow">◀</span>
+        </button>
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-section collapsible">
+                <h3 class="section-toggle" onclick="toggleSection(this)">Select Subject <span class="toggle-icon">▼</span></h3>
+                <div class="section-content">
+                    <select id="subject-select" class="subject-dropdown">
+                        <option value="">-- Choose Subject --</option>
+                    </select>
+                </div>
+            </div>
+            <div class="sidebar-section collapsible">
+                <h3 class="section-toggle" onclick="toggleSection(this)">Search <span class="toggle-icon">▼</span></h3>
+                <div class="section-content">
+                    <input type="text" id="search-input" class="search-input" placeholder="Search questions...">
+                </div>
+            </div>
+            <div class="sidebar-section collapsible">
+                <h3 class="section-toggle" onclick="toggleSection(this)">Filter <span class="toggle-icon">▼</span></h3>
+                <div class="section-content">
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="unanswered">Unanswered</button>
+                        <button class="filter-btn" data-filter="answered">Answered</button>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-section collapsible">
+                <h3 class="section-toggle" onclick="toggleSection(this)">Stats <span class="toggle-icon">▼</span></h3>
+                <div class="section-content">
+                    <div class="stats-box" id="stats-box">
+                        <p class="placeholder">Select a subject</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="content-header">
+                <div style="display:flex; justify-content: space-between; gap: 12px; align-items: center; flex-wrap: wrap;">
+                    <h2 style="margin: 0;">Edit questions & set correct answers</h2>
+                    <button class="btn btn-primary" id="add-q-btn" onclick="openAddModal()" disabled>➕ Add Question</button>
+                </div>
+            </div>
+            <div id="questions-list" class="questions-list">
+                <div class="empty-state">
+                    <span class="empty-icon">📝</span>
+                    <p>Select a subject from the sidebar to load questions</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Save Bar for pending answer changes -->
+    <div class="save-bar" id="save-bar" style="display: none;">
+        <span id="changes-count">0 changes pending</span>
+        <button class="btn btn-success" onclick="saveAllAnswers()">💾 Save Answers</button>
+    </div>
+
+    <!-- Add Modal -->
+    <div id="add-modal" class="modal">
+        <div class="modal-overlay" onclick="closeAddModal()"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Add Question</h3>
+                <button class="modal-close" onclick="closeAddModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>Question Text</label>
+                    <textarea id="add-question-text" rows="4" placeholder="Type the question..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Option A</label>
+                    <input type="text" id="add-option-0" placeholder="Option A">
+                </div>
+                <div class="form-group">
+                    <label>Option B</label>
+                    <input type="text" id="add-option-1" placeholder="Option B">
+                </div>
+                <div class="form-group">
+                    <label>Option C</label>
+                    <input type="text" id="add-option-2" placeholder="Option C">
+                </div>
+                <div class="form-group">
+                    <label>Option D</label>
+                    <input type="text" id="add-option-3" placeholder="Option D">
+                </div>
+                <div class="form-group">
+                    <label>Correct Answer</label>
+                    <select id="add-correct">
+                        <option value="">Not Set</option>
+                        <option value="0">A</option>
+                        <option value="1">B</option>
+                        <option value="2">C</option>
+                        <option value="3">D</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" onclick="closeAddModal()">Cancel</button>
+                <button class="btn btn-primary" id="add-save-btn" onclick="saveNewQuestion()">Add</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Modal -->
+    <div id="edit-modal" class="modal">
+        <div class="modal-overlay" onclick="closeEditModal()"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Edit Question <span id="edit-question-id"></span></h3>
+                <button class="modal-close" onclick="closeEditModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>Question Text</label>
+                    <textarea id="edit-question-text" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Option A</label>
+                    <input type="text" id="edit-option-0">
+                </div>
+                <div class="form-group">
+                    <label>Option B</label>
+                    <input type="text" id="edit-option-1">
+                </div>
+                <div class="form-group">
+                    <label>Option C</label>
+                    <input type="text" id="edit-option-2">
+                </div>
+                <div class="form-group">
+                    <label>Option D</label>
+                    <input type="text" id="edit-option-3">
+                </div>
+                <div class="form-group">
+                    <label>Correct Answer</label>
+                    <select id="edit-correct">
+                        <option value="">Not Set</option>
+                        <option value="0">A</option>
+                        <option value="1">B</option>
+                        <option value="2">C</option>
+                        <option value="3">D</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" onclick="closeEditModal()">Cancel</button>
+                <button class="btn btn-primary" onclick="saveQuestionEdit()">Save Changes</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast" class="toast"></div>
+
+    <script>
+        // Toggle entire sidebar slide in/out
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const toggle = document.getElementById('sidebar-toggle');
+            const pageLayout = document.querySelector('.page-layout');
+            
+            sidebar.classList.toggle('collapsed');
+            toggle.classList.toggle('collapsed');
+            pageLayout.classList.toggle('sidebar-collapsed');
+        }
+
+        // Toggle sidebar section collapse/expand
+        function toggleSection(headerEl) {
+            const section = headerEl.closest('.sidebar-section');
+            if (section) {
+                section.classList.toggle('collapsed');
+            }
+        }
+
+        async function requireApiAdmin() {
+            try {
+                const res = await fetch('api/admin/me.php', { cache: 'no-store' });
+                if (!res.ok) throw new Error('Unauthorized');
+                const data = await res.json();
+                if (!data || data.ok !== true) throw new Error('Unauthorized');
+            } catch (_) {
+                window.location.href = 'admin.html';
+            }
+        }
+
+        requireApiAdmin();
+
+        let subjectsInfo = {};
+        let questions = [];
+        let pendingAnswerChanges = {};
+        let currentSubject = null;
+        let currentEditIndex = null;
+        let searchTerm = '';
+        let currentFilter = 'all';
+
+        // Load subjects on page load
+        document.addEventListener('DOMContentLoaded', async () => {
+            await loadSubjects();
+            setupSearch();
+            setupFilterButtons();
+        });
+
+        async function loadSubjects() {
+            try {
+                const response = await fetch('api/admin/subjects.php', { cache: 'no-store' });
+                const data = await response.json();
+                const subjects = data.subjects || [];
+                const select = document.getElementById('subject-select');
+                
+                subjects.forEach(subject => {
+                    const code = subject.code || subject.id;
+                    if (!code) return;
+                    subjectsInfo[code] = subject;
+                    const option = document.createElement('option');
+                    option.value = code;
+                    option.textContent = `${subject.name} (${subject.questionCount} Q)`;
+                    select.appendChild(option);
+                });
+                
+                select.addEventListener('change', loadQuestions);
+            } catch (error) {
+                console.error('Error loading subjects:', error);
+            }
+        }
+
+        async function loadQuestions() {
+            const subjectId = document.getElementById('subject-select').value;
+            
+            if (!subjectId) {
+                questions = [];
+                currentSubject = null;
+                pendingAnswerChanges = {};
+                document.getElementById('add-q-btn').disabled = true;
+                renderQuestions();
+                updateStats();
+                updateSaveBar();
+                return;
+            }
+            
+            currentSubject = subjectId;
+            document.getElementById('add-q-btn').disabled = false;
+            
+            try {
+                const response = await fetch(`api/admin/questions.php?subject=${encodeURIComponent(subjectId)}`, { cache: 'no-store' });
+                const data = await response.json();
+                questions = data.questions || [];
+                pendingAnswerChanges = {};
+                
+                renderQuestions();
+                updateStats();
+                updateSaveBar();
+                
+                showToast(`Loaded ${questions.length} questions`, 'success');
+            } catch (error) {
+                console.error('Error loading questions:', error);
+                showToast('Error loading questions', 'error');
+            }
+        }
+
+        function setupSearch() {
+            const searchInput = document.getElementById('search-input');
+            let debounceTimer;
+            
+            searchInput.addEventListener('input', () => {
+                clearTimeout(debounceTimer);
+                debounceTimer = setTimeout(() => {
+                    searchTerm = searchInput.value.toLowerCase();
+                    renderQuestions();
+                }, 300);
+            });
+        }
+
+        function setupFilterButtons() {
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    currentFilter = btn.dataset.filter;
+                    renderQuestions();
+                });
+            });
+        }
+
+        function renderQuestions() {
+            const container = document.getElementById('questions-list');
+            
+            if (questions.length === 0) {
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <span class="empty-icon">📝</span>
+                        <p>Select a subject from the sidebar to load questions</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            let filtered = questions;
+            
+            // Apply filter
+            if (currentFilter === 'answered') {
+                filtered = filtered.filter(q => q.correct !== undefined && q.correct !== null);
+            } else if (currentFilter === 'unanswered') {
+                filtered = filtered.filter(q => q.correct === undefined || q.correct === null);
+            }
+            
+            // Apply search
+            if (searchTerm) {
+                filtered = filtered.filter(q => 
+                    q.question.toLowerCase().includes(searchTerm) ||
+                    q.id?.toString().toLowerCase().includes(searchTerm) ||
+                    q.options.some(opt => opt.toLowerCase().includes(searchTerm))
+                );
+            }
+            
+            if (filtered.length === 0) {
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <span class="empty-icon">🔍</span>
+                        <p>No questions match your search/filter</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            container.innerHTML = filtered.map(q => {
+                const index = questions.indexOf(q);
+                const hasAnswer = q.correct !== undefined && q.correct !== null;
+                const pendingAnswer = pendingAnswerChanges[index]?.correct;
+                const currentCorrect = pendingAnswer !== undefined ? pendingAnswer : q.correct;
+                const hasPending = pendingAnswer !== undefined;
+                
+                return `
+                    <div class="question-card ${hasAnswer ? 'has-answer' : 'no-answer'} ${hasPending ? 'has-pending' : ''}">
+                        <div class="question-header">
+                            <span class="question-id">#${index + 1} | ID: ${q.id || 'N/A'}</span>
+                            <div class="question-actions">
+                                <button class="edit-btn" onclick="openEditModal(${index})" title="Edit question text & options">✏️ Edit</button>
+                                <button class="btn btn-danger icon-btn" title="Delete question" onclick="deleteQuestion(${index})">🗑️</button>
+                            </div>
+                        </div>
+                        <div class="question-text">${escapeHtml(q.question)}</div>
+                        <div class="options-grid">
+                            ${q.options.map((opt, optIndex) => `
+                                <button class="option-btn ${currentCorrect === optIndex ? 'selected' : ''}" 
+                                        onclick="selectAnswer(${index}, ${optIndex})"
+                                        title="Click to set as correct answer">
+                                    <span class="option-letter">${String.fromCharCode(65 + optIndex)}.</span>
+                                    <span class="option-text">${escapeHtml(opt)}</span>
+                                </button>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function selectAnswer(questionIndex, optionIndex) {
+            const question = questions[questionIndex];
+            
+            // If clicking same as original, clear pending
+            if (question.correct === optionIndex) {
+                if (pendingAnswerChanges[questionIndex]?.correct !== undefined) {
+                    delete pendingAnswerChanges[questionIndex].correct;
+                    if (Object.keys(pendingAnswerChanges[questionIndex]).length === 0) {
+                        delete pendingAnswerChanges[questionIndex];
+                    }
+                }
+            } else {
+                // Set pending change
+                if (!pendingAnswerChanges[questionIndex]) {
+                    pendingAnswerChanges[questionIndex] = {};
+                }
+                pendingAnswerChanges[questionIndex].correct = optionIndex;
+            }
+            
+            renderQuestions();
+            updateSaveBar();
+        }
+
+        function updateSaveBar() {
+            const saveBar = document.getElementById('save-bar');
+            const changesCount = document.getElementById('changes-count');
+            const count = Object.keys(pendingAnswerChanges).length;
+            
+            if (count > 0) {
+                saveBar.style.display = 'flex';
+                changesCount.textContent = `${count} answer${count > 1 ? 's' : ''} pending`;
+            } else {
+                saveBar.style.display = 'none';
+            }
+        }
+
+        async function saveAllAnswers() {
+            if (Object.keys(pendingAnswerChanges).length === 0) return;
+            
+            const saveBtn = document.querySelector('#save-bar .btn-success');
+            saveBtn.disabled = true;
+            saveBtn.textContent = '⏳ Saving...';
+            
+            let successCount = 0;
+            let failCount = 0;
+            
+            for (const [indexStr, changes] of Object.entries(pendingAnswerChanges)) {
+                const index = parseInt(indexStr);
+                const question = questions[index];
+                
+                if (changes.correct !== undefined) {
+                    try {
+                        const res = await fetch('api/admin/update_correct.php', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({
+                                subject: currentSubject,
+                                id: question.id,
+                                correct: changes.correct
+                            }),
+                            cache: 'no-store'
+                        });
+                        
+                        if (!res.ok) throw new Error('Failed');
+                        
+                        question.correct = changes.correct;
+                        successCount++;
+                    } catch (_) {
+                        failCount++;
+                    }
+                }
+            }
+            
+            pendingAnswerChanges = {};
+            renderQuestions();
+            updateStats();
+            updateSaveBar();
+            
+            saveBtn.disabled = false;
+            saveBtn.textContent = '💾 Save Answers';
+            
+            if (failCount === 0) {
+                showToast(`Saved ${successCount} answer${successCount > 1 ? 's' : ''} ✅`, 'success');
+            } else {
+                showToast(`Saved ${successCount}, failed ${failCount}`, 'error');
+            }
+        }
+
+        function updateStats() {
+            const statsBox = document.getElementById('stats-box');
+            
+            if (questions.length === 0) {
+                statsBox.innerHTML = '<p class="placeholder">Select a subject</p>';
+                return;
+            }
+            
+            const total = questions.length;
+            const answered = questions.filter(q => q.correct !== undefined && q.correct !== null).length;
+            const unanswered = total - answered;
+            const percent = Math.round((answered / total) * 100);
+            
+            statsBox.innerHTML = `
+                <h4>📊 Statistics</h4>
+                <p>Total: <span class="stat-number">${total}</span></p>
+                <p>Answered: <span class="stat-number good">${answered}</span></p>
+                <p>Unanswered: <span class="stat-number ${unanswered > 0 ? 'bad' : ''}">${unanswered}</span></p>
+                <div class="progress-bar-mini">
+                    <div class="progress-fill-mini" style="width: ${percent}%"></div>
+                </div>
+                <p class="progress-text">${percent}% complete</p>
+            `;
+        }
+
+        // ========== Edit Modal ==========
+        function openEditModal(index) {
+            currentEditIndex = index;
+            const question = questions[index];
+            
+            document.getElementById('edit-question-id').textContent = `#${index + 1}`;
+            document.getElementById('edit-question-text').value = question.question;
+            
+            for (let i = 0; i < 4; i++) {
+                document.getElementById(`edit-option-${i}`).value = question.options[i] || '';
+            }
+            
+            document.getElementById('edit-correct').value = question.correct !== undefined && question.correct !== null ? question.correct : '';
+            
+            document.getElementById('edit-modal').classList.add('active');
+        }
+
+        function closeEditModal() {
+            document.getElementById('edit-modal').classList.remove('active');
+            currentEditIndex = null;
+        }
+
+        async function saveQuestionEdit() {
+            if (currentEditIndex === null) return;
+            
+            const question = questions[currentEditIndex];
+            const newQuestion = document.getElementById('edit-question-text').value;
+            const newOptions = [];
+            for (let i = 0; i < 4; i++) {
+                newOptions.push(document.getElementById(`edit-option-${i}`).value);
+            }
+            const correctValue = document.getElementById('edit-correct').value;
+            const newCorrect = correctValue === '' ? null : parseInt(correctValue);
+            
+            closeEditModal();
+
+            try {
+                const res = await fetch('api/admin/update_question.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        subject: currentSubject,
+                        id: question.id,
+                        question: newQuestion,
+                        options: newOptions,
+                        correct: newCorrect
+                    }),
+                    cache: 'no-store'
+                });
+                if (!res.ok) throw new Error('Save failed');
+
+                // Update local data
+                question.question = newQuestion;
+                question.options = newOptions;
+                question.correct = newCorrect;
+                
+                // Clear any pending answer change for this question
+                delete pendingAnswerChanges[currentEditIndex];
+                
+                renderQuestions();
+                updateStats();
+                updateSaveBar();
+                showToast('Saved ✅', 'success');
+            } catch (error) {
+                console.error('Error saving question:', error);
+                showToast('Error saving', 'error');
+            }
+        }
+
+        // ========== Add Modal ==========
+        function openAddModal() {
+            if (!currentSubject) {
+                showToast('Select a subject first', 'error');
+                return;
+            }
+            document.getElementById('add-question-text').value = '';
+            for (let i = 0; i < 4; i++) {
+                document.getElementById(`add-option-${i}`).value = '';
+            }
+            document.getElementById('add-correct').value = '';
+            document.getElementById('add-modal').classList.add('active');
+        }
+
+        function closeAddModal() {
+            document.getElementById('add-modal').classList.remove('active');
+        }
+
+        async function saveNewQuestion() {
+            if (!currentSubject) return;
+
+            const btn = document.getElementById('add-save-btn');
+            btn.disabled = true;
+
+            const questionText = document.getElementById('add-question-text').value;
+            const options = [];
+            for (let i = 0; i < 4; i++) {
+                options.push(document.getElementById(`add-option-${i}`).value);
+            }
+            const correctValue = document.getElementById('add-correct').value;
+            const correct = correctValue === '' ? null : parseInt(correctValue);
+
+            try {
+                const res = await fetch('api/admin/create_question.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        subject: currentSubject,
+                        question: questionText,
+                        options,
+                        correct
+                    }),
+                    cache: 'no-store'
+                });
+                const data = await res.json().catch(() => null);
+                if (!res.ok || !data || data.ok !== true) {
+                    showToast((data && data.error) ? data.error : 'Failed to add question', 'error');
+                    return;
+                }
+
+                closeAddModal();
+                await loadQuestions();
+                showToast('Added ✅', 'success');
+            } catch (error) {
+                console.error('Error adding question:', error);
+                showToast('Error adding question', 'error');
+            } finally {
+                btn.disabled = false;
+            }
+        }
+
+        // ========== Delete ==========
+        async function deleteQuestion(index) {
+            const q = questions[index];
+            if (!q || !currentSubject || !q.id) {
+                showToast('Missing question id', 'error');
+                return;
+            }
+
+            const ok = confirm('Delete this question? This cannot be undone.');
+            if (!ok) return;
+
+            try {
+                const res = await fetch('api/admin/delete_question.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ subject: currentSubject, id: q.id }),
+                    cache: 'no-store'
+                });
+                const data = await res.json().catch(() => null);
+                if (!res.ok || !data || data.ok !== true) {
+                    showToast('Failed to delete', 'error');
+                    return;
+                }
+
+                // Clear any pending changes for this question
+                delete pendingAnswerChanges[index];
+                
+                await loadQuestions();
+                showToast('Deleted ✅', 'success');
+            } catch (_) {
+                showToast('Failed to delete', 'error');
+            }
+        }
+
+        // ========== Utilities ==========
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function showToast(message, type = 'success') {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.className = `toast ${type} show`;
+            setTimeout(() => toast.classList.remove('show'), 3000);
+        }
+
+        // Close modal on escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeEditModal();
+                closeAddModal();
+            }
+        });
+    </script>
+</body>
+</html>
