@@ -25,6 +25,7 @@ const state = {
 
 const LAST_MOCK_CONFIG_KEY = 'lastMockExamConfig';
 const LAST_MOCK_WRONG_CONFIG_KEY = 'lastMockWrongExamConfig';
+const LAST_PRACTICE_WRONG_CONFIG_KEY = 'lastPracticeWrongExamConfig';
 
 let postUserLoginAction = null;
 let cachedUserLoggedIn = null;
@@ -135,19 +136,33 @@ function showResults() {
 }
 
 function refreshRetryWrongNav() {
-    const link = document.getElementById('nav-retry-wrong');
-    if (!link) return;
-
-    let hasWrong = false;
-    try {
-        const raw = localStorage.getItem(LAST_MOCK_WRONG_CONFIG_KEY);
-        const parsed = raw ? JSON.parse(raw) : null;
-        hasWrong = !!(parsed && parsed.subjectCode && Array.isArray(parsed.questionIds) && parsed.questionIds.length > 0);
-    } catch (_) {
-        hasWrong = false;
+    // Handle retry wrong for mock tests
+    const linkMock = document.getElementById('nav-retry-wrong');
+    if (linkMock) {
+        let hasWrongMock = false;
+        try {
+            const raw = localStorage.getItem(LAST_MOCK_WRONG_CONFIG_KEY);
+            const parsed = raw ? JSON.parse(raw) : null;
+            hasWrongMock = !!(parsed && parsed.subjectCode && Array.isArray(parsed.questionIds) && parsed.questionIds.length > 0);
+        } catch (_) {
+            hasWrongMock = false;
+        }
+        linkMock.style.display = hasWrongMock ? 'flex' : 'none';
     }
 
-    link.style.display = hasWrong ? 'flex' : 'none';
+    // Handle retry wrong for practice
+    const linkPractice = document.getElementById('nav-retry-practice');
+    if (linkPractice) {
+        let hasWrongPractice = false;
+        try {
+            const raw = localStorage.getItem(LAST_PRACTICE_WRONG_CONFIG_KEY);
+            const parsed = raw ? JSON.parse(raw) : null;
+            hasWrongPractice = !!(parsed && parsed.subjectCode && Array.isArray(parsed.questionIds) && parsed.questionIds.length > 0);
+        } catch (_) {
+            hasWrongPractice = false;
+        }
+        linkPractice.style.display = hasWrongPractice ? 'flex' : 'none';
+    }
 }
 
 // ============================================
@@ -742,19 +757,7 @@ function finishExam() {
     clearQuestionTimer();
     state.examFinished = true;
 
-    // Persist practice sessions too (no results screen)
-    if (state.mode === 'practice') {
-        persistAttemptToApi('practice');
-    }
-
-    if (state.mode === 'practice') {
-        // Practice has instant feedback; no results screen.
-        // Reset to subject selection so user can pick another/same subject.
-        state.pendingSubject = null;
-        showSubjects();
-        return;
-    }
-
+    // Show results for both mock and practice modes
     showResults();
 }
 
@@ -825,46 +828,45 @@ function displayResults() {
     const total = state.questions.length;
     const percentage = Math.round((correct / total) * 100);
 
-    // Persist retry set (wrong + skipped) for mock tests
-    if (state.mode === 'mock') {
-        const retryIds = [];
-        state.questions.forEach((question, index) => {
-            const userAnswer = state.userAnswers[index];
-            const correctIndex = question?.correct;
-            const isSkipped = (userAnswer === -1);
-            const isWrong = (!isSkipped && correctIndex !== null && correctIndex !== undefined && userAnswer !== correctIndex);
+    // Persist retry set (wrong + skipped) for both mock tests and practice
+    const retryIds = [];
+    state.questions.forEach((question, index) => {
+        const userAnswer = state.userAnswers[index];
+        const correctIndex = question?.correct;
+        const isSkipped = (userAnswer === -1);
+        const isWrong = (!isSkipped && correctIndex !== null && correctIndex !== undefined && userAnswer !== correctIndex);
 
-            // If correct answer is not set, treat as skipped (can't mark wrong)
-            const noCorrect = (correctIndex === null || correctIndex === undefined);
-            if (isSkipped || isWrong || noCorrect) {
-                if (question && question.id !== undefined && question.id !== null) retryIds.push(question.id);
-            }
-        });
-
-        try {
-            if (retryIds.length > 0) {
-                localStorage.setItem(
-                    LAST_MOCK_WRONG_CONFIG_KEY,
-                    JSON.stringify({
-                        subjectCode: state.currentSubject,
-                        timePerQuestionSec: state.timePerQuestionSec,
-                        questionIds: retryIds
-                    })
-                );
-            } else {
-                localStorage.removeItem(LAST_MOCK_WRONG_CONFIG_KEY);
-            }
-        } catch (_) {
-            // ignore
+        // If correct answer is not set, treat as skipped (can't mark wrong)
+        const noCorrect = (correctIndex === null || correctIndex === undefined);
+        if (isSkipped || isWrong || noCorrect) {
+            if (question && question.id !== undefined && question.id !== null) retryIds.push(question.id);
         }
-        refreshRetryWrongNav();
+    });
+
+    // Store retry configuration based on mode
+    const storageKey = state.mode === 'mock' ? LAST_MOCK_WRONG_CONFIG_KEY : LAST_PRACTICE_WRONG_CONFIG_KEY;
+    const retryConfig = {
+        subjectCode: state.currentSubject,
+        timePerQuestionSec: state.mode === 'mock' ? state.timePerQuestionSec : 0,
+        questionIds: retryIds
+    };
+
+    try {
+        if (retryIds.length > 0) {
+            localStorage.setItem(storageKey, JSON.stringify(retryConfig));
+        } else {
+            localStorage.removeItem(storageKey);
+        }
+    } catch (_) {
+        // ignore
     }
+    refreshRetryWrongNav();
     
     // Save to history
     const subjectName = state.subjects[state.currentSubject].name;
     const subjectLabel = `${state.currentSubject} - ${subjectName}`;
-    saveExamResult(subjectLabel, percentage, correct, wrong, skipped, total);
-    persistAttemptToApi('mock', { percentage, correct, wrong, skipped, total });
+    saveExamResult(subjectLabel, percentage, correct, wrong, skipped, total, state.mode);
+    persistAttemptToApi(state.mode, { percentage, correct, wrong, skipped, total });
     
     // Update UI
     document.getElementById('results-subject').textContent = subjectLabel;
@@ -908,6 +910,28 @@ function retryWrongQuestions() {
         timePerQuestionSec: Number(last.timePerQuestionSec || 0),
         questionIds: last.questionIds,
         // Keep the main "Retake Exam" config intact (the full mock settings)
+        skipPersistLastMock: true
+    });
+}
+
+function retryPracticeWrong() {
+    let last = null;
+    try {
+        const raw = localStorage.getItem(LAST_PRACTICE_WRONG_CONFIG_KEY);
+        last = raw ? JSON.parse(raw) : null;
+    } catch (_) {
+        last = null;
+    }
+
+    if (!last || !last.subjectCode || !Array.isArray(last.questionIds) || last.questionIds.length === 0) {
+        alert('No wrong/skipped questions found from your last practice session yet.');
+        return;
+    }
+
+    startExam(last.subjectCode, {
+        mode: 'practice',
+        timePerQuestionSec: 0,
+        questionIds: last.questionIds,
         skipPersistLastMock: true
     });
 }
@@ -1116,7 +1140,7 @@ async function getExamHistoryApiFirst() {
     }
 }
 
-function saveExamResult(subjectName, score, correct, wrong, skipped, total) {
+function saveExamResult(subjectName, score, correct, wrong, skipped, total, mode) {
     const history = getExamHistory();
     const result = {
         id: Date.now(),
@@ -1126,6 +1150,7 @@ function saveExamResult(subjectName, score, correct, wrong, skipped, total) {
         wrong: wrong,
         skipped: skipped,
         total: total,
+        mode: mode || 'mock',
         date: new Date().toISOString()
     };
     history.unshift(result); // Add to beginning
