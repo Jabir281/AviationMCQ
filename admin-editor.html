@@ -318,12 +318,12 @@
                                 <button class="btn btn-danger icon-btn" title="Delete question" onclick="deleteQuestion(${index})">🗑️</button>
                             </div>
                         </div>
-                        <div class="question-text">${escapeHtml(q.question)}</div>
+                        <div class="question-text">${formatText(q.question)}</div>
                         <div class="options-grid">
                             ${q.options.map((opt, optIndex) => `
                                 <div class="option-btn display-only ${q.correct === optIndex ? 'selected' : ''}">
                                     <span class="option-letter">${String.fromCharCode(65 + optIndex)}.</span>
-                                    <span class="option-text">${escapeHtml(opt)}</span>
+                                    <span class="option-text">${formatText(opt)}</span>
                                 </div>
                             `).join('')}
                         </div>
@@ -510,6 +510,10 @@
             const div = document.createElement('div');
             div.textContent = text;
             return div.innerHTML;
+        }
+
+        function formatText(text) {
+            return escapeHtml(text).replace(/\n/g, '<br>');
         }
 
         function showToast(message, type = 'success') {

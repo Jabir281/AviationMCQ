@@ -582,7 +582,7 @@ function displayQuestion() {
     // Update question
     document.getElementById('question-number').textContent = 
         `Question ${current}`;
-    document.getElementById('question-text').textContent = question.question;
+    document.getElementById('question-text').innerHTML = formatText(question.question);
     
     // Check if this is an IC-033-099 figure question (FPL fuel calculations)
     const figureContainer = document.getElementById('figure-container');
@@ -623,7 +623,7 @@ function displayQuestion() {
         optionEl.onclick = () => selectOption(index);
         optionEl.innerHTML = `
             <span class="option-marker">${markers[index]}</span>
-            <span class="option-text">${option}</span>
+            <span class="option-text">${formatText(option)}</span>
         `;
         container.appendChild(optionEl);
     });
@@ -1081,7 +1081,7 @@ function displayReview() {
                 prefix = '✗ ' + markers[i] + '. ';
             }
             
-            return `<div class="review-option ${optClass}">${prefix}${opt}</div>`;
+            return `<div class="review-option ${optClass}">${prefix}${formatText(opt)}</div>`;
         }).join('');
         
         item.innerHTML = `
@@ -1089,7 +1089,7 @@ function displayReview() {
                 <span class="review-question-num">Question ${index + 1}</span>
                 <span class="review-status ${statusClass}">${status}</span>
             </div>
-            <div class="review-question-text">${question.question}</div>
+            <div class="review-question-text">${formatText(question.question)}</div>
             <div class="review-options">${optionsHtml}</div>
         `;
         
@@ -1100,6 +1100,16 @@ function displayReview() {
 // ============================================
 // Utility Functions
 // ============================================
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+function formatText(text) {
+    return escapeHtml(text).replace(/\n/g, '<br>');
+}
+
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
