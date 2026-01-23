@@ -6,7 +6,7 @@
     <title>Edit Questions - Admin</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/admin.css?v=20260124">
+    <link rel="stylesheet" href="css/admin.css?v=20260124_2">
 </head>
 <body>
     <header class="admin-header">
@@ -20,7 +20,10 @@
     </header>
 
     <div class="page-layout">
-        <aside class="sidebar">
+        <button class="sidebar-toggle" id="sidebar-toggle" onclick="toggleSidebar()" title="Toggle Sidebar">
+            <span class="toggle-arrow">◀</span>
+        </button>
+        <aside class="sidebar" id="sidebar">
             <div class="sidebar-section collapsible">
                 <h3 class="section-toggle" onclick="toggleSection(this)">Select Subject <span class="toggle-icon">▼</span></h3>
                 <div class="section-content">
@@ -158,6 +161,17 @@
     <div id="toast" class="toast"></div>
 
     <script>
+        // Toggle entire sidebar slide in/out
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const toggle = document.getElementById('sidebar-toggle');
+            const pageLayout = document.querySelector('.page-layout');
+            
+            sidebar.classList.toggle('collapsed');
+            toggle.classList.toggle('collapsed');
+            pageLayout.classList.toggle('sidebar-collapsed');
+        }
+
         // Toggle sidebar section collapse/expand
         function toggleSection(headerEl) {
             const section = headerEl.closest('.sidebar-section');
