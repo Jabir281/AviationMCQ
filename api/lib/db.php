@@ -2,7 +2,7 @@
 
 require_once __DIR__ . '/response.php';
 
-function api_config(): array {
+function api_config_base(): array {
     $configPath = __DIR__ . '/../config.php';
     if (!file_exists($configPath)) {
         json_error('Server not configured (missing api/config.php).', 500);
@@ -15,11 +15,38 @@ function api_config(): array {
     return $cfg;
 }
 
+function api_config(): array {
+    static $fullConfig = null;
+    if ($fullConfig !== null) {
+        return $fullConfig;
+    }
+    
+    $cfg = api_config_base();
+    
+    // Override with database settings if available
+    try {
+        $pdo = db();
+        $stmt = $pdo->query("SELECT setting_key, setting_value FROM settings");
+        if ($stmt) {
+            foreach ($stmt->fetchAll() as $row) {
+                if ($row['setting_key'] === 'singleDevicePerUser') {
+                    $cfg['singleDevicePerUser'] = ($row['setting_value'] === '1');
+                }
+            }
+        }
+    } catch (Throwable $e) {
+        // Table might not exist yet or other error - use file config
+    }
+    
+    $fullConfig = $cfg;
+    return $fullConfig;
+}
+
 function db(): PDO {
     static $pdo = null;
     if ($pdo) return $pdo;
 
-    $cfg = api_config();
+    $cfg = api_config_base();
     $db = $cfg['db'];
 
     $host = $db['host'] ?? 'localhost';

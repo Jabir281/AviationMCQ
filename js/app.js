@@ -539,6 +539,10 @@ async function startExam(subjectCode) {
         randomized = randomized.slice(0, Math.min(state.questionLimit, randomized.length));
     }
 
+    // Shuffle options for each question so A/B/C/D positions change every new session.
+    // This is done once per session (not per render) to keep navigation stable.
+    randomized = randomized.map(shuffleQuestionOptions);
+
     state.questions = randomized;
     
     // Reset state
@@ -976,6 +980,7 @@ async function persistAttemptToApi(mode, computed) {
         payload: {
             questionIds: state.questions.map(q => q.id),
             userAnswers: state.userAnswers,
+            optionOrder: state.questions.map(q => q?._optionOrder ?? null),
         }
     };
 
@@ -1116,6 +1121,32 @@ function shuffleArray(array) {
         [array[i], array[j]] = [array[j], array[i]];
     }
     return array;
+}
+
+function shuffleQuestionOptions(question) {
+    if (!question || !Array.isArray(question.options) || question.options.length < 2) {
+        return question;
+    }
+
+    const optionOrder = question.options.map((_, i) => i);
+    shuffleArray(optionOrder);
+
+    const shuffledOptions = optionOrder.map(i => question.options[i]);
+
+    // Remap correct index (stored against the original option array)
+    const correctRaw = question.correct;
+    let newCorrect = correctRaw;
+    if (correctRaw !== null && correctRaw !== undefined && correctRaw !== '') {
+        const originalCorrectIndex = Number(correctRaw);
+        const mapped = optionOrder.indexOf(originalCorrectIndex);
+        newCorrect = mapped >= 0 ? mapped : null;
+    }
+
+    const out = { ...question, options: shuffledOptions, _optionOrder: optionOrder };
+    if (question.correct !== undefined) {
+        out.correct = newCorrect;
+    }
+    return out;
 }
 
 // ============================================

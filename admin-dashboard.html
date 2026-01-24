@@ -27,6 +27,21 @@
             <h2>Welcome to Admin Panel</h2>
             <p class="dashboard-subtitle">Choose what you want to do</p>
             
+            <!-- Settings Section -->
+            <div class="settings-section" style="margin-bottom: 2rem; padding: 1.5rem; background: #f8f9fa; border-radius: 12px; border: 1px solid #e0e0e0;">
+                <h3 style="margin: 0 0 1rem 0; font-size: 1.1rem; color: #333;">⚙️ System Settings</h3>
+                <div class="setting-row" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+                    <div>
+                        <strong style="color: #333;">Single Device per Password</strong>
+                        <p style="margin: 0.25rem 0 0 0; font-size: 0.9rem; color: #666;">When enabled, each password can only be used on one device at a time</p>
+                    </div>
+                    <label class="toggle-switch" style="position: relative; display: inline-block; width: 60px; height: 34px; flex-shrink: 0;">
+                        <input type="checkbox" id="singleDeviceToggle" onchange="toggleSingleDevice(this.checked)" style="opacity: 0; width: 0; height: 0;">
+                        <span class="toggle-slider" style="position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; transition: 0.3s; border-radius: 34px;"></span>
+                    </label>
+                </div>
+            </div>
+            
             <div class="dashboard-cards">
                 <a href="admin-questions.html" class="dashboard-card">
                     <span class="card-icon">📝</span>
@@ -59,6 +74,30 @@
         </div>
     </main>
 
+    <style>
+        .toggle-switch input:checked + .toggle-slider {
+            background-color: #4CAF50;
+        }
+        .toggle-slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: 0.3s;
+            border-radius: 50%;
+        }
+        .toggle-switch input:checked + .toggle-slider:before {
+            transform: translateX(26px);
+        }
+        .toggle-switch input:disabled + .toggle-slider {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    </style>
+
     <script>
         async function requireApiAdmin() {
             try {
@@ -72,6 +111,50 @@
         }
 
         requireApiAdmin();
+        loadSettings();
+
+        async function loadSettings() {
+            try {
+                const res = await fetch('api/admin/settings.php', { cache: 'no-store' });
+                const data = await res.json();
+                if (data.ok && data.settings) {
+                    const toggle = document.getElementById('singleDeviceToggle');
+                    toggle.checked = data.settings.singleDevicePerUser === '1';
+                }
+            } catch (e) {
+                console.error('Failed to load settings:', e);
+            }
+        }
+
+        async function toggleSingleDevice(enabled) {
+            const toggle = document.getElementById('singleDeviceToggle');
+            toggle.disabled = true;
+            
+            try {
+                const res = await fetch('api/admin/settings.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        key: 'singleDevicePerUser',
+                        value: enabled ? '1' : '0'
+                    })
+                });
+                const data = await res.json();
+                if (!data.ok) {
+                    throw new Error('Failed to update setting');
+                }
+                // Show brief feedback
+                const label = toggle.closest('.setting-row').querySelector('strong');
+                const originalText = label.textContent;
+                label.textContent = enabled ? '✓ Enabled' : '✓ Disabled';
+                setTimeout(() => { label.textContent = originalText; }, 1500);
+            } catch (e) {
+                alert('Failed to update setting. Please try again.');
+                toggle.checked = !enabled; // Revert
+            } finally {
+                toggle.disabled = false;
+            }
+        }
 
         async function logout() {
             try {
