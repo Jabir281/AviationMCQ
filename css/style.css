@@ -3,6 +3,7 @@
    ============================================ */
 
 :root {
+    --nav-height: 60px;
     --primary: #0ea5e9;
     --primary-dark: #0284c7;
     --primary-light: #38bdf8;
@@ -47,6 +48,8 @@ body {
 #app {
     position: relative;
     min-height: 100vh;
+    /* Offset fixed top navbar so it never overlaps page content */
+    padding-top: var(--nav-height);
 }
 
 .page {
@@ -83,7 +86,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 60px;
+    height: var(--nav-height);
     z-index: 1000;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -166,7 +169,7 @@ body {
 
 .nav-menu {
     position: absolute;
-    top: 60px;
+    top: var(--nav-height);
     right: 0;
     background: rgba(15, 23, 42, 0.98);
     backdrop-filter: blur(10px);
@@ -247,7 +250,8 @@ body {
     justify-content: center;
     text-align: center;
     padding: 2rem;
-    padding-top: 80px;
+    /* #app already adds nav-height padding; keep a little extra spacing */
+    padding-top: calc(var(--nav-height) + 20px);
     position: relative;
 }
 
