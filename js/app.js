@@ -409,16 +409,10 @@ function startMockTest() {
         return;
     }
 
-    const hEl = document.getElementById('mock-hours');
-    const mEl = document.getElementById('mock-minutes');
-    const sEl = document.getElementById('mock-seconds');
+    const timeEl = document.getElementById('mock-time');
     const countEl = document.getElementById('mock-count');
 
-    normalizeMockTimeInputs();
-    const hours = parseTwoDigitField(hEl?.value, 99);
-    const minutes = parseTwoDigitField(mEl?.value, 59);
-    const seconds = parseTwoDigitField(sEl?.value, 59);
-    const totalTimeSec = Math.max(0, (hours * 3600) + (minutes * 60) + seconds);
+    const totalTimeSec = Math.max(0, Math.floor(Number(timeEl?.value || 0)));
     const questionCount = Math.max(1, Number(countEl?.value || 1));
 
     if (!(totalTimeSec > 0)) {
@@ -436,34 +430,6 @@ function startMockTest() {
     });
 }
 
-function pad2(n) {
-    return String(Math.max(0, Math.floor(Number(n) || 0))).padStart(2, '0');
-}
-
-function parseTwoDigitField(rawValue, max) {
-    const digits = String(rawValue ?? '').replace(/\D/g, '');
-    if (!digits) return 0;
-    const n = Number(digits);
-    if (!Number.isFinite(n) || n < 0) return 0;
-    return Math.min(max, Math.floor(n));
-}
-
-function normalizeMockTimeInputs() {
-    const hEl = document.getElementById('mock-hours');
-    const mEl = document.getElementById('mock-minutes');
-    const sEl = document.getElementById('mock-seconds');
-    if (!hEl || !mEl || !sEl) return;
-
-    // If user clears a box, treat it as 00.
-    const hours = parseTwoDigitField(hEl.value, 99);
-    const minutes = parseTwoDigitField(mEl.value, 59);
-    const seconds = parseTwoDigitField(sEl.value, 59);
-
-    hEl.value = pad2(hours);
-    mEl.value = pad2(minutes);
-    sEl.value = pad2(seconds);
-}
-
 function showMockTimeError(message) {
     const el = document.getElementById('mock-time-error');
     if (!el) return;
@@ -479,15 +445,10 @@ function showMockTimeError(message) {
 
 function updateMockStartEnabled() {
     const btn = document.getElementById('start-mock-btn');
-    const hEl = document.getElementById('mock-hours');
-    const mEl = document.getElementById('mock-minutes');
-    const sEl = document.getElementById('mock-seconds');
-    if (!btn || !hEl || !mEl || !sEl) return;
+    const timeEl = document.getElementById('mock-time');
+    if (!btn || !timeEl) return;
 
-    const hours = parseTwoDigitField(hEl.value, 99);
-    const minutes = parseTwoDigitField(mEl.value, 59);
-    const seconds = parseTwoDigitField(sEl.value, 59);
-    const total = (hours * 3600) + (minutes * 60) + seconds;
+    const total = Math.max(0, Math.floor(Number(timeEl.value || 0)));
 
     btn.disabled = !(total > 0);
     if (total > 0) showMockTimeError('');
@@ -1374,25 +1335,12 @@ document.addEventListener('DOMContentLoaded', () => {
     refreshRetryWrongNav();
 
     // Mock exam timer inputs: enforce non-zero duration.
-    const hEl = document.getElementById('mock-hours');
-    const mEl = document.getElementById('mock-minutes');
-    const sEl = document.getElementById('mock-seconds');
-    [hEl, mEl, sEl].forEach(el => {
-        if (!el) return;
-        el.addEventListener('input', () => {
-            // Allow partial typing; just update button state.
-            updateMockStartEnabled();
-        });
-        el.addEventListener('change', () => {
-            // When user leaves the field, normalize empty/invalid to 00.
-            normalizeMockTimeInputs();
-            updateMockStartEnabled();
-        });
-        el.addEventListener('blur', () => {
-            normalizeMockTimeInputs();
-            updateMockStartEnabled();
-        });
-    });
+    const timeEl = document.getElementById('mock-time');
+    if (timeEl) {
+        timeEl.addEventListener('input', () => updateMockStartEnabled());
+        timeEl.addEventListener('change', () => updateMockStartEnabled());
+        timeEl.addEventListener('blur', () => updateMockStartEnabled());
+    }
     updateMockStartEnabled();
 });
 

@@ -114,18 +114,11 @@
                             <label class="field">
                                 <span>Total exam time</span>
                                 <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
-                                    <label style="display:flex; flex-direction:column; gap:6px; min-width: 110px;">
-                                        <span style="font-size: 0.85em; opacity: 0.9;">Hours</span>
-                                        <input id="mock-hours" type="text" inputmode="numeric" placeholder="00" value="00" maxlength="2" />
-                                    </label>
-                                    <label style="display:flex; flex-direction:column; gap:6px; min-width: 110px;">
-                                        <span style="font-size: 0.85em; opacity: 0.9;">Minutes</span>
-                                        <input id="mock-minutes" type="text" inputmode="numeric" placeholder="00" value="20" maxlength="2" />
-                                    </label>
-                                    <label style="display:flex; flex-direction:column; gap:6px; min-width: 110px;">
+                                    <label style="display:flex; flex-direction:column; gap:6px; min-width: 220px;">
                                         <span style="font-size: 0.85em; opacity: 0.9;">Seconds</span>
-                                        <input id="mock-seconds" type="text" inputmode="numeric" placeholder="00" value="00" maxlength="2" />
+                                        <input id="mock-time" type="number" min="1" step="1" placeholder="e.g. 1200" />
                                     </label>
+                                    <div style="align-self: end; opacity: 0.85; font-size: 0.85em; padding-bottom: 6px;">(will display as HH:MM:SS during exam)</div>
                                 </div>
                                 <p id="mock-time-error" style="margin: 8px 0 0; color: #ff6b6b; display:none;"></p>
                             </label>
