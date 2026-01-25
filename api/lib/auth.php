@@ -11,15 +11,36 @@ const ADMIN_FEATURES = [
     'settings',
 ];
 
-function ensure_session(): void {
-    if (session_status() === PHP_SESSION_NONE) {
-        // Cookies must be sent before output.
-        session_start();
-    }
+function session_cookie_params(): array {
+    $isHttps = !empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off';
+    return [
+        'lifetime' => 0,
+        'path' => '/',
+        'domain' => '',
+        'secure' => $isHttps,
+        'httponly' => true,
+        'samesite' => 'Lax',
+    ];
+}
+
+function ensure_admin_session(): void {
+    if (session_status() !== PHP_SESSION_NONE) return;
+    // Cookies must be sent before output.
+    session_name('MCQ_ADMIN_SESS');
+    session_set_cookie_params(session_cookie_params());
+    session_start();
+}
+
+function ensure_user_session(): void {
+    if (session_status() !== PHP_SESSION_NONE) return;
+    // Cookies must be sent before output.
+    session_name('MCQ_USER_SESS');
+    session_set_cookie_params(session_cookie_params());
+    session_start();
 }
 
 function require_admin(): array {
-    ensure_session();
+    ensure_admin_session();
     if (!isset($_SESSION['admin_id'])) {
         json_error('Unauthorized', 401);
     }
@@ -149,7 +170,7 @@ function require_super_admin(): array {
 }
 
 function require_user(): array {
-    ensure_session();
+    ensure_user_session();
     if (!isset($_SESSION['user_id'])) {
         json_error('Unauthorized', 401);
     }
@@ -196,17 +217,17 @@ function require_user(): array {
 }
 
 function login_user(int $userId): void {
-    ensure_session();
+    ensure_user_session();
     $_SESSION['user_id'] = $userId;
 }
 
 function logout_user(): void {
-    ensure_session();
+    ensure_user_session();
     unset($_SESSION['user_id']);
 }
 
 function logout_admin(): void {
-    ensure_session();
+    ensure_admin_session();
     unset($_SESSION['admin_id']);
     unset($_SESSION['admin_username']);
 }

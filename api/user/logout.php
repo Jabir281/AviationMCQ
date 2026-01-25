@@ -6,9 +6,7 @@ require_once __DIR__ . '/../lib/db.php';
 
 // If single-device is enabled, clear active_session_id on logout.
 try {
-	if (session_status() === PHP_SESSION_NONE) {
-		session_start();
-	}
+	ensure_user_session();
 	$uid = isset($_SESSION['user_id']) ? (int)$_SESSION['user_id'] : 0;
 	$cfg = api_config();
 	if ($uid > 0 && (($cfg['singleDevicePerUser'] ?? false) === true)) {

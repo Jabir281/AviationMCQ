@@ -35,9 +35,7 @@ if ($foundId === null) {
 }
 
 // Prevent session fixation and support single-device enforcement.
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
+ensure_user_session();
 @session_regenerate_id(true);
 
 $sid = session_id();

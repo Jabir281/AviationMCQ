@@ -2,6 +2,7 @@
 
 require_once __DIR__ . '/../lib/db.php';
 require_once __DIR__ . '/../lib/response.php';
+require_once __DIR__ . '/../lib/auth.php';
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     json_error('Method not allowed', 405);
@@ -22,7 +23,7 @@ $admins = $stmt->fetchAll();
 
 foreach ($admins as $a) {
     if (password_verify($password, $a['password_hash'])) {
-        if (session_status() === PHP_SESSION_NONE) session_start();
+        ensure_admin_session();
         $_SESSION['admin_id'] = (int)$a['id'];
         $_SESSION['admin_username'] = $a['username'];
         json_response(['ok' => true, 'username' => $a['username']]);
