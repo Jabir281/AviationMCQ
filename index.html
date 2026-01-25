@@ -112,14 +112,28 @@
 
                         <div class="mode-form">
                             <label class="field">
-                                <span>Total exam time (HH:MM:SS)</span>
-                                <input id="mock-time" type="text" inputmode="numeric" placeholder="00:20:00" value="00:20:00" />
+                                <span>Total exam time</span>
+                                <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
+                                    <label style="display:flex; flex-direction:column; gap:6px; min-width: 110px;">
+                                        <span style="font-size: 0.85em; opacity: 0.9;">Hours</span>
+                                        <input id="mock-hours" type="number" min="0" step="1" value="0" />
+                                    </label>
+                                    <label style="display:flex; flex-direction:column; gap:6px; min-width: 110px;">
+                                        <span style="font-size: 0.85em; opacity: 0.9;">Minutes</span>
+                                        <input id="mock-minutes" type="number" min="0" max="59" step="1" value="20" />
+                                    </label>
+                                    <label style="display:flex; flex-direction:column; gap:6px; min-width: 110px;">
+                                        <span style="font-size: 0.85em; opacity: 0.9;">Seconds</span>
+                                        <input id="mock-seconds" type="number" min="0" max="59" step="1" value="0" />
+                                    </label>
+                                </div>
+                                <p id="mock-time-error" style="margin: 8px 0 0; color: #ff6b6b; display:none;"></p>
                             </label>
                             <label class="field">
                                 <span>Number of questions</span>
                                 <input id="mock-count" type="number" min="1" step="1" value="20" />
                             </label>
-                            <button class="btn btn-primary" onclick="startMockTest()">Start Mock Test</button>
+                            <button class="btn btn-primary" id="start-mock-btn" onclick="startMockTest()">Start Mock Test</button>
                         </div>
                     </div>
 

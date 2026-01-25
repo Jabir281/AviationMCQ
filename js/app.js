@@ -409,17 +409,66 @@ function startMockTest() {
         return;
     }
 
-    const timeEl = document.getElementById('mock-time');
+    const hEl = document.getElementById('mock-hours');
+    const mEl = document.getElementById('mock-minutes');
+    const sEl = document.getElementById('mock-seconds');
     const countEl = document.getElementById('mock-count');
 
-    const totalTimeSec = parseDurationToSeconds(String(timeEl?.value || ''));
+    const hours = clampInt(hEl?.value, 0, 999);
+    const minutes = clampInt(mEl?.value, 0, 59);
+    const seconds = clampInt(sEl?.value, 0, 59);
+    const totalTimeSec = Math.max(0, (hours * 3600) + (minutes * 60) + seconds);
     const questionCount = Math.max(1, Number(countEl?.value || 1));
+
+    if (!(totalTimeSec > 0)) {
+        showMockTimeError('Please set a timer before starting the mock exam.');
+        updateMockStartEnabled();
+        return;
+    }
+
+    showMockTimeError('');
 
     startExam(state.pendingSubject, {
         mode: 'mock',
         totalTimeSec,
         questionCount
     });
+}
+
+function clampInt(value, min, max) {
+    const n = Number(String(value ?? '').trim());
+    if (!Number.isFinite(n)) return min;
+    const i = Math.floor(n);
+    return Math.min(max, Math.max(min, i));
+}
+
+function showMockTimeError(message) {
+    const el = document.getElementById('mock-time-error');
+    if (!el) return;
+    const msg = String(message || '').trim();
+    if (!msg) {
+        el.style.display = 'none';
+        el.textContent = '';
+        return;
+    }
+    el.textContent = msg;
+    el.style.display = 'block';
+}
+
+function updateMockStartEnabled() {
+    const btn = document.getElementById('start-mock-btn');
+    const hEl = document.getElementById('mock-hours');
+    const mEl = document.getElementById('mock-minutes');
+    const sEl = document.getElementById('mock-seconds');
+    if (!btn || !hEl || !mEl || !sEl) return;
+
+    const hours = clampInt(hEl.value, 0, 999);
+    const minutes = clampInt(mEl.value, 0, 59);
+    const seconds = clampInt(sEl.value, 0, 59);
+    const total = (hours * 3600) + (minutes * 60) + seconds;
+
+    btn.disabled = !(total > 0);
+    if (total > 0) showMockTimeError('');
 }
 
 function startPractice(allQuestions) {
@@ -1301,5 +1350,16 @@ document.addEventListener('DOMContentLoaded', () => {
     showPage('home-page');
     refreshUserNav();
     refreshRetryWrongNav();
+
+    // Mock exam timer inputs: enforce non-zero duration.
+    const hEl = document.getElementById('mock-hours');
+    const mEl = document.getElementById('mock-minutes');
+    const sEl = document.getElementById('mock-seconds');
+    [hEl, mEl, sEl].forEach(el => {
+        if (!el) return;
+        el.addEventListener('input', () => updateMockStartEnabled());
+        el.addEventListener('change', () => updateMockStartEnabled());
+    });
+    updateMockStartEnabled();
 });
 
