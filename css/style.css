@@ -739,12 +739,17 @@ body {
 .quiz-navigation {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 1.5rem;
     gap: 1rem;
 }
 
 .quiz-navigation.mock-mode {
-    justify-content: flex-end;
+    justify-content: space-between;
+}
+
+.quiz-navigation .btn {
+    flex: 1 1 180px;
 }
 
 /* ============================================

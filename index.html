@@ -154,7 +154,6 @@
         <div id="quiz-page" class="page">
             <div class="quiz-container">
                 <div class="quiz-header">
-                    <button class="btn-back" id="end-session-btn" onclick="confirmEndExam()">← End Exam</button>
                     <div class="quiz-info">
                         <span id="current-subject"></span>
                         <span class="separator">|</span>
@@ -177,6 +176,9 @@
                 </div>
 
                 <div class="quiz-navigation">
+                    <button class="btn btn-danger" id="end-session-btn" onclick="confirmEndExam()">
+                        End Exam
+                    </button>
                     <button class="btn btn-secondary" id="prev-btn" onclick="prevQuestion()">
                         ← Previous
                     </button>
