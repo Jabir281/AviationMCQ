@@ -700,6 +700,7 @@ function displayQuestion() {
         // Mock mode now supports Previous because timer is exam-wide.
         prevBtn.style.display = '';
         prevBtn.style.visibility = current === 1 ? 'hidden' : 'visible';
+        prevBtn.onclick = () => prevQuestion();
     }
     
     const nextBtn = document.getElementById('next-btn');

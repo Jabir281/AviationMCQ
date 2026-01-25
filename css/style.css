@@ -1053,22 +1053,26 @@ body {
 /* ============================================
    Responsive Design
    ============================================ */
-@media (max-width: 768px) {
+
+/* Tablet (iPad) styles */
+@media (max-width: 1024px) {
+    .container {
+        padding: 1.5rem;
+    }
+    
     .hero-content {
-        padding: 2rem;
-    }
-    
-    .hero h1 {
-        font-size: 2rem;
-    }
-    
-    .stats {
-        flex-direction: column;
-        gap: 1rem;
+        padding: 2.5rem 3rem;
+        max-width: 90%;
     }
     
     .subject-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 1rem;
+    }
+    
+    .mode-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
     
     .quiz-container {
@@ -1079,31 +1083,305 @@ body {
         padding: 1.5rem;
     }
     
-    .question-text {
-        font-size: 1.1rem;
-    }
-    
     .results-card {
-        padding: 2rem;
-    }
-    
-    .results-stats {
-        flex-direction: column;
-        gap: 1rem;
-    }
-    
-    .modal-actions {
-        flex-direction: column;
+        padding: 2.5rem;
+        max-width: 90%;
     }
 }
 
-@media (max-width: 480px) {
+/* Mobile styles */
+@media (max-width: 768px) {
+    :root {
+        --nav-height: 56px;
+    }
+    
+    .navbar {
+        padding: 0 15px;
+    }
+    
+    .nav-title {
+        font-size: 1rem;
+    }
+    
+    .hero {
+        padding: 1rem;
+        padding-top: calc(var(--nav-height) + 10px);
+    }
+    
+    .hero-content {
+        padding: 1.5rem;
+        max-width: 100%;
+    }
+    
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    .stats {
+        flex-direction: column;
+        gap: 0.75rem;
+        padding: 0.75rem;
+    }
+    
+    .btn {
+        padding: 0.75rem 1.25rem;
+        font-size: 0.95rem;
+    }
+    
+    .btn-large {
+        padding: 0.875rem 2rem;
+        font-size: 1rem;
+    }
+    
+    /* Subject grid */
+    .subject-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+    
+    .subject-card {
+        padding: 1.25rem;
+    }
+    
+    .subject-icon {
+        font-size: 2rem;
+    }
+    
+    .subject-name {
+        font-size: 1.1rem;
+    }
+    
+    /* Quiz page */
+    .quiz-container {
+        padding: 0.75rem;
+    }
+    
+    .quiz-header {
+        padding: 0.75rem 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .quiz-info {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        font-size: 0.85rem;
+    }
+    
+    .timer-badge {
+        font-size: 0.8rem;
+        padding: 0.2rem 0.4rem;
+    }
+    
+    .question-card {
+        padding: 1.25rem;
+        border-radius: var(--radius);
+    }
+    
+    .question-number {
+        font-size: 0.8rem;
+    }
+    
+    .question-text {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+    }
+    
+    .option {
+        padding: 0.875rem 1rem;
+        gap: 0.5rem;
+    }
+    
+    .option-marker {
+        width: 24px;
+        height: 24px;
+        font-size: 0.8rem;
+    }
+    
+    .option-text {
+        font-size: 0.95rem;
+    }
+    
+    /* Quiz navigation - stack on mobile */
     .quiz-navigation {
         flex-direction: column;
+        gap: 0.75rem;
+        margin-top: 1rem;
     }
     
     .quiz-navigation .btn {
         width: 100%;
+        flex: none;
+        padding: 0.875rem 1rem;
+    }
+    
+    /* Make End Exam less prominent on mobile */
+    .quiz-navigation #end-session-btn {
+        order: 3;
+        background: transparent;
+        color: var(--danger);
+        border: 1px solid var(--danger);
+    }
+    
+    .quiz-navigation #prev-btn {
+        order: 1;
+    }
+    
+    .quiz-navigation #next-btn {
+        order: 2;
+    }
+    
+    /* Results page */
+    .results-card {
+        padding: 1.5rem;
+        margin: 0.5rem;
+    }
+    
+    .results-icon {
+        font-size: 3rem;
+    }
+    
+    .results-card h2 {
+        font-size: 1.5rem;
+    }
+    
+    .score-circle {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .score-value {
+        font-size: 2.5rem;
+    }
+    
+    .score-label {
+        font-size: 1rem;
+    }
+    
+    .results-stats {
+        flex-direction: column;
+        gap: 0.75rem;
+        padding: 1rem;
+    }
+    
+    .stat-item .stat-value {
+        font-size: 1.25rem;
+    }
+    
+    /* Modal */
+    .modal {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+    
+    .modal-actions {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    
+    .modal-actions .btn {
+        width: 100%;
+    }
+    
+    /* Mode cards */
+    .mode-card {
+        padding: 1.25rem;
+    }
+    
+    .mode-icon {
+        font-size: 1.75rem;
+    }
+    
+    .mode-form {
+        gap: 0.5rem;
+    }
+    
+    .field input {
+        padding: 0.65rem 0.75rem;
+        font-size: 0.95rem;
+    }
+    
+    .mode-actions {
+        flex-direction: column;
+    }
+    
+    .mode-actions .btn {
+        width: 100%;
+    }
+    
+    /* Review page */
+    .review-item {
+        padding: 1rem;
+    }
+    
+    .review-question-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .review-option {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.9rem;
+    }
+    
+    /* History page */
+    .history-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+        padding: 1rem;
+    }
+    
+    .history-score {
+        text-align: left;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* Small mobile styles */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    
+    .question-text {
+        font-size: 0.95rem;
+    }
+    
+    .option {
+        padding: 0.75rem;
+    }
+    
+    .option-marker {
+        width: 22px;
+        height: 22px;
+        font-size: 0.75rem;
+    }
+    
+    .option-text {
+        font-size: 0.9rem;
+    }
+    
+    .score-circle {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .score-value {
+        font-size: 2rem;
+    }
+    
+    .nav-menu {
+        min-width: 100%;
+        border-radius: 0;
     }
 }
 
