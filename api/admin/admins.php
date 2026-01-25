@@ -11,12 +11,22 @@ $limit = isset($_GET['limit']) ? (int)$_GET['limit'] : 200;
 if ($limit <= 0) $limit = 200;
 if ($limit > 500) $limit = 500;
 
-$stmt = $pdo->query(
-    'SELECT id, username, created_at, permissions_json
-     FROM admin_users
-     ORDER BY created_at DESC
-     LIMIT ' . (int)$limit
-);
+// Try with permissions_json; fall back if column doesn't exist yet.
+try {
+    $stmt = $pdo->query(
+        'SELECT id, username, created_at, permissions_json
+         FROM admin_users
+         ORDER BY created_at DESC
+         LIMIT ' . (int)$limit
+    );
+} catch (Throwable $e) {
+    $stmt = $pdo->query(
+        'SELECT id, username, created_at
+         FROM admin_users
+         ORDER BY created_at DESC
+         LIMIT ' . (int)$limit
+    );
+}
 
 $rows = $stmt->fetchAll();
 $admins = array_map(function ($r) {
