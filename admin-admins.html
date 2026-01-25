@@ -62,14 +62,14 @@
 
     <!-- Edit Access Modal (super admins only) -->
     <div id="perm-modal" style="position: fixed; inset: 0; background: rgba(0,0,0,0.55); display:none; align-items: center; justify-content: center; padding: 18px; z-index: 9999;">
-        <div style="width: 100%; max-width: 560px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px; padding: 16px;">
+        <div style="width: 100%; max-width: 560px; background: #1a2744; border: 1px solid #2a3a5a; border-radius: 16px; padding: 16px; color: #fff;">
             <div style="display:flex; align-items:center; justify-content: space-between; gap: 12px;">
-                <h3 style="margin: 0;">Edit admin access</h3>
+                <h3 style="margin: 0; color: #fff;">Edit admin access</h3>
                 <button class="btn btn-outline" onclick="closePermModal()">Close</button>
             </div>
-            <div class="form-hint" style="margin-top: 6px;">Admin: <strong id="perm-username"></strong></div>
+            <div style="margin-top: 6px; color: #ccc;">Admin: <strong id="perm-username" style="color: #fff;"></strong></div>
 
-            <div style="margin-top: 12px; display:flex; gap: 10px; flex-wrap: wrap;">
+            <div style="margin-top: 12px; display:flex; gap: 10px; flex-wrap: wrap; color: #fff;">
                 <label style="display:flex; gap:8px; align-items:center;"><input type="checkbox" class="perm-check" value="questions"> Questions</label>
                 <label style="display:flex; gap:8px; align-items:center;"><input type="checkbox" class="perm-check" value="subjects"> Subjects</label>
                 <label style="display:flex; gap:8px; align-items:center;"><input type="checkbox" class="perm-check" value="users"> Users</label>
