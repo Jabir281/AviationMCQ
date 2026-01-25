@@ -763,9 +763,6 @@ function nextQuestion() {
 }
 
 function prevQuestion() {
-    if (state.mode === 'mock') {
-        return;
-    }
     if (state.currentQuestionIndex > 0) {
         state.currentQuestionIndex--;
         displayQuestion();
