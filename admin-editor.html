@@ -182,10 +182,17 @@
 
         async function requireApiAdmin() {
             try {
-                const res = await fetch('api/admin/me.php', { cache: 'no-store' });
+                const res = await fetch('api/admin/me.php', { cache: 'no-store', credentials: 'include' });
                 if (!res.ok) throw new Error('Unauthorized');
                 const data = await res.json();
-                if (!data || data.ok !== true) throw new Error('Unauthorized');
+                if (!data || data.ok !== true || !data.admin) throw new Error('Unauthorized');
+                const admin = data.admin;
+                const feats = Array.isArray(admin.features) ? admin.features : [];
+                const allowed = admin.isSuper === true || feats.includes('questions');
+                if (!allowed) {
+                    window.location.href = 'admin-dashboard.html';
+                    return;
+                }
             } catch (_) {
                 window.location.href = 'admin.html';
             }

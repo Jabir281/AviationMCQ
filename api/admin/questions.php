@@ -3,7 +3,7 @@
 require_once __DIR__ . '/../lib/auth.php';
 require_once __DIR__ . '/../lib/response.php';
 
-require_admin();
+require_admin_feature('questions');
 
 $subject = isset($_GET['subject']) ? strtoupper(trim((string)$_GET['subject'])) : '';
 if ($subject === '') {

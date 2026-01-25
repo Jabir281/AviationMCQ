@@ -21,6 +21,10 @@ return [
         ['username' => 'admin2', 'password' => 'CHANGE_ME_ADMIN_PASSWORD_2'],
     ],
 
+    // Only these admins can manage admin permissions and create new admins with restricted access.
+    // Set to the two "master" admins (case-insensitive).
+    'superAdmins' => ['Jabir', 'Ahmed'],
+
     // If true, the quiz API requires users to log in using a password (access code)
     // created by an admin. Recommended for Hostinger production.
     'requireUserAuth' => false,

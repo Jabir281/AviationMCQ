@@ -34,6 +34,13 @@ try {
     // ignore (likely column already exists)
 }
 
+// Add permissions_json for existing installs
+try {
+    $pdo->exec('ALTER TABLE admin_users ADD COLUMN permissions_json TEXT NULL');
+} catch (Throwable $e) {
+    // ignore (likely column already exists)
+}
+
 try {
     $pdo->exec("ALTER TABLE subjects ADD COLUMN section VARCHAR(10) NOT NULL DEFAULT 'seen'");
 } catch (Throwable $e) {

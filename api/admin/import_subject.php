@@ -3,7 +3,7 @@
 require_once __DIR__ . '/../lib/auth.php';
 require_once __DIR__ . '/../lib/response.php';
 
-require_admin();
+require_admin_feature('subjects');
 $cfg = api_config();
 $files = $cfg['importFiles'] ?? [];
 

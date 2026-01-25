@@ -36,6 +36,18 @@
                     <input class="form-input" id="admin-password" placeholder="6–64 characters" maxlength="64" />
                 </div>
 
+                <div class="form-group" id="features-box" style="display:none;">
+                    <label class="form-label">New admin access</label>
+                    <div class="form-hint">Only super admins can decide what features a new admin can access.</div>
+                    <div style="display:flex; gap: 10px; flex-wrap: wrap; margin-top: 10px;">
+                        <label style="display:flex; gap:8px; align-items:center;"><input type="checkbox" class="feature-check" value="questions" checked> Questions</label>
+                        <label style="display:flex; gap:8px; align-items:center;"><input type="checkbox" class="feature-check" value="subjects" checked> Subjects</label>
+                        <label style="display:flex; gap:8px; align-items:center;"><input type="checkbox" class="feature-check" value="users" checked> Users</label>
+                        <label style="display:flex; gap:8px; align-items:center;"><input type="checkbox" class="feature-check" value="admins" checked> Admins</label>
+                        <label style="display:flex; gap:8px; align-items:center;"><input type="checkbox" class="feature-check" value="settings" checked> Settings</label>
+                    </div>
+                </div>
+
                 <div style="display:flex; gap: 10px; flex-wrap: wrap; align-items: center;">
                     <button class="btn btn-primary" id="create-admin-btn" onclick="createAdmin()">Create Admin</button>
                     <button class="btn btn-outline" onclick="loadAdmins()">Refresh List</button>
@@ -48,13 +60,46 @@
         </div>
     </main>
 
+    <!-- Edit Access Modal (super admins only) -->
+    <div id="perm-modal" style="position: fixed; inset: 0; background: rgba(0,0,0,0.55); display:none; align-items: center; justify-content: center; padding: 18px; z-index: 9999;">
+        <div style="width: 100%; max-width: 560px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px; padding: 16px;">
+            <div style="display:flex; align-items:center; justify-content: space-between; gap: 12px;">
+                <h3 style="margin: 0;">Edit admin access</h3>
+                <button class="btn btn-outline" onclick="closePermModal()">Close</button>
+            </div>
+            <div class="form-hint" style="margin-top: 6px;">Admin: <strong id="perm-username"></strong></div>
+
+            <div style="margin-top: 12px; display:flex; gap: 10px; flex-wrap: wrap;">
+                <label style="display:flex; gap:8px; align-items:center;"><input type="checkbox" class="perm-check" value="questions"> Questions</label>
+                <label style="display:flex; gap:8px; align-items:center;"><input type="checkbox" class="perm-check" value="subjects"> Subjects</label>
+                <label style="display:flex; gap:8px; align-items:center;"><input type="checkbox" class="perm-check" value="users"> Users</label>
+                <label style="display:flex; gap:8px; align-items:center;"><input type="checkbox" class="perm-check" value="admins"> Admins</label>
+                <label style="display:flex; gap:8px; align-items:center;"><input type="checkbox" class="perm-check" value="settings"> Settings</label>
+            </div>
+
+            <div style="display:flex; gap: 10px; flex-wrap: wrap; align-items:center; margin-top: 14px;">
+                <button class="btn btn-primary" id="perm-save-btn" onclick="savePerms()">Save Access</button>
+                <button class="btn btn-outline" onclick="selectAllPerms(true)">Select all</button>
+                <button class="btn btn-outline" onclick="selectAllPerms(false)">Select none</button>
+                <span id="perm-status" style="font-weight:600;"></span>
+            </div>
+        </div>
+    </div>
+
     <script>
         async function requireApiAdmin() {
             try {
                 const res = await fetch('api/admin/me.php', { cache: 'no-store', credentials: 'include' });
                 if (!res.ok) throw new Error('Unauthorized');
                 const data = await res.json();
-                if (!data || data.ok !== true) throw new Error('Unauthorized');
+                if (!data || data.ok !== true || !data.admin) throw new Error('Unauthorized');
+                const me = data.admin;
+                // Only super admins can manage admins.
+                if (me.isSuper !== true) {
+                    window.location.href = 'admin-dashboard.html';
+                    return;
+                }
+                document.getElementById('features-box').style.display = 'block';
             } catch (_) {
                 window.location.href = 'admin.html';
             }
@@ -81,6 +126,74 @@
             return Number(window.__meAdminId || 0);
         }
 
+        function setPermStatus(text, ok) {
+            const el = document.getElementById('perm-status');
+            el.textContent = text;
+            el.style.color = ok === true ? '#2ecc71' : (ok === false ? '#ff6b6b' : '');
+        }
+
+        function closePermModal() {
+            const modal = document.getElementById('perm-modal');
+            modal.style.display = 'none';
+            window.__permEditing = null;
+            setPermStatus('', null);
+        }
+
+        function selectAllPerms(flag) {
+            document.querySelectorAll('.perm-check').forEach(x => { x.checked = !!flag; });
+        }
+
+        function openPermModal(admin) {
+            if (!admin || admin.isSuper === true) {
+                setStatus('Cannot edit super admin access.', false);
+                return;
+            }
+            window.__permEditing = { id: Number(admin.id || 0), username: String(admin.username || ''), features: Array.isArray(admin.features) ? admin.features : [] };
+            document.getElementById('perm-username').textContent = window.__permEditing.username;
+
+            const current = new Set(window.__permEditing.features.map(x => String(x)));
+            document.querySelectorAll('.perm-check').forEach(x => {
+                x.checked = current.has(String(x.value));
+            });
+            setPermStatus('', null);
+            document.getElementById('perm-modal').style.display = 'flex';
+        }
+
+        async function savePerms() {
+            const editing = window.__permEditing;
+            if (!editing || !editing.id) return;
+
+            const btn = document.getElementById('perm-save-btn');
+            btn.disabled = true;
+            setPermStatus('Saving…', null);
+
+            const features = Array.from(document.querySelectorAll('.perm-check'))
+                .filter(x => x && x.checked)
+                .map(x => String(x.value));
+
+            try {
+                const res = await fetch('api/admin/update_admin_permissions.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ adminId: editing.id, features }),
+                    cache: 'no-store',
+                    credentials: 'include'
+                });
+                const data = await res.json().catch(() => null);
+                if (!res.ok || !data || data.ok !== true) {
+                    setPermStatus((data && data.error) ? data.error : 'Failed', false);
+                    return;
+                }
+                setPermStatus('Saved.', true);
+                await loadAdmins();
+                setTimeout(() => closePermModal(), 600);
+            } catch (_) {
+                setPermStatus('Failed', false);
+            } finally {
+                btn.disabled = false;
+            }
+        }
+
         async function fetchMe() {
             const res = await fetch('api/admin/me.php', { cache: 'no-store', credentials: 'include' });
             if (!res.ok) throw new Error('Unauthorized');
@@ -88,6 +201,13 @@
             if (!data || data.ok !== true || !data.admin) throw new Error('Unauthorized');
             window.__meAdminId = Number(data.admin.id || 0);
             return data.admin;
+        }
+
+        function formatFeatures(a) {
+            const feats = Array.isArray(a.features) ? a.features : [];
+            if (a.isSuper === true) return 'ALL (Super)';
+            if (feats.length === 0) return 'None';
+            return feats.join(', ');
         }
 
         async function loadAdmins() {
@@ -113,10 +233,12 @@
                     return `
                         <div style="display:flex; gap:10px; align-items:center; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border);">
                             <div>
-                                <div><strong>${escapeHtml(a.username)}</strong> ${isMe ? '<span style="opacity:0.85; font-size: 0.9rem;">(you)</span>' : ''}</div>
+                                <div><strong>${escapeHtml(a.username)}</strong> ${a.isSuper ? '<span style="opacity:0.85; font-size: 0.9rem;">(super)</span>' : ''} ${isMe ? '<span style="opacity:0.85; font-size: 0.9rem;">(you)</span>' : ''}</div>
                                 <div style="opacity:0.85; font-size: 0.95rem;">Created: ${escapeHtml(a.createdAt)}</div>
+                                <div style="opacity:0.85; font-size: 0.95rem;">Access: ${escapeHtml(formatFeatures(a))}</div>
                             </div>
                             <div style="display:flex; gap:8px; align-items:center;">
+                                ${a.isSuper ? '' : `<button class="btn btn-outline" onclick='openPermModal(${JSON.stringify({ id: Number(a.id), username: String(a.username || ''), isSuper: !!a.isSuper, features: Array.isArray(a.features) ? a.features : [] }).replace(/</g, '\\u003c')})'>🧩 Edit access</button>`}
                                 <button class="btn btn-outline" onclick="changeAdminPassword(${Number(a.id)})">🔑 Change password</button>
                                 <button class="btn btn-danger" ${isMe ? 'disabled title="You cannot revoke yourself"' : ''} onclick="revokeAdmin(${Number(a.id)}, '${escapeHtml(a.username)}')">🗑️ Revoke</button>
                             </div>
@@ -187,6 +309,10 @@
             const username = String(document.getElementById('admin-username')?.value || '').trim();
             const password = String(document.getElementById('admin-password')?.value || '').trim();
 
+            const features = Array.from(document.querySelectorAll('.feature-check'))
+                .filter(x => x && x.checked)
+                .map(x => String(x.value));
+
             if (!username || !password) {
                 setStatus('Enter username and password.', false);
                 return;
@@ -199,7 +325,7 @@
                 const res = await fetch('api/admin/create_admin.php', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ username, password }),
+                    body: JSON.stringify({ username, password, features }),
                     cache: 'no-store',
                     credentials: 'include'
                 });

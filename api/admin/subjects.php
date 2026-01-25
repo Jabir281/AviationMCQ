@@ -3,7 +3,10 @@
 require_once __DIR__ . '/../lib/auth.php';
 require_once __DIR__ . '/../lib/response.php';
 
-require_admin();
+$admin = require_admin();
+if (!admin_has_feature($admin, 'subjects') && !admin_has_feature($admin, 'questions')) {
+    json_error('Forbidden', 403);
+}
 
 $pdo = db();
 

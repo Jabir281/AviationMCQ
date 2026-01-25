@@ -28,7 +28,7 @@
             <p class="dashboard-subtitle">Choose what you want to do</p>
             
             <!-- Settings Section -->
-            <div class="settings-section" style="margin-bottom: 2rem; padding: 1.5rem; background: #f8f9fa; border-radius: 12px; border: 1px solid #e0e0e0;">
+            <div class="settings-section" data-feature="settings" style="margin-bottom: 2rem; padding: 1.5rem; background: #f8f9fa; border-radius: 12px; border: 1px solid #e0e0e0;">
                 <h3 style="margin: 0 0 1rem 0; font-size: 1.1rem; color: #333;">⚙️ System Settings</h3>
                 <div class="setting-row" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
                     <div>
@@ -43,28 +43,28 @@
             </div>
             
             <div class="dashboard-cards">
-                <a href="admin-questions.html" class="dashboard-card">
+                <a href="admin-questions.html" class="dashboard-card" data-feature="questions">
                     <span class="card-icon">📝</span>
                     <h3>Question Manager</h3>
                     <p>Edit questions, set correct answers, add or delete - all in one place</p>
                     <span class="card-arrow">→</span>
                 </a>
 
-                <a href="admin-subjects.html" class="dashboard-card">
+                <a href="admin-subjects.html" class="dashboard-card" data-feature="subjects">
                     <span class="card-icon">➕</span>
                     <h3>Upload New Subject</h3>
                     <p>Add a new subject by uploading a JSON question file</p>
                     <span class="card-arrow">→</span>
                 </a>
 
-                <a href="admin-users.html?v=20260122_3" class="dashboard-card">
+                <a href="admin-users.html?v=20260122_3" class="dashboard-card" data-feature="users">
                     <span class="card-icon">👤</span>
                     <h3>User Passwords</h3>
                     <p>Create user passwords and track last seen</p>
                     <span class="card-arrow">→</span>
                 </a>
 
-                <a href="admin-admins.html" class="dashboard-card">
+                <a href="admin-admins.html" class="dashboard-card" data-feature="admins">
                     <span class="card-icon">🛡️</span>
                     <h3>Manage Admins</h3>
                     <p>Add additional admins for the dashboard</p>
@@ -99,23 +99,49 @@
     </style>
 
     <script>
+        function hasFeature(admin, feature) {
+            if (!admin) return false;
+            if (admin.isSuper === true) return true;
+            const list = Array.isArray(admin.features) ? admin.features : [];
+            return list.includes(String(feature));
+        }
+
+        function applyFeatureGating(admin) {
+            const nodes = document.querySelectorAll('[data-feature]');
+            nodes.forEach(el => {
+                const f = el.getAttribute('data-feature');
+                if (!f) return;
+                if (!hasFeature(admin, f)) {
+                    el.style.display = 'none';
+                }
+            });
+        }
+
         async function requireApiAdmin() {
             try {
-                const res = await fetch('api/admin/me.php', { cache: 'no-store' });
+                const res = await fetch('api/admin/me.php', { cache: 'no-store', credentials: 'include' });
                 if (!res.ok) throw new Error('Unauthorized');
                 const data = await res.json();
-                if (!data || data.ok !== true) throw new Error('Unauthorized');
+                if (!data || data.ok !== true || !data.admin) throw new Error('Unauthorized');
+                const admin = data.admin;
+                window.__meAdmin = admin;
+                applyFeatureGating(admin);
+                return admin;
             } catch (_) {
                 window.location.href = 'admin.html';
             }
         }
 
-        requireApiAdmin();
-        loadSettings();
+        (async () => {
+            const me = await requireApiAdmin();
+            if (me && hasFeature(me, 'settings')) {
+                loadSettings();
+            }
+        })();
 
         async function loadSettings() {
             try {
-                const res = await fetch('api/admin/settings.php', { cache: 'no-store' });
+                const res = await fetch('api/admin/settings.php', { cache: 'no-store', credentials: 'include' });
                 const data = await res.json();
                 if (data.ok && data.settings) {
                     const toggle = document.getElementById('singleDeviceToggle');
@@ -134,6 +160,7 @@
                 const res = await fetch('api/admin/settings.php', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
+                    credentials: 'include',
                     body: JSON.stringify({
                         key: 'singleDevicePerUser',
                         value: enabled ? '1' : '0'

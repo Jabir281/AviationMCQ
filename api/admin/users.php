@@ -4,7 +4,7 @@ require_once __DIR__ . '/../lib/auth.php';
 require_once __DIR__ . '/../lib/response.php';
 require_once __DIR__ . '/../lib/db.php';
 
-require_admin();
+require_admin_feature('users');
 
 $pdo = db();
 $limit = isset($_GET['limit']) ? (int)$_GET['limit'] : 200;
