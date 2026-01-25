@@ -13,7 +13,7 @@ const state = {
     currentSubject: null,
     subjectSection: null, // 'seen' | 'unseen'
     mode: null, // 'mock' | 'practice'
-    timePerQuestionSec: 0,
+    examTotalTimeSec: 0,
     questionLimit: null,
     timerId: null,
     timeRemainingSec: 0,
@@ -412,12 +412,12 @@ function startMockTest() {
     const timeEl = document.getElementById('mock-time');
     const countEl = document.getElementById('mock-count');
 
-    const timePerQuestionSec = Math.max(0, Number(timeEl?.value || 0));
+    const totalTimeSec = parseDurationToSeconds(String(timeEl?.value || ''));
     const questionCount = Math.max(1, Number(countEl?.value || 1));
 
     startExam(state.pendingSubject, {
         mode: 'mock',
-        timePerQuestionSec,
+        totalTimeSec,
         questionCount
     });
 }
@@ -486,10 +486,14 @@ async function startExam(subjectCode) {
 
     state.currentSubject = subjectCode;
     state.mode = config.mode || 'mock';
-    state.timePerQuestionSec = Math.max(0, Number(config.timePerQuestionSec || 0));
+    // New: total exam duration (seconds). Old configs might provide timePerQuestionSec.
+    state.examTotalTimeSec = Math.max(0, Number(config.totalTimeSec || 0));
     state.questionLimit = (config.questionCount === null || config.questionCount === undefined)
         ? null
         : Math.max(1, Number(config.questionCount));
+
+    // Stop any existing timer from a prior session.
+    clearExamTimer();
 
     // Persist last MOCK config for "Retake Exam" (practice should NOT overwrite it)
     // Some flows (e.g., retry-wrong) should not overwrite the main retake config.
@@ -500,7 +504,7 @@ async function startExam(subjectCode) {
                 JSON.stringify({
                     subjectCode,
                     mode: 'mock',
-                    timePerQuestionSec: state.timePerQuestionSec,
+                    totalTimeSec: state.examTotalTimeSec,
                     questionCount: state.questionLimit
                 })
             );
@@ -550,6 +554,17 @@ async function startExam(subjectCode) {
     state.userAnswers = new Array(state.questions.length).fill(-1);
     state.examFinished = false;
 
+    // Start a single exam-wide timer for mock mode.
+    // Back-compat: if totalTimeSec wasn't provided, but timePerQuestionSec was, derive total time.
+    if (state.mode === 'mock') {
+        if (!(state.examTotalTimeSec > 0) && Number(config.timePerQuestionSec || 0) > 0) {
+            state.examTotalTimeSec = Math.max(0, Math.round(Number(config.timePerQuestionSec || 0) * state.questions.length));
+        }
+        if (state.examTotalTimeSec > 0) {
+            startExamTimer(state.examTotalTimeSec);
+        }
+    }
+
     // Mode-specific UI state
     const quizPage = document.getElementById('quiz-page');
     if (quizPage) {
@@ -571,8 +586,6 @@ async function startExam(subjectCode) {
 }
 
 function displayQuestion() {
-    clearQuestionTimer();
-
     const question = state.questions[state.currentQuestionIndex];
     const total = state.questions.length;
     const current = state.currentQuestionIndex + 1;
@@ -645,12 +658,9 @@ function displayQuestion() {
 
     const prevBtn = document.getElementById('prev-btn');
     if (prevBtn) {
-        if (state.mode === 'mock') {
-            prevBtn.style.display = 'none';
-        } else {
-            prevBtn.style.display = '';
-            prevBtn.style.visibility = current === 1 ? 'hidden' : 'visible';
-        }
+        // Mock mode now supports Previous because timer is exam-wide.
+        prevBtn.style.display = '';
+        prevBtn.style.visibility = current === 1 ? 'hidden' : 'visible';
     }
     
     const nextBtn = document.getElementById('next-btn');
@@ -662,11 +672,9 @@ function displayQuestion() {
         nextBtn.onclick = () => nextQuestion();
     }
 
-    // Timer (mock test)
+    // Timer (mock test) is exam-wide (does NOT reset per question)
     updateTimerVisibility();
-    if (state.mode === 'mock' && state.timePerQuestionSec > 0) {
-        startQuestionTimer(state.timePerQuestionSec);
-    }
+    renderTimer();
 }
 
 function selectOption(index) {
@@ -709,7 +717,6 @@ function applyPracticeFeedback() {
 }
 
 function nextQuestion() {
-    clearQuestionTimer();
     if (state.currentQuestionIndex < state.questions.length - 1) {
         state.currentQuestionIndex++;
         displayQuestion();
@@ -717,7 +724,6 @@ function nextQuestion() {
 }
 
 function prevQuestion() {
-    clearQuestionTimer();
     if (state.mode === 'mock') {
         return;
     }
@@ -758,7 +764,7 @@ function endExam() {
 }
 
 function finishExam() {
-    clearQuestionTimer();
+    clearExamTimer();
     state.examFinished = true;
 
     // Show results for both mock and practice modes
@@ -768,14 +774,15 @@ function finishExam() {
 function updateTimerVisibility() {
     const timerBadge = document.getElementById('timer-badge');
     const timerSep = document.getElementById('timer-sep');
-    const show = state.mode === 'mock' && state.timePerQuestionSec > 0;
+    const show = state.mode === 'mock' && state.examTotalTimeSec > 0;
 
     if (timerBadge) timerBadge.style.display = show ? 'inline-flex' : 'none';
     if (timerSep) timerSep.style.display = show ? 'inline' : 'none';
 }
 
-function startQuestionTimer(seconds) {
-    state.timeRemainingSec = Math.max(0, Number(seconds) || 0);
+function startExamTimer(totalSeconds) {
+    clearExamTimer();
+    state.timeRemainingSec = Math.max(0, Number(totalSeconds) || 0);
     renderTimer();
 
     state.timerId = window.setInterval(() => {
@@ -783,27 +790,51 @@ function startQuestionTimer(seconds) {
         renderTimer();
 
         if (state.timeRemainingSec <= 0) {
-            clearQuestionTimer();
-
-            // Auto-advance when time is up
-            if (state.currentQuestionIndex < state.questions.length - 1) {
-                state.currentQuestionIndex++;
-                displayQuestion();
-            } else {
-                finishExam();
-            }
+            clearExamTimer();
+            finishExam();
         }
     }, 1000);
+}
+
+function formatDuration(totalSec) {
+    const s = Math.max(0, Math.floor(Number(totalSec) || 0));
+    const hours = Math.floor(s / 3600);
+    const minutes = Math.floor((s % 3600) / 60);
+    const seconds = s % 60;
+    return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+}
+
+function parseDurationToSeconds(raw) {
+    const text = String(raw || '').trim();
+    if (!text) return 0;
+
+    // Accept HH:MM:SS (preferred), also tolerate MM:SS.
+    const parts = text.split(':').map(p => p.trim()).filter(Boolean);
+    if (parts.length < 2 || parts.length > 3) return 0;
+
+    const nums = parts.map(p => (p === '' ? NaN : Number(p)));
+    if (nums.some(n => !Number.isFinite(n) || n < 0)) return 0;
+
+    let hours = 0, minutes = 0, seconds = 0;
+    if (nums.length === 3) {
+        [hours, minutes, seconds] = nums;
+    } else {
+        [minutes, seconds] = nums;
+    }
+
+    // Basic sanity
+    if (minutes >= 60 || seconds >= 60) return 0;
+    return Math.round(hours * 3600 + minutes * 60 + seconds);
 }
 
 function renderTimer() {
     const el = document.getElementById('timer-badge');
     if (!el) return;
     const sec = Math.max(0, state.timeRemainingSec);
-    el.textContent = `⏱️ ${sec}s`;
+    el.textContent = `⏱️ ${formatDuration(sec)}`;
 }
 
-function clearQuestionTimer() {
+function clearExamTimer() {
     if (state.timerId) {
         window.clearInterval(state.timerId);
         state.timerId = null;
@@ -851,7 +882,7 @@ function displayResults() {
     const storageKey = state.mode === 'mock' ? LAST_MOCK_WRONG_CONFIG_KEY : LAST_PRACTICE_WRONG_CONFIG_KEY;
     const retryConfig = {
         subjectCode: state.currentSubject,
-        timePerQuestionSec: state.mode === 'mock' ? state.timePerQuestionSec : 0,
+        totalTimeSec: state.mode === 'mock' ? state.examTotalTimeSec : 0,
         questionIds: retryIds
     };
 
@@ -911,7 +942,7 @@ function retryWrongQuestions() {
 
     startExam(last.subjectCode, {
         mode: 'mock',
-        timePerQuestionSec: Number(last.timePerQuestionSec || 0),
+        totalTimeSec: Number(last.totalTimeSec || 0),
         questionIds: last.questionIds,
         // Keep the main "Retake Exam" config intact (the full mock settings)
         skipPersistLastMock: true
@@ -934,7 +965,7 @@ function retryPracticeWrong() {
 
     startExam(last.subjectCode, {
         mode: 'practice',
-        timePerQuestionSec: 0,
+        totalTimeSec: 0,
         questionIds: last.questionIds,
         skipPersistLastMock: true
     });
@@ -1031,7 +1062,9 @@ function retakeExam() {
 
     startExam(last.subjectCode, {
         mode: last.mode || 'mock',
-        timePerQuestionSec: Number(last.timePerQuestionSec || 0),
+        totalTimeSec: Number(last.totalTimeSec || 0) > 0
+            ? Number(last.totalTimeSec || 0)
+            : Math.max(0, Math.round(Number(last.timePerQuestionSec || 0) * Number(last.questionCount || 0))),
         questionCount: last.questionCount
     });
 }
