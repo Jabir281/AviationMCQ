@@ -11,33 +11,24 @@ const ADMIN_FEATURES = [
     'settings',
 ];
 
-function session_cookie_params(): array {
+function ensure_session(): void {
+    if (session_status() !== PHP_SESSION_NONE) return;
+    // Set cookie params for better cross-page persistence.
     $isHttps = !empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off';
-    return [
+    session_set_cookie_params([
         'lifetime' => 0,
         'path' => '/',
         'domain' => '',
         'secure' => $isHttps,
         'httponly' => true,
         'samesite' => 'Lax',
-    ];
-}
-
-function ensure_admin_session(): void {
-    if (session_status() !== PHP_SESSION_NONE) return;
-    // Cookies must be sent before output.
-    session_name('MCQ_ADMIN_SESS');
-    session_set_cookie_params(session_cookie_params());
+    ]);
     session_start();
 }
 
-function ensure_user_session(): void {
-    if (session_status() !== PHP_SESSION_NONE) return;
-    // Cookies must be sent before output.
-    session_name('MCQ_USER_SESS');
-    session_set_cookie_params(session_cookie_params());
-    session_start();
-}
+// Aliases for compatibility.
+function ensure_admin_session(): void { ensure_session(); }
+function ensure_user_session(): void { ensure_session(); }
 
 function require_admin(): array {
     ensure_admin_session();
@@ -54,9 +45,18 @@ function require_admin(): array {
 
     try {
         $pdo = db();
-        $stmt = $pdo->prepare('SELECT id, username, permissions_json FROM admin_users WHERE id = ?');
-        $stmt->execute([$adminId]);
-        $row = $stmt->fetch();
+        // Try with permissions_json; fall back if column doesn't exist.
+        try {
+            $stmt = $pdo->prepare('SELECT id, username, permissions_json FROM admin_users WHERE id = ?');
+            $stmt->execute([$adminId]);
+            $row = $stmt->fetch();
+        } catch (Throwable $e) {
+            // Column may not exist yet; try without it.
+            $stmt = $pdo->prepare('SELECT id, username FROM admin_users WHERE id = ?');
+            $stmt->execute([$adminId]);
+            $row = $stmt->fetch();
+            if ($row) $row['permissions_json'] = null;
+        }
         if (!$row) {
             logout_admin();
             json_error('Unauthorized', 401);
