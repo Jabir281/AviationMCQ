@@ -393,6 +393,12 @@ async function loadSubjects() {
 // ============================================
 // Subject Options (Mock / Practice)
 // ============================================
+function toNonNegInt(value) {
+    const n = Number(value);
+    if (!Number.isFinite(n)) return 0;
+    return Math.max(0, Math.floor(n));
+}
+
 function showSubjectOptions(subjectCode) {
     state.pendingSubject = subjectCode;
     const subjectName = state.subjects[subjectCode]?.name || subjectCode;
@@ -412,7 +418,7 @@ function startMockTest() {
     const timeEl = document.getElementById('mock-time');
     const countEl = document.getElementById('mock-count');
 
-    const totalTimeSec = Math.max(0, Math.floor(Number(timeEl?.value || 0)));
+    const totalTimeSec = toNonNegInt(timeEl?.value);
     const questionCount = Math.max(1, Number(countEl?.value || 1));
 
     if (!(totalTimeSec > 0)) {
@@ -448,7 +454,7 @@ function updateMockStartEnabled() {
     const timeEl = document.getElementById('mock-time');
     if (!btn || !timeEl) return;
 
-    const total = Math.max(0, Math.floor(Number(timeEl.value || 0)));
+    const total = toNonNegInt(timeEl.value);
 
     btn.disabled = !(total > 0);
     if (total > 0) showMockTimeError('');
@@ -519,7 +525,7 @@ async function startExam(subjectCode) {
     state.currentSubject = subjectCode;
     state.mode = config.mode || 'mock';
     // New: total exam duration (seconds). Old configs might provide timePerQuestionSec.
-    state.examTotalTimeSec = Math.max(0, Number(config.totalTimeSec || 0));
+    state.examTotalTimeSec = toNonNegInt(config.totalTimeSec);
     state.questionLimit = (config.questionCount === null || config.questionCount === undefined)
         ? null
         : Math.max(1, Number(config.questionCount));
@@ -586,17 +592,6 @@ async function startExam(subjectCode) {
     state.userAnswers = new Array(state.questions.length).fill(-1);
     state.examFinished = false;
 
-    // Start a single exam-wide timer for mock mode.
-    // Back-compat: if totalTimeSec wasn't provided, but timePerQuestionSec was, derive total time.
-    if (state.mode === 'mock') {
-        if (!(state.examTotalTimeSec > 0) && Number(config.timePerQuestionSec || 0) > 0) {
-            state.examTotalTimeSec = Math.max(0, Math.round(Number(config.timePerQuestionSec || 0) * state.questions.length));
-        }
-        if (state.examTotalTimeSec > 0) {
-            startExamTimer(state.examTotalTimeSec);
-        }
-    }
-
     // Mode-specific UI state
     const quizPage = document.getElementById('quiz-page');
     if (quizPage) {
@@ -614,6 +609,18 @@ async function startExam(subjectCode) {
     document.getElementById('current-subject').textContent = `${subjectCode} - ${subjectName}`;
     
     showQuiz();
+
+    // Start a single exam-wide timer for mock mode (after quiz page is shown so UI updates reliably).
+    // Back-compat: if totalTimeSec wasn't provided, but timePerQuestionSec was, derive total time.
+    if (state.mode === 'mock') {
+        if (!(state.examTotalTimeSec > 0) && toNonNegInt(config.timePerQuestionSec) > 0) {
+            state.examTotalTimeSec = Math.max(0, Math.round(toNonNegInt(config.timePerQuestionSec) * state.questions.length));
+        }
+        if (state.examTotalTimeSec > 0) {
+            startExamTimer(state.examTotalTimeSec);
+        }
+    }
+
     displayQuestion();
 }
 
@@ -806,7 +813,7 @@ function finishExam() {
 function updateTimerVisibility() {
     const timerBadge = document.getElementById('timer-badge');
     const timerSep = document.getElementById('timer-sep');
-    const show = state.mode === 'mock' && state.examTotalTimeSec > 0;
+    const show = state.mode === 'mock' && ((state.examTotalTimeSec > 0) || (state.timeRemainingSec > 0) || !!state.timerId);
 
     if (timerBadge) timerBadge.style.display = show ? 'inline-flex' : 'none';
     if (timerSep) timerSep.style.display = show ? 'inline' : 'none';
