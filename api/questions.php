@@ -28,7 +28,7 @@ if (!$subjectRow) {
 
 $sql = "SELECT external_id, question_text, option_a, option_b, option_c, option_d, correct_index
         FROM questions
-        WHERE subject_id = ?";
+        WHERE subject_id = ? AND correct_index IS NOT NULL";
 
 if ($random === 1) {
     $sql .= " ORDER BY RAND()";

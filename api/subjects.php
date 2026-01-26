@@ -12,10 +12,11 @@ if (($cfg['requireUserAuth'] ?? false) === true) {
 $pdo = db();
 
 // Returns array: [{ id: 'COMS', name: 'Communications', questionCount: 192 }, ...]
+// Only count questions that have correct answers set
 $stmt = $pdo->query(
     "SELECT s.code, s.name, s.icon, s.section, COUNT(q.id) AS question_count
      FROM subjects s
-     LEFT JOIN questions q ON q.subject_id = s.id
+     LEFT JOIN questions q ON q.subject_id = s.id AND q.correct_index IS NOT NULL
     GROUP BY s.id, s.code, s.name, s.icon, s.section
      ORDER BY s.code"
 );
