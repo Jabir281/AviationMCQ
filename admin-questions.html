@@ -6,7 +6,7 @@
     <title>Question Manager - Admin</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/admin.css?v=20260124_4">
+    <link rel="stylesheet" href="css/admin.css?v=20260126_5">
 </head>
 <body>
     <header class="admin-header">
@@ -62,7 +62,17 @@
             <div class="content-header">
                 <div style="display:flex; justify-content: space-between; gap: 12px; align-items: center; flex-wrap: wrap;">
                     <h2 style="margin: 0;">Edit questions & set correct answers</h2>
-                    <button class="btn btn-primary" id="add-q-btn" onclick="openAddModal()" disabled>➕ Add Question</button>
+                    <div style="display: flex; gap: 8px; align-items: center;">
+                        <button class="btn btn-secondary" id="move-q-btn" onclick="openMoveModal()" style="display: none;">📦 Move Selected (<span id="selected-count">0</span>)</button>
+                        <button class="btn btn-primary" id="add-q-btn" onclick="openAddModal()" disabled>➕ Add Question</button>
+                    </div>
+                </div>
+                <div id="select-all-bar" style="display: none; margin-top: 10px; padding: 8px 12px; background: #f0f4ff; border-radius: 8px; align-items: center; gap: 12px;">
+                    <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                        <input type="checkbox" id="select-all-checkbox" onchange="toggleSelectAll()">
+                        <span>Select All</span>
+                    </label>
+                    <button class="btn btn-outline btn-sm" onclick="clearSelection()">Clear Selection</button>
                 </div>
             </div>
             <div id="questions-list" class="questions-list">
@@ -174,10 +184,45 @@
         </div>
     </div>
 
+    <!-- Move Modal -->
+    <div id="move-modal" class="modal">
+        <div class="modal-overlay" onclick="closeMoveModal()"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>📦 Move Questions</h3>
+                <button class="modal-close" onclick="closeMoveModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p style="margin-bottom: 16px;"><strong id="move-count">0</strong> question(s) selected</p>
+                <div class="form-group">
+                    <label>Move to Subject</label>
+                    <select id="move-target-subject">
+                        <option value="">-- Select Destination --</option>
+                    </select>
+                </div>
+                <p style="font-size: 13px; color: #666; margin-top: 12px;">
+                    Questions will be added to the end of the target subject.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" onclick="closeMoveModal()">Cancel</button>
+                <button class="btn btn-primary" id="move-confirm-btn" onclick="confirmMoveQuestions()">Move Questions</button>
+            </div>
+        </div>
+    </div>
+
     <div id="toast" class="toast"></div>
 
     <script>
         // Toggle entire sidebar slide in/out
+        let subjectsInfo = [];
+        let questions = [];
+        let currentSubject = null;
+        let searchTerm = '';
+        let currentFilter = 'all';
+        let pendingAnswerChanges = {};
+        let currentEditIndex = null;
+        let selectedQuestions = new Set();  // Track selected question indices
         function toggleSidebar() {
             const sidebar = document.getElementById('sidebar');
             const toggle = document.getElementById('sidebar-toggle');
@@ -216,14 +261,6 @@
 
         requireApiAdmin();
 
-        let subjectsInfo = {};
-        let questions = [];
-        let pendingAnswerChanges = {};
-        let currentSubject = null;
-        let currentEditIndex = null;
-        let searchTerm = '';
-        let currentFilter = 'all';
-
         // Load subjects on page load
         document.addEventListener('DOMContentLoaded', async () => {
             await loadSubjects();
@@ -238,17 +275,30 @@
                 const subjects = data.subjects || [];
                 const select = document.getElementById('subject-select');
                 
+                // Clear previous options (keep first placeholder)
+                while (select.options.length > 1) {
+                    select.remove(1);
+                }
+                
+                // Reset subjectsInfo array
+                subjectsInfo = [];
+                
                 subjects.forEach(subject => {
                     const code = subject.code || subject.id;
                     if (!code) return;
-                    subjectsInfo[code] = subject;
+                    // Store as array for move modal
+                    subjectsInfo.push({ slug: code, name: subject.name, questionCount: subject.questionCount });
                     const option = document.createElement('option');
                     option.value = code;
                     option.textContent = `${subject.name} (${subject.questionCount} Q)`;
                     select.appendChild(option);
                 });
                 
-                select.addEventListener('change', loadQuestions);
+                // Only add listener once
+                if (!select.dataset.listenerAdded) {
+                    select.addEventListener('change', loadQuestions);
+                    select.dataset.listenerAdded = 'true';
+                }
             } catch (error) {
                 console.error('Error loading subjects:', error);
             }
@@ -256,6 +306,10 @@
 
         async function loadQuestions() {
             const subjectId = document.getElementById('subject-select').value;
+            
+            // Clear selection when changing subjects
+            selectedQuestions.clear();
+            document.getElementById('select-all-checkbox').checked = false;
             
             if (!subjectId) {
                 questions = [];
@@ -265,6 +319,7 @@
                 renderQuestions();
                 updateStats();
                 updateSaveBar();
+                updateSelectionUI();
                 return;
             }
             
@@ -280,6 +335,7 @@
                 renderQuestions();
                 updateStats();
                 updateSaveBar();
+                updateSelectionUI();
                 
                 showToast(`Loaded ${questions.length} questions`, 'success');
             } catch (error) {
@@ -359,11 +415,18 @@
                 const pendingAnswer = pendingAnswerChanges[index]?.correct;
                 const currentCorrect = pendingAnswer !== undefined ? pendingAnswer : q.correct;
                 const hasPending = pendingAnswer !== undefined;
+                const isSelected = selectedQuestions.has(index);
                 
                 return `
-                    <div class="question-card ${hasAnswer ? 'has-answer' : 'no-answer'} ${hasPending ? 'has-pending' : ''}">
+                    <div class="question-card ${hasAnswer ? 'has-answer' : 'no-answer'} ${hasPending ? 'has-pending' : ''} ${isSelected ? 'selected' : ''}">
                         <div class="question-header">
-                            <span class="question-id">#${index + 1} | ID: ${q.id || 'N/A'}</span>
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <input type="checkbox" class="q-select-checkbox" 
+                                       ${isSelected ? 'checked' : ''} 
+                                       onchange="toggleQuestionSelect(${index}, this.checked)"
+                                       title="Select for moving">
+                                <span class="question-id">#${index + 1} | ID: ${q.id || 'N/A'}</span>
+                            </div>
                             <div class="question-actions">
                                 <button class="edit-btn" onclick="openEditModal(${index})" title="Edit question text & options">✏️ Edit</button>
                                 <button class="btn btn-danger icon-btn" title="Delete question" onclick="deleteQuestion(${index})">🗑️</button>
@@ -681,11 +744,165 @@
             setTimeout(() => toast.classList.remove('show'), 3000);
         }
 
+        // ========== Selection & Move ==========
+        function toggleQuestionSelect(index, isChecked) {
+            if (isChecked) {
+                selectedQuestions.add(index);
+            } else {
+                selectedQuestions.delete(index);
+            }
+            updateSelectionUI();
+        }
+
+        function toggleSelectAll() {
+            const checkbox = document.getElementById('select-all-checkbox');
+            if (checkbox.checked) {
+                // Select all visible/filtered questions
+                const filtered = getFilteredQuestions();
+                filtered.forEach(q => {
+                    const index = questions.indexOf(q);
+                    selectedQuestions.add(index);
+                });
+            } else {
+                selectedQuestions.clear();
+            }
+            renderQuestions();
+            updateSelectionUI();
+        }
+
+        function clearSelection() {
+            selectedQuestions.clear();
+            document.getElementById('select-all-checkbox').checked = false;
+            renderQuestions();
+            updateSelectionUI();
+        }
+
+        function getFilteredQuestions() {
+            let filtered = questions;
+            if (currentFilter === 'answered') {
+                filtered = filtered.filter(q => q.correct !== undefined && q.correct !== null);
+            } else if (currentFilter === 'unanswered') {
+                filtered = filtered.filter(q => q.correct === undefined || q.correct === null);
+            }
+            if (searchTerm) {
+                filtered = filtered.filter(q => 
+                    q.question.toLowerCase().includes(searchTerm) ||
+                    q.id?.toString().toLowerCase().includes(searchTerm) ||
+                    q.options.some(opt => opt.toLowerCase().includes(searchTerm))
+                );
+            }
+            return filtered;
+        }
+
+        function updateSelectionUI() {
+            const count = selectedQuestions.size;
+            const moveBtn = document.getElementById('move-q-btn');
+            const selectAllBar = document.getElementById('select-all-bar');
+            const selectedCountEl = document.getElementById('selected-count');
+            
+            selectedCountEl.textContent = count;
+            
+            if (currentSubject && questions.length > 0) {
+                selectAllBar.style.display = 'flex';
+                if (count > 0) {
+                    moveBtn.style.display = 'inline-flex';
+                } else {
+                    moveBtn.style.display = 'none';
+                }
+            } else {
+                selectAllBar.style.display = 'none';
+                moveBtn.style.display = 'none';
+            }
+        }
+
+        function openMoveModal() {
+            if (selectedQuestions.size === 0) {
+                showToast('No questions selected', 'error');
+                return;
+            }
+            
+            document.getElementById('move-count').textContent = selectedQuestions.size;
+            
+            // Populate target subject dropdown (exclude current subject)
+            const select = document.getElementById('move-target-subject');
+            select.innerHTML = '<option value="">-- Select Destination --</option>';
+            subjectsInfo.forEach(subj => {
+                if (subj.slug !== currentSubject) {
+                    const opt = document.createElement('option');
+                    opt.value = subj.slug;
+                    opt.textContent = subj.name;
+                    select.appendChild(opt);
+                }
+            });
+            
+            document.getElementById('move-modal').classList.add('active');
+        }
+
+        function closeMoveModal() {
+            document.getElementById('move-modal').classList.remove('active');
+        }
+
+        async function confirmMoveQuestions() {
+            const targetSubject = document.getElementById('move-target-subject').value;
+            if (!targetSubject) {
+                showToast('Please select a destination subject', 'error');
+                return;
+            }
+            
+            const btn = document.getElementById('move-confirm-btn');
+            btn.disabled = true;
+            btn.textContent = '⏳ Moving...';
+            
+            // Get question IDs to move
+            const questionIds = [];
+            selectedQuestions.forEach(index => {
+                if (questions[index] && questions[index].id) {
+                    questionIds.push(questions[index].id);
+                }
+            });
+            
+            try {
+                const res = await fetch('api/admin/move_questions.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        fromSubject: currentSubject,
+                        toSubject: targetSubject,
+                        questionIds: questionIds
+                    }),
+                    cache: 'no-store'
+                });
+                
+                const data = await res.json().catch(() => null);
+                
+                if (!res.ok || !data || data.ok !== true) {
+                    showToast(data?.error || 'Failed to move questions', 'error');
+                    return;
+                }
+                
+                closeMoveModal();
+                selectedQuestions.clear();
+                await loadQuestions();
+                await loadSubjects(); // Refresh counts
+                
+                const msg = `Moved ${data.moved} question(s)` + (data.skipped > 0 ? `, ${data.skipped} skipped` : '');
+                showToast(msg + ' ✅', 'success');
+                
+            } catch (error) {
+                console.error('Error moving questions:', error);
+                showToast('Error moving questions', 'error');
+            } finally {
+                btn.disabled = false;
+                btn.textContent = 'Move Questions';
+            }
+        }
+
         // Close modal on escape
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') {
                 closeEditModal();
                 closeAddModal();
+                closeMoveModal();
             }
         });
     </script>
