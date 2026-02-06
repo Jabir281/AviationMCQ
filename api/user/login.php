@@ -21,17 +21,24 @@ if ($code === '') {
 $pdo = db();
 
 // Find user by access code hash.
-$stmt = $pdo->query('SELECT id, access_code_hash FROM users');
+$stmt = $pdo->query('SELECT id, access_code_hash, is_locked FROM users');
 $foundId = null;
+$isLocked = false;
 foreach ($stmt->fetchAll() as $row) {
     if (password_verify($code, (string)$row['access_code_hash'])) {
         $foundId = (int)$row['id'];
+        $isLocked = isset($row['is_locked']) ? (bool)$row['is_locked'] : false;
         break;
     }
 }
 
 if ($foundId === null) {
     json_error('Invalid password', 401);
+}
+
+// Check if user is locked by admin
+if ($isLocked) {
+    json_error('Your account has been locked. Please contact the administrator.', 403);
 }
 
 // Prevent session fixation and support single-device enforcement.

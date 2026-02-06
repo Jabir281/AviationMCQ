@@ -9,7 +9,7 @@
     <title>User Passwords - Aviation MCQ Admin</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/admin.css?v=20260127_1">
+    <link rel="stylesheet" href="css/admin.css?v=20260206_1">
 </head>
 <body>
     <header class="admin-header">
@@ -124,17 +124,22 @@
                 const created = new Date(u.createdAt).toLocaleString();
                 const seen = u.lastSeenAt ? new Date(u.lastSeenAt).toLocaleString() : 'Never';
                 const locked = !!u.locked;
+                const hasSession = !!u.hasSession;
                 const name = (u.name && String(u.name).trim() !== '') ? String(u.name).trim() : '';
                 const cachedPw = window.__pwCache[String(u.id)] || null;
                 const pwText = cachedPw ? escapeHtml(cachedPw) : '••••••••';
+                const lockIcon = locked ? '🔒' : '🔓';
+                const lockText = locked ? 'Locked' : 'Active';
+                const lockBtnText = locked ? '🔓 Unlock' : '🔒 Lock';
+                const lockBtnClass = locked ? 'btn-success' : 'btn-warning';
                 return `
-                    <div style="padding: 10px 0; border-bottom: 1px solid var(--border);">
+                    <div style="padding: 10px 0; border-bottom: 1px solid var(--border); ${locked ? 'opacity: 0.7; background: rgba(255,100,100,0.05);' : ''}">
                         <div style="display:flex; justify-content: space-between; gap: 10px; align-items:center; flex-wrap: wrap;">
                             <div style="min-width: 120px;"><strong>Serial #${u.id}</strong></div>
                             <div style="flex: 1; min-width: 220px;">Name: <strong>${name ? escapeHtml(name) : '-'}</strong></div>
                             <div style="flex: 1; min-width: 220px;">Created: ${escapeHtml(created)}</div>
                             <div style="flex: 1; min-width: 220px;">Last seen: ${escapeHtml(seen)}</div>
-                            <div style="min-width: 110px; opacity: 0.9;">${locked ? '🔒 Locked' : '🔓 Unlocked'}</div>
+                            <div style="min-width: 110px; font-weight: 600; color: ${locked ? '#e74c3c' : '#27ae60'};">${lockIcon} ${lockText}</div>
                         </div>
 
                         <div style="display:flex; justify-content: space-between; gap: 10px; align-items:center; flex-wrap: wrap; margin-top: 8px;">
@@ -143,10 +148,11 @@
                                 <div id="pw-${u.id}" style="font-size: 16px; letter-spacing: 0.8px; padding: 6px 10px; border-radius: 10px; border: 1px solid var(--border); background: rgba(255,255,255,0.05);">${pwText}</div>
                             </div>
                             <div style="display:flex; gap: 8px; flex-wrap: wrap;">
+                                <button class="btn ${lockBtnClass}" title="${locked ? 'Unlock user access' : 'Lock user access'}" onclick="toggleUserLock(${u.id}, ${locked})">${lockBtnText}</button>
                                 <button class="btn btn-outline" title="Edit name/label" onclick="editUserName(${u.id}, ${JSON.stringify(name)})">🏷️ Name</button>
                                 <button class="btn btn-outline" title="Reveal stored password" onclick="revealUserPassword(${u.id})">👁️ Reveal</button>
                                 <button class="btn btn-outline" title="Reset password and show new one" onclick="resetUserPassword(${u.id})">🔁 Reset</button>
-                                <button class="btn btn-outline" title="Reset device lock" onclick="resetUserSession(${u.id})">🔓 Unlock</button>
+                                ${hasSession ? `<button class="btn btn-outline" title="Reset device session" onclick="resetUserSession(${u.id})">📱 Reset Device</button>` : ''}
                                 <button class="btn btn-danger" title="Revoke access" onclick="deleteUser(${u.id})">🗑️ Revoke</button>
                             </div>
                         </div>
@@ -313,7 +319,34 @@
                     return;
                 }
 
-                setStatus(data.updated ? `Reset lock for User #${id}` : `User #${id} not found`, true);
+                setStatus(data.updated ? `Reset device for User #${id}` : `User #${id} not found`, true);
+                await loadUsers();
+            } catch (_) {
+                setStatus('Failed', false);
+            }
+        }
+
+        async function toggleUserLock(id, currentlyLocked) {
+            const action = currentlyLocked ? 'unlock' : 'lock';
+            const ok = confirm(`${currentlyLocked ? 'Unlock' : 'Lock'} User #${id}?\n\n${currentlyLocked ? 'User will be able to log in again.' : 'User will be blocked from logging in.'}`);
+            if (!ok) return;
+
+            setStatus('Updating…', null);
+            try {
+                const res = await fetch('api/admin/toggle_user_lock.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ userId: id, lock: !currentlyLocked }),
+                    cache: 'no-store',
+                    credentials: 'include'
+                });
+                const data = await res.json().catch(() => null);
+                if (!res.ok || !data || data.ok !== true) {
+                    setStatus((data && data.error) ? data.error : 'Failed', false);
+                    return;
+                }
+
+                setStatus(`User #${id} ${data.locked ? 'locked' : 'unlocked'}`, true);
                 await loadUsers();
             } catch (_) {
                 setStatus('Failed', false);

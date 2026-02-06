@@ -14,6 +14,7 @@ CREATE TABLE IF NOT EXISTS users (
   access_code_enc TEXT NULL,
   display_name VARCHAR(120) NULL,
   active_session_id VARCHAR(128) NULL,
+  is_locked TINYINT(1) NOT NULL DEFAULT 0,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   last_seen_at TIMESTAMP NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
