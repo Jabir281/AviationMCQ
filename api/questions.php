@@ -37,11 +37,13 @@ if ($chunkId > 0) {
         if ($chunkRow) {
             $startIdx = (int)$chunkRow['start_index'];
             $endIdx = (int)$chunkRow['end_index'];
+            $chunkLimit = $endIdx - $startIdx + 1;
+            $chunkOffset = $startIdx - 1;
             // Get the question IDs in this range (1-based, ordered by id)
             $idStmt = $pdo->prepare(
-                'SELECT id FROM questions WHERE subject_id = ? ORDER BY id LIMIT ? OFFSET ?'
+                'SELECT id FROM questions WHERE subject_id = ? ORDER BY id LIMIT ' . (int)$chunkLimit . ' OFFSET ' . (int)$chunkOffset
             );
-            $idStmt->execute([$subjectRow['id'], $endIdx - $startIdx + 1, $startIdx - 1]);
+            $idStmt->execute([$subjectRow['id']]);
             $chunkQuestionIds = array_column($idStmt->fetchAll(), 'id');
         }
     } catch (Throwable $e) {
