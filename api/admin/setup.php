@@ -115,6 +115,31 @@ try {
     json_error('Failed creating exam_attempts table', 500);
 }
 
+// Create subject_chunks table
+try {
+    $pdo->exec(
+        'CREATE TABLE IF NOT EXISTS subject_chunks (
+            id INT AUTO_INCREMENT PRIMARY KEY,
+            subject_id INT NOT NULL,
+            name VARCHAR(100) NOT NULL,
+            start_index INT NOT NULL,
+            end_index INT NOT NULL,
+            sort_order INT NOT NULL DEFAULT 0,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            CONSTRAINT fk_chunks_subject FOREIGN KEY (subject_id) REFERENCES subjects(id) ON DELETE CASCADE
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4'
+    );
+} catch (Throwable $e) {
+    // ignore
+}
+
+// Add is_locked for existing installs
+try {
+    $pdo->exec('ALTER TABLE users ADD COLUMN is_locked TINYINT(1) NOT NULL DEFAULT 0');
+} catch (Throwable $e) {
+    // ignore (likely column already exists)
+}
+
 // Seed admins only if none exist
 $count = (int)$pdo->query('SELECT COUNT(*) AS c FROM admin_users')->fetch()['c'];
 if ($count === 0) {

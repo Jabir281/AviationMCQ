@@ -56,6 +56,14 @@
                     </div>
                 </div>
             </div>
+            <div class="sidebar-section collapsible">
+                <h3 class="section-toggle" onclick="toggleSection(this)">📦 Chunks <span class="toggle-icon">▼</span></h3>
+                <div class="section-content">
+                    <div id="chunks-box">
+                        <p class="placeholder">Select a subject</p>
+                    </div>
+                </div>
+            </div>
         </aside>
 
         <main class="main-content">
@@ -64,6 +72,7 @@
                     <h2 style="margin: 0;">Edit questions & set correct answers</h2>
                     <div style="display: flex; gap: 8px; align-items: center;">
                         <button class="btn btn-secondary" id="move-q-btn" onclick="openMoveModal()" style="display: none;">📦 Move Selected (<span id="selected-count">0</span>)</button>
+                        <button class="btn btn-outline" id="chunk-q-btn" onclick="openChunkModal()" style="display: none;">📦 Manage Chunks</button>
                         <button class="btn btn-primary" id="add-q-btn" onclick="openAddModal()" disabled>➕ Add Question</button>
                     </div>
                 </div>
@@ -211,6 +220,46 @@
         </div>
     </div>
 
+    <!-- Chunk Modal -->
+    <div id="chunk-modal" class="modal">
+        <div class="modal-overlay" onclick="closeChunkModal()"></div>
+        <div class="modal-content" style="max-width: 600px;">
+            <div class="modal-header">
+                <h3>📦 Manage Chunks</h3>
+                <button class="modal-close" onclick="closeChunkModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p style="margin-bottom: 12px; color: #666;">
+                    Divide questions into named sections. Indices are 1-based (question 1 = first question).
+                </p>
+                <div id="chunk-list" style="margin-bottom: 16px;">
+                    <p style="opacity:0.7;">Loading...</p>
+                </div>
+                <hr style="border: 1px solid #eee; margin: 16px 0;">
+                <h4 style="margin-bottom: 12px;">Add New Chunk</h4>
+                <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: flex-end;">
+                    <div class="form-group" style="flex: 1; min-width: 120px;">
+                        <label>Name</label>
+                        <input type="text" id="chunk-name" placeholder="e.g. P1" maxlength="100">
+                    </div>
+                    <div class="form-group" style="width: 100px;">
+                        <label>From Q#</label>
+                        <input type="number" id="chunk-start" min="1" placeholder="1">
+                    </div>
+                    <div class="form-group" style="width: 100px;">
+                        <label>To Q#</label>
+                        <input type="number" id="chunk-end" min="1" placeholder="45">
+                    </div>
+                    <button class="btn btn-primary" onclick="createChunk()" style="height: 40px;">Add</button>
+                </div>
+                <p id="chunk-total-info" style="font-size: 13px; color: #888; margin-top: 8px;"></p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" onclick="closeChunkModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
     <div id="toast" class="toast"></div>
 
     <script>
@@ -320,6 +369,7 @@
                 updateStats();
                 updateSaveBar();
                 updateSelectionUI();
+                loadChunks();
                 return;
             }
             
@@ -336,6 +386,7 @@
                 updateStats();
                 updateSaveBar();
                 updateSelectionUI();
+                loadChunks();
                 
                 showToast(`Loaded ${questions.length} questions`, 'success');
             } catch (error) {
@@ -744,6 +795,148 @@
             setTimeout(() => toast.classList.remove('show'), 3000);
         }
 
+        // ========== Chunks ==========
+        async function loadChunks() {
+            const box = document.getElementById('chunks-box');
+            const btn = document.getElementById('chunk-q-btn');
+            
+            if (!currentSubject) {
+                box.innerHTML = '<p class="placeholder">Select a subject</p>';
+                if (btn) btn.style.display = 'none';
+                return;
+            }
+
+            if (btn) btn.style.display = 'inline-flex';
+
+            try {
+                const res = await fetch(`api/admin/chunks.php?subject=${encodeURIComponent(currentSubject)}`, { cache: 'no-store' });
+                const data = await res.json().catch(() => null);
+                if (!res.ok || !data || data.ok !== true) {
+                    box.innerHTML = '<p style="color: #ff6b6b; font-size: 13px;">Failed to load chunks</p>';
+                    return;
+                }
+
+                if (data.chunks.length === 0) {
+                    box.innerHTML = '<p style="font-size: 13px; opacity: 0.7;">No chunks defined. Click "Manage Chunks" to create.</p>';
+                } else {
+                    box.innerHTML = data.chunks.map(c => `
+                        <div style="padding: 6px 0; border-bottom: 1px solid #eee; font-size: 13px; display: flex; justify-content: space-between; align-items: center;">
+                            <span><strong>${escapeHtml(c.name)}</strong> — Q${c.startIndex}–${c.endIndex} (${c.questionCount})</span>
+                        </div>
+                    `).join('');
+                }
+            } catch (_) {
+                box.innerHTML = '<p style="font-size: 13px; opacity: 0.7;">Chunks not available</p>';
+            }
+        }
+
+        function openChunkModal() {
+            if (!currentSubject) {
+                showToast('Select a subject first', 'error');
+                return;
+            }
+            document.getElementById('chunk-name').value = '';
+            document.getElementById('chunk-start').value = '';
+            document.getElementById('chunk-end').value = '';
+            document.getElementById('chunk-total-info').textContent = `Total questions in this subject: ${questions.length}`;
+            document.getElementById('chunk-modal').classList.add('active');
+            loadChunkList();
+        }
+
+        function closeChunkModal() {
+            document.getElementById('chunk-modal').classList.remove('active');
+        }
+
+        async function loadChunkList() {
+            const list = document.getElementById('chunk-list');
+            try {
+                const res = await fetch(`api/admin/chunks.php?subject=${encodeURIComponent(currentSubject)}`, { cache: 'no-store' });
+                const data = await res.json().catch(() => null);
+                if (!res.ok || !data || data.ok !== true) {
+                    list.innerHTML = '<p style="color: #ff6b6b;">Failed to load</p>';
+                    return;
+                }
+
+                if (data.chunks.length === 0) {
+                    list.innerHTML = '<p style="opacity: 0.7;">No chunks yet. Add one below.</p>';
+                } else {
+                    list.innerHTML = data.chunks.map(c => `
+                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 12px; margin-bottom: 6px; background: #f8f9fa; border-radius: 8px; border: 1px solid #eee;">
+                            <div>
+                                <strong>${escapeHtml(c.name)}</strong>
+                                <span style="color: #666; margin-left: 8px;">Questions ${c.startIndex} – ${c.endIndex}</span>
+                                <span style="color: #888; margin-left: 8px;">(${c.questionCount} Q)</span>
+                            </div>
+                            <button class="btn btn-danger btn-sm" onclick="deleteChunk(${c.id})" title="Delete chunk" style="padding: 4px 10px; font-size: 12px;">🗑️</button>
+                        </div>
+                    `).join('');
+                }
+            } catch (_) {
+                list.innerHTML = '<p style="color: #ff6b6b;">Failed to load</p>';
+            }
+        }
+
+        async function createChunk() {
+            const name = document.getElementById('chunk-name').value.trim();
+            const startIndex = parseInt(document.getElementById('chunk-start').value);
+            const endIndex = parseInt(document.getElementById('chunk-end').value);
+
+            if (!name) { showToast('Enter a chunk name', 'error'); return; }
+            if (!startIndex || startIndex < 1) { showToast('Invalid start index', 'error'); return; }
+            if (!endIndex || endIndex < startIndex) { showToast('End must be >= start', 'error'); return; }
+
+            try {
+                const res = await fetch('api/admin/create_chunk.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        subject: currentSubject,
+                        name,
+                        startIndex,
+                        endIndex
+                    }),
+                    cache: 'no-store'
+                });
+                const data = await res.json().catch(() => null);
+                if (!res.ok || !data || data.ok !== true) {
+                    showToast(data?.error || 'Failed to create chunk', 'error');
+                    return;
+                }
+
+                document.getElementById('chunk-name').value = '';
+                document.getElementById('chunk-start').value = '';
+                document.getElementById('chunk-end').value = '';
+                showToast(`Chunk "${name}" created ✅`, 'success');
+                await loadChunkList();
+                await loadChunks();
+            } catch (_) {
+                showToast('Error creating chunk', 'error');
+            }
+        }
+
+        async function deleteChunk(id) {
+            if (!confirm('Delete this chunk?')) return;
+
+            try {
+                const res = await fetch('api/admin/delete_chunk.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ id }),
+                    cache: 'no-store'
+                });
+                const data = await res.json().catch(() => null);
+                if (!res.ok || !data || data.ok !== true) {
+                    showToast('Failed to delete chunk', 'error');
+                    return;
+                }
+                showToast('Chunk deleted ✅', 'success');
+                await loadChunkList();
+                await loadChunks();
+            } catch (_) {
+                showToast('Error deleting chunk', 'error');
+            }
+        }
+
         // ========== Selection & Move ==========
         function toggleQuestionSelect(index, isChecked) {
             if (isChecked) {
@@ -903,6 +1096,7 @@
                 closeEditModal();
                 closeAddModal();
                 closeMoveModal();
+                closeChunkModal();
             }
         });
     </script>

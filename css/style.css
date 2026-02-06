@@ -1028,6 +1028,118 @@ body {
 }
 
 /* ============================================
+   Chunk Picker Modal
+   ============================================ */
+.chunk-picker-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1100;
+    padding: 1rem;
+}
+
+.chunk-picker-overlay.active {
+    display: flex;
+}
+
+.chunk-picker {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    max-width: 460px;
+    width: 100%;
+    max-height: 80vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.chunk-picker-header {
+    padding: 1.5rem 1.5rem 1rem;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.chunk-picker-header h3 {
+    margin: 0;
+    color: var(--gray-900);
+    font-size: 1.25rem;
+}
+
+.chunk-picker-list {
+    padding: 1rem;
+    overflow-y: auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.chunk-option {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 16px;
+    background: var(--gray-50);
+    border: 2px solid var(--gray-200);
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: left;
+    font-family: inherit;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.chunk-option:hover {
+    border-color: var(--primary);
+    background: rgba(102, 126, 234, 0.05);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+}
+
+.chunk-option-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.chunk-option-info {
+    flex: 1;
+}
+
+.chunk-option-name {
+    font-weight: 600;
+    color: var(--gray-900);
+    margin-bottom: 2px;
+}
+
+.chunk-option-detail {
+    font-size: 0.85rem;
+    color: var(--gray-500);
+}
+
+.chunk-option.chunk-all {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.08), rgba(118, 75, 162, 0.08));
+    border-color: rgba(102, 126, 234, 0.3);
+}
+
+.chunk-option.chunk-all:hover {
+    border-color: var(--primary);
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.15), rgba(118, 75, 162, 0.15));
+}
+
+.chunk-picker-footer {
+    padding: 1rem 1.5rem;
+    border-top: 1px solid var(--gray-200);
+    text-align: center;
+}
+
+/* ============================================
    Loading State
    ============================================ */
 .loading {

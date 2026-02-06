@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aviation MCQ Test</title>
-    <link rel="stylesheet" href="css/style.css?v=20260126_1">
+    <link rel="stylesheet" href="css/style.css?v=20260206_1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -283,6 +283,22 @@
         </div>
     </div>
 
-    <script src="js/app.js?v=20260126_2"></script>
+    <!-- Chunk Picker Modal -->
+    <div id="chunk-picker-modal" class="chunk-picker-overlay">
+        <div class="chunk-picker">
+            <div class="chunk-picker-header">
+                <h3>Choose a Section</h3>
+                <p id="chunk-picker-subject" style="opacity: 0.8; margin-top: 4px;"></p>
+            </div>
+            <div class="chunk-picker-list" id="chunk-picker-list">
+                <!-- Chunk options loaded dynamically -->
+            </div>
+            <div class="chunk-picker-footer">
+                <button class="btn btn-outline" onclick="closeChunkPicker()">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js?v=20260206_1"></script>
 </body>
 </html>

@@ -12,6 +12,7 @@ const state = {
     pendingSubject: null,
     currentSubject: null,
     subjectSection: null, // 'seen' | 'unseen'
+    selectedChunkId: null, // chunk ID or null for all questions
     mode: null, // 'mock' | 'practice'
     examTotalTimeSec: 0,
     questionLimit: null,
@@ -401,12 +402,74 @@ function toNonNegInt(value) {
 
 function showSubjectOptions(subjectCode) {
     state.pendingSubject = subjectCode;
+    state.selectedChunkId = null; // Reset chunk selection
     const subjectName = state.subjects[subjectCode]?.name || subjectCode;
     const titleEl = document.getElementById('selected-subject-title');
     if (titleEl) {
         titleEl.textContent = `${subjectCode} - ${subjectName}`;
     }
+
+    // Check for chunks before showing mode selection
+    checkAndShowChunks(subjectCode);
+}
+
+async function checkAndShowChunks(subjectCode) {
+    try {
+        const res = await fetch(`api/chunks.php?subject=${encodeURIComponent(subjectCode)}`, { cache: 'no-store' });
+        const data = await res.json().catch(() => null);
+        if (data && data.ok && Array.isArray(data.chunks) && data.chunks.length > 0) {
+            showChunkPicker(subjectCode, data.chunks);
+            return;
+        }
+    } catch (_) {
+        // chunks API not available, skip
+    }
+    // No chunks → go directly to mode selection
     showPage('subject-options-page');
+}
+
+function showChunkPicker(subjectCode, chunks) {
+    const modal = document.getElementById('chunk-picker-modal');
+    const list = document.getElementById('chunk-picker-list');
+    const subjectName = state.subjects[subjectCode]?.name || subjectCode;
+
+    document.getElementById('chunk-picker-subject').textContent = `${subjectCode} - ${subjectName}`;
+
+    let html = `
+        <button class="chunk-option chunk-all" onclick="selectChunk(null)">
+            <div class="chunk-option-icon">📚</div>
+            <div class="chunk-option-info">
+                <div class="chunk-option-name">All Questions</div>
+                <div class="chunk-option-detail">Practice the entire subject</div>
+            </div>
+        </button>
+    `;
+
+    chunks.forEach(c => {
+        html += `
+            <button class="chunk-option" onclick="selectChunk(${c.id})">
+                <div class="chunk-option-icon">📦</div>
+                <div class="chunk-option-info">
+                    <div class="chunk-option-name">${escapeHtml(c.name)}</div>
+                    <div class="chunk-option-detail">Questions ${c.startIndex}–${c.endIndex} (${c.questionCount} Q)</div>
+                </div>
+            </button>
+        `;
+    });
+
+    list.innerHTML = html;
+    modal.classList.add('active');
+}
+
+function selectChunk(chunkId) {
+    state.selectedChunkId = chunkId;
+    const modal = document.getElementById('chunk-picker-modal');
+    modal.classList.remove('active');
+    showPage('subject-options-page');
+}
+
+function closeChunkPicker() {
+    document.getElementById('chunk-picker-modal').classList.remove('active');
 }
 
 function startMockTest() {
@@ -503,8 +566,13 @@ async function loadQuestions(subjectCode) {
     if (!subject) return [];
     
     try {
+        let apiUrl = `api/questions.php?subject=${encodeURIComponent(subjectCode)}`;
+        if (state.selectedChunkId) {
+            apiUrl += `&chunk=${encodeURIComponent(state.selectedChunkId)}`;
+        }
+
         const api = await fetchJsonApiFirst(
-            `api/questions.php?subject=${encodeURIComponent(subjectCode)}`,
+            apiUrl,
             `data/${subject.file}`
         );
 
