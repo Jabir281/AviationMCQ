@@ -6,7 +6,7 @@
     <title>Upload Subject - Aviation MCQ Admin</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/admin.css?v=20260127_1">
+    <link rel="stylesheet" href="css/admin.css?v=20260212_1">
 </head>
 <body>
     <header class="admin-header">
@@ -194,13 +194,19 @@
                     return `
                         <div style="display:flex; gap:10px; align-items:center; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border);">
                             <div style="min-width: 140px;"><strong>${code}</strong></div>
-                            <div style="flex:1; opacity: 0.95;">${name} <span style="opacity:0.85;">(${qn} questions)</span></div>
+                            <div style="flex:1; opacity: 0.95; min-width: 240px;">
+                                <div style="display:flex; gap:10px; align-items:center; flex-wrap: wrap;">
+                                    <input class="form-input" data-name-code="${code}" value="${escapeHtml(name)}" style="width: 260px; padding: 8px 10px;" />
+                                    <span style="opacity:0.85; font-size: 13px;">(${qn} questions)</span>
+                                </div>
+                            </div>
                             <div style="display:flex; gap:8px; align-items:center;">
                                 <select data-code="${code}" class="form-input" style="width: 140px; padding: 8px 10px;">
                                     <option value="seen" ${section === 'seen' ? 'selected' : ''}>Seen</option>
                                     <option value="unseen" ${section === 'unseen' ? 'selected' : ''}>Unseen</option>
                                 </select>
                                 <button class="btn btn-outline" style="padding: 10px 14px;" onclick="updateSection('${code}')">Update</button>
+                                <button class="btn btn-outline" style="padding: 10px 14px;" onclick="updateSubjectName('${code}')">Save Name</button>
                                 <button class="btn btn-danger icon-btn" title="Delete subject" onclick="deleteSubject('${code}')">🗑️</button>
                             </div>
                         </div>
@@ -233,6 +239,34 @@
                 setStatus(`Updated ${code} → ${section}`, true);
             } catch (_) {
                 alert('Failed to update subject section.');
+            }
+        }
+
+        async function updateSubjectName(code) {
+            const input = document.querySelector(`input[data-name-code="${code}"]`);
+            const name = String(input?.value || '').trim();
+            if (!name) {
+                alert('Subject name cannot be empty.');
+                return;
+            }
+
+            try {
+                const res = await fetch('api/admin/update_subject_name.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ code, name }),
+                    cache: 'no-store',
+                    credentials: 'include'
+                });
+                const data = await res.json().catch(() => null);
+                if (!res.ok || !data || data.ok !== true) {
+                    alert((data && data.error) ? data.error : 'Failed to update subject name.');
+                    return;
+                }
+                setStatus(`Renamed ${code} ✅`, true);
+                await loadSubjectsList();
+            } catch (_) {
+                alert('Failed to update subject name.');
             }
         }
 
